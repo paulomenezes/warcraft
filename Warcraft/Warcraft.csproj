@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{13F82A3A-108E-4ECC-80BB-B2E7274ECB9C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Warcraft</RootNamespace>
+    <AssemblyName>Warcraft</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MonoGamePlatform>DesktopGL</MonoGamePlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Warcraft.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Buildings\Humans\Barracks.cs" />
+    <Compile Include="Buildings\Humans\ChickenFarm.cs" />
+    <Compile Include="Buildings\Humans\TownHall.cs" />
+    <Compile Include="Buildings\Neutral\GoldMine.cs" />
+    <Compile Include="Buildings\Building.cs" />
+    <Compile Include="Buildings\InformationBuilding.cs" />
+    <Compile Include="Commands\BuilderBuildings.cs" />
+    <Compile Include="Commands\BuilderUnits.cs" />
+    <Compile Include="Commands\BuilderWalls.cs" />
+    <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="Commands\Miner.cs" />
+    <Compile Include="Events\MouseClickEventArgs.cs" />
+    <Compile Include="Events\MouseEventArgs.cs" />
+    <Compile Include="Managers\ManagerBuildings.cs" />
+    <Compile Include="Managers\ManagerCombat.cs" />
+    <Compile Include="Managers\ManagerEnemies.cs" />
+    <Compile Include="Managers\ManagerMap.cs" />
+    <Compile Include="Managers\ManagerMouse.cs" />
+    <Compile Include="Managers\ManagerUI.cs" />
+    <Compile Include="Managers\ManagerUnits.cs" />
+    <Compile Include="Map\Noise2D.cs" />
+    <Compile Include="Map\Tile.cs" />
+    <Compile Include="UI\Buildings\Barracks.cs" />
+    <Compile Include="UI\Buildings\ChickenFarm.cs" />
+    <Compile Include="UI\Buildings\GoldMine.cs" />
+    <Compile Include="UI\Buildings\TownHall.cs" />
+    <Compile Include="UI\Units\ElvenArcher.cs" />
+    <Compile Include="UI\Units\Footman.cs" />
+    <Compile Include="UI\Units\Grunt.cs" />
+    <Compile Include="UI\Units\Peasant.cs" />
+    <Compile Include="UI\Units\TrollAxethrower.cs" />
+    <Compile Include="UI\Button.cs" />
+    <Compile Include="UI\Main.cs" />
+    <Compile Include="UI\SelectRectangle.cs" />
+    <Compile Include="UI\UI.cs" />
+    <Compile Include="Units\Humans\ElvenArcher.cs" />
+    <Compile Include="Units\Humans\Footman.cs" />
+    <Compile Include="Units\Humans\Peasant.cs" />
+    <Compile Include="Units\Orcs\Grunt.cs" />
+    <Compile Include="Units\Orcs\TrollAxethrower.cs" />
+    <Compile Include="Units\InformationUnit.cs" />
+    <Compile Include="Units\Unit.cs" />
+    <Compile Include="Units\UnitEnemy.cs" />
+    <Compile Include="Util\Animation.cs" />
+    <Compile Include="Util\Buildings.cs" />
+    <Compile Include="Util\Camera.cs" />
+    <Compile Include="Util\Frame.cs" />
+    <Compile Include="Util\GeneticUtil.cs" />
+    <Compile Include="Util\Information.cs" />
+    <Compile Include="Util\Pathfinding.cs" />
+    <Compile Include="Util\PathNode.cs" />
+    <Compile Include="Util\Sprite.cs" />
+    <Compile Include="Util\Units.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Icon.png" />
+    <None Include="Content\arrow.png" />
+    <None Include="Content\axe.png" />
+    <None Include="Content\Cursor.png" />
+    <None Include="Content\Dwarven.png" />
+    <None Include="Content\Elven Archer.png" />
+    <None Include="Content\Font.spritefont" />
+    <None Include="Content\Footman.png" />
+    <None Include="Content\Grunt.png" />
+    <None Include="Content\Human Buildings %28Summer%29.png" />
+    <None Include="Content\Icons.png" />
+    <None Include="Content\Knight.png" />
+    <None Include="Content\Mage.png" />
+    <None Include="Content\Orc Buildings %28Summer%29 .png" />
+    <None Include="Content\Peasant_dying.png" />
+    <None Include="Content\Peasant_gold.png" />
+    <None Include="Content\Peasant_walking.png" />
+    <None Include="Content\Summer Tiles.png" />
+    <None Include="Content\Troll Axethrower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="x64\libopenal.so.1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\soft_oal.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\libSDL2-2.0.so.0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\SDL2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\libopenal.so.1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\soft_oal.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\libSDL2-2.0.so.0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\SDL2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MonoGame.Framework.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libopenal.1.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libSDL2-2.0.0.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+</Project>

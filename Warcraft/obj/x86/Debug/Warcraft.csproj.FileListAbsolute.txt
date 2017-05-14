@@ -1,0 +1,37 @@
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/x64/libopenal.so.1
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/x64/soft_oal.dll
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/x64/libSDL2-2.0.so.0
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/x64/SDL2.dll
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/x86/libopenal.so.1
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/x86/soft_oal.dll
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/x86/libSDL2-2.0.so.0
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/x86/SDL2.dll
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/MonoGame.Framework.dll.config
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/libopenal.1.dylib
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/libSDL2-2.0.0.dylib
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Warcraft.exe
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Warcraft.pdb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/MonoGame.Framework.dll
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/MonoGame.Framework.xml
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/obj/x86/Debug/Warcraft.csprojResolveAssemblyReference.cache
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/obj/x86/Debug/Warcraft.csproj.CoreCompileInputs.cache
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/obj/x86/Debug/Warcraft.exe
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/obj/x86/Debug/Warcraft.pdb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Cursor.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Dwarven.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Elven Archer.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Font.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Footman.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Grunt.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Human Buildings (Summer).xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Icons.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Knight.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Mage.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orc Buildings (Summer) .xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Peasant_dying.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Peasant_gold.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Peasant_walking.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Summer Tiles.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Troll Axethrower.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/arrow.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/axe.xnb
