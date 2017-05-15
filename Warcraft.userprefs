@@ -1,13 +1,9 @@
 ﻿<Properties StartupConfiguration="{13F82A3A-108E-4ECC-80BB-B2E7274ECB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Warcraft.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Map/Tile.cs">
     <Files>
-      <File FileName="Warcraft/Warcraft.cs" Line="23" Column="5" />
-      <File FileName="Warcraft/UI/UI.cs" Line="10" Column="39" />
-      <File FileName="Warcraft/Managers/ManagerMap.cs" Line="127" Column="1" />
-      <File FileName="Warcraft/Managers/ManagerUnits.cs" Line="21" Column="114" />
-      <File FileName="Warcraft/Managers/ManagerEnemies.cs" Line="11" Column="11" />
-      <File FileName="Warcraft/Managers/ManagerCombat.cs" Line="12" Column="57" />
-      <File FileName="Warcraft/Units/UnitEnemy.cs" Line="29" Column="26" />
+      <File FileName="Warcraft/Managers/ManagerMouse.cs" Line="42" Column="39" />
+      <File FileName="Warcraft/Managers/ManagerMap.cs" Line="97" Column="50" />
+      <File FileName="Warcraft/Map/Tile.cs" Line="41" Column="56" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

@@ -8,8 +8,8 @@ namespace Warcraft.Map
     enum TileType
     {
         WATER,
-        GLASS,
-        DESERT,
+		DESERT,
+		GLASS,
         FLOREST,
         ROCK,
         NONE
@@ -19,7 +19,7 @@ namespace Warcraft.Map
     {
         public static Texture2D texture;
         private Rectangle rectangle;
-        private Vector2 position;
+        public Vector2 position;
 
         public int TileX;
         public int TileY;
