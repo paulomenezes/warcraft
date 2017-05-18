@@ -42,11 +42,12 @@ namespace Warcraft.Managers
     class ManagerMap
     {
         private Texture2D texture;
-        private List<List<Tile>> map = new List<List<Tile>>();
+        public List<List<Tile>> map = new List<List<Tile>>();
 		private List<List<int>> match = new List<List<int>>();
         public List<Tile> walls = new List<Tile>();
+		public List<Tile> water = new List<Tile>();
 
-        int[,,] metadata = new int[50, 50, 4];
+		int[,,] metadata = new int[50, 50, 4];
         
         public static Dictionary<int[], int[]> Mapping = new Dictionary<int[], int[]>(new MyEqualityComparer());
 
@@ -62,15 +63,23 @@ namespace Warcraft.Managers
                 for (int j = 0; j < Warcraft.MAP_SIZE; j++)
                 {
                     if (noise[i, j] < 0.2f)
-                        t.Add(new Tile(i, j, TileType.WATER));
+                    {
+                        Tile tile = new Tile(i, j, TileType.WATER);
+                        t.Add(tile);
+                        water.Add(tile);
+                    }
                     else if (noise[i, j] >= 0.2f && noise[i, j] < 0.4f)
                         t.Add(new Tile(i, j, TileType.DESERT));
                     else if (noise[i, j] >= 0.4f && noise[i, j] < 0.8f)
-						t.Add(new Tile(i, j, TileType.GLASS));
-					else if (noise[i, j] >= 0.8f && noise[i, j] < 0.9f)
+                        t.Add(new Tile(i, j, TileType.GLASS));
+                    else if (noise[i, j] >= 0.8f && noise[i, j] < 0.9f)
                         t.Add(new Tile(i, j, TileType.DESERT));
-					else if (noise[i, j] >= 0.9f)
-                        t.Add(new Tile(i, j, TileType.WATER));
+                    else if (noise[i, j] >= 0.9f)
+                    {
+						Tile tile = new Tile(i, j, TileType.WATER);
+						t.Add(tile);
+						water.Add(tile);
+					}
                     //else if (noise[i, j] >= 0.8f)
                         //t.Add(new Tile(i, j, TileType.FLOREST));
                     //if (noise[i, j] < 0.5f)
@@ -118,7 +127,7 @@ namespace Warcraft.Managers
 			matches.Add(new int[] { 1, 1, 2, 2 }, new int[] { 9, 14 });
 			matches.Add(new int[] { 1, 2, 1, 1 }, new int[] { 11, 15 });
 			matches.Add(new int[] { 1, 2, 1, 2 }, new int[] { 13, 14 });
-			matches.Add(new int[] { 1, 2, 2, 1 }, new int[] { 3, 14 });
+			matches.Add(new int[] { 1, 2, 2, 1 }, new int[] { 3, 15 }); //
 			matches.Add(new int[] { 1, 2, 2, 2 }, new int[] { 4, 14 });
 			matches.Add(new int[] { 2, 1, 1, 1 }, new int[] { 13, 15 });
 			matches.Add(new int[] { 2, 1, 1, 2 }, new int[] { 17, 14 });
@@ -137,6 +146,9 @@ namespace Warcraft.Managers
 						int[] key = { match[i][j], match[i + 1][j], match[i][j + 1], match[i + 1][j + 1] };
                         if (matches.ContainsKey(key)) {
                             map[i][j].ChangeTexture(matches[key][0], matches[key][1]);
+
+                            if (match[i][j] == 0 || match[i + 1][j] == 0 || match[i][j + 1] == 0 || match[i + 1][j + 1] == 0)
+                                water.Add(new Tile(i, j));
                         }
                     }
 				}
