@@ -25,7 +25,7 @@ namespace Warcraft.Buildings
             set 
             {
 				position = value;
-                Data.Write("Mover [" + information.GetType() + "] X: " + Math.Floor(position.X / 32) + " Y: " + Math.Floor(position.Y / 32));
+                Data.Write("Mover [" + (information as InformationBuilding).Type + "] X: " + Math.Floor(position.X / 32) + " Y: " + Math.Floor(position.Y / 32));
             }
         }
 
@@ -92,7 +92,8 @@ namespace Warcraft.Buildings
                 if (isBuilding && e.SelectRectangle.Width == 0 && e.SelectRectangle.Height == 0 &&
                     !managerMap.CheckWalls(position, width / 32, height / 32))
                 {
-                    isPlaceSelected = true;
+					isPlaceSelected = true;
+					Data.Write("Adicionar [" + (information as InformationBuilding).Type + "] X: " + Math.Floor(position.X / 32) + " Y: " + Math.Floor(position.Y / 32));
                 }
 
                 if (isWorking)
@@ -148,7 +149,6 @@ namespace Warcraft.Buildings
             {
                 MouseState mouse = Mouse.GetState();
                 position = new Vector2(mouse.X - width / 2, mouse.Y - height / 2) + Warcraft.camera.center;
-                Data.Write("Adicionar [TrollAxeTrower] X: " + Math.Floor(position.X / 32) + " Y: " + Math.Floor(position.Y / 32));
             }
         }
 

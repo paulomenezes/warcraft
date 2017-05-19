@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Warcraft.Buildings;
 using Warcraft.Managers;
 using Warcraft.Units;
+using Warcraft.Util;
 
 namespace Warcraft.Commands
 {
@@ -33,6 +34,8 @@ namespace Warcraft.Commands
             {
                 Warcraft.GOLD -= building.information.CostGold;
                 Warcraft.WOOD -= building.information.CostWood;
+
+                Data.Write("Construindo Predio [" + (building.information as InformationBuilding).Type + "]");
 
                 if ((building.information as InformationBuilding).Type == Util.Buildings.CHICKEN_FARM)
                 {

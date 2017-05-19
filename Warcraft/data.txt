@@ -1,122 +1,219 @@
 ##############
-Começando jogo: 5/18/2017 10:45:25 PM
-##############
-Começando jogo: 5/18/2017 10:45:41 PM
+Começando jogo: 5/19/2017 4:16:19 PM
 Adicionar [Gold Mine] X: 30 Y: 18
-Adicionar [TrollAxeTrower] X: 0 Y: 0
-Adicionar [TrollAxeTrower] X: 0 Y: 0
-Adicionar [Grunt] X: 0 Y: 0
-Adicionar [Grunt] X: 0 Y: 0
-Adicionar [TrollAxeTrower] X: 0 Y: 0
-Adicionar [TrollAxeTrower] X: 0 Y: 0
-Adicionar [TrollAxeTrower] X: 0 Y: 0
-Adicionar [TrollAxeTrower] X: 0 Y: 0
-Adicionar [Grunt] X: 0 Y: 0
-Adicionar [Grunt] X: 0 Y: 0
 Adicionar [TownHall] X: 0 Y: 0
 Adicionar [Barracks] X: 0 Y: 0
 Adicionar [Chicken Farm] X: 0 Y: 0
 Adicionar [Peasant] X: 30 Y: 23
+Adicionar [TOWN_HALL] X: 33 Y: 24
+Mover [PEASANT] X: 33 Y: 24
+Adicionar [TownHall] X: 0 Y: 0
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 33 Y: 24
+Adicionar [TownHall] X: 0 Y: 0
+Adicionar [Barracks] X: 0 Y: 0
+Adicionar [Chicken Farm] X: 0 Y: 0
+Adicionar [Peasant] X: 35 Y: 28
+Mover [PEASANT] X: 35 Y: 28
+Mover [PEASANT] X: 30 Y: 18
+Adicionar [BARRACKS] X: 36 Y: 28
+Mover [PEASANT] X: 36 Y: 28
+Mover [PEASANT] X: 33 Y: 24
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 33 Y: 24
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 33 Y: 24
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 33 Y: 24
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 33 Y: 24
+Mover [PEASANT] X: 30 Y: 18
+Adicionar [Barracks] X: 0 Y: 0
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 33 Y: 24
+Mover [PEASANT] X: 30 Y: 18
+Adicionar [CHICKEN_FARM] X: 39 Y: 20
+Mover [PEASANT] X: 39 Y: 20
+Adicionar [CHICKEN_FARM] X: 39 Y: 20
+Mover [PEASANT] X: 33 Y: 24
+Adicionar [ElvenArcher] X: 38 Y: 32
+Mover [ELVEN_ARCHER] X: 38 Y: 32
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 33 Y: 24
+Adicionar [Footman] X: 38 Y: 32
+Mover [FOOTMAN] X: 38 Y: 32
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 33 Y: 24
+Mover [ELVEN_ARCHER] X: 44 Y: 29
+Mover [FOOTMAN] X: 44 Y: 30
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 33 Y: 24
+Adicionar [Chicken Farm] X: 0 Y: 0
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 30 Y: 18
 ##############
-Começando jogo: 5/18/2017 10:57:46 PM
-Adicionar [TownHall] X: 0 Y: 0
-Adicionar [TownHall] X: 0 Y: 0
-Adicionar [Barracks] X: 0 Y: 0
-Adicionar [Chicken Farm] X: 0 Y: 0
-Adicionar [Peasant] X: 41 Y: 26
-Adicionar [Barracks] X: 0 Y: 0
-Adicionar [ElvenArcher] X: 34 Y: 31
-Adicionar [Footman] X: 34 Y: 31
-Adicionar [Chicken Farm] X: 0 Y: 0
+Começando jogo: 5/19/2017 4:24:09 PM
 Adicionar [Gold Mine] X: 30 Y: 18
-Adicionar [Grunt] X: 0 Y: 0
-Adicionar [TrollAxeTrower] X: 0 Y: 0
-Adicionar [Grunt] X: 0 Y: 0
-Adicionar [TrollAxeTrower] X: 0 Y: 0
-Adicionar [TrollAxeTrower] X: 0 Y: 0
-Adicionar [Grunt] X: 0 Y: 0
-Adicionar [Grunt] X: 0 Y: 0
-Adicionar [TrollAxeTrower] X: 0 Y: 0
-Adicionar [TrollAxeTrower] X: 0 Y: 0
-Adicionar [Grunt] X: 0 Y: 0
-Adicionar [TownHall] X: 0 Y: 0
-Adicionar [Barracks] X: 0 Y: 0
-Adicionar [Chicken Farm] X: 0 Y: 0
 Adicionar [Peasant] X: 30 Y: 23
+Adicionar [TOWN_HALL] X: 34 Y: 24
+Mover [PEASANT] X: 34 Y: 24
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 34 Y: 24
+Mover [PEASANT] X: 30 Y: 18
+Adicionar [Peasant] X: 36 Y: 28
+Mover [PEASANT] X: 36 Y: 28
+Mover [PEASANT] X: 34 Y: 24
+Adicionar [BARRACKS] X: 38 Y: 20
+Mover [PEASANT] X: 38 Y: 20
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 34 Y: 24
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 34 Y: 24
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 34 Y: 24
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 34 Y: 24
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 34 Y: 24
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 34 Y: 24
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 34 Y: 24
+Mover [PEASANT] X: 30 Y: 18
+Adicionar [CHICKEN_FARM] X: 38 Y: 31
+Mover [PEASANT] X: 38 Y: 31
+Adicionar [CHICKEN_FARM] X: 38 Y: 31
+Adicionar [CHICKEN_FARM] X: 38 Y: 31
+Mover [PEASANT] X: 34 Y: 24
+Adicionar [ElvenArcher] X: 40 Y: 24
+Mover [ELVEN_ARCHER] X: 40 Y: 24
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 34 Y: 24
+Adicionar [Footman] X: 40 Y: 24
+Mover [FOOTMAN] X: 40 Y: 24
+Mover [ELVEN_ARCHER] X: 33 Y: 31
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 34 Y: 24
+Mover [PEASANT] X: 30 Y: 18
+Mover [FOOTMAN] X: 43 Y: 30
+Mover [PEASANT] X: 34 Y: 24
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 30 Y: 18
+Mover [PEASANT] X: 34 Y: 24
 ##############
-Começando jogo: 5/18/2017 11:07:28 PM
-Adicionar [TownHall] X: 0 Y: 0
-Adicionar [TownHall] X: 0 Y: 0
-Adicionar [Barracks] X: 0 Y: 0
-Adicionar [Chicken Farm] X: 0 Y: 0
-Adicionar [Peasant] X: 35 Y: 29
-Adicionar [Barracks] X: 0 Y: 0
-Adicionar [ElvenArcher] X: 41 Y: 25
-Adicionar [Footman] X: 41 Y: 25
-Adicionar [Chicken Farm] X: 0 Y: 0
+Começando jogo: 5/19/2017 4:44:02 PM
 Adicionar [Gold Mine] X: 30 Y: 18
-Adicionar [Grunt] X: 0 Y: 0
-Adicionar [TrollAxeTrower] X: 0 Y: 0
-Adicionar [TrollAxeTrower] X: 0 Y: 0
-Adicionar [Grunt] X: 0 Y: 0
-Adicionar [TrollAxeTrower] X: 0 Y: 0
-Adicionar [TrollAxeTrower] X: 0 Y: 0
-Adicionar [Grunt] X: 0 Y: 0
-Adicionar [TrollAxeTrower] X: 0 Y: 0
-Adicionar [Grunt] X: 0 Y: 0
-Adicionar [Grunt] X: 0 Y: 0
-Adicionar [TownHall] X: 0 Y: 0
-Adicionar [Barracks] X: 0 Y: 0
-Adicionar [Chicken Farm] X: 0 Y: 0
 Adicionar [Peasant] X: 30 Y: 23
-##############
-Começando jogo: 5/18/2017 11:14:09 PM
-Adicionar [TrollAxeTrower] X: 49 Y: 22
-Adicionar [TrollAxeTrower] X: 49 Y: 22
-Adicionar [TrollAxeTrower] X: 49 Y: 22
-Adicionar [TrollAxeTrower] X: 49 Y: 22
-Adicionar [TrollAxeTrower] X: 49 Y: 22
-Adicionar [TrollAxeTrower] X: 49 Y: 22
-Adicionar [TrollAxeTrower] X: 49 Y: 22
-Adicionar [TrollAxeTrower] X: 49 Y: 22
-Adicionar [TrollAxeTrower] X: 49 Y: 22
-Adicionar [TrollAxeTrower] X: 49 Y: 22
-Adicionar [TrollAxeTrower] X: 48 Y: 22
-Adicionar [TrollAxeTrower] X: 46 Y: 22
-Adicionar [TrollAxeTrower] X: 44 Y: 22
-Adicionar [TrollAxeTrower] X: 40 Y: 22
-Adicionar [TrollAxeTrower] X: 38 Y: 22
-Adicionar [TrollAxeTrower] X: 36 Y: 23
-Adicionar [TrollAxeTrower] X: 35 Y: 23
-Adicionar [TrollAxeTrower] X: 34 Y: 23
-Adicionar [TrollAxeTrower] X: 33 Y: 23
-Adicionar [TrollAxeTrower] X: 33 Y: 23
-Adicionar [TrollAxeTrower] X: 33 Y: 23
-Adicionar [TrollAxeTrower] X: 33 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Adicionar [TrollAxeTrower] X: 32 Y: 23
-Mover [Warcraft.Units.InformationUnit] X: 32 Y: 23
-Adicionar [TownHall] X: 0 Y: 0
-Mover [Warcraft.Units.InformationUnit] X: 0 Y: 1
-Mover [Warcraft.Units.InformationUnit] X: 38 Y: 31
+Construindo Predio [TOWN_HALL]
+Adicionar [TOWN_HALL] X: 33 Y: 23
+Mover [PEASANT] X: 33 Y: 23
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 30 Y: 18
+Começar Mineração [Peasant, GoldMiner]
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Adicionar [Peasant] X: 35 Y: 27
+Mover [PEASANT] X: 35 Y: 27
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Construindo Predio [BARRACKS]
+Adicionar [BARRACKS] X: 38 Y: 28
+Mover [PEASANT] X: 38 Y: 28
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Construindo Predio [CHICKEN_FARM]
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Adicionar [CHICKEN_FARM] X: 40 Y: 21
+Mover [PEASANT] X: 40 Y: 21
+Adicionar [CHICKEN_FARM] X: 40 Y: 21
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Adicionar [ElvenArcher] X: 40 Y: 32
+Mover [ELVEN_ARCHER] X: 40 Y: 32
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [ELVEN_ARCHER] X: 45 Y: 27
+Adicionar [Footman] X: 40 Y: 32
+Mover [FOOTMAN] X: 40 Y: 32
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [FOOTMAN] X: 33 Y: 32
+Mover [FOOTMAN] X: 33 Y: 32
+Mover [FOOTMAN] X: 33 Y: 32
+Mover [FOOTMAN] X: 33 Y: 32
+Mover [FOOTMAN] X: 33 Y: 32
+Mover [FOOTMAN] X: 33 Y: 32
+Mover [FOOTMAN] X: 33 Y: 32
+Mover [FOOTMAN] X: 33 Y: 32
+Mover [FOOTMAN] X: 33 Y: 32
+Mover [FOOTMAN] X: 33 Y: 32
+Mover [FOOTMAN] X: 33 Y: 32
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 33 Y: 23
+Entregando Gold [Peasant, GoldMiner]

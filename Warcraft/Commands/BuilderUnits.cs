@@ -1,4 +1,5 @@
 ﻿using Warcraft.Units;
+using Warcraft.Util;
 
 namespace Warcraft.Commands
 {
@@ -25,6 +26,8 @@ namespace Warcraft.Commands
             {
                 Warcraft.GOLD -= informationUnit.CostGold;
                 Warcraft.FOOD -= informationUnit.CostFood;
+
+                Data.Write("Construir Unidade [" + informationUnit.Type + "]");
 
                 go = true;
                 completed = false;

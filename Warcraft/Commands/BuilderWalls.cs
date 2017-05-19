@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework.Input;
 using System;
 using Warcraft.Managers;
 using Warcraft.Units.Humans;
+using Warcraft.Util;
 
 namespace Warcraft.Commands
 {
@@ -83,6 +84,8 @@ namespace Warcraft.Commands
         {
             if (Warcraft.GOLD - 100 >= 0)
             {
+                Data.Write("Construindo muro X: " + Normalize(position.X) + " Y: " + Normalize(position.Y));
+
                 Warcraft.GOLD -= 100;
                 managerUnits.managerMap.AddWalls(position, textureOffset);
             }

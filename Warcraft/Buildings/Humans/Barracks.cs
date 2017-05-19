@@ -34,8 +34,6 @@ namespace Warcraft.Buildings.Humans
 
             commands.Add(new BuilderUnits(Util.Units.ELVEN_ARCHER, ElvenArcher.Information));
             commands.Add(new BuilderUnits(Util.Units.FOOTMAN, Footman.Information));
-
-            Data.Write("Adicionar [Barracks] X: " + tileX + " Y: " + tileY);
         }
 
         public override void Update()

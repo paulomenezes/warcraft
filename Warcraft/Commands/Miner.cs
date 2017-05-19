@@ -4,6 +4,7 @@ using Warcraft.Buildings.Neutral;
 using Warcraft.Managers;
 using Warcraft.Units;
 using Warcraft.Units.Humans;
+using Warcraft.Util;
 
 namespace Warcraft.Commands
 {
@@ -50,6 +51,8 @@ namespace Warcraft.Commands
                 worker.selected = false;
 
                 currentState = State.MINER;
+
+                Data.Write("Começar Mineração [Peasant, GoldMiner]");
             }
         }
 
@@ -72,6 +75,8 @@ namespace Warcraft.Commands
 
                         goldMine.animations.Change("normal");
                         currentState = State.TOWN_HALL;
+
+                        Data.Write("Entregando Gold [Peasant, GoldMiner]");
                     }
                     else
                     {
@@ -82,6 +87,8 @@ namespace Warcraft.Commands
 
                         goldMine.animations.Change("working");
                         currentState = State.MINER;
+
+                        Data.Write("Minerando [Peasant, GoldMiner]");
                     }
 
                     elapsed = 0;

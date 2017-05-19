@@ -51,17 +51,17 @@ namespace Warcraft
 
 		protected override void Initialize()
 		{
+			Data.Write("##############");
+			Data.Write("Começando jogo: " + DateTime.Now);
+
 			managerBuildings = new ManagerBuildings(managerMouse, managerMap);
-			managerEnemies = new ManagerEnemies(managerMouse, managerMap, managerBuildings);
+            //managerEnemies = new ManagerEnemies(managerMouse, managerMap, managerBuildings);
 			managerUnits = new ManagerUnits(managerMouse, managerMap, managerBuildings);
 			managerUI = new ManagerUI(managerMouse, managerBuildings, managerUnits);
 
-			managerCombat = new ManagerCombat(managerUnits, managerEnemies, managerBuildings);
+			//managerCombat = new ManagerCombat(managerUnits, managerEnemies, managerBuildings);
 
 			camera = new Camera(GraphicsDevice.Viewport);
-
-			Data.Write("##############");
-            Data.Write("Começando jogo: " + DateTime.Now);
 
 			base.Initialize();
 		}
@@ -72,7 +72,7 @@ namespace Warcraft
 
 			managerMap.LoadContent(Content);
 			managerUnits.LoadContent(Content);
-			managerEnemies.LoadContent(Content);
+			//managerEnemies.LoadContent(Content);
 			managerBuildings.LoadContent(Content);
 			managerUI.LoadContent(Content);
 
@@ -90,7 +90,7 @@ namespace Warcraft
 			managerBuildings.Update();
 			managerUI.Update();
 
-			managerCombat.Update();
+			//managerCombat.Update();
 
 			if (IsActive)
 				camera.Update(gameTime);
@@ -105,7 +105,7 @@ namespace Warcraft
 			spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null, null, camera.transform);
 			managerMap.Draw(spriteBatch);
 
-			managerEnemies.Draw(spriteBatch);
+			//managerEnemies.Draw(spriteBatch);
 			managerUnits.Draw(spriteBatch);
 			managerBuildings.Draw(spriteBatch);
 			managerMouse.Draw(spriteBatch);
@@ -115,7 +115,7 @@ namespace Warcraft
 			managerUI.DrawBack(spriteBatch);
 			managerUI.Draw(spriteBatch);
 			managerUnits.DrawUI(spriteBatch);
-			managerEnemies.DrawUI(spriteBatch);
+			//managerEnemies.DrawUI(spriteBatch);
 			managerBuildings.DrawUI(spriteBatch);
 			spriteBatch.End();
 
