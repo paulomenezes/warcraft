@@ -93,6 +93,7 @@
     <Compile Include="Util\PathNode.cs" />
     <Compile Include="Util\Sprite.cs" />
     <Compile Include="Util\Units.cs" />
+    <Compile Include="Util\Data.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.manifest" />

@@ -114,6 +114,8 @@ namespace Warcraft.Units.Humans
             commands.Add(new BuilderBuildings(Util.Buildings.CHICKEN_FARM, this, managerMouse, managerBuildings, managerUnits));
             commands.Add(new BuilderWalls(this, managerMouse, managerBuildings, managerUnits));
             commands.Add(new Miner(managerBuildings, this));
+
+            Data.Write("Adicionar [Peasant] X: " + tileX + " Y: " + tileY);
         }
 
         public override void LoadContent(ContentManager content)
@@ -154,7 +156,7 @@ namespace Warcraft.Units.Humans
                     if (workState == WorkigState.WAITING_PLACE && cmd.building.isPlaceSelected)
                     {
                         workState = WorkigState.GO_TO_WORK;
-                        Move((int)cmd.building.position.X / 32, (int)cmd.building.position.Y / 32);
+                        Move((int)cmd.building.Position.X / 32, (int)cmd.building.Position.Y / 32);
                         selected = false;
                     }
 

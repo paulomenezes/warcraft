@@ -1,11 +1,21 @@
 ﻿<Properties StartupConfiguration="{13F82A3A-108E-4ECC-80BB-B2E7274ECB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Units/Humans/Peasant.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Util/Information.cs">
     <Files>
-      <File FileName="Warcraft/Util/Pathfinding.cs" Line="127" Column="13" />
-      <File FileName="Warcraft/Managers/ManagerMap.cs" Line="77" Column="50" />
-      <File FileName="Warcraft/Warcraft.cs" Line="3" Column="20" />
-      <File FileName="Warcraft/Map/Tile.cs" Line="18" Column="11" />
-      <File FileName="Warcraft/Units/Humans/Peasant.cs" Line="1" Column="1" />
+      <File FileName="Warcraft/Buildings/Neutral/GoldMine.cs" Line="38" Column="33" />
+      <File FileName="Warcraft/Buildings/Humans/Barracks.cs" Line="52" Column="107" />
+      <File FileName="Warcraft/Buildings/Humans/ChickenFarm.cs" Line="34" Column="48" />
+      <File FileName="Warcraft/Buildings/Humans/TownHall.cs" Line="51" Column="46" />
+      <File FileName="Warcraft/Units/Humans/Peasant.cs" Line="159" Column="84" />
+      <File FileName="Warcraft/Units/Humans/Footman.cs" Line="104" Column="43" />
+      <File FileName="Warcraft/Units/Humans/ElvenArcher.cs" Line="95" Column="47" />
+      <File FileName="Warcraft/Units/Orcs/Grunt.cs" Line="107" Column="13" />
+      <File FileName="Warcraft/Units/Orcs/TrollAxethrower.cs" Line="107" Column="13" />
+      <File FileName="Warcraft/Buildings/Building.cs" Line="151" Column="131" />
+      <File FileName="Warcraft/Commands/BuilderBuildings.cs" Line="37" Column="56" />
+      <File FileName="Warcraft/Buildings/InformationBuilding.cs" Line="5" Column="37" />
+      <File FileName="Warcraft/Units/Unit.cs" Line="334" Column="13" />
+      <File FileName="Warcraft/Commands/Miner.cs" Line="78" Column="52" />
+      <File FileName="Warcraft/Util/Information.cs" Line="25" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

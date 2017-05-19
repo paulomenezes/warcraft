@@ -1,0 +1,122 @@
+##############
+Começando jogo: 5/18/2017 10:45:25 PM
+##############
+Começando jogo: 5/18/2017 10:45:41 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [TownHall] X: 0 Y: 0
+Adicionar [Barracks] X: 0 Y: 0
+Adicionar [Chicken Farm] X: 0 Y: 0
+Adicionar [Peasant] X: 30 Y: 23
+##############
+Começando jogo: 5/18/2017 10:57:46 PM
+Adicionar [TownHall] X: 0 Y: 0
+Adicionar [TownHall] X: 0 Y: 0
+Adicionar [Barracks] X: 0 Y: 0
+Adicionar [Chicken Farm] X: 0 Y: 0
+Adicionar [Peasant] X: 41 Y: 26
+Adicionar [Barracks] X: 0 Y: 0
+Adicionar [ElvenArcher] X: 34 Y: 31
+Adicionar [Footman] X: 34 Y: 31
+Adicionar [Chicken Farm] X: 0 Y: 0
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [TownHall] X: 0 Y: 0
+Adicionar [Barracks] X: 0 Y: 0
+Adicionar [Chicken Farm] X: 0 Y: 0
+Adicionar [Peasant] X: 30 Y: 23
+##############
+Começando jogo: 5/18/2017 11:07:28 PM
+Adicionar [TownHall] X: 0 Y: 0
+Adicionar [TownHall] X: 0 Y: 0
+Adicionar [Barracks] X: 0 Y: 0
+Adicionar [Chicken Farm] X: 0 Y: 0
+Adicionar [Peasant] X: 35 Y: 29
+Adicionar [Barracks] X: 0 Y: 0
+Adicionar [ElvenArcher] X: 41 Y: 25
+Adicionar [Footman] X: 41 Y: 25
+Adicionar [Chicken Farm] X: 0 Y: 0
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [TownHall] X: 0 Y: 0
+Adicionar [Barracks] X: 0 Y: 0
+Adicionar [Chicken Farm] X: 0 Y: 0
+Adicionar [Peasant] X: 30 Y: 23
+##############
+Começando jogo: 5/18/2017 11:14:09 PM
+Adicionar [TrollAxeTrower] X: 49 Y: 22
+Adicionar [TrollAxeTrower] X: 49 Y: 22
+Adicionar [TrollAxeTrower] X: 49 Y: 22
+Adicionar [TrollAxeTrower] X: 49 Y: 22
+Adicionar [TrollAxeTrower] X: 49 Y: 22
+Adicionar [TrollAxeTrower] X: 49 Y: 22
+Adicionar [TrollAxeTrower] X: 49 Y: 22
+Adicionar [TrollAxeTrower] X: 49 Y: 22
+Adicionar [TrollAxeTrower] X: 49 Y: 22
+Adicionar [TrollAxeTrower] X: 49 Y: 22
+Adicionar [TrollAxeTrower] X: 48 Y: 22
+Adicionar [TrollAxeTrower] X: 46 Y: 22
+Adicionar [TrollAxeTrower] X: 44 Y: 22
+Adicionar [TrollAxeTrower] X: 40 Y: 22
+Adicionar [TrollAxeTrower] X: 38 Y: 22
+Adicionar [TrollAxeTrower] X: 36 Y: 23
+Adicionar [TrollAxeTrower] X: 35 Y: 23
+Adicionar [TrollAxeTrower] X: 34 Y: 23
+Adicionar [TrollAxeTrower] X: 33 Y: 23
+Adicionar [TrollAxeTrower] X: 33 Y: 23
+Adicionar [TrollAxeTrower] X: 33 Y: 23
+Adicionar [TrollAxeTrower] X: 33 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Adicionar [TrollAxeTrower] X: 32 Y: 23
+Mover [Warcraft.Units.InformationUnit] X: 32 Y: 23
+Adicionar [TownHall] X: 0 Y: 0
+Mover [Warcraft.Units.InformationUnit] X: 0 Y: 1
+Mover [Warcraft.Units.InformationUnit] X: 38 Y: 31

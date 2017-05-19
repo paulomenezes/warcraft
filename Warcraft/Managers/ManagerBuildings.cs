@@ -15,7 +15,7 @@ namespace Warcraft.Managers
         {
             this.managerMap = managerMap;
 
-            buildings.Add(new GoldMine(25, 25, managerMouse, managerMap, null));
+            buildings.Add(new GoldMine(30, 18, managerMouse, managerMap, null));
         }
 
         public void AddBuilding(Building building)

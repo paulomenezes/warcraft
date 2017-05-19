@@ -100,6 +100,8 @@ namespace Warcraft.Units.Humans
 
             information = new InformationUnit("Footman", Race.HUMAN, Faction.ALLIANCE, 60, 6, 360, 10, 600, 1, Util.Buildings.BARRACKS, 300, 15, 90, 1, 0, Util.Units.FOOTMAN);
             Information = information;
+
+            Data.Write("Adicionar [Footman] X: " + tileX + " Y: " + tileY);
         }
 
         public override void LoadContent(ContentManager content)

@@ -33,6 +33,8 @@ namespace Warcraft.Buildings.Humans
             textureName = "Human Buildings (Summer)";
 
             commands.Add(new BuilderUnits(Util.Units.PEASANT, Peasant.Information));
+
+            Data.Write("Adicionar [TownHall] X: " + tileX + " Y: " + tileY);
         }
 
         public override void Update()
@@ -46,7 +48,7 @@ namespace Warcraft.Buildings.Humans
 
                 if (c.completed)
                 {
-                    var p = new Point(((int)position.X / 32) + ((width / Warcraft.TILE_SIZE) / 2), ((int)position.Y / 32) + ((height / Warcraft.TILE_SIZE)));
+                    var p = new Point(((int)Position.X / 32) + ((width / Warcraft.TILE_SIZE) / 2), ((int)Position.Y / 32) + ((height / Warcraft.TILE_SIZE)));
                     managerUnits.Factory(c.type, p.X, p.Y, target.X, target.Y);
                     c.completed = false;
                     c.remove = true;

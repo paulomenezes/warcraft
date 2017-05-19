@@ -103,6 +103,8 @@ namespace Warcraft.Units.Orcs
             
             this.information = information;
             Information = information;
+
+            Data.Write("Adicionar [Grunt] X: " + Math.Floor(position.X / 32) + " Y: " + Math.Floor(position.Y / 32));
         }
 
         public override void LoadContent(ContentManager content)

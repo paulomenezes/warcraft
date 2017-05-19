@@ -14,25 +14,18 @@ namespace Warcraft.Managers
         ManagerMouse managerMouse;
         public ManagerMap managerMap;
         ManagerBuildings managerBuildings;
-        ManagerEnemies managerEnemies;
 
         ContentManager content;
 
-        public ManagerUnits(ManagerMouse managerMouse, ManagerMap managerMap, ManagerBuildings managerBuildings, ManagerEnemies managerEnemies)
+        public ManagerUnits(ManagerMouse managerMouse, ManagerMap managerMap, ManagerBuildings managerBuildings)
         {
             this.managerMouse = managerMouse;
             this.managerMap = managerMap;
             this.managerBuildings = managerBuildings;
-            //this.managerEnemies = managerEnemies;
 
             managerMouse.MouseClickEventHandler += ManagerMouse_MouseClickEventHandler;
 
-            units.Add(new Peasant(23, 23, managerMouse, managerMap, managerBuildings, this));
-
-            //for (int i = 0; i < 40; i++)
-            //{
-            //    units.Add(new ElvenArcher(24, 23, managerMouse, managerMap, managerBuildings, this));
-            //}
+            units.Add(new Peasant(30, 23, managerMouse, managerMap, managerBuildings, this));
         }
 
         public void Factory(Util.Units type, int x, int y, int targetX, int targetY)

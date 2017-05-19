@@ -91,6 +91,8 @@ namespace Warcraft.Units.Humans
 
             information = new InformationUnit("Elven Archer", Race.HIGH_ELF, Faction.ALLIANCE, 150, 20, 360, 10, 500, 1, Util.Buildings.BARRACKS, 400, 20, 100, 4, 0, Util.Units.ELVEN_ARCHER);
             Information = information;
+
+            Data.Write("Adicionar [ElvenArcher] X: " + tileX + " Y: " + tileY);
         }
 
         public override void LoadContent(ContentManager content)

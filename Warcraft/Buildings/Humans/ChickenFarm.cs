@@ -30,6 +30,8 @@ namespace Warcraft.Buildings.Humans
             textureName = "Human Buildings (Summer)";
 
             unselected = true;
+
+            Data.Write("Adicionar [Chicken Farm] X: " + tileX + " Y: " + tileY);
         }
     }
 }

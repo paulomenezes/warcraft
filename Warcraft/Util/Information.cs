@@ -21,8 +21,8 @@
         public float HitPointsTotal;
 
         public int CostGold;
-        public int CostFood;
-        public int CostWood;
+		public int CostFood;
+		public int CostWood;
         public int BuildTime;
     }
 }

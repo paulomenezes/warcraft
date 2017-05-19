@@ -46,7 +46,7 @@ namespace Warcraft.Commands
 
                 goldMine.workers.Add(worker as Peasant);
                 worker.workState = WorkigState.GO_TO_WORK;
-                worker.Move((int)goldMine.position.X / 32, (int)goldMine.position.Y / 32);
+                worker.Move((int)goldMine.Position.X / 32, (int)goldMine.Position.Y / 32);
                 worker.selected = false;
 
                 currentState = State.MINER;
@@ -67,7 +67,7 @@ namespace Warcraft.Commands
 
                     if (currentState == State.MINER)
                     {
-                        worker.Move((int)townHall.position.X / 32, (int)townHall.position.Y / 32);
+                        worker.Move((int)townHall.Position.X / 32, (int)townHall.Position.Y / 32);
                         worker.animations.currentAnimation = Util.AnimationType.GOLD;
 
                         goldMine.animations.Change("normal");
@@ -75,7 +75,7 @@ namespace Warcraft.Commands
                     }
                     else
                     {
-                        worker.Move((int)goldMine.position.X / 32, (int)goldMine.position.Y / 32);
+                        worker.Move((int)goldMine.Position.X / 32, (int)goldMine.Position.Y / 32);
                         worker.animations.currentAnimation = Util.AnimationType.WALKING;
 
                         Warcraft.GOLD += 100;

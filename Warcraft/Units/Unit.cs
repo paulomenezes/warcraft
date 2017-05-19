@@ -24,6 +24,16 @@ namespace Warcraft.Units
         public Animation animations;
 
         public Vector2 position;
+		public Vector2 Position
+		{
+			get { return position; }
+			set
+			{
+				position = value;
+				Data.Write("Mover [" + information.GetType() + "] X: " + Math.Floor(position.X / 32) + " Y: " + Math.Floor(position.Y / 32));
+			}
+		}
+		
         private Vector2 goal;
 
         public WorkigState workState = WorkigState.NOTHING;
@@ -292,6 +302,8 @@ namespace Warcraft.Units
 
         public void Move(int xTile, int yTile)
         {
+            Data.Write("Mover [" + information.GetType() + "] X: " + xTile + " Y: " + yTile);
+
             if (information.HitPoints > 0)
             {
                 if (pathfinding.SetGoal((int)position.X, (int)position.Y, xTile, yTile))
@@ -318,6 +330,8 @@ namespace Warcraft.Units
 
         public void MoveTo(int xTile, int yTile)
         {
+            Data.Write("Mover [" + information.GetType() + "] X: " + xTile + " Y: " + yTile);
+
             if (information.HitPoints > 0)
             {
                 if (pathfinding.SetGoal((int)position.X, (int)position.Y, (int)position.X / 32 + xTile, (int)position.Y / 32 + yTile))

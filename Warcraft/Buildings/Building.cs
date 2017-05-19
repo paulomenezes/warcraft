@@ -18,7 +18,16 @@ namespace Warcraft.Buildings
         public Animation animations;
 
         protected Point target;
-        public Vector2 position;
+        private Vector2 position;
+        public Vector2 Position 
+        {
+            get { return position; }
+            set 
+            {
+				position = value;
+                Data.Write("Mover [" + information.GetType() + "] X: " + Math.Floor(position.X / 32) + " Y: " + Math.Floor(position.Y / 32));
+            }
+        }
 
         public bool selected;
         public bool unselected = false;
@@ -139,6 +148,7 @@ namespace Warcraft.Buildings
             {
                 MouseState mouse = Mouse.GetState();
                 position = new Vector2(mouse.X - width / 2, mouse.Y - height / 2) + Warcraft.camera.center;
+                Data.Write("Adicionar [TrollAxeTrower] X: " + Math.Floor(position.X / 32) + " Y: " + Math.Floor(position.Y / 32));
             }
         }
 

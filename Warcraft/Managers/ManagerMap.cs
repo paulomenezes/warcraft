@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using System;
+using System.IO;
 
 namespace Warcraft.Managers
 {
@@ -55,7 +56,31 @@ namespace Warcraft.Managers
 
         public ManagerMap()
         {
-            float[,] noise = Noise2D.GenerateNoiseMap(Warcraft.MAP_SIZE, Warcraft.MAP_SIZE, 20);
+            float[,] noise = new float[Warcraft.MAP_SIZE, Warcraft.MAP_SIZE]; // Noise2D.GenerateNoiseMap(Warcraft.MAP_SIZE, Warcraft.MAP_SIZE, 20);
+
+            String mapValues = "";
+
+            using (var filestream = File.Open("../../Content/map.txt", FileMode.Open))
+            using (var binaryStream = new BinaryReader(filestream))
+            {
+            	while (binaryStream.PeekChar() != -1)
+            	{
+                    mapValues += binaryStream.ReadChar();
+            	}
+            }
+
+            String[] values = mapValues.Split(',');
+            int vX = 0, vY = 0;
+            for (int i = 0; i < values.Length; i++)
+            {
+                noise[vX, vY] = (float)Convert.ToDouble(values[i]);
+
+                vX++;
+                if (vX == 50) {
+                    vY++;
+                    vX = 0;
+                }
+            }
 
             for (int i = 0; i < Warcraft.MAP_SIZE; i++)
             {
@@ -148,57 +173,29 @@ namespace Warcraft.Managers
                             map[i][j].ChangeTexture(matches[key][0], matches[key][1]);
 
                             if (match[i][j] == 0 || match[i + 1][j] == 0 || match[i][j + 1] == 0 || match[i + 1][j + 1] == 0)
+                            {
                                 water.Add(new Tile(i, j));
+                            }
                         }
                     }
 				}
 			}
 
-			//Mapping.Add(new int[4] { (int)TileType.WATER, (int)TileType.DESERT, (int)TileType.WATER, (int)TileType.DESERT }, new int[2] { 7, 11 });
-			//Mapping.Add(new int[4] { (int)TileType.DESERT, (int)TileType.GLASS, (int)TileType.GLASS, (int)TileType.GLASS }, new int[2] { 4, 14 });
-			//Mapping.Add(new int[4] { (int)TileType.GLASS, (int)TileType.GLASS, (int)TileType.DESERT, (int)TileType.DESERT }, new int[2] { 9, 16 });
-
-			//Mapping.Add(new int[4] { (int)TileType.WATER, (int)TileType.DESERT, (int)TileType.DESERT, (int)TileType.DESERT }, new int[2] { 17, 10 });
-			//Mapping.Add(new int[4] { (int)TileType.DESERT, (int)TileType.WATER, (int)TileType.DESERT, (int)TileType.DESERT }, new int[2] { 18, 10 });
-			//Mapping.Add(new int[4] { (int)TileType.DESERT, (int)TileType.DESERT, (int)TileType.DESERT, (int)TileType.GLASS }, new int[2] { 18, 14 });
-
-			//Mapping.Add(new int[4] { (int)TileType.GLASS, (int)TileType.DESERT, (int)TileType.DESERT, (int)TileType.DESERT }, new int[2] { 14, 14 });
-
-			//Mapping.Add(new int[4] { (int)TileType.GLASS, (int)TileType.FLOREST, (int)TileType.GLASS, (int)TileType.FLOREST }, new int[2] { 3, 7 });
-			//Mapping.Add(new int[4] { (int)TileType.GLASS, (int)TileType.FLOREST, (int)TileType.FLOREST, (int)TileType.FLOREST }, new int[2] { 15, 14 });
-
-			// OrganizeMap();
-		}
-
-        public void OrganizeMap()
-        {
-            for (int i = 0; i < map.Count; i++)
+            for (int i = water.Count - 1; i >= 0; i--)
             {
-                for (int j = 0; j < map[i].Count; j++)
+                for (int j = water.Count - 1; j >= 0; j--)
                 {
-                    TileType[] n = MapNeighbourhood(i, j, map[i][j].tileType);
-
-                    map[i][j].ChangeTexture(n);
-                }
+					if (i != j)
+					{
+                        if (i < water.Count && j < water.Count && water[i].TileX == water[j].TileX && water[i].TileY == water[j].TileY)
+						{
+                            water.RemoveAt(i);
+						}
+					}
+				}
             }
         }
 
-        private TileType[] MapNeighbourhood(int i, int j, TileType tileType)
-        {
-            TileType[] neighbourhood = new TileType[4];
-
-            neighbourhood[0] = map[Math.Max(i - 1, 0)][Math.Max(j - 1, 0)].tileType;
-            neighbourhood[1] = map[Math.Max(i - 1, 0)][Math.Min(j + 1, 49)].tileType;
-            neighbourhood[2] = map[Math.Min(i + 1, 49)][Math.Max(j - 1, 0)].tileType;
-            neighbourhood[3] = map[Math.Min(i + 1, 49)][Math.Min(j + 1, 49)].tileType;
-
-            metadata[i, j, 0] = (int)neighbourhood[0];
-            metadata[i, j, 1] = (int)neighbourhood[1];
-            metadata[i, j, 2] = (int)neighbourhood[2];
-            metadata[i, j, 3] = (int)neighbourhood[3];
-
-            return neighbourhood;
-        }
 
         public void LoadContent(ContentManager content)
         {
@@ -211,7 +208,6 @@ namespace Warcraft.Managers
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            // map.ForEach((item) => item.ForEach((tile) => tile.Draw(spriteBatch)));
             for (int i = 0; i < 50; i++)
             {
                 for (int j = 0; j < 50; j++)
@@ -219,17 +215,6 @@ namespace Warcraft.Managers
                     map[i][j].Draw(spriteBatch);
                 }
             }
-
-     //       for (int i = 0; i < match.Count; i++)
-     //       {
-     //           for (int j = 0; j < match[i].Count; j++)
-     //           {
-					//int x = Math.Min(i, Warcraft.MAP_SIZE - 1);
-					//int y = Math.Min(j, Warcraft.MAP_SIZE - 1);
-					
-            //        spriteBatch.DrawString(font, match[i][j].ToString(), map[x][y].position, Color.Red);
-            //    }
-            //}
             walls.ForEach((item) => item.Draw(spriteBatch));
         }
 

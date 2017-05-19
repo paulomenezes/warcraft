@@ -53,12 +53,15 @@ namespace Warcraft
 		{
 			managerBuildings = new ManagerBuildings(managerMouse, managerMap);
 			managerEnemies = new ManagerEnemies(managerMouse, managerMap, managerBuildings);
-			managerUnits = new ManagerUnits(managerMouse, managerMap, managerBuildings, managerEnemies);
+			managerUnits = new ManagerUnits(managerMouse, managerMap, managerBuildings);
 			managerUI = new ManagerUI(managerMouse, managerBuildings, managerUnits);
 
 			managerCombat = new ManagerCombat(managerUnits, managerEnemies, managerBuildings);
 
 			camera = new Camera(GraphicsDevice.Viewport);
+
+			Data.Write("##############");
+            Data.Write("Começando jogo: " + DateTime.Now);
 
 			base.Initialize();
 		}
