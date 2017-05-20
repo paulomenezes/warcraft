@@ -38,6 +38,8 @@ namespace Warcraft
 		public static int FOOD = 5;
 		public static int OIL = 99999;
 
+        private GenerateRooms generateRooms;
+
 		public Warcraft()
 		{
 			graphics = new GraphicsDeviceManager(this);
@@ -59,9 +61,11 @@ namespace Warcraft
 			managerUnits = new ManagerUnits(managerMouse, managerMap, managerBuildings);
 			managerUI = new ManagerUI(managerMouse, managerBuildings, managerUnits);
 
-			//managerCombat = new ManagerCombat(managerUnits, managerEnemies, managerBuildings);
+            //managerCombat = new ManagerCombat(managerUnits, managerEnemies, managerBuildings);
 
-			camera = new Camera(GraphicsDevice.Viewport);
+            camera = new Camera(GraphicsDevice.Viewport);
+
+            generateRooms = new GenerateRooms();
 
 			base.Initialize();
 		}
@@ -109,6 +113,8 @@ namespace Warcraft
 			managerUnits.Draw(spriteBatch);
 			managerBuildings.Draw(spriteBatch);
 			managerMouse.Draw(spriteBatch);
+
+            generateRooms.Draw(spriteBatch);
 			spriteBatch.End();
 
 			spriteBatch.Begin();
