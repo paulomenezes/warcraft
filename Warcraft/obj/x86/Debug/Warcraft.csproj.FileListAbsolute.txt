@@ -35,3 +35,6 @@
 /Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Troll Axethrower.xnb
 /Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/arrow.xnb
 /Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/axe.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Peon_dying.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Peon_gold.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Peon_walking.xnb

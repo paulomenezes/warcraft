@@ -2,8 +2,8 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
-using PeasantUnit = Warcraft.Units.Humans.Peasant;
 using Warcraft.Managers;
+using Warcraft.Units.Humans;
 
 namespace Warcraft.UI.Units
 {
@@ -14,12 +14,12 @@ namespace Warcraft.UI.Units
 
         Button buttonMiner;
 
-        PeasantUnit peasant;
+        Builder builderUnit;
 
         bool showBuilder = false;
         List<Button> builder = new List<Button>();
 
-        public Peasant(ManagerMouse managerMouse, PeasantUnit peasant)
+        public Peasant(ManagerMouse managerMouse, Builder builderUnit)
         {
             buttonPortrait = new Button(0, 0);
             buttonBuilder = new Button(0, 280, 7, 8);
@@ -32,26 +32,26 @@ namespace Warcraft.UI.Units
 
             buttonMiner = new Button(50, 280, 9, 8);
 
-            this.peasant = peasant;
+            this.builderUnit = builderUnit;
 
             managerMouse.MouseEventHandler += ManagerMouse_MouseEventHandler;
         }
 
         private void ManagerMouse_MouseEventHandler(object sender, Events.MouseEventArgs e)
         {
-            if (peasant.selected && e.SelectRectangle.Width == 0 && e.SelectRectangle.Height == 0)
+            if (builderUnit.selected && e.SelectRectangle.Width == 0 && e.SelectRectangle.Height == 0)
             {
                 for (int i = 0; i < builder.Count; i++)
                 {
                     if (showBuilder && e.SelectRectangle.Intersects(builder[i].rectangle))
                     {
-                        peasant.commands[i].execute();
+                        builderUnit.commands[i].execute();
                         break;
                     }
                 }
 
                 if (!showBuilder && e.SelectRectangle.Intersects(buttonMiner.rectangle))
-                    peasant.commands[peasant.commands.Count - 1].execute();
+                    builderUnit.commands[builderUnit.commands.Count - 1].execute();
 
                 if (e.SelectRectangle.Intersects(buttonBuilder.rectangle))
                     showBuilder = true;
@@ -87,13 +87,13 @@ namespace Warcraft.UI.Units
                     buttonCancel.Draw(spriteBatch);
                 }
 
-                spriteBatch.DrawString(font, peasant.information.Name, new Vector2(minX + 50, 100), Color.Black);
-                spriteBatch.DrawString(font, "Armor: " + peasant.information.Armor, new Vector2(minX, 150), Color.Black);
-                spriteBatch.DrawString(font, "Damage: " + peasant.information.Damage + " (" + peasant.information.Precision + "%)", new Vector2(minX, 170), Color.Black);
-                spriteBatch.DrawString(font, "Range: " + peasant.information.Range + "sq", new Vector2(minX, 190), Color.Black);
-                spriteBatch.DrawString(font, "Sight: " + peasant.information.Sight + "º", new Vector2(minX, 210), Color.Black);
-                spriteBatch.DrawString(font, "Speed: " + peasant.information.MovementSpeed, new Vector2(minX, 230), Color.Black);
-                spriteBatch.DrawString(font, "Hit points: " + peasant.information.HitPoints, new Vector2(minX, 250), Color.Black);
+                spriteBatch.DrawString(font, builderUnit.information.Name, new Vector2(minX + 50, 100), Color.Black);
+                spriteBatch.DrawString(font, "Armor: " + builderUnit.information.Armor, new Vector2(minX, 150), Color.Black);
+                spriteBatch.DrawString(font, "Damage: " + builderUnit.information.Damage + " (" + builderUnit.information.Precision + "%)", new Vector2(minX, 170), Color.Black);
+                spriteBatch.DrawString(font, "Range: " + builderUnit.information.Range + "sq", new Vector2(minX, 190), Color.Black);
+                spriteBatch.DrawString(font, "Sight: " + builderUnit.information.Sight + "º", new Vector2(minX, 210), Color.Black);
+                spriteBatch.DrawString(font, "Speed: " + builderUnit.information.MovementSpeed, new Vector2(minX, 230), Color.Black);
+                spriteBatch.DrawString(font, "Hit points: " + builderUnit.information.HitPoints, new Vector2(minX, 250), Color.Black);
             }
         }
     }

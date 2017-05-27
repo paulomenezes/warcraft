@@ -98,6 +98,9 @@
     <Compile Include="Map\Room.cs" />
     <Compile Include="Map\GenerateRooms.cs" />
     <Compile Include="Util\Delaunay.cs" />
+    <Compile Include="Units\Builder.cs" />
+    <Compile Include="Units\Orcs\Peon.cs" />
+    <Compile Include="Units\Orcs\Actions\PeonBuilding.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.manifest" />
@@ -120,6 +123,9 @@
     <None Include="Content\Peasant_walking.png" />
     <None Include="Content\Summer Tiles.png" />
     <None Include="Content\Troll Axethrower.png" />
+    <None Include="Content\Peon_dying.png" />
+    <None Include="Content\Peon_gold.png" />
+    <None Include="Content\Peon_walking.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />
@@ -161,6 +167,9 @@
     <Content Include="libSDL2-2.0.0.dylib">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Units\Orcs\Actions\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />

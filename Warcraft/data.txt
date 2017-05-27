@@ -537,3 +537,110 @@ Adicionar [Peasant] X: 30 Y: 23
 Começando jogo: 5/20/2017 3:41:50 PM
 Adicionar [Gold Mine] X: 30 Y: 18
 Adicionar [Peasant] X: 30 Y: 23
+##############
+Começando jogo: 5/26/2017 8:28:10 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Mover [PEASANT] X: 37 Y: 21
+Mover [PEASANT] X: 36 Y: 25
+Mover [PEASANT] X: 37 Y: 22
+Mover [PEASANT] X: 37 Y: 17
+Mover [PEASANT] X: 26 Y: 11
+Mover [PEASANT] X: 24 Y: 15
+Mover [PEASANT] X: 24 Y: 15
+Mover [PEASANT] X: 25 Y: 15
+Mover [PEASANT] X: 28 Y: 15
+Mover [PEASANT] X: 27 Y: 19
+Mover [PEASANT] X: 24 Y: 16
+##############
+Começando jogo: 5/26/2017 8:59:26 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [Grunt] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 0 Y: 0
+Adicionar [Peasant] X: 30 Y: 23
+Mover [TROLL_AXETHROWER] X: 17 Y: 0
+Mover [GRUNT] X: 17 Y: 10
+Mover [GRUNT] X: 4 Y: 16
+Mover [GRUNT] X: 6 Y: 48
+##############
+Começando jogo: 5/26/2017 9:00:41 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+##############
+Começando jogo: 5/26/2017 9:05:16 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+##############
+Começando jogo: 5/26/2017 9:07:12 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peasant] X: 30 Y: 23
+##############
+Começando jogo: 5/26/2017 9:26:44 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peasant] X: 30 Y: 23
+Mover [PEASANT] X: 25 Y: 18
+Mover [PEASANT] X: 25 Y: 10
+Mover [PEASANT] X: 24 Y: 9
+Mover [PEASANT] X: 32 Y: 10
+##############
+Começando jogo: 5/26/2017 9:33:12 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peasant] X: 30 Y: 23
+##############
+Começando jogo: 5/26/2017 9:35:08 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peasant] X: 12 Y: 12
+Adicionar [Peasant] X: 30 Y: 23
+##############
+Começando jogo: 5/26/2017 9:35:28 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peasant] X: 13 Y: 13
+Adicionar [Peasant] X: 30 Y: 23
+##############
+Começando jogo: 5/26/2017 10:14:24 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peon] X: 13 Y: 13
+Adicionar [Peasant] X: 30 Y: 23
+##############
+Começando jogo: 5/26/2017 10:33:11 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peon] X: 13 Y: 13
+Adicionar [Peasant] X: 30 Y: 23
+Mover [PEASANT] X: 25 Y: 19
+Mover [PEASANT] X: 22 Y: 12
+Mover [PEASANT] X: 27 Y: 16
+Mover [PEASANT] X: 24 Y: 17
+##############
+Começando jogo: 5/26/2017 11:21:23 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peon] X: 13 Y: 13
+##############
+Começando jogo: 5/26/2017 11:21:49 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peon] X: 13 Y: 13
+##############
+Começando jogo: 5/26/2017 11:23:49 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peon] X: 13 Y: 13
+Mover [TOWN_HALL] X: 1 Y: 1

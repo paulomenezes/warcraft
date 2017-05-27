@@ -38,8 +38,6 @@ namespace Warcraft
 		public static int FOOD = 5;
 		public static int OIL = 99999;
 
-        private GenerateRooms generateRooms;
-
 		public Warcraft()
 		{
 			graphics = new GraphicsDeviceManager(this);
@@ -57,15 +55,13 @@ namespace Warcraft
 			Data.Write("Começando jogo: " + DateTime.Now);
 
 			managerBuildings = new ManagerBuildings(managerMouse, managerMap);
-            //managerEnemies = new ManagerEnemies(managerMouse, managerMap, managerBuildings);
 			managerUnits = new ManagerUnits(managerMouse, managerMap, managerBuildings);
+            managerEnemies = new ManagerEnemies(managerMouse, managerMap, managerBuildings, managerUnits);
 			managerUI = new ManagerUI(managerMouse, managerBuildings, managerUnits);
 
             //managerCombat = new ManagerCombat(managerUnits, managerEnemies, managerBuildings);
 
             camera = new Camera(GraphicsDevice.Viewport);
-
-            generateRooms = new GenerateRooms();
 
 			base.Initialize();
 		}
@@ -76,7 +72,7 @@ namespace Warcraft
 
 			managerMap.LoadContent(Content);
 			managerUnits.LoadContent(Content);
-			//managerEnemies.LoadContent(Content);
+			managerEnemies.LoadContent(Content);
 			managerBuildings.LoadContent(Content);
 			managerUI.LoadContent(Content);
 
@@ -90,7 +86,7 @@ namespace Warcraft
 
 			managerMouse.Update();
 			managerUnits.Update();
-			//managerEnemies.Update();
+			managerEnemies.Update();
 			managerBuildings.Update();
 			managerUI.Update();
 
@@ -109,19 +105,17 @@ namespace Warcraft
 			spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null, null, camera.transform);
 			managerMap.Draw(spriteBatch);
 
-			//managerEnemies.Draw(spriteBatch);
+			managerEnemies.Draw(spriteBatch);
 			managerUnits.Draw(spriteBatch);
 			managerBuildings.Draw(spriteBatch);
 			managerMouse.Draw(spriteBatch);
-
-            generateRooms.Draw(spriteBatch);
 			spriteBatch.End();
 
 			spriteBatch.Begin();
 			managerUI.DrawBack(spriteBatch);
 			managerUI.Draw(spriteBatch);
 			managerUnits.DrawUI(spriteBatch);
-			//managerEnemies.DrawUI(spriteBatch);
+			managerEnemies.DrawUI(spriteBatch);
 			managerBuildings.DrawUI(spriteBatch);
 			spriteBatch.End();
 

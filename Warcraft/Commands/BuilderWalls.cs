@@ -14,7 +14,7 @@ namespace Warcraft.Commands
         private ManagerBuildings managerBuildings;
         private ManagerMouse managerMouse;
         private ManagerUnits managerUnits;
-        private Peasant peasant;
+        private Builder builder;
 
         private Texture2D texture;
 
@@ -24,9 +24,9 @@ namespace Warcraft.Commands
 
         public bool started;
 
-        public BuilderWalls(Peasant peasant, ManagerMouse managerMouse, ManagerBuildings managerBuildings, ManagerUnits managerUnits)
+        public BuilderWalls(Builder builder, ManagerMouse managerMouse, ManagerBuildings managerBuildings, ManagerUnits managerUnits)
         {
-            this.peasant = peasant;
+            this.builder = builder;
             this.managerMouse = managerMouse;
             this.managerBuildings = managerBuildings;
             this.managerUnits = managerUnits;
