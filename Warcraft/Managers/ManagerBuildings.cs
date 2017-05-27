@@ -6,16 +6,16 @@ using Warcraft.Buildings.Neutral;
 
 namespace Warcraft.Managers
 {
-    class ManagerBuildings
+    abstract class ManagerBuildings
     {
         public List<Building> buildings = new List<Building>();
         public ManagerMap managerMap;
 
+        public int index = -1;
+
         public ManagerBuildings(ManagerMouse managerMouse, ManagerMap managerMap)
         {
             this.managerMap = managerMap;
-
-            buildings.Add(new GoldMine(30, 18, managerMouse, managerMap, null));
         }
 
         public void AddBuilding(Building building)
@@ -44,16 +44,6 @@ namespace Warcraft.Managers
             buildings.ForEach((u) => u.DrawUI(spriteBatch));
         }
 
-        public List<Building> GetSelected()
-        {
-            List<Building> selecteds = new List<Building>(); ;
-            for (int i = 0; i < buildings.Count; i++)
-            {
-                if (buildings[i].selected)
-                    selecteds.Add(buildings[i]);
-            }
-
-            return selecteds;
-        }
+        public abstract List<Building> GetSelected();
     }
 }

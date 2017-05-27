@@ -30,17 +30,15 @@ namespace Warcraft.Commands
 
         public void execute()
         {
-            if (Warcraft.GOLD  - building.information.CostGold >= 0 && Warcraft.WOOD - building.information.CostWood >= 0)
+            if (ManagerResources.CompareGold(managerUnits.index, building.information.CostGold) && ManagerResources.CompareFood(managerUnits.index, building.information.CostWood))
             {
-                Warcraft.GOLD -= building.information.CostGold;
-                Warcraft.WOOD -= building.information.CostWood;
+                ManagerResources.ReduceGold(managerUnits.index, building.information.CostGold);
 
-                Data.Write("Construindo Predio [" + (building.information as InformationBuilding).Type + "]");
+				if ((building.information as InformationBuilding).Type == Util.Buildings.CHICKEN_FARM ||
+                    (building.information as InformationBuilding).Type == Util.Buildings.PIG_FARM)
+                    ManagerResources.ReduceFood(managerUnits.index, -5);
 
-                if ((building.information as InformationBuilding).Type == Util.Buildings.CHICKEN_FARM)
-                {
-                    Warcraft.FOOD += 5;
-                }
+				Data.Write("Construindo Predio [" + (building.information as InformationBuilding).Type + "]");
 
                 builder.workState = WorkigState.WAITING_PLACE;
                 building.builder();

@@ -7,6 +7,7 @@
         ELVEN_ARCHER,
         NONE,
         GRUNT,
-        TROLL_AXETHROWER
+        TROLL_AXETHROWER,
+        PEON
     }
 }

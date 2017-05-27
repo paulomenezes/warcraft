@@ -644,3 +644,2418 @@ Adicionar [Peasant] X: 30 Y: 23
 Adicionar [Gold Mine] X: 10 Y: 10
 Adicionar [Peon] X: 13 Y: 13
 Mover [TOWN_HALL] X: 1 Y: 1
+##############
+Começando jogo: 5/26/2017 11:29:31 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peon] X: 13 Y: 13
+Mover [TOWN_HALL] X: 1 Y: 1
+##############
+Começando jogo: 5/27/2017 9:30:23 AM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peon] X: 13 Y: 13
+Construindo Predio [TOWN_HALL]
+##############
+Começando jogo: 5/27/2017 9:30:39 AM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peon] X: 13 Y: 13
+Construindo Predio [TOWN_HALL]
+##############
+Começando jogo: 5/27/2017 9:32:33 AM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peon] X: 13 Y: 13
+Construindo Predio [TOWN_HALL]
+Adicionar [TOWN_HALL] X: 18 Y: 12
+##############
+Começando jogo: 5/27/2017 9:35:08 AM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peon] X: 13 Y: 13
+Construindo Predio [TOWN_HALL]
+Mover [TOWN_HALL] X: 1 Y: 1
+Adicionar [TOWN_HALL] X: 1 Y: 1
+##############
+Começando jogo: 5/27/2017 9:43:50 AM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peon] X: 13 Y: 13
+Construindo Predio [TOWN_HALL]
+Mover [TOWN_HALL] X: 1 Y: 1
+Mover [PEASANT] X: 1 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+##############
+Começando jogo: 5/27/2017 10:03:14 AM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peon] X: 13 Y: 13
+Construindo Predio [TOWN_HALL]
+Mover [TOWN_HALL] X: 1 Y: 1
+Mover [PEASANT] X: 1 Y: 1
+Construindo Predio [TOWN_HALL]
+Adicionar [TOWN_HALL] X: 21 Y: 13
+Mover [PEASANT] X: 21 Y: 13
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [BARRACKS]
+Adicionar [BARRACKS] X: 26 Y: 7
+Mover [PEASANT] X: 26 Y: 7
+Adicionar [BARRACKS] X: 26 Y: 7
+Construir Unidade [PEASANT]
+Adicionar [Peasant] X: 23 Y: 17
+Mover [PEASANT] X: 23 Y: 17
+Mover [PEASANT] X: 30 Y: 18
+Começar Mineração [Peasant, GoldMiner]
+Mover [PEASANT] X: 1 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Começar Mineração [Peasant, GoldMiner]
+Mover [PEASANT] X: 1 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 30 Y: 18
+Começar Mineração [Peasant, GoldMiner]
+Mover [PEASANT] X: 1 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+##############
+Começando jogo: 5/27/2017 10:05:46 AM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peon] X: 13 Y: 13
+Construindo Predio [TOWN_HALL]
+Mover [TOWN_HALL] X: 1 Y: 1
+Mover [PEASANT] X: 1 Y: 1
+Adicionar [TOWN_HALL] X: 1 Y: 1
+Construindo Predio [TOWN_HALL]
+Adicionar [TOWN_HALL] X: 33 Y: 23
+Adicionar [TOWN_HALL] X: 1 Y: 1
+Mover [PEASANT] X: 33 Y: 23
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 30 Y: 18
+Começar Mineração [Peasant, GoldMiner]
+Mover [PEASANT] X: 1 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+##############
+Começando jogo: 5/27/2017 10:08:35 AM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peon] X: 13 Y: 13
+Construindo Predio [TOWN_HALL]
+Mover [TOWN_HALL] X: 2 Y: 2
+Mover [PEASANT] X: 2 Y: 2
+Adicionar [TOWN_HALL] X: 2 Y: 2
+Construindo Predio [TOWN_HALL]
+Adicionar [TOWN_HALL] X: 36 Y: 23
+Mover [PEASANT] X: 36 Y: 23
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 30 Y: 18
+Começar Mineração [Peasant, GoldMiner]
+Mover [PEASANT] X: 2 Y: 2
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 2 Y: 2
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+##############
+Começando jogo: 5/27/2017 10:19:36 AM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peon] X: 13 Y: 13
+Construindo Predio [TOWN_HALL]
+Mover [TOWN_HALL] X: 2 Y: 2
+Mover [PEASANT] X: 2 Y: 2
+Adicionar [TOWN_HALL] X: 2 Y: 2
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 4 Y: 8
+Mover [PEASANT] X: 4 Y: 8
+Mover [PEASANT] X: 2 Y: 12
+Mover [PEASANT] X: 27 Y: 12
+Construindo Predio [TOWN_HALL]
+Adicionar [TOWN_HALL] X: 20 Y: 13
+Mover [PEASANT] X: 20 Y: 13
+##############
+Começando jogo: 5/27/2017 3:10:01 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 10 Y: 10
+Adicionar [Peon] X: 13 Y: 13
+Construindo Predio [TOWN_HALL]
+Mover [TOWN_HALL] X: 2 Y: 2
+Mover [PEASANT] X: 2 Y: 2
+##############
+Começando jogo: 5/27/2017 3:12:19 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [TOWN_HALL]
+Mover [TOWN_HALL] X: 2 Y: 2
+Mover [PEASANT] X: 2 Y: 2
+Mover [PEASANT] X: 0 Y: 1
+##############
+Começando jogo: 5/27/2017 3:13:32 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [TOWN_HALL]
+Mover [TOWN_HALL] X: 1 Y: 1
+Mover [PEASANT] X: 1 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 30 Y: 23
+Mover [PEASANT] X: 30 Y: 23
+Mover [PEASANT] X: 24 Y: 15
+Construindo Predio [TOWN_HALL]
+Adicionar [TOWN_HALL] X: 26 Y: 11
+Mover [PEASANT] X: 26 Y: 11
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 30 Y: 18
+Começar Mineração [Peasant, GoldMiner]
+Mover [PEASANT] X: 26 Y: 11
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 26 Y: 11
+Entregando Gold [Peasant, GoldMiner]
+##############
+Começando jogo: 5/27/2017 3:18:03 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [TOWN_HALL]
+Mover [TOWN_HALL] X: 1 Y: 1
+Mover [PEASANT] X: 1 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [Peasant, GoldMiner]
+Mover [PEASANT] X: 1 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+##############
+Começando jogo: 5/27/2017 3:20:20 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [TOWN_HALL]
+Mover [TOWN_HALL] X: 1 Y: 1
+Mover [PEASANT] X: 1 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [Peasant, GoldMiner]
+Mover [PEASANT] X: 1 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+##############
+Começando jogo: 5/27/2017 3:23:15 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [TOWN_HALL]
+Mover [TOWN_HALL] X: 5 Y: 1
+Mover [PEASANT] X: 5 Y: 1
+##############
+Começando jogo: 5/27/2017 3:23:31 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [TOWN_HALL]
+Mover [TOWN_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Construindo Predio [TOWN_HALL]
+Adicionar [TOWN_HALL] X: 24 Y: 9
+Mover [PEASANT] X: 24 Y: 9
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Começar Mineração [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 24 Y: 9
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 24 Y: 9
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 24 Y: 9
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 24 Y: 9
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 24 Y: 9
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 24 Y: 9
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 24 Y: 9
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 24 Y: 9
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+##############
+Começando jogo: 5/27/2017 3:30:27 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [TOWN_HALL]
+Mover [TOWN_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+##############
+Começando jogo: 5/27/2017 3:31:48 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+##############
+Começando jogo: 5/27/2017 3:32:24 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+##############
+Começando jogo: 5/27/2017 3:32:48 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+##############
+Começando jogo: 5/27/2017 3:35:46 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+##############
+Começando jogo: 5/27/2017 3:37:00 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+##############
+Começando jogo: 5/27/2017 3:37:45 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+##############
+Começando jogo: 5/27/2017 3:38:16 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+##############
+Começando jogo: 5/27/2017 3:38:40 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 9 Y: 11
+Mover [PEASANT] X: 9 Y: 11
+Mover [PEASANT] X: 9 Y: 11
+Mover [PEASANT] X: 15 Y: 10
+Mover [PEASANT] X: 15 Y: 10
+##############
+Começando jogo: 5/27/2017 3:42:11 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Mover [PEASANT] X: 30 Y: 23
+Mover [PEASANT] X: 30 Y: 23
+Mover [PEASANT] X: 30 Y: 23
+Mover [PEASANT] X: 30 Y: 23
+Mover [PEASANT] X: 30 Y: 23
+Mover [PEASANT] X: 30 Y: 23
+Mover [PEASANT] X: 30 Y: 23
+Mover [PEASANT] X: 30 Y: 23
+Mover [PEASANT] X: 30 Y: 23
+Mover [PEASANT] X: 30 Y: 23
+Mover [PEASANT] X: 30 Y: 23
+Mover [PEASANT] X: 27 Y: 17
+Mover [PEASANT] X: 27 Y: 17
+Mover [PEASANT] X: 27 Y: 17
+Mover [PEASANT] X: 27 Y: 17
+Mover [PEASANT] X: 27 Y: 17
+Mover [PEASANT] X: 27 Y: 17
+Mover [PEASANT] X: 27 Y: 17
+Mover [PEASANT] X: 25 Y: 11
+Mover [PEASANT] X: 25 Y: 11
+Mover [PEASANT] X: 25 Y: 11
+Mover [PEASANT] X: 25 Y: 11
+Mover [PEASANT] X: 25 Y: 11
+Mover [PEASANT] X: 25 Y: 11
+Mover [PEASANT] X: 25 Y: 11
+Mover [PEASANT] X: 28 Y: 12
+Mover [PEASANT] X: 28 Y: 12
+Mover [PEASANT] X: 28 Y: 12
+Mover [PEASANT] X: 28 Y: 12
+Mover [PEASANT] X: 28 Y: 12
+Mover [PEASANT] X: 28 Y: 12
+Mover [PEASANT] X: 28 Y: 12
+Mover [PEASANT] X: 33 Y: 12
+Mover [PEASANT] X: 33 Y: 12
+Mover [PEASANT] X: 33 Y: 12
+Mover [PEASANT] X: 33 Y: 12
+Mover [PEASANT] X: 33 Y: 12
+Mover [PEASANT] X: 33 Y: 12
+Mover [PEASANT] X: 33 Y: 12
+Mover [PEASANT] X: 31 Y: 15
+Mover [PEASANT] X: 31 Y: 15
+Mover [PEASANT] X: 31 Y: 15
+Mover [PEASANT] X: 31 Y: 15
+Mover [PEASANT] X: 31 Y: 15
+Mover [PEASANT] X: 27 Y: 16
+Mover [PEASANT] X: 27 Y: 16
+Mover [PEASANT] X: 27 Y: 16
+Mover [PEASANT] X: 27 Y: 16
+Mover [PEASANT] X: 27 Y: 16
+Mover [PEASANT] X: 27 Y: 16
+Mover [PEASANT] X: 26 Y: 14
+Mover [PEASANT] X: 26 Y: 14
+Mover [PEASANT] X: 26 Y: 14
+Mover [PEASANT] X: 26 Y: 14
+Mover [PEASANT] X: 26 Y: 14
+Mover [PEASANT] X: 27 Y: 10
+Mover [PEASANT] X: 27 Y: 10
+Mover [PEASANT] X: 27 Y: 10
+Mover [PEASANT] X: 27 Y: 10
+Mover [PEASANT] X: 27 Y: 10
+Mover [PEASANT] X: 27 Y: 10
+Mover [PEASANT] X: 30 Y: 9
+Mover [PEASANT] X: 30 Y: 9
+Mover [PEASANT] X: 30 Y: 9
+Mover [PEASANT] X: 30 Y: 9
+Mover [PEASANT] X: 30 Y: 9
+Mover [PEASANT] X: 30 Y: 9
+Mover [PEASANT] X: 30 Y: 9
+Mover [PEASANT] X: 30 Y: 9
+Mover [PEASANT] X: 30 Y: 9
+Mover [PEASANT] X: 30 Y: 9
+Mover [PEASANT] X: 25 Y: 12
+Mover [PEASANT] X: 25 Y: 12
+Mover [PEASANT] X: 25 Y: 12
+Mover [PEASANT] X: 25 Y: 12
+Mover [PEASANT] X: 25 Y: 12
+Mover [PEASANT] X: 25 Y: 12
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [TOWN_HALL]
+Adicionar [TOWN_HALL] X: 30 Y: 8
+Mover [PEASANT] X: 30 Y: 8
+Adicionar [TOWN_HALL] X: 30 Y: 8
+Mover [PEASANT] X: 0 Y: 1
+##############
+Começando jogo: 5/27/2017 3:43:58 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+##############
+Começando jogo: 5/27/2017 3:49:03 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [Peasant, GoldMiner]
+##############
+Começando jogo: 5/27/2017 3:50:03 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+##############
+Começando jogo: 5/27/2017 3:50:58 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [Peasant, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [Peasant, GoldMiner]
+##############
+Começando jogo: 5/27/2017 3:56:18 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 4:50:41 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+##############
+Começando jogo: 5/27/2017 4:51:22 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Construindo Predio [TOWN_HALL]
+Adicionar [TOWN_HALL] X: 22 Y: 12
+Mover [PEASANT] X: 22 Y: 12
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Construindo Predio [BARRACKS]
+Adicionar [BARRACKS] X: 29 Y: 8
+Mover [PEASANT] X: 29 Y: 8
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Adicionar [Peasant] X: 24 Y: 16
+Mover [PEASANT] X: 24 Y: 16
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Adicionar [Peasant] X: 24 Y: 16
+Mover [PEASANT] X: 24 Y: 16
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Adicionar [Peasant] X: 24 Y: 16
+Mover [PEASANT] X: 24 Y: 16
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Adicionar [Peasant] X: 24 Y: 16
+Mover [PEASANT] X: 24 Y: 16
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Adicionar [Peasant] X: 24 Y: 16
+Mover [PEASANT] X: 24 Y: 16
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 29 Y: 13
+Mover [PEASANT] X: 30 Y: 13
+Mover [PEASANT] X: 31 Y: 13
+Mover [PEASANT] X: 29 Y: 14
+Mover [PEASANT] X: 30 Y: 14
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 12
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 12
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 12
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 12
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 12
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 12
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 12
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 12
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 12
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 12
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 12
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 12
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 12
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 29 Y: 15
+Mover [PEASANT] X: 29 Y: 16
+Mover [PEASANT] X: 29 Y: 17
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 19 Y: 15
+Mover [PEASANT] X: 19 Y: 16
+Mover [PEASANT] X: 19 Y: 17
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 4:55:23 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+##############
+Começando jogo: 5/27/2017 4:55:54 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Adicionar [GREAT_HALL] X: 10 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Adicionar [CHICKEN_FARM] X: 33 Y: 23
+Mover [PEASANT] X: 33 Y: 23
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Construindo Predio [TOWN_HALL]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Adicionar [TOWN_HALL] X: 21 Y: 14
+Mover [PEASANT] X: 21 Y: 14
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Construindo Predio [CHICKEN_FARM]
+##############
+Começando jogo: 5/27/2017 4:59:43 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+##############
+Começando jogo: 5/27/2017 5:00:34 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+##############
+Começando jogo: 5/27/2017 5:02:38 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Adicionar [CHICKEN_FARM] X: 34 Y: 23
+Mover [PEASANT] X: 34 Y: 23
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Construindo Predio [CHICKEN_FARM]
+##############
+Começando jogo: 5/27/2017 5:06:29 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Adicionar [CHICKEN_FARM] X: 27 Y: 11
+Mover [PEASANT] X: 27 Y: 11
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Construindo Predio [CHICKEN_FARM]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Adicionar [CHICKEN_FARM] X: 19 Y: 11
+Mover [PEASANT] X: 19 Y: 11
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Construindo Predio [CHICKEN_FARM]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 5:09:19 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Adicionar [GREAT_HALL] X: 10 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Adicionar [CHICKEN_FARM] X: 26 Y: 27
+Mover [PEASANT] X: 26 Y: 27
+Adicionar [CHICKEN_FARM] X: 26 Y: 27
+Adicionar [CHICKEN_FARM] X: 26 Y: 27
+Adicionar [CHICKEN_FARM] X: 26 Y: 27
+Adicionar [CHICKEN_FARM] X: 26 Y: 27
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Adicionar [CHICKEN_FARM] X: 26 Y: 27
+Adicionar [CHICKEN_FARM] X: 26 Y: 27
+Adicionar [CHICKEN_FARM] X: 26 Y: 27
+Adicionar [CHICKEN_FARM] X: 26 Y: 27
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Adicionar [CHICKEN_FARM] X: 26 Y: 27
+Adicionar [CHICKEN_FARM] X: 26 Y: 27
+Adicionar [CHICKEN_FARM] X: 26 Y: 27
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 5:10:22 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Adicionar [GREAT_HALL] X: 10 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Adicionar [CHICKEN_FARM] X: 26 Y: 27
+Mover [PEASANT] X: 26 Y: 27
+##############
+Começando jogo: 5/27/2017 5:13:21 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Adicionar [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Construindo Predio [CHICKEN_FARM]
+Adicionar [CHICKEN_FARM] X: 25 Y: 27
+Mover [PEASANT] X: 25 Y: 27
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Adicionar [CHICKEN_FARM] X: 25 Y: 27
+Adicionar [CHICKEN_FARM] X: 25 Y: 27
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 5:18:40 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Construindo Predio [CHICKEN_FARM]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Adicionar [CHICKEN_FARM] X: 19 Y: 20
+Mover [PEASANT] X: 19 Y: 20
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 5:32:29 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Construindo Predio [CHICKEN_FARM]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Adicionar [CHICKEN_FARM] X: 17 Y: 22
+Mover [PEASANT] X: 17 Y: 22
+##############
+Começando jogo: 5/27/2017 5:34:30 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Adicionar [CHICKEN_FARM] X: 19 Y: 29
+Mover [PEASANT] X: 19 Y: 29
+##############
+Começando jogo: 5/27/2017 5:39:01 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 10 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 25 Y: 17
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 29 Y: 21
+Mover [PEASANT] X: 29 Y: 21
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 7 Y: 33
+Mover [PEASANT] X: 7 Y: 33
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 34 Y: 33
+Mover [PEASANT] X: 34 Y: 33
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Construindo Predio [CHICKEN_FARM]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Adicionar [CHICKEN_FARM] X: 18 Y: 15
+Mover [PEASANT] X: 18 Y: 15
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 10 Y: 1
+Entregando Gold [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 5:48:36 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Adicionar [GREAT_HALL] X: 11 Y: 3
+Mover [PEASANT] X: 11 Y: 3
+##############
+Começando jogo: 5/27/2017 5:53:18 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 16 Y: 9
+Mover [PEASANT] X: 16 Y: 9
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [BARRACKS]
+Mover [BARRACKS] X: 46 Y: 10
+Mover [PEASANT] X: 46 Y: 10
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Mover [CHICKEN_FARM] X: 48 Y: 34
+Mover [PEASANT] X: 48 Y: 34
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 16 Y: 9
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 5:56:01 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 12 Y: 49
+Mover [PEASANT] X: 12 Y: 49
+##############
+Começando jogo: 5/27/2017 5:58:11 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 32 Y: 8
+Mover [PEASANT] X: 32 Y: 8
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [BARRACKS]
+Mover [BARRACKS] X: 36 Y: 14
+Mover [PEASANT] X: 36 Y: 14
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Mover [CHICKEN_FARM] X: 21 Y: 36
+Mover [PEASANT] X: 21 Y: 36
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 32 Y: 8
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 32 Y: 8
+Entregando Gold [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 6:00:08 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 9 Y: 41
+Mover [PEASANT] X: 9 Y: 41
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [BARRACKS]
+Mover [BARRACKS] X: 38 Y: 8
+Mover [PEASANT] X: 38 Y: 8
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Mover [CHICKEN_FARM] X: 39 Y: 17
+Mover [PEASANT] X: 39 Y: 17
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 9 Y: 41
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 6:08:48 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+##############
+Começando jogo: 5/27/2017 6:12:31 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 15 Y: 13
+Mover [PEASANT] X: 15 Y: 13
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [BARRACKS]
+Mover [BARRACKS] X: 8 Y: 36
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 8 Y: 36
+Mover [PEASANT] X: 17 Y: 17
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Mover [CHICKEN_FARM] X: 24 Y: 15
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 24 Y: 15
+Construir Unidade [PEASANT]
+Adicionar [ElvenArcher] X: 10 Y: 40
+Mover [ELVEN_ARCHER] X: 10 Y: 40
+Adicionar [Footman] X: 10 Y: 40
+Mover [FOOTMAN] X: 10 Y: 40
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 15 Y: 13
+Entregando Gold [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 6:17:01 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 22 Y: 15
+Mover [PEASANT] X: 22 Y: 15
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [BARRACKS]
+Mover [BARRACKS] X: 42 Y: 33
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 42 Y: 33
+Mover [PEASANT] X: 24 Y: 19
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Mover [CHICKEN_FARM] X: 41 Y: 13
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 41 Y: 13
+Construir Unidade [PEASANT]
+Adicionar [ElvenArcher] X: 44 Y: 37
+Mover [ELVEN_ARCHER] X: 44 Y: 37
+Adicionar [Footman] X: 44 Y: 37
+Mover [FOOTMAN] X: 44 Y: 37
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 15
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 15
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 15
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 15
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 15
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 15
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 15
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 15
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 15
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 15
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 15
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 15
+Entregando Gold [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 6:21:23 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 34 Y: 5
+Mover [PEASANT] X: 34 Y: 5
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [BARRACKS]
+Mover [BARRACKS] X: 38 Y: 34
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 38 Y: 34
+Mover [PEASANT] X: 36 Y: 9
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Mover [CHICKEN_FARM] X: 26 Y: 18
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 26 Y: 18
+Construir Unidade [PEASANT]
+Adicionar [ElvenArcher] X: 40 Y: 38
+Mover [ELVEN_ARCHER] X: 40 Y: 38
+Adicionar [Footman] X: 40 Y: 38
+Mover [FOOTMAN] X: 40 Y: 38
+##############
+Começando jogo: 5/27/2017 6:25:24 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 15 Y: 38
+Mover [PEASANT] X: 15 Y: 38
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [BARRACKS]
+Mover [BARRACKS] X: 22 Y: 8
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 22 Y: 8
+Mover [PEASANT] X: 17 Y: 42
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Mover [CHICKEN_FARM] X: 36 Y: 5
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 36 Y: 5
+Construir Unidade [PEASANT]
+Adicionar [ElvenArcher] X: 24 Y: 12
+Mover [ELVEN_ARCHER] X: 24 Y: 12
+Adicionar [Footman] X: 24 Y: 12
+Mover [FOOTMAN] X: 24 Y: 12
+##############
+Começando jogo: 5/27/2017 6:32:36 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 40 Y: 28
+Mover [PEASANT] X: 40 Y: 28
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [BARRACKS]
+Mover [BARRACKS] X: 39 Y: 16
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 39 Y: 16
+Mover [PEASANT] X: 42 Y: 32
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Mover [CHICKEN_FARM] X: 17 Y: 13
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 17 Y: 13
+Construir Unidade [PEASANT]
+Adicionar [ElvenArcher] X: 41 Y: 20
+Mover [ELVEN_ARCHER] X: 41 Y: 20
+Adicionar [Footman] X: 41 Y: 20
+Mover [FOOTMAN] X: 41 Y: 20
+##############
+Começando jogo: 5/27/2017 6:34:03 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 19 Y: 6
+Mover [PEASANT] X: 19 Y: 6
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [BARRACKS]
+Mover [BARRACKS] X: 42 Y: 16
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 42 Y: 16
+Mover [PEASANT] X: 21 Y: 10
+##############
+Começando jogo: 5/27/2017 6:35:02 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 3 Y: 13
+Mover [PEASANT] X: 3 Y: 13
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [BARRACKS]
+Mover [BARRACKS] X: 16 Y: 8
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 16 Y: 8
+Mover [PEASANT] X: 5 Y: 17
+##############
+Começando jogo: 5/27/2017 6:36:57 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 42 Y: 7
+Mover [PEASANT] X: 42 Y: 7
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [BARRACKS]
+Mover [BARRACKS] X: 31 Y: 22
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 31 Y: 22
+Mover [PEASANT] X: 44 Y: 11
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Mover [CHICKEN_FARM] X: 25 Y: 23
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 25 Y: 23
+Construir Unidade [PEASANT]
+Adicionar [ElvenArcher] X: 33 Y: 26
+Mover [ELVEN_ARCHER] X: 33 Y: 26
+Adicionar [Footman] X: 33 Y: 26
+Mover [FOOTMAN] X: 33 Y: 26
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+##############
+Começando jogo: 5/27/2017 6:43:27 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 27 Y: 13
+Mover [PEASANT] X: 27 Y: 13
+##############
+Começando jogo: 5/27/2017 6:45:47 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 45 Y: 14
+Mover [PEASANT] X: 45 Y: 14
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [BARRACKS]
+Mover [BARRACKS] X: 19 Y: 4
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 19 Y: 4
+Mover [PEASANT] X: 47 Y: 18
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Mover [CHICKEN_FARM] X: 32 Y: 6
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 32 Y: 6
+Construir Unidade [PEASANT]
+Adicionar [ElvenArcher] X: 21 Y: 8
+Mover [ELVEN_ARCHER] X: 21 Y: 8
+Adicionar [Footman] X: 21 Y: 8
+Mover [FOOTMAN] X: 21 Y: 8
+##############
+Começando jogo: 5/27/2017 6:51:56 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 45 Y: 10
+Mover [PEASANT] X: 45 Y: 10
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [ORC_BARRACKS] X: 13 Y: 41
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 13 Y: 41
+Mover [PEASANT] X: 47 Y: 14
+##############
+Começando jogo: 5/27/2017 6:54:00 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 34 Y: 17
+Mover [PEASANT] X: 34 Y: 17
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [ORC_BARRACKS] X: 14 Y: 8
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 14 Y: 8
+Mover [PEASANT] X: 36 Y: 21
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Mover [CHICKEN_FARM] X: 29 Y: 3
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 29 Y: 3
+Construir Unidade [PEASANT]
+Adicionar [ElvenArcher] X: 15 Y: 11
+Mover [ELVEN_ARCHER] X: 15 Y: 11
+Adicionar [Footman] X: 15 Y: 11
+Mover [FOOTMAN] X: 15 Y: 11
+##############
+Começando jogo: 5/27/2017 6:55:04 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 35 Y: 21
+Mover [PEASANT] X: 35 Y: 21
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [ORC_BARRACKS] X: 35 Y: 27
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 35 Y: 27
+Mover [PEASANT] X: 37 Y: 25
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [CHICKEN_FARM]
+Mover [CHICKEN_FARM] X: 11 Y: 14
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 11 Y: 14
+Construir Unidade [PEASANT]
+Adicionar [ElvenArcher] X: 36 Y: 30
+Mover [ELVEN_ARCHER] X: 36 Y: 30
+Adicionar [Footman] X: 36 Y: 30
+Mover [FOOTMAN] X: 36 Y: 30
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 6:58:24 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 18 Y: 44
+Mover [PEASANT] X: 18 Y: 44
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [ORC_BARRACKS] X: 6 Y: 8
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 6 Y: 8
+Mover [PEASANT] X: 20 Y: 48
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [PIG_FARM]
+Mover [PIG_FARM] X: 39 Y: 23
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 39 Y: 23
+Construir Unidade [PEASANT]
+Adicionar [ElvenArcher] X: 7 Y: 11
+Mover [ELVEN_ARCHER] X: 7 Y: 11
+Adicionar [Footman] X: 7 Y: 11
+Mover [FOOTMAN] X: 7 Y: 11
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 18 Y: 44
+Entregando Gold [PEASANT, GoldMiner]
+Construindo Predio [TOWN_HALL]
+Adicionar [TOWN_HALL] X: 21 Y: 11
+Mover [PEASANT] X: 21 Y: 11
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 18 Y: 44
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Começar Mineração [PEASANT, GoldMiner]
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 18 Y: 44
+Entregando Gold [PEASANT, GoldMiner]
+Adicionar [Peasant] X: 23 Y: 15
+Mover [PEASANT] X: 23 Y: 15
+Construindo Predio [BARRACKS]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Adicionar [BARRACKS] X: 29 Y: 6
+Mover [PEASANT] X: 29 Y: 6
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 18 Y: 44
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 18 Y: 44
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Começar Mineração [PEASANT, GoldMiner]
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Adicionar [ElvenArcher] X: 31 Y: 10
+Mover [ELVEN_ARCHER] X: 31 Y: 10
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Construir Unidade [PEASANT]
+Adicionar [Peasant] X: 23 Y: 15
+Mover [PEASANT] X: 23 Y: 15
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Adicionar [Footman] X: 31 Y: 10
+Mover [FOOTMAN] X: 31 Y: 10
+Construindo Predio [CHICKEN_FARM]
+Adicionar [CHICKEN_FARM] X: 24 Y: 6
+Mover [PEASANT] X: 24 Y: 6
+Adicionar [CHICKEN_FARM] X: 24 Y: 6
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [ELVEN_ARCHER] X: 29 Y: 13
+Mover [FOOTMAN] X: 29 Y: 14
+Mover [ELVEN_ARCHER] X: 29 Y: 13
+Mover [FOOTMAN] X: 29 Y: 14
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 18 Y: 44
+Entregando Gold [PEASANT, GoldMiner]
+Mover [ELVEN_ARCHER] X: 28 Y: 14
+Mover [FOOTMAN] X: 28 Y: 15
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [ELVEN_ARCHER] X: 28 Y: 14
+Mover [FOOTMAN] X: 28 Y: 15
+Mover [ELVEN_ARCHER] X: 28 Y: 14
+Mover [FOOTMAN] X: 28 Y: 15
+Mover [ELVEN_ARCHER] X: 31 Y: 14
+Mover [FOOTMAN] X: 31 Y: 15
+Mover [ELVEN_ARCHER] X: 31 Y: 14
+Mover [FOOTMAN] X: 31 Y: 15
+Mover [ELVEN_ARCHER] X: 31 Y: 14
+Mover [FOOTMAN] X: 31 Y: 15
+Mover [ELVEN_ARCHER] X: 31 Y: 14
+Mover [FOOTMAN] X: 31 Y: 15
+Mover [ELVEN_ARCHER] X: 31 Y: 14
+Mover [FOOTMAN] X: 31 Y: 15
+Mover [ELVEN_ARCHER] X: 31 Y: 12
+Mover [FOOTMAN] X: 31 Y: 13
+Mover [ELVEN_ARCHER] X: 31 Y: 12
+Mover [FOOTMAN] X: 31 Y: 13
+Mover [ELVEN_ARCHER] X: 31 Y: 12
+Mover [FOOTMAN] X: 31 Y: 13
+Mover [ELVEN_ARCHER] X: 31 Y: 12
+Mover [FOOTMAN] X: 31 Y: 13
+Mover [ELVEN_ARCHER] X: 31 Y: 12
+Mover [FOOTMAN] X: 31 Y: 13
+Mover [ELVEN_ARCHER] X: 31 Y: 12
+Mover [FOOTMAN] X: 31 Y: 13
+Mover [ELVEN_ARCHER] X: 31 Y: 12
+Mover [FOOTMAN] X: 31 Y: 13
+Mover [ELVEN_ARCHER] X: 31 Y: 12
+Mover [FOOTMAN] X: 31 Y: 13
+Mover [ELVEN_ARCHER] X: 31 Y: 12
+Mover [FOOTMAN] X: 31 Y: 13
+Mover [ELVEN_ARCHER] X: 31 Y: 12
+Mover [FOOTMAN] X: 31 Y: 13
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 29 Y: 13
+Mover [FOOTMAN] X: 29 Y: 14
+Mover [ELVEN_ARCHER] X: 29 Y: 13
+Mover [FOOTMAN] X: 29 Y: 14
+Mover [ELVEN_ARCHER] X: 29 Y: 13
+Mover [FOOTMAN] X: 29 Y: 14
+Mover [ELVEN_ARCHER] X: 29 Y: 13
+Mover [FOOTMAN] X: 29 Y: 14
+Mover [ELVEN_ARCHER] X: 29 Y: 13
+Mover [FOOTMAN] X: 29 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [ELVEN_ARCHER] X: 28 Y: 13
+Mover [FOOTMAN] X: 28 Y: 14
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [ELVEN_ARCHER] X: 27 Y: 13
+Mover [FOOTMAN] X: 27 Y: 14
+Mover [ELVEN_ARCHER] X: 27 Y: 13
+Mover [FOOTMAN] X: 27 Y: 14
+Mover [ELVEN_ARCHER] X: 27 Y: 13
+Mover [FOOTMAN] X: 27 Y: 14
+Mover [ELVEN_ARCHER] X: 27 Y: 12
+Mover [FOOTMAN] X: 27 Y: 13
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 11
+Mover [FOOTMAN] X: 27 Y: 12
+Mover [ELVEN_ARCHER] X: 27 Y: 10
+Mover [FOOTMAN] X: 27 Y: 11
+Mover [ELVEN_ARCHER] X: 27 Y: 10
+Mover [FOOTMAN] X: 27 Y: 11
+Mover [ELVEN_ARCHER] X: 27 Y: 10
+Mover [FOOTMAN] X: 27 Y: 11
+Mover [ELVEN_ARCHER] X: 27 Y: 10
+Mover [FOOTMAN] X: 27 Y: 11
+Mover [ELVEN_ARCHER] X: 27 Y: 10
+Mover [FOOTMAN] X: 27 Y: 11
+Mover [ELVEN_ARCHER] X: 27 Y: 10
+Mover [FOOTMAN] X: 27 Y: 11
+Mover [ELVEN_ARCHER] X: 27 Y: 9
+Mover [FOOTMAN] X: 27 Y: 10
+Mover [ELVEN_ARCHER] X: 27 Y: 9
+Mover [FOOTMAN] X: 27 Y: 10
+Mover [ELVEN_ARCHER] X: 27 Y: 9
+Mover [FOOTMAN] X: 27 Y: 10
+Mover [ELVEN_ARCHER] X: 27 Y: 9
+Mover [FOOTMAN] X: 27 Y: 10
+Mover [ELVEN_ARCHER] X: 27 Y: 9
+Mover [FOOTMAN] X: 27 Y: 10
+Mover [ELVEN_ARCHER] X: 27 Y: 9
+Mover [FOOTMAN] X: 27 Y: 10
+Mover [ELVEN_ARCHER] X: 27 Y: 9
+Mover [FOOTMAN] X: 27 Y: 10
+Mover [ELVEN_ARCHER] X: 26 Y: 8
+Mover [FOOTMAN] X: 26 Y: 9
+Mover [ELVEN_ARCHER] X: 26 Y: 8
+Mover [FOOTMAN] X: 26 Y: 9
+Mover [ELVEN_ARCHER] X: 26 Y: 8
+Mover [FOOTMAN] X: 26 Y: 9
+Mover [ELVEN_ARCHER] X: 26 Y: 8
+Mover [FOOTMAN] X: 26 Y: 9
+Mover [ELVEN_ARCHER] X: 26 Y: 8
+Mover [FOOTMAN] X: 26 Y: 9
+Mover [ELVEN_ARCHER] X: 26 Y: 8
+Mover [FOOTMAN] X: 26 Y: 9
+Mover [ELVEN_ARCHER] X: 26 Y: 8
+Mover [FOOTMAN] X: 26 Y: 9
+Mover [ELVEN_ARCHER] X: 26 Y: 8
+Mover [FOOTMAN] X: 26 Y: 9
+Mover [ELVEN_ARCHER] X: 28 Y: 12
+Mover [FOOTMAN] X: 28 Y: 13
+Mover [ELVEN_ARCHER] X: 28 Y: 12
+Mover [FOOTMAN] X: 28 Y: 13
+Mover [ELVEN_ARCHER] X: 28 Y: 12
+Mover [FOOTMAN] X: 28 Y: 13
+Mover [ELVEN_ARCHER] X: 28 Y: 12
+Mover [FOOTMAN] X: 28 Y: 13
+Mover [ELVEN_ARCHER] X: 28 Y: 12
+Mover [FOOTMAN] X: 28 Y: 13
+Mover [ELVEN_ARCHER] X: 28 Y: 12
+Mover [FOOTMAN] X: 28 Y: 13
+Mover [ELVEN_ARCHER] X: 28 Y: 12
+Mover [FOOTMAN] X: 28 Y: 13
+Mover [ELVEN_ARCHER] X: 27 Y: 12
+Mover [FOOTMAN] X: 27 Y: 13
+Mover [ELVEN_ARCHER] X: 27 Y: 12
+Mover [FOOTMAN] X: 27 Y: 13
+Mover [ELVEN_ARCHER] X: 27 Y: 12
+Mover [FOOTMAN] X: 27 Y: 13
+Mover [ELVEN_ARCHER] X: 27 Y: 12
+Mover [FOOTMAN] X: 27 Y: 13
+Mover [ELVEN_ARCHER] X: 27 Y: 12
+Mover [FOOTMAN] X: 27 Y: 13
+Mover [ELVEN_ARCHER] X: 27 Y: 12
+Mover [FOOTMAN] X: 27 Y: 13
+Mover [ELVEN_ARCHER] X: 27 Y: 12
+Mover [FOOTMAN] X: 27 Y: 13
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 0 Y: 1
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 18 Y: 44
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Construindo muro X: 544 Y: 128
+Construindo muro X: 576 Y: 128
+Construindo muro X: 608 Y: 128
+Construindo muro X: 640 Y: 128
+Construindo muro X: 672 Y: 128
+Construindo muro X: 704 Y: 128
+Construindo muro X: 736 Y: 128
+Construindo muro X: 768 Y: 128
+Construindo muro X: 800 Y: 128
+Construindo muro X: 832 Y: 128
+Construindo muro X: 864 Y: 128
+Construindo muro X: 896 Y: 128
+Construindo muro X: 928 Y: 128
+Construindo muro X: 960 Y: 128
+Construindo muro X: 992 Y: 128
+Construindo muro X: 1024 Y: 128
+Construindo muro X: 1056 Y: 128
+Construindo muro X: 1088 Y: 128
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Construindo muro X: 544 Y: 128
+Construindo muro X: 544 Y: 160
+Construindo muro X: 544 Y: 192
+Construindo muro X: 544 Y: 224
+Construindo muro X: 544 Y: 256
+Construindo muro X: 544 Y: 288
+Construindo muro X: 544 Y: 320
+Construindo muro X: 544 Y: 352
+Mover [PEASANT] X: 21 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 30 Y: 18
+Minerando [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 7:03:13 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 22 Y: 11
+Mover [PEASANT] X: 22 Y: 11
+Adicionar [GREAT_HALL] X: 22 Y: 11
+Construindo muro X: 1024 Y: 896
+Construindo muro X: 1056 Y: 896
+Construindo muro X: 1088 Y: 896
+Construindo muro X: 1120 Y: 896
+Construindo muro X: 1152 Y: 896
+Construindo muro X: 1184 Y: 896
+Construindo muro X: 1216 Y: 896
+##############
+Começando jogo: 5/27/2017 7:35:21 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 8 Y: 32
+Mover [PEASANT] X: 8 Y: 32
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [ORC_BARRACKS] X: 7 Y: 25
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 7 Y: 25
+Mover [PEASANT] X: 10 Y: 36
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [PIG_FARM]
+Mover [PIG_FARM] X: 43 Y: 29
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 43 Y: 29
+Construir Unidade [PEASANT]
+Adicionar [ElvenArcher] X: 8 Y: 28
+Mover [ELVEN_ARCHER] X: 8 Y: 28
+Adicionar [Footman] X: 8 Y: 28
+Mover [FOOTMAN] X: 8 Y: 28
+Mover [PEASANT] X: 0 Y: 1
+Construindo muro X: 160 Y: 288
+Construindo muro X: 160 Y: 320
+Construindo muro X: 160 Y: 352
+Construindo muro X: 160 Y: 384
+Construindo muro X: 160 Y: 416
+Construindo muro X: 160 Y: 448
+Construindo muro X: 160 Y: 480
+Construindo muro X: 160 Y: 512
+Construindo muro X: 160 Y: 544
+Construindo muro X: 160 Y: 576
+Construindo muro X: 160 Y: 608
+Construindo muro X: 160 Y: 640
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 8 Y: 32
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 8 Y: 32
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 7:37:31 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 17 Y: 11
+Mover [PEASANT] X: 17 Y: 11
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [ORC_BARRACKS] X: 16 Y: 7
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 16 Y: 7
+Mover [PEASANT] X: 19 Y: 15
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [PIG_FARM]
+Mover [PIG_FARM] X: 39 Y: 24
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 39 Y: 24
+Construir Unidade [PEASANT]
+Adicionar [ElvenArcher] X: 17 Y: 10
+Mover [ELVEN_ARCHER] X: 17 Y: 10
+Adicionar [Footman] X: 17 Y: 10
+Mover [FOOTMAN] X: 17 Y: 10
+Mover [PEASANT] X: 0 Y: 1
+Construindo muro X: 832 Y: 512
+Construindo muro X: 800 Y: 512
+Construindo muro X: 768 Y: 512
+Construindo muro X: 736 Y: 512
+Construindo muro X: 704 Y: 512
+Construindo muro X: 672 Y: 512
+Construindo muro X: 640 Y: 512
+Construindo muro X: 608 Y: 512
+Construindo muro X: 576 Y: 512
+Construindo muro X: 544 Y: 512
+Construindo muro X: 512 Y: 512
+Construindo muro X: 480 Y: 512
+Mover [PEASANT] X: 5 Y: 5
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 17 Y: 11
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 5 Y: 5
+Minerando [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 7:40:38 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Adicionar [Gold Mine] X: 5 Y: 5
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 22 Y: 9
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 43 Y: 24
+Mover [PEASANT] X: 22 Y: 9
+Mover [PEASANT] X: 43 Y: 24
+##############
+Começando jogo: 5/27/2017 7:45:35 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 800 Y: 736
+Adicionar [Peon] X: 8 Y: 8
+Adicionar [Gold Mine] X: 928 Y: 960
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 43 Y: 34
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 9 Y: 19
+Mover [PEASANT] X: 43 Y: 34
+Mover [PEASANT] X: 9 Y: 19
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [ORC_BARRACKS] X: 27 Y: 21
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 27 Y: 21
+Mover [PEASANT] X: 11 Y: 23
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [ORC_BARRACKS] X: 12 Y: 5
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 12 Y: 5
+Mover [PEASANT] X: 45 Y: 38
+Mover [PEASANT] X: 0 Y: 1
+Mover [PIG_FARM] X: 6 Y: 37
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 928 Y: 960
+Começar Mineração [PEASANT, GoldMiner]
+##############
+Começando jogo: 5/27/2017 7:46:17 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 192 Y: 736
+##############
+Começando jogo: 5/27/2017 7:46:53 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 22 Y: 6
+Adicionar [Peon] X: 8 Y: 8
+Adicionar [Gold Mine] X: 4 Y: 26
+Adicionar [Peon] X: 8 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 14 Y: 36
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 44 Y: 25
+Mover [PEASANT] X: 14 Y: 36
+Mover [PEASANT] X: 44 Y: 25
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [ORC_BARRACKS] X: 4 Y: 46
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 4 Y: 46
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [ORC_BARRACKS] X: 5 Y: 9
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 5 Y: 9
+Mover [PEASANT] X: 16 Y: 40
+Mover [PEASANT] X: 46 Y: 29
+Mover [PEASANT] X: 0 Y: 1
+Mover [PIG_FARM] X: 43 Y: 6
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 22 Y: 6
+Começar Mineração [PEASANT, GoldMiner]
+Adicionar [ElvenArcher] X: 5 Y: 49
+Mover [ELVEN_ARCHER] X: 5 Y: 49
+Mover [PEASANT] X: 0 Y: 1
+Mover [PIG_FARM] X: 45 Y: 9
+Mover [PEASANT] X: 4 Y: 26
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 14 Y: 36
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 44 Y: 25
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 6
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 14 Y: 36
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 4 Y: 26
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 22 Y: 6
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 44 Y: 25
+##############
+Começando jogo: 5/27/2017 8:13:33 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 7 Y: 27
+Adicionar [Peon] X: 39 Y: 20
+Adicionar [Gold Mine] X: 19 Y: 41
+Adicionar [Peon] X: 42 Y: 20
+##############
+Começando jogo: 5/27/2017 8:14:14 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 11 Y: 39
+Adicionar [Peon] X: 21 Y: 15
+Adicionar [Gold Mine] X: 25 Y: 23
+Adicionar [Peon] X: 24 Y: 14
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 37 Y: 24
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 41 Y: 9
+Mover [PEASANT] X: 37 Y: 24
+Mover [PEASANT] X: 41 Y: 9
+##############
+Começando jogo: 5/27/2017 8:15:49 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 9 Y: 36
+Adicionar [Peon] X: 45 Y: 28
+Adicionar [Gold Mine] X: 5 Y: 35
+Adicionar [Peon] X: 43 Y: 14
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 42 Y: 8
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 5 Y: 19
+Mover [PEASANT] X: 42 Y: 8
+Mover [PEASANT] X: 5 Y: 19
+##############
+Começando jogo: 5/27/2017 8:16:07 PM
+Adicionar [Gold Mine] X: 30 Y: 18
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 31 Y: 26
+Adicionar [Peon] X: 10 Y: 39
+Adicionar [Gold Mine] X: 35 Y: 34
+Adicionar [Peon] X: 37 Y: 18
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 25 Y: 14
+Construindo Predio [GREAT_HALL]
+Mover [GREAT_HALL] X: 3 Y: 23
+Mover [PEASANT] X: 25 Y: 14
+Mover [PEASANT] X: 3 Y: 23
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [ORC_BARRACKS] X: 10 Y: 38
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 10 Y: 38
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [ORC_BARRACKS] X: 5 Y: 32
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 5 Y: 32
+Mover [PEASANT] X: 27 Y: 18
+Mover [PEASANT] X: 5 Y: 27
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [PIG_FARM]
+Mover [PIG_FARM] X: 17 Y: 8
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 17 Y: 8
+Construir Unidade [PEASANT]
+Adicionar [ElvenArcher] X: 6 Y: 35
+Mover [ELVEN_ARCHER] X: 6 Y: 35
+Adicionar [Footman] X: 6 Y: 35
+Mover [FOOTMAN] X: 6 Y: 35
+Mover [PEASANT] X: 0 Y: 1
+Construindo Predio [PIG_FARM]
+Mover [PIG_FARM] X: 32 Y: 34
+Construir Unidade [PEASANT]
+Mover [PEASANT] X: 32 Y: 34
+Construir Unidade [PEASANT]
+Adicionar [ElvenArcher] X: 11 Y: 41
+Mover [ELVEN_ARCHER] X: 11 Y: 41
+Adicionar [Footman] X: 11 Y: 41
+Mover [FOOTMAN] X: 11 Y: 41
+Mover [PEASANT] X: 0 Y: 1
+Construindo muro X: 1120 Y: 1088
+Construindo muro X: 1120 Y: 1056
+Construindo muro X: 1120 Y: 1024
+Construindo muro X: 1120 Y: 992
+Construindo muro X: 1120 Y: 960
+Construindo muro X: 1120 Y: 928
+Construindo muro X: 1120 Y: 896
+Construindo muro X: 1120 Y: 864
+Construindo muro X: 1120 Y: 832
+Construindo muro X: 1120 Y: 800
+Construindo muro X: 1120 Y: 768
+Construindo muro X: 1120 Y: 736
+Mover [PEASANT] X: 35 Y: 34
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 0 Y: 1
+Construindo muro X: 256 Y: 416
+Construindo muro X: 288 Y: 416
+Construindo muro X: 320 Y: 416
+Construindo muro X: 352 Y: 416
+Construindo muro X: 384 Y: 416
+Construindo muro X: 416 Y: 416
+Construindo muro X: 448 Y: 416
+Construindo muro X: 480 Y: 416
+Construindo muro X: 512 Y: 416
+Mover [PEASANT] X: 31 Y: 26
+Começar Mineração [PEASANT, GoldMiner]
+Mover [PEASANT] X: 25 Y: 14
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 3 Y: 23
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 31 Y: 26
+Minerando [PEASANT, GoldMiner]
+Mover [PEASANT] X: 25 Y: 14
+Entregando Gold [PEASANT, GoldMiner]
+Mover [PEASANT] X: 35 Y: 34
+Minerando [PEASANT, GoldMiner]

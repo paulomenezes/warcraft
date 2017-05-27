@@ -82,12 +82,10 @@
     <Compile Include="Units\Orcs\TrollAxethrower.cs" />
     <Compile Include="Units\InformationUnit.cs" />
     <Compile Include="Units\Unit.cs" />
-    <Compile Include="Units\UnitEnemy.cs" />
     <Compile Include="Util\Animation.cs" />
     <Compile Include="Util\Buildings.cs" />
     <Compile Include="Util\Camera.cs" />
     <Compile Include="Util\Frame.cs" />
-    <Compile Include="Util\GeneticUtil.cs" />
     <Compile Include="Util\Information.cs" />
     <Compile Include="Util\Pathfinding.cs" />
     <Compile Include="Util\PathNode.cs" />
@@ -101,6 +99,17 @@
     <Compile Include="Units\Builder.cs" />
     <Compile Include="Units\Orcs\Peon.cs" />
     <Compile Include="Units\Orcs\Actions\PeonBuilding.cs" />
+    <Compile Include="Managers\ManagerBotsUnits.cs" />
+    <Compile Include="Managers\ManagerBotsBuildings.cs" />
+    <Compile Include="Managers\ManagerPlayerUnits.cs" />
+    <Compile Include="Managers\ManagerPlayerBuildings.cs" />
+    <Compile Include="Buildings\Orcs\GreatHall.cs" />
+    <Compile Include="Buildings\Neutral\CityHall.cs" />
+    <Compile Include="Managers\ManagerResources.cs" />
+    <Compile Include="Buildings\Neutral\Barracks.cs" />
+    <Compile Include="Buildings\Orcs\Barracks.cs" />
+    <Compile Include="Buildings\Orcs\PigFarm.cs" />
+    <Compile Include="Util\Functions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.manifest" />
@@ -170,6 +179,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Units\Orcs\Actions\" />
+    <Folder Include="Buildings\Orcs\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />

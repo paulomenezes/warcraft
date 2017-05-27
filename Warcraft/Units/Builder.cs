@@ -13,8 +13,8 @@ namespace Warcraft.Units.Humans
 
 		//public static InformationUnit Information;
 
-		public Builder(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerBuildings managerBuildings, ManagerUnits managerUnits)
-			: base(tileX, tileY, 32, 32, 2, managerMouse, managerMap, managerBuildings)
+		public Builder(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits)
+            : base(tileX, tileY, 32, 32, 2, managerMouse, managerMap, managerUnits)
 		{
 			
 		}
@@ -48,13 +48,15 @@ namespace Warcraft.Units.Humans
 				{
 					var cmd = commands[i] as BuilderBuildings;
 
-					if (workState == WorkigState.WORKING &&
-						cmd.building.isBuilding &&
-						cmd.building.isPlaceSelected &&
-						!cmd.building.isStartBuilding)
-						cmd.building.StartBuilding();
+                    if (workState == WorkigState.WORKING &&
+                        cmd.building.isBuilding &&
+                        cmd.building.isPlaceSelected &&
+                        !cmd.building.isStartBuilding)
+                    {
+                        cmd.building.StartBuilding();
+                    }
 
-					if (workState == WorkigState.WAITING_PLACE && cmd.building.isPlaceSelected)
+                    if (workState == WorkigState.WAITING_PLACE && cmd.building.isPlaceSelected && !cmd.building.isWorking)
 					{
 						workState = WorkigState.GO_TO_WORK;
 						Move((int)cmd.building.Position.X / 32, (int)cmd.building.Position.Y / 32);

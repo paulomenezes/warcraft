@@ -6,6 +6,9 @@
         BARRACKS,
         CHICKEN_FARM,
         GOLD_MINE,
-        NONE
+        NONE,
+        GREAT_HALL,
+        PIG_FARM,
+        ORC_BARRACKS
     }
 }

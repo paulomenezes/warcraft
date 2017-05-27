@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{13F82A3A-108E-4ECC-80BB-B2E7274ECB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Commands/BuilderBuildings.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/UI/Main.cs">
     <Files>
-      <File FileName="Warcraft/Warcraft.cs" Line="118" Column="4" />
-      <File FileName="Warcraft/Managers/ManagerEnemies.cs" Line="30" Column="1" />
-      <File FileName="Warcraft/Units/Orcs/Actions/PeonBuilding.cs" Line="21" Column="38" />
-      <File FileName="Warcraft/Util/Buildings.cs" Line="1" Column="1" />
-      <File FileName="Warcraft/Buildings/Building.cs" Line="115" Column="34" />
-      <File FileName="Warcraft/Units/Builder.cs" Line="59" Column="26" />
-      <File FileName="Warcraft/Units/Unit.cs" Line="81" Column="25" />
-      <File FileName="Warcraft/Commands/BuilderBuildings.cs" Line="1" Column="1" />
+      <File FileName="Warcraft/Units/Orcs/Peon.cs" Line="12" Column="118" />
+      <File FileName="Warcraft/Units/Humans/Peasant.cs" Line="12" Column="156" />
+      <File FileName="Warcraft/Managers/ManagerPlayerUnits.cs" Line="17" Column="4" />
+      <File FileName="Warcraft/Managers/ManagerBotsUnits.cs" Line="10" Column="37" />
+      <File FileName="Warcraft/Managers/ManagerUnits.cs" Line="10" Column="20" />
+      <File FileName="Warcraft/Managers/ManagerResources.cs" Line="33" Column="1" />
+      <File FileName="Warcraft/Warcraft.cs" Line="56" Column="54" />
+      <File FileName="Warcraft/UI/Main.cs" Line="89" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

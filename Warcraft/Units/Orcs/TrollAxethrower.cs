@@ -8,10 +8,10 @@ using Warcraft.Util;
 
 namespace Warcraft.Units.Orcs
 {
-    class TrollAxethrower : UnitEnemy
+    class TrollAxethrower : Unit
     {
-        public TrollAxethrower(InformationUnit information, ManagerMouse managerMouse, ManagerMap managerMap, ManagerBuildings managerBuildings) 
-            : base(52, 52, 1, managerMouse, managerMap, managerBuildings)
+        public TrollAxethrower(InformationUnit information, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits) 
+            : base(1, 1, 52, 52, 1, managerMouse, managerMap, managerUnits)
         {
             Dictionary<AnimationType, List<Sprite>> sprites = new Dictionary<AnimationType, List<Sprite>>();
             List<Sprite> spriteWalking = new List<Sprite>();

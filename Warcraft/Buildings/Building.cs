@@ -14,7 +14,7 @@ namespace Warcraft.Buildings
 {
     abstract class Building
     {
-        public static Texture2D texture;
+        public static Dictionary<string, Texture2D> texture = new Dictionary<string, Texture2D>();
         public Animation animations;
 
         protected Point target;
@@ -31,8 +31,8 @@ namespace Warcraft.Buildings
 
         public bool selected;
         public bool unselected = false;
-        protected int width;
-        protected int height;
+        public int width;
+        public int height;
 
         private Rectangle rectangle;
 
@@ -71,13 +71,28 @@ namespace Warcraft.Buildings
         public static Building Factory(Util.Buildings type, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits)
         {
             Building building = null;
+            switch (type)
+            {
+                case Util.Buildings.TOWN_HALL:
+                    building = new Humans.TownHall(0, 0, managerMouse, managerMap, managerUnits);
+                    break;
+                case Util.Buildings.BARRACKS:
+                    building = new Humans.Barracks(0, 0, managerMouse, managerMap, managerUnits);
+                    break;
+                case Util.Buildings.CHICKEN_FARM:
+                    building = new Humans.ChickenFarm(0, 0, managerMouse, managerMap, managerUnits);
+                    break;
 
-            if (type == Util.Buildings.TOWN_HALL)
-                building = new Humans.TownHall(0, 0, managerMouse, managerMap, managerUnits);
-            else if (type == Util.Buildings.BARRACKS)
-                building = new Humans.Barracks(0, 0, managerMouse, managerMap, managerUnits);
-            else if (type == Util.Buildings.CHICKEN_FARM)
-                building = new Humans.ChickenFarm(0, 0, managerMouse, managerMap, managerUnits);
+                case Util.Buildings.GREAT_HALL:
+                    building = new Orcs.GreatHall(0, 0, managerMouse, managerMap, managerUnits);
+					break;
+                case Util.Buildings.ORC_BARRACKS:
+                    building = new Orcs.Barracks(0, 0, managerMouse, managerMap, managerUnits);
+					break;
+                case Util.Buildings.PIG_FARM:
+                    building = new Orcs.PigFarm(0, 0, managerMouse, managerMap, managerUnits);
+					break;
+            }
 
             return building;
         }
@@ -125,16 +140,21 @@ namespace Warcraft.Buildings
 
         public virtual void LoadContent(ContentManager content)
         {
-            if (texture == null)
-                texture = content.Load<Texture2D>(textureName);
+            if (!texture.ContainsKey(textureName))
+            {
+                texture.Add(textureName, content.Load<Texture2D>(textureName));
+            }
 
-            ui.LoadContent(content);
+            if (ui != null)
+                ui.LoadContent(content);
         }
 
         public virtual void Update()
         {
             animations.Update();
-            ui.Update();
+
+            if (ui != null)
+                ui.Update();
 
             if (animations.completed && !isWorking)
             {
@@ -148,16 +168,16 @@ namespace Warcraft.Buildings
             if (isBuilding && !isPlaceSelected)
             {
                 MouseState mouse = Mouse.GetState();
-                position = new Vector2(mouse.X - width / 2, mouse.Y - height / 2) + Warcraft.camera.center;
+                position = new Vector2(Normalize(mouse.X - width / 2), Normalize(mouse.Y - height / 2)) + Warcraft.camera.center;
             }
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
             if (isBuilding && !isPlaceSelected)
-                spriteBatch.Draw(texture, position, new Rectangle(animations.Last().x, animations.Last().y, animations.Last().width, animations.Last().height), Color.White);
+                spriteBatch.Draw(texture[textureName], position, new Rectangle(animations.Last().x, animations.Last().y, animations.Last().width, animations.Last().height), Color.White);
             else if ((isBuilding && isPlaceSelected && isStartBuilding) || isWorking)
-                spriteBatch.Draw(texture, position, animations.rectangle, Color.White);
+                spriteBatch.Draw(texture[textureName], position, animations.rectangle, Color.White);
 
             if (selected)
             {
@@ -180,5 +200,10 @@ namespace Warcraft.Buildings
         {
             isBuilding = true;
         }
-    }
+		
+        private int Normalize(float value)
+		{
+			return (int)(value / 32) * 32;
+		}
+	}
 }

@@ -19,40 +19,46 @@ namespace Warcraft.Commands
         public bool started;
 
         GoldMine goldMine;
-        TownHall townHall;
+        CityHall cityHall;
         Unit worker;
 
         ManagerBuildings managerBuildings;
+		ManagerUnits managerUnits;
 
-        float elapsed;
+		float elapsed;
 
         State currentState;
 
-        public Miner(ManagerBuildings managerBuildings, Unit worker)
+        public Miner(ManagerBuildings managerBuildings, ManagerUnits managerUnits, Unit worker)
         {
             goldMine = managerBuildings.buildings.Find((b) => (b.information as InformationBuilding).Type == Util.Buildings.GOLD_MINE) as GoldMine;
-            townHall = managerBuildings.buildings.Find((b) => (b.information as InformationBuilding).Type == Util.Buildings.TOWN_HALL) as TownHall;
+			cityHall = managerBuildings.buildings.Find((b) => 
+                                                       (b.information as InformationBuilding).Type == Util.Buildings.TOWN_HALL ||
+													   (b.information as InformationBuilding).Type == Util.Buildings.GREAT_HALL) as TownHall;
 
             this.worker = worker;
             this.managerBuildings = managerBuildings;
+            this.managerUnits = managerUnits;
         }
 
         public void execute()
         {
-            townHall = managerBuildings.buildings.Find((b) => (b.information as InformationBuilding).Type == Util.Buildings.TOWN_HALL) as TownHall;
+            cityHall = managerBuildings.buildings.Find((b) => 
+                                                       (b.information as InformationBuilding).Type == Util.Buildings.TOWN_HALL ||
+                                                       (b.information as InformationBuilding).Type == Util.Buildings.GREAT_HALL) as CityHall;
 
-            if (townHall != null)
+            if (cityHall != null)
             {
                 started = true;
 
-                goldMine.workers.Add(worker as Peasant);
+                goldMine.workers.Add(worker as Builder);
                 worker.workState = WorkigState.GO_TO_WORK;
                 worker.Move((int)goldMine.Position.X / 32, (int)goldMine.Position.Y / 32);
                 worker.selected = false;
 
                 currentState = State.MINER;
 
-                Data.Write("Começar Mineração [Peasant, GoldMiner]");
+                Data.Write("Começar Mineração [" + (worker.information as InformationUnit).Type + ", GoldMiner]");
             }
         }
 
@@ -70,25 +76,25 @@ namespace Warcraft.Commands
 
                     if (currentState == State.MINER)
                     {
-                        worker.Move((int)townHall.Position.X / 32, (int)townHall.Position.Y / 32);
+                        worker.Move((int)cityHall.Position.X / 32, (int)cityHall.Position.Y / 32);
                         worker.animations.currentAnimation = Util.AnimationType.GOLD;
 
                         goldMine.animations.Change("normal");
                         currentState = State.TOWN_HALL;
 
-                        Data.Write("Entregando Gold [Peasant, GoldMiner]");
+                        Data.Write("Entregando Gold [" + (worker.information as InformationUnit).Type + ", GoldMiner]");
                     }
                     else
                     {
                         worker.Move((int)goldMine.Position.X / 32, (int)goldMine.Position.Y / 32);
                         worker.animations.currentAnimation = Util.AnimationType.WALKING;
 
-                        Warcraft.GOLD += 100;
+                        ManagerResources.ReduceGold(managerUnits.index, -100);
 
                         goldMine.animations.Change("working");
                         currentState = State.MINER;
 
-                        Data.Write("Minerando [Peasant, GoldMiner]");
+                        Data.Write("Minerando [" + (worker.information as InformationUnit).Type + ", GoldMiner]");
                     }
 
                     elapsed = 0;

@@ -194,6 +194,11 @@ namespace Warcraft.Managers
 					}
 				}
             }
+
+            for (int i = 0; i < water.Count; i++)
+            {
+                AddWalls(water[i].position, 1, 1);
+            }
         }
 
 

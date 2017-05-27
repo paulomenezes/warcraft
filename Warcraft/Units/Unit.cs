@@ -69,7 +69,9 @@ namespace Warcraft.Units
         bool shoot = false;
         float angle = 0;
 
-        public Unit(int tileX, int tileY, int width, int height, int speed, ManagerMouse managerMouse, ManagerMap managerMap, ManagerBuildings managerBuildings)
+        ManagerUnits managerUnits;
+
+        public Unit(int tileX, int tileY, int width, int height, int speed, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits)
         {
             this.width = width;
             this.height = height;
@@ -81,6 +83,8 @@ namespace Warcraft.Units
             managerMouse.MouseEventHandler += ManagerMouse_MouseEventHandler;
 
             rectangle = new Rectangle((int)position.X, (int)position.Y, width, height);
+
+            this.managerUnits = managerUnits;
         }
 
         private void ManagerMouse_MouseEventHandler(object sender, Events.MouseEventArgs e)
@@ -102,8 +106,6 @@ namespace Warcraft.Units
             missileElven = content.Load<Texture2D>("arrow");
 
             ui.LoadContent(content);
-
-            GeneticUtil.Encode(this);
         }
 
         public virtual void Update()
@@ -140,8 +142,7 @@ namespace Warcraft.Units
                 animations.isLooping = false;
                 animations.Play("dying");
 
-                if (information.Faction == Faction.ALLIANCE)
-                    Warcraft.FOOD++;
+                ManagerResources.ReduceFood(managerUnits.index, -1);
             }
 
             if (information.HitPoints > 0)
@@ -309,7 +310,7 @@ namespace Warcraft.Units
                 if (pathfinding.SetGoal((int)position.X, (int)position.Y, xTile, yTile))
                 {
                     path = pathfinding.DiscoverPath();
-                    if (path.Last().x == 49 && path.Last().y == 49)
+                    if (path.Count > 0 && path.Last().x == 49 && path.Last().y == 49)
                     {
                         // 
                     }

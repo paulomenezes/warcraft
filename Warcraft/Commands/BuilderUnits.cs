@@ -1,4 +1,5 @@
-﻿using Warcraft.Units;
+﻿using Warcraft.Managers;
+using Warcraft.Units;
 using Warcraft.Util;
 
 namespace Warcraft.Commands
@@ -14,18 +15,22 @@ namespace Warcraft.Commands
 
         public Util.Units type;
 
-        public BuilderUnits(Util.Units type, InformationUnit informationUnit)
+        ManagerUnits managerUnits;
+
+        public BuilderUnits(Util.Units type, ManagerUnits managerUnits, InformationUnit informationUnit)
         {
             this.informationUnit = informationUnit;
             this.type = type;
+
+            this.managerUnits = managerUnits;
         }
 
         public void execute()
         {
-            if (Warcraft.GOLD - informationUnit.CostGold >= 0 && Warcraft.FOOD - informationUnit.CostFood >= 0)
+            if (ManagerResources.CompareGold(managerUnits.index, informationUnit.CostGold) && ManagerResources.CompareFood(managerUnits.index, informationUnit.CostFood))
             {
-                Warcraft.GOLD -= informationUnit.CostGold;
-                Warcraft.FOOD -= informationUnit.CostFood;
+                ManagerResources.ReduceGold(managerUnits.index, informationUnit.CostGold);
+                ManagerResources.ReduceFood(managerUnits.index, informationUnit.CostFood);
 
                 Data.Write("Construir Unidade [" + informationUnit.Type + "]");
 

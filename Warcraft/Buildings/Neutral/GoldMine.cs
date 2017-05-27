@@ -7,7 +7,7 @@ namespace Warcraft.Buildings.Neutral
 {
     class GoldMine : Building
     {
-        public List<Peasant> workers = new List<Peasant>();
+        public List<Builder> workers = new List<Builder>();
 
         public GoldMine(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits)
             : base(tileX, tileY, 96, 96, managerMouse, managerMap, managerUnits)

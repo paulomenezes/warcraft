@@ -9,8 +9,8 @@ namespace Warcraft.Units.Humans
 {
 	class Peon : Builder
 	{
-		public Peon(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerBuildings managerBuildings, ManagerUnits managerUnits)
-			: base(tileX, tileY, managerMouse, managerMap, managerBuildings, managerUnits)
+        public Peon(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits, ManagerBuildings managerBuildings)
+			: base(tileX, tileY, managerMouse, managerMap, managerUnits)
 		{
 			Dictionary<AnimationType, List<Sprite>> sprites = new Dictionary<AnimationType, List<Sprite>>();
 			List<Sprite> spriteWalking = new List<Sprite>();
@@ -105,11 +105,11 @@ namespace Warcraft.Units.Humans
             information = new InformationUnit("Peon", Race.ORC, Faction.HORDE, 30, 2, 4, 10, 400, 1, Util.Buildings.TOWN_HALL, 200, 1, 5, 1, 0, Util.Units.PEASANT);
 			Information = information;
 
-			commands.Add(new BuilderBuildings(Util.Buildings.TOWN_HALL, this, managerMouse, managerBuildings, managerUnits));
-			commands.Add(new BuilderBuildings(Util.Buildings.BARRACKS, this, managerMouse, managerBuildings, managerUnits));
-			commands.Add(new BuilderBuildings(Util.Buildings.CHICKEN_FARM, this, managerMouse, managerBuildings, managerUnits));
+            commands.Add(new BuilderBuildings(Util.Buildings.GREAT_HALL, this, managerMouse, managerBuildings, managerUnits));
+			commands.Add(new BuilderBuildings(Util.Buildings.ORC_BARRACKS, this, managerMouse, managerBuildings, managerUnits));
+            commands.Add(new BuilderBuildings(Util.Buildings.PIG_FARM, this, managerMouse, managerBuildings, managerUnits));
 			commands.Add(new BuilderWalls(this, managerMouse, managerBuildings, managerUnits));
-			commands.Add(new Miner(managerBuildings, this));
+            commands.Add(new Miner(managerBuildings, managerUnits, this));
 
 			Data.Write("Adicionar [Peon] X: " + tileX + " Y: " + tileY);
 		}

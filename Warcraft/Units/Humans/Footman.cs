@@ -7,8 +7,8 @@ namespace Warcraft.Units.Humans
 {
     class Footman : Unit
     {
-        public Footman(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerBuildings managerBuildings, ManagerUnits managerUnits) 
-            : base(tileX, tileY, 52, 52, 2, managerMouse, managerMap, managerBuildings)
+        public Footman(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits) 
+            : base(tileX, tileY, 52, 52, 2, managerMouse, managerMap, managerUnits)
         {
             Dictionary<AnimationType, List<Sprite>> sprites = new Dictionary<AnimationType, List<Sprite>>();
             List<Sprite> spriteWalking = new List<Sprite>();

@@ -9,8 +9,8 @@ namespace Warcraft.Units.Humans
 {
     class Peasant : Builder
     {
-        public Peasant(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerBuildings managerBuildings, ManagerUnits managerUnits) 
-            : base(tileX, tileY, managerMouse, managerMap, managerBuildings, managerUnits)
+        public Peasant(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits, ManagerBuildings managerBuildings) 
+            : base(tileX, tileY, managerMouse, managerMap, managerUnits)
         {
             Dictionary<AnimationType, List<Sprite>> sprites = new Dictionary<AnimationType, List<Sprite>>();
             List<Sprite> spriteWalking = new List<Sprite>();
@@ -109,7 +109,7 @@ namespace Warcraft.Units.Humans
             commands.Add(new BuilderBuildings(Util.Buildings.BARRACKS, this, managerMouse, managerBuildings, managerUnits));
             commands.Add(new BuilderBuildings(Util.Buildings.CHICKEN_FARM, this, managerMouse, managerBuildings, managerUnits));
             commands.Add(new BuilderWalls(this, managerMouse, managerBuildings, managerUnits));
-            commands.Add(new Miner(managerBuildings, this));
+            commands.Add(new Miner(managerBuildings, managerUnits, this));
 
             Data.Write("Adicionar [Peasant] X: " + tileX + " Y: " + tileY);
         }

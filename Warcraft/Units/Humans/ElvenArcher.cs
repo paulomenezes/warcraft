@@ -8,8 +8,8 @@ namespace Warcraft.Units.Humans
 {
     class ElvenArcher : Unit
     {
-        public ElvenArcher(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerBuildings managerBuildings, ManagerUnits managerUnits) 
-            : base(tileX, tileY, 48, 48, 2, managerMouse, managerMap, managerBuildings)
+        public ElvenArcher(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits) 
+            : base(tileX, tileY, 48, 48, 2, managerMouse, managerMap, managerUnits)
         {
             Dictionary<AnimationType, List<Sprite>> sprites = new Dictionary<AnimationType, List<Sprite>>();
             List<Sprite> spriteWalking = new List<Sprite>();
