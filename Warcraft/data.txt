@@ -60182,3 +60182,509 @@ Começar Mineração [PEON, GoldMiner]
 Construir Unidade [PEON]
 Construir Unidade [PEON]
 Construir Unidade [PEON]
+##############
+Começando jogo: 5/29/2017 5:56:32 PM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 33 Y: 18
+Adicionar [Peon] X: 37 Y: 25
+Adicionar [Peon] X: 17 Y: 37
+Adicionar [Peon] X: 17 Y: 37
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 20 Y: 12
+Mover [PEON] X: 42 Y: 25
+Mover [PEON] X: 22 Y: 37
+Mover [PEON] X: 22 Y: 37
+##############
+Começando jogo: 5/29/2017 6:15:12 PM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 36 Y: 29
+Adicionar [Peon] X: 20 Y: 7
+Adicionar [Peon] X: 20 Y: 7
+Adicionar [Peon] X: 20 Y: 7
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 38 Y: 36
+Mover [PEON] X: 18 Y: 7
+Mover [PEON] X: 18 Y: 7
+Mover [PEON] X: 18 Y: 7
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 42 Y: 20
+Mover [PEON] X: 22 Y: 32
+Mover [PEON] X: 22 Y: 18
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 30 Y: 5
+##############
+Começando jogo: 5/29/2017 6:30:46 PM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 18 Y: 38
+Adicionar [Peon] X: 44 Y: 16
+Adicionar [Peon] X: 44 Y: 16
+Adicionar [Peon] X: 44 Y: 16
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 12 Y: 42
+Mover [PEON] X: 34 Y: 12
+Mover [PEON] X: 34 Y: 12
+Mover [PEON] X: 34 Y: 12
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 15 Y: 11
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 31 Y: 13
+Mover [PEON] X: 14 Y: 14
+Mover [PEON] X: 35 Y: 26
+Mover [PEON] X: 0 Y: 1
+Mover [PEON] X: 38 Y: 22
+Começar Mineração [PEON, GoldMiner]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Mover [PEON] X: 0 Y: 1
+Mover [PEON] X: 38 Y: 22
+Começar Mineração [PEON, GoldMiner]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Adicionar [Peon] X: 36 Y: 16
+Mover [PEON] X: 36 Y: 16
+Adicionar [Grunt] X: 32 Y: 16
+Mover [GRUNT] X: 32 Y: 16
+Mover [GRUNT] X: 32 Y: 32
+Adicionar [TrollAxeTrower] X: 32 Y: 16
+Mover [TROLL_AXETHROWER] X: 32 Y: 16
+Mover [TROLL_AXETHROWER] X: 0 Y: 0
+Mover [PEON] X: 34 Y: 12
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 0 Y: 1
+Mover [PEON] X: 38 Y: 22
+Começar Mineração [PEON, GoldMiner]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Mover [PEON] X: 34 Y: 12
+Entregando Gold [PEON, GoldMiner]
+Adicionar [Peon] X: 36 Y: 16
+Mover [PEON] X: 36 Y: 16
+Adicionar [Grunt] X: 36 Y: 29
+Mover [GRUNT] X: 36 Y: 29
+Mover [GRUNT] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 36 Y: 29
+Mover [TROLL_AXETHROWER] X: 36 Y: 29
+Mover [GRUNT] X: 0 Y: 32
+Mover [TROLL_AXETHROWER] X: 32 Y: 0
+Mover [TROLL_AXETHROWER] X: 0 Y: 32
+Mover [PEON] X: 0 Y: 1
+Mover [PEON] X: 6 Y: 33
+Começar Mineração [PEON, GoldMiner]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Adicionar [Peon] X: 36 Y: 16
+Mover [PEON] X: 36 Y: 16
+Mover [GRUNT] X: 33 Y: 26
+Adicionar [Grunt] X: 15 Y: 17
+Mover [GRUNT] X: 15 Y: 17
+Mover [GRUNT] X: 32 Y: 0
+Mover [GRUNT] X: 33 Y: 26
+Adicionar [TrollAxeTrower] X: 15 Y: 17
+Mover [TROLL_AXETHROWER] X: 15 Y: 17
+Mover [TROLL_AXETHROWER] X: 0 Y: 32
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 33 Y: 26
+Mover [GRUNT] X: 32 Y: 26
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [TROLL_AXETHROWER] X: 0 Y: 0
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Adicionar [Peon] X: 14 Y: 46
+Mover [PEON] X: 14 Y: 46
+Mover [GRUNT] X: 32 Y: 28
+Adicionar [Grunt] X: 16 Y: 14
+Mover [GRUNT] X: 16 Y: 14
+Mover [GRUNT] X: 0 Y: 32
+Mover [GRUNT] X: 34 Y: 26
+Adicionar [TrollAxeTrower] X: 16 Y: 14
+Mover [TROLL_AXETHROWER] X: 16 Y: 14
+Mover [TROLL_AXETHROWER] X: 32 Y: 32
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 15 Y: 15
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 17 Y: 13
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 0 Y: 32
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [GRUNT] X: 32 Y: 28
+Mover [GRUNT] X: 34 Y: 26
+Mover [TROLL_AXETHROWER] X: 0 Y: 0
+Mover [TROLL_AXETHROWER] X: 0 Y: 32
+Mover [PEON] X: 34 Y: 12
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 34 Y: 12
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 12 Y: 42
+Entregando Gold [PEON, GoldMiner]
+Mover [TROLL_AXETHROWER] X: 0 Y: 0
+Mover [TROLL_AXETHROWER] X: 0 Y: 0
+Mover [TROLL_AXETHROWER] X: 32 Y: 0
+Mover [PEON] X: 34 Y: 12
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 29
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 30
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 30
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 30
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 30
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 30
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 30
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 30
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 30
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 30
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 30
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 30
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 30
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 30
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 30
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 30
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 30
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [GRUNT] X: 3 Y: 28
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [GRUNT] X: 0 Y: 0
+Mover [GRUNT] X: 0 Y: 0
+Mover [GRUNT] X: 0 Y: 0
+Mover [GRUNT] X: 32 Y: 0
+Mover [PEON] X: 12 Y: 42
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 34 Y: 12
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 34 Y: 12
+Entregando Gold [PEON, GoldMiner]
+Mover [GRUNT] X: 0 Y: 0
+Mover [GRUNT] X: 0 Y: 0
+Mover [GRUNT] X: 0 Y: 32
+Mover [GRUNT] X: 0 Y: 0
+Mover [GRUNT] X: 0 Y: 0
+Mover [GRUNT] X: 0 Y: 0
+Mover [GRUNT] X: 0 Y: 0
+Mover [GRUNT] X: 32 Y: 0
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 34 Y: 12
+Entregando Gold [PEON, GoldMiner]
+##############
+Começando jogo: 5/29/2017 6:38:22 PM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 4 Y: 7
+Adicionar [Peon] X: 30 Y: 27
+Adicionar [Peon] X: 30 Y: 27
+Adicionar [Peon] X: 30 Y: 27
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 21 Y: 30
+Mover [PEON] X: 13 Y: 10
+Mover [PEON] X: 37 Y: 6
+Mover [PEON] X: 37 Y: 6
+Adicionar [GREAT_HALL] X: 21 Y: 30
+Adicionar [GREAT_HALL] X: 13 Y: 10
+Adicionar [GREAT_HALL] X: 37 Y: 6
+Adicionar [GREAT_HALL] X: 37 Y: 6
+Construindo Predio [TOWN_HALL]
+Adicionar [TOWN_HALL] X: 20 Y: 9
+Adicionar [GREAT_HALL] X: 21 Y: 30
+Adicionar [GREAT_HALL] X: 13 Y: 10
+Adicionar [GREAT_HALL] X: 37 Y: 6
+Adicionar [GREAT_HALL] X: 37 Y: 6
+Mover [PEASANT] X: 20 Y: 9
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 42 Y: 43
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 21 Y: 16
+Mover [PEON] X: 42 Y: 28
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 40 Y: 33

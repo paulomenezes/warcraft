@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{13F82A3A-108E-4ECC-80BB-B2E7274ECB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Managers/ManagerMap.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Units/Unit.cs">
     <Files>
-      <File FileName="Warcraft/Managers/ManagerMap.cs" Line="91" Column="37" />
-      <File FileName="Warcraft/Map/Tile.cs" Line="14" Column="12" />
+      <File FileName="Warcraft/Managers/ManagerMap.cs" Line="202" Column="1" />
+      <File FileName="Warcraft/Map/Tile.cs" Line="121" Column="100" />
+      <File FileName="Warcraft/Units/Orcs/Peon.cs" Line="80" Column="46" />
+      <File FileName="Warcraft/Units/Unit.cs" Line="325" Column="107" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,11 +12,12 @@
           <Node name="Warcraft" expanded="True">
             <Node name="Warcraft" expanded="True">
               <Node name="EA" expanded="True" />
-              <Node name="Managers" expanded="True">
-                <Node name="ManagerMap.cs" selected="True" />
-              </Node>
+              <Node name="Managers" expanded="True" />
               <Node name="Map" expanded="True" />
-              <Node name="Units" expanded="True" />
+              <Node name="Units" expanded="True">
+                <Node name="Orcs" expanded="True" />
+                <Node name="Unit.cs" selected="True" />
+              </Node>
               <Node name="Util" expanded="True" />
             </Node>
           </Node>

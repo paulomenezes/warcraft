@@ -15,73 +15,73 @@ namespace Warcraft.Units.Humans
 			Dictionary<AnimationType, List<Sprite>> sprites = new Dictionary<AnimationType, List<Sprite>>();
 			List<Sprite> spriteWalking = new List<Sprite>();
 			// UP
-			spriteWalking.Add(new Sprite(16, 8, 26, 23));
-			spriteWalking.Add(new Sprite(18, 46, 24, 28));
-			spriteWalking.Add(new Sprite(17, 86, 25, 26));
-			spriteWalking.Add(new Sprite(19, 122, 23, 30));
-			spriteWalking.Add(new Sprite(18, 159, 24, 27));
+			spriteWalking.Add(new Sprite(14, 2, 29, 32));
+			spriteWalking.Add(new Sprite(17, 40, 24, 24));
+			spriteWalking.Add(new Sprite(17, 82, 25, 33));
+			spriteWalking.Add(new Sprite(12, 122, 31, 33));
+			spriteWalking.Add(new Sprite(13, 164, 28, 33));
 			// DOWN
-			spriteWalking.Add(new Sprite(166, 7, 25, 26));
-			spriteWalking.Add(new Sprite(168, 45, 24, 26));
-			spriteWalking.Add(new Sprite(167, 85, 25, 27));
-			spriteWalking.Add(new Sprite(168, 121, 23, 26));
-			spriteWalking.Add(new Sprite(167, 158, 24, 27));
+			spriteWalking.Add(new Sprite(209, 6, 30, 25));
+			spriteWalking.Add(new Sprite(210, 46, 25, 29));
+			spriteWalking.Add(new Sprite(210, 87, 26, 28));
+			spriteWalking.Add(new Sprite(210, 128, 31, 29));
+			spriteWalking.Add(new Sprite(211, 169, 30, 28));
 			// LEFT
-			spriteWalking.Add(new Sprite(97, 4, 14, 31));
-			spriteWalking.Add(new Sprite(91, 42, 24, 30));
-			spriteWalking.Add(new Sprite(96, 82, 16, 31));
-			spriteWalking.Add(new Sprite(91, 118, 23, 30));
-			spriteWalking.Add(new Sprite(95, 155, 20, 30));
+			spriteWalking.Add(new Sprite(122, 1, 18, 33));
+			spriteWalking.Add(new Sprite(118, 40, 28, 31));
+			spriteWalking.Add(new Sprite(119, 81, 24, 32));
+			spriteWalking.Add(new Sprite(119, 121, 28, 32));
+			spriteWalking.Add(new Sprite(118, 163, 22, 34));
 			// UP-RIGHT
-			spriteWalking.Add(new Sprite(56, 6, 22, 26));
-			spriteWalking.Add(new Sprite(55, 44, 26, 30));
-			spriteWalking.Add(new Sprite(56, 84, 24, 29));
-			spriteWalking.Add(new Sprite(59, 119, 23, 29));
-			spriteWalking.Add(new Sprite(57, 156, 21, 28));
+			spriteWalking.Add(new Sprite(69, 0, 26, 34));
+			spriteWalking.Add(new Sprite(68, 39, 26, 31));
+			spriteWalking.Add(new Sprite(68, 80, 25, 31));
+			spriteWalking.Add(new Sprite(63, 121, 37, 36));
+			spriteWalking.Add(new Sprite(67, 162, 29, 36));
 			// DOWN-RIGHT
-			spriteWalking.Add(new Sprite(127, 3, 22, 31));
-			spriteWalking.Add(new Sprite(128, 40, 20, 27));
-			spriteWalking.Add(new Sprite(130, 80, 19, 28));
-			spriteWalking.Add(new Sprite(126, 119, 26, 29));
-			spriteWalking.Add(new Sprite(126, 156, 26, 28));
+			spriteWalking.Add(new Sprite(164, 2, 23, 29));
+			spriteWalking.Add(new Sprite(159, 41, 33, 32));
+			spriteWalking.Add(new Sprite(161, 83, 31, 31));
+			spriteWalking.Add(new Sprite(164, 122, 25, 30));
+			spriteWalking.Add(new Sprite(162, 165, 25, 27));
 
 			sprites.Add(AnimationType.WALKING, spriteWalking);
 
 			List<Sprite> spriteGold = new List<Sprite>();
 			// MINER UP
-			spriteGold.Add(new Sprite(29, 10, 24, 27));
-			spriteGold.Add(new Sprite(30, 52, 23, 30));
-			spriteGold.Add(new Sprite(30, 95, 23, 28));
-			spriteGold.Add(new Sprite(30, 137, 24, 32));
-			spriteGold.Add(new Sprite(30, 180, 24, 30));
+			spriteGold.Add(new Sprite(36, 536, 27, 34));
+			spriteGold.Add(new Sprite(37, 575, 26, 36));
+			spriteGold.Add(new Sprite(37, 620, 27, 35));
+			spriteGold.Add(new Sprite(35, 662, 27, 35));
+			spriteGold.Add(new Sprite(34, 706, 28, 35));
 			// MINER DOWN
-			spriteGold.Add(new Sprite(159, 1, 23, 36));
-			spriteGold.Add(new Sprite(160, 43, 23, 36));
-			spriteGold.Add(new Sprite(160, 86, 23, 37));
-			spriteGold.Add(new Sprite(158, 131, 24, 34));
-			spriteGold.Add(new Sprite(158, 173, 24, 36));
+			spriteGold.Add(new Sprite(180, 534, 30, 34));
+			spriteGold.Add(new Sprite(180, 575, 29, 38));
+			spriteGold.Add(new Sprite(180, 619, 29, 37));
+			spriteGold.Add(new Sprite(181, 662, 29, 38));
+			spriteGold.Add(new Sprite(181, 705, 29, 37));
 			// MINER RIGHT
-			spriteGold.Add(new Sprite(97, 7, 21, 31));
-			spriteGold.Add(new Sprite(96, 50, 24, 30));
-			spriteGold.Add(new Sprite(96, 93, 23, 30));
-			spriteGold.Add(new Sprite(98, 134, 22, 32));
-			spriteGold.Add(new Sprite(97, 177, 23, 31));
+			spriteGold.Add(new Sprite(109, 539, 25, 32));
+			spriteGold.Add(new Sprite(109, 579, 26, 30));
+			spriteGold.Add(new Sprite(110, 623, 25, 32));
+			spriteGold.Add(new Sprite(110, 665, 24, 31));
+			spriteGold.Add(new Sprite(109, 709, 25, 30));
 			// MINER UP RIGHT
-			spriteGold.Add(new Sprite(62, 7, 24, 31));
-			spriteGold.Add(new Sprite(62, 49, 25, 34));
-			spriteGold.Add(new Sprite(62, 91, 25, 33));
-			spriteGold.Add(new Sprite(62, 135, 25, 30));
-			spriteGold.Add(new Sprite(62, 178, 24, 30));
+			spriteGold.Add(new Sprite(75, 537, 24, 34));
+			spriteGold.Add(new Sprite(72, 577, 27, 31));
+			spriteGold.Add(new Sprite(72, 621, 27, 32));
+			spriteGold.Add(new Sprite(77, 664, 22, 36));
+			spriteGold.Add(new Sprite(77, 707, 22, 36));
 			// MINER DOWN RIGHT
-			spriteGold.Add(new Sprite(129, 1, 21, 37));
-			spriteGold.Add(new Sprite(127, 44, 22, 34));
-			spriteGold.Add(new Sprite(129, 87, 21, 37));
-			spriteGold.Add(new Sprite(128, 130, 22, 37));
-			spriteGold.Add(new Sprite(129, 173, 21, 37));
+			spriteGold.Add(new Sprite(142, 539, 28, 28));
+			spriteGold.Add(new Sprite(143, 579, 29, 32));
+			spriteGold.Add(new Sprite(144, 624, 29, 31));
+			spriteGold.Add(new Sprite(144, 665, 29, 29));
+			spriteGold.Add(new Sprite(144, 710, 28, 26));
 			sprites.Add(AnimationType.GOLD, spriteGold);
 
 			List<Sprite> spriteDie = new List<Sprite>();
-			spriteDie.Add(new Sprite(10, 50, 33, 33));
+			spriteDie.Add(new Sprite(13, 494, 34, 32));
 			sprites.Add(AnimationType.DYING, spriteDie);
 
 			Dictionary<string, Frame> animations = new Dictionary<string, Frame>();
@@ -98,9 +98,9 @@ namespace Warcraft.Units.Humans
 			this.animations = new Animation(sprites, animations, "down", width, height);
 
 			ui = new UI.Units.Builder(managerMouse, this);
-			textureName.Add(AnimationType.WALKING, "Peasant_walking");
-			textureName.Add(AnimationType.GOLD, "Peasant_gold");
-			textureName.Add(AnimationType.DYING, "Peasant_dying");
+			textureName.Add(AnimationType.WALKING, "Orcs/Peon");
+			textureName.Add(AnimationType.GOLD, "Orcs/Peon");
+			textureName.Add(AnimationType.DYING, "Orcs/Peon");
 
             information = new InformationUnit("Peon", Race.ORC, Faction.HORDE, 30, 0, 4, 10, 400, 1, Util.Buildings.GREAT_HALL, 200, 3, 5, 1, 0, Util.Units.PEON);
 			Information = information;

@@ -38,3 +38,44 @@
 /Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Peon_dying.xnb
 /Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Peon_gold.xnb
 /Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Peon_walking.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Army Colors.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Corpses.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Critters.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Daemon.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Magic and Missiles.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Misc..xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Skeleton.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Wasteland Tiles.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Winter Tiles.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Humans/Ballista.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Humans/Battleship.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Humans/Dwarven Demolition Squad.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Humans/Elven Archer.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Humans/Elven Destroyer.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Humans/Footman.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Humans/Gnomish Flying Machine.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Humans/Gnomish Submarine.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Humans/Gryphon Rider.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Humans/Human Buildings (Summer).xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Humans/Human Buildings (Winter).xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Humans/Human Oil Tanker.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Humans/Human Transport.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Humans/Knight.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Humans/Mage.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Humans/Peasant.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Catapult.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Death Knight.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Dragon.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Giant Turtle.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Goblin Sappers.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Goblin Zeppelin.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Grunt.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Ogre Juggernaut.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Ogre.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Orc Buildings (Summer).xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Orc Buildings (Winter).xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Orc Oil Tanker.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Orc Transport.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Peon.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Troll Axethrower.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Troll Destroyer.xnb
