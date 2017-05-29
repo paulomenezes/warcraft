@@ -1,27 +1,20 @@
 ﻿<Properties StartupConfiguration="{13F82A3A-108E-4ECC-80BB-B2E7274ECB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/EA/GeneUnit.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Managers/ManagerMap.cs">
     <Files>
-      <File FileName="Warcraft/Managers/ManagerCombat.cs" Line="51" Column="39" />
-      <File FileName="Warcraft/Units/InformationUnit.cs" Line="20" Column="20" />
-      <File FileName="Warcraft/Buildings/Neutral/GoldMine.cs" Line="12" Column="33" />
-      <File FileName="Warcraft/Units/Unit.cs" Line="239" Column="44" />
-      <File FileName="Warcraft/Managers/ManagerEnemies.cs" Line="101" Column="47" />
-      <File FileName="Warcraft/EA/GeneBuilding.cs" Line="8" Column="12" />
-      <File FileName="Warcraft/EA/GeneBuildWall.cs" Line="6" Column="13" />
-      <File FileName="Warcraft/Util/Functions.cs" Line="18" Column="5" />
-      <File FileName="Warcraft/Warcraft.cs" Line="63" Column="47" />
-      <File FileName="Warcraft/EA/Gene.cs" Line="8" Column="20" />
-      <File FileName="Warcraft/EA/GeneUnit.cs" Line="4" Column="18" />
+      <File FileName="Warcraft/Managers/ManagerMap.cs" Line="91" Column="37" />
+      <File FileName="Warcraft/Map/Tile.cs" Line="14" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Warcraft" expanded="True">
             <Node name="Warcraft" expanded="True">
-              <Node name="EA" expanded="True">
-                <Node name="GeneUnit.cs" selected="True" />
+              <Node name="EA" expanded="True" />
+              <Node name="Managers" expanded="True">
+                <Node name="ManagerMap.cs" selected="True" />
               </Node>
-              <Node name="Managers" expanded="True" />
+              <Node name="Map" expanded="True" />
+              <Node name="Units" expanded="True" />
               <Node name="Util" expanded="True" />
             </Node>
           </Node>

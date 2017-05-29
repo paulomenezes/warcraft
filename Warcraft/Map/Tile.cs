@@ -10,7 +10,7 @@ namespace Warcraft.Map
     {
         WATER,
 		DESERT,
-		GLASS,
+		GRASS,
         FLOREST,
         ROCK,
         NONE
@@ -56,7 +56,7 @@ namespace Warcraft.Map
                     textureX = 5;
                     textureY = 17;
                     break;
-                case TileType.GLASS:
+                case TileType.GRASS:
                     textureX = 14;
                     textureY = 18;
                     break;
@@ -69,8 +69,8 @@ namespace Warcraft.Map
                     textureY = 5;
                     break;
                 case TileType.ROCK:
-                    textureX = 0;
-                    textureY = 9;
+                    textureX = 15;
+                    textureY = 7;
                     break;
             }
 
@@ -118,7 +118,7 @@ namespace Warcraft.Map
             if (rectangle.Width >= 0)
                 spriteBatch.Draw(texture, position, rectangle, Color.White);
             //else
-            //    SelectRectangle.Draw(spriteBatch, new Rectangle(TileX * 32, TileY * 32, 32, 32));
+              //  SelectRectangle.Draw(spriteBatch, new Rectangle(TileX * 32, TileY * 32, 32, 32));
         }
 
         private bool ArrayEquals(TileType[] arr1, TileType[] arr2)

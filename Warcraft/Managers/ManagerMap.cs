@@ -87,16 +87,14 @@ namespace Warcraft.Managers
                 List<Tile> t = new List<Tile>();
                 for (int j = 0; j < Warcraft.MAP_SIZE; j++)
                 {
-                    if (noise[i, j] < 0.2f)
+                    if (noise[i, j] < 0.1f)
+                        t.Add(new Tile(i, j, TileType.FLOREST));
+                    else if (noise[i, j] >= 0.1f && noise[i, j] < 0.3f)
+                        t.Add(new Tile(i, j, TileType.GRASS));
+                    else if (noise[i, j] >= 0.3f && noise[i, j] < 0.7f)
+                        t.Add(new Tile(i, j, TileType.DESERT));
+                    else if (noise[i, j] >= 0.7f)
                         t.Add(new Tile(i, j, TileType.WATER));
-                    else if (noise[i, j] >= 0.2f && noise[i, j] < 0.4f)
-                        t.Add(new Tile(i, j, TileType.DESERT));
-                    else if (noise[i, j] >= 0.4f && noise[i, j] < 0.8f)
-                        t.Add(new Tile(i, j, TileType.GLASS));
-                    else if (noise[i, j] >= 0.8f && noise[i, j] < 0.9f)
-                        t.Add(new Tile(i, j, TileType.DESERT));
-                    else if (noise[i, j] >= 0.9f)
-                        t.Add(new Tile(i, j, TileType.GLASS));
                     //else if (noise[i, j] >= 0.8f)
                         //t.Add(new Tile(i, j, TileType.FLOREST));
                     //if (noise[i, j] < 0.5f)
@@ -153,6 +151,21 @@ namespace Warcraft.Managers
 			matches.Add(new int[] { 2, 2, 1, 1 }, new int[] { 8, 15 });
 			matches.Add(new int[] { 2, 2, 1, 2 }, new int[] { 11, 14 });
 			matches.Add(new int[] { 2, 2, 2, 1 }, new int[] { 0, 15 });
+			// Grass to Florest
+			matches.Add(new int[] { 2, 2, 2, 3 }, new int[] { 3, 7 });
+			matches.Add(new int[] { 2, 2, 3, 2 }, new int[] { 18, 6 });
+			matches.Add(new int[] { 2, 2, 3, 3 }, new int[] { 11, 5 }); //
+			matches.Add(new int[] { 2, 3, 2, 2 }, new int[] { 16, 6 });
+			matches.Add(new int[] { 2, 3, 2, 3 }, new int[] { 2, 7 });
+			//matches.Add(new int[] { 2, 3, 3, 2 }, new int[] { 0, 0 }); //
+			matches.Add(new int[] { 2, 3, 3, 3 }, new int[] { 10, 5 }); ////
+			matches.Add(new int[] { 3, 2, 2, 2 }, new int[] { 15, 6 }); //
+			//matches.Add(new int[] { 3, 2, 2, 3 }, new int[] { 0, 0 });
+			matches.Add(new int[] { 3, 2, 3, 2 }, new int[] { 0, 7 });
+			//matches.Add(new int[] { 3, 2, 3, 3 }, new int[] { 12, 5 });
+			matches.Add(new int[] { 3, 3, 2, 2 }, new int[] { 10, 6 });
+			matches.Add(new int[] { 3, 3, 2, 3 }, new int[] { 13, 5 });//
+			matches.Add(new int[] { 3, 3, 3, 2 }, new int[] { 0, 6 });
 
 			for (int i = 0; i < match.Count - 1; i++)
 			{
@@ -167,8 +180,8 @@ namespace Warcraft.Managers
                         }
                     }
 
-					if (key[0] == 0 || key[1] == 0 || 
-					    key[2] == 0 || key[3] == 0)
+					if (key[0] == 0 || key[1] == 0 || key[2] == 0 || key[3] == 0 || 
+                        key[0] == 3 || key[1] == 3 || key[2] == 3 || key[3] == 3)
 					{
 					    water.Add(new Tile(i, j));
 					}

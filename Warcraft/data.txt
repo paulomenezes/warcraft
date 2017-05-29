@@ -58005,3 +58005,2180 @@ Mover [GRUNT] X: 0 Y: 0
 Mover [TROLL_AXETHROWER] X: 0 Y: 0
 Mover [GRUNT] X: 32 Y: 0
 Mover [TROLL_AXETHROWER] X: 32 Y: 0
+##############
+Começando jogo: 5/29/2017 1:00:31 AM
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 36 Y: 3
+Adicionar [Peon] X: 25 Y: 13
+Adicionar [Peon] X: 25 Y: 13
+Adicionar [Peon] X: 25 Y: 13
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 33 Y: 26
+Mover [PEON] X: 13 Y: 39
+Mover [PEON] X: 13 Y: 39
+Mover [PEON] X: 13 Y: 39
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 43 Y: 31
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 40 Y: 37
+Mover [PEON] X: 40 Y: 37
+Mover [PEON] X: 40 Y: 37
+Mover [PEON] X: 0 Y: 1
+Mover [PEON] X: 38 Y: 22
+Começar Mineração [PEON, GoldMiner]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+##############
+Começando jogo: 5/29/2017 1:01:44 AM
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 5 Y: 43
+Adicionar [Peon] X: 37 Y: 11
+Adicionar [Peon] X: 37 Y: 11
+Adicionar [Peon] X: 37 Y: 11
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 8 Y: 14
+Mover [PEON] X: 30 Y: 27
+Mover [PEON] X: 30 Y: 27
+Mover [PEON] X: 30 Y: 27
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 38 Y: 33
+Mover [PEON] X: 18 Y: 3
+Mover [PEON] X: 18 Y: 3
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 34 Y: 19
+##############
+Começando jogo: 5/29/2017 1:02:55 AM
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 42 Y: 39
+Adicionar [Peon] X: 31 Y: 6
+Adicionar [Peon] X: 31 Y: 6
+Adicionar [Peon] X: 31 Y: 6
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 9 Y: 28
+Mover [PEON] X: 24 Y: 19
+Mover [PEON] X: 24 Y: 19
+Mover [PEON] X: 26 Y: 4
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 19 Y: 17
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 4 Y: 6
+Mover [PEON] X: 44 Y: 30
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 43 Y: 23
+##############
+Começando jogo: 5/29/2017 1:04:19 AM
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 35 Y: 23
+Adicionar [Peon] X: 44 Y: 21
+Adicionar [Peon] X: 24 Y: 33
+Adicionar [Peon] X: 24 Y: 33
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 34 Y: 29
+Mover [PEON] X: 14 Y: 42
+Mover [PEON] X: 14 Y: 42
+Mover [PEON] X: 14 Y: 42
+##############
+Começando jogo: 5/29/2017 1:04:44 AM
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 11 Y: 5
+Adicionar [Peon] X: 43 Y: 14
+Adicionar [Peon] X: 43 Y: 14
+Adicionar [Peon] X: 43 Y: 14
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 22 Y: 22
+Mover [PEON] X: 44 Y: 34
+Mover [PEON] X: 24 Y: 4
+Mover [PEON] X: 24 Y: 4
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 34 Y: 39
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 11 Y: 43
+Mover [PEON] X: 11 Y: 43
+##############
+Começando jogo: 5/29/2017 1:05:15 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 17 Y: 31
+Adicionar [Peon] X: 43 Y: 8
+Adicionar [Peon] X: 43 Y: 8
+Adicionar [Peon] X: 23 Y: 21
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 8 Y: 18
+Mover [PEON] X: 27 Y: 42
+Mover [PEON] X: 7 Y: 12
+Mover [PEON] X: 7 Y: 12
+##############
+Começando jogo: 5/29/2017 1:05:31 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 3 Y: 15
+Adicionar [Peon] X: 31 Y: 17
+Adicionar [Peon] X: 31 Y: 17
+Adicionar [Peon] X: 10 Y: 29
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 30 Y: 23
+Mover [PEON] X: 10 Y: 35
+Mover [PEON] X: 10 Y: 35
+Mover [PEON] X: 10 Y: 35
+##############
+Começando jogo: 5/29/2017 1:06:03 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 36 Y: 43
+Adicionar [Peon] X: 20 Y: 21
+Adicionar [Peon] X: 20 Y: 21
+Adicionar [Peon] X: 20 Y: 21
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 25 Y: 4
+Mover [PEON] X: 5 Y: 16
+Mover [PEON] X: 5 Y: 16
+Mover [PEON] X: 5 Y: 16
+##############
+Começando jogo: 5/29/2017 1:07:43 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 40 Y: 41
+Adicionar [Peon] X: 26 Y: 43
+Adicionar [Peon] X: 26 Y: 43
+Adicionar [Peon] X: 6 Y: 14
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 41 Y: 29
+Mover [PEON] X: 21 Y: 42
+Mover [PEON] X: 21 Y: 42
+Mover [PEON] X: 43 Y: 12
+##############
+Começando jogo: 5/29/2017 1:08:48 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 25 Y: 27
+Adicionar [Peon] X: 29 Y: 34
+Adicionar [Peon] X: 9 Y: 5
+Adicionar [Peon] X: 9 Y: 5
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 22 Y: 8
+Mover [PEON] X: 44 Y: 21
+Mover [PEON] X: 44 Y: 21
+Mover [PEON] X: 44 Y: 21
+##############
+Começando jogo: 5/29/2017 1:09:45 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 26 Y: 42
+Adicionar [Peon] X: 10 Y: 20
+Adicionar [Peon] X: 10 Y: 20
+Adicionar [Peon] X: 10 Y: 20
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 39 Y: 40
+Mover [PEON] X: 19 Y: 10
+Mover [PEON] X: 19 Y: 10
+Mover [PEON] X: 19 Y: 10
+##############
+Começando jogo: 5/29/2017 1:10:34 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 24 Y: 24
+Adicionar [Peon] X: 28 Y: 32
+Adicionar [Peon] X: 8 Y: 44
+Adicionar [Peon] X: 8 Y: 44
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 21 Y: 5
+Mover [PEON] X: 43 Y: 18
+Mover [PEON] X: 23 Y: 30
+Mover [PEON] X: 23 Y: 30
+##############
+Começando jogo: 5/29/2017 1:11:46 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 23 Y: 21
+Adicionar [Peon] X: 7 Y: 40
+Adicionar [Peon] X: 7 Y: 40
+Adicionar [Peon] X: 7 Y: 40
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 31 Y: 34
+Mover [PEON] X: 11 Y: 5
+Mover [PEON] X: 11 Y: 5
+Mover [PEON] X: 33 Y: 17
+##############
+Começando jogo: 5/29/2017 1:13:10 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 27 Y: 23
+Adicionar [Peon] X: 33 Y: 13
+Adicionar [Peon] X: 33 Y: 13
+Adicionar [Peon] X: 13 Y: 25
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 39 Y: 44
+Mover [PEON] X: 19 Y: 14
+Mover [PEON] X: 19 Y: 14
+Mover [PEON] X: 19 Y: 14
+##############
+Começando jogo: 5/29/2017 1:14:18 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 29 Y: 11
+Adicionar [Peon] X: 12 Y: 31
+Adicionar [Peon] X: 12 Y: 31
+Adicionar [Peon] X: 12 Y: 31
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 5 Y: 26
+Mover [PEON] X: 27 Y: 38
+Mover [PEON] X: 27 Y: 38
+Mover [PEON] X: 27 Y: 38
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 11 Y: 5
+Mover [PEON] X: 33 Y: 18
+Mover [PEON] X: 33 Y: 18
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 26 Y: 4
+##############
+Começando jogo: 5/29/2017 1:16:48 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 9 Y: 9
+Adicionar [Peon] X: 35 Y: 29
+Adicionar [Peon] X: 35 Y: 29
+Adicionar [Peon] X: 35 Y: 29
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 25 Y: 41
+Mover [PEON] X: 5 Y: 12
+Mover [PEON] X: 5 Y: 12
+Mover [PEON] X: 27 Y: 24
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 9 Y: 22
+##############
+Começando jogo: 5/29/2017 1:17:44 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 11 Y: 13
+Adicionar [Peon] X: 17 Y: 3
+Adicionar [Peon] X: 17 Y: 3
+Adicionar [Peon] X: 17 Y: 3
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 25 Y: 4
+Mover [PEON] X: 5 Y: 16
+Mover [PEON] X: 5 Y: 16
+Mover [PEON] X: 5 Y: 16
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 28 Y: 44
+Mover [PEON] X: 28 Y: 44
+Mover [PEON] X: 35 Y: 11
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 21 Y: 14
+##############
+Começando jogo: 5/29/2017 1:18:58 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 37 Y: 24
+Adicionar [Peon] X: 43 Y: 14
+Adicionar [Peon] X: 43 Y: 14
+Adicionar [Peon] X: 43 Y: 14
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 22 Y: 32
+Mover [PEON] X: 24 Y: 15
+Mover [PEON] X: 24 Y: 15
+Mover [PEON] X: 24 Y: 15
+##############
+Começando jogo: 5/29/2017 1:19:48 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 34 Y: 34
+Adicionar [Peon] X: 40 Y: 24
+Adicionar [Peon] X: 20 Y: 36
+Adicionar [Peon] X: 20 Y: 36
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 3 Y: 23
+Mover [PEON] X: 25 Y: 36
+Mover [PEON] X: 25 Y: 36
+Mover [PEON] X: 25 Y: 36
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 6 Y: 37
+Mover [PEON] X: 28 Y: 8
+##############
+Começando jogo: 5/29/2017 1:20:36 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 16 Y: 5
+Adicionar [Peon] X: 22 Y: 37
+Adicionar [Peon] X: 22 Y: 37
+Adicionar [Peon] X: 44 Y: 7
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 41 Y: 30
+Mover [PEON] X: 21 Y: 43
+Mover [PEON] X: 21 Y: 43
+Mover [PEON] X: 21 Y: 43
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 12 Y: 26
+Mover [PEON] X: 34 Y: 39
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 7 Y: 22
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 5 Y: 12
+Mover [PEON] X: 0 Y: 1
+Mover [PEON] X: 6 Y: 33
+Começar Mineração [PEON, GoldMiner]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Mover [PEON] X: 0 Y: 1
+Mover [PEON] X: 6 Y: 33
+Começar Mineração [PEON, GoldMiner]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Adicionar [Peon] X: 23 Y: 47
+Mover [PEON] X: 23 Y: 47
+Adicionar [Grunt] X: 35 Y: 42
+Mover [GRUNT] X: 35 Y: 42
+Mover [GRUNT] X: 32 Y: 0
+Adicionar [TrollAxeTrower] X: 35 Y: 42
+Mover [TROLL_AXETHROWER] X: 35 Y: 42
+Mover [TROLL_AXETHROWER] X: 0 Y: 0
+Adicionar [Peon] X: 23 Y: 47
+Mover [PEON] X: 23 Y: 47
+Adicionar [Grunt] X: 13 Y: 29
+Mover [GRUNT] X: 13 Y: 29
+Mover [GRUNT] X: 0 Y: 32
+Adicionar [TrollAxeTrower] X: 13 Y: 29
+Mover [TROLL_AXETHROWER] X: 13 Y: 29
+Mover [TROLL_AXETHROWER] X: 32 Y: 32
+Mover [PEON] X: 21 Y: 43
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 21 Y: 43
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 0 Y: 1
+Mover [PEON] X: 38 Y: 22
+Começar Mineração [PEON, GoldMiner]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [GRUNT] X: 0 Y: 32
+Mover [GRUNT] X: 32 Y: 0
+Mover [TROLL_AXETHROWER] X: 32 Y: 0
+Mover [PEON] X: 0 Y: 1
+Mover [PEON] X: 6 Y: 33
+Começar Mineração [PEON, GoldMiner]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Adicionar [Peon] X: 43 Y: 34
+Mover [PEON] X: 43 Y: 34
+Adicionar [Grunt] X: 8 Y: 25
+Mover [GRUNT] X: 8 Y: 25
+Mover [GRUNT] X: 32 Y: 32
+Adicionar [TrollAxeTrower] X: 8 Y: 25
+Mover [TROLL_AXETHROWER] X: 8 Y: 25
+Mover [TROLL_AXETHROWER] X: 32 Y: 0
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 25
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 7 Y: 26
+Mover [GRUNT] X: 32 Y: 0
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Adicionar [Peon] X: 23 Y: 47
+Mover [PEON] X: 23 Y: 47
+Adicionar [Grunt] X: 6 Y: 15
+Mover [GRUNT] X: 6 Y: 15
+Mover [GRUNT] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 6 Y: 15
+Mover [TROLL_AXETHROWER] X: 6 Y: 15
+Mover [TROLL_AXETHROWER] X: 0 Y: 32
+Mover [PEON] X: 21 Y: 43
+Entregando Gold [PEON, GoldMiner]
+Mover [TROLL_AXETHROWER] X: 0 Y: 32
+Mover [PEON] X: 41 Y: 30
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 21 Y: 43
+Entregando Gold [PEON, GoldMiner]
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 23 Y: 31
+Mover [GRUNT] X: 0 Y: 0
+Mover [PEON] X: 21 Y: 43
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [GRUNT] X: 32 Y: 0
+Mover [TROLL_AXETHROWER] X: 0 Y: 0
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [GRUNT] X: 0 Y: 32
+Mover [PEON] X: 41 Y: 30
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 21 Y: 43
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 21 Y: 43
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 21 Y: 43
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 41 Y: 30
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [GRUNT] X: 0 Y: 0
+Mover [GRUNT] X: 0 Y: 0
+Mover [GRUNT] X: 0 Y: 32
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [PEON] X: 21 Y: 43
+Entregando Gold [PEON, GoldMiner]
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 4
+Mover [GRUNT] X: 0 Y: 0
+Mover [GRUNT] X: 0 Y: 0
+Mover [PEON] X: 41 Y: 30
+Entregando Gold [PEON, GoldMiner]
+Mover [GRUNT] X: 0 Y: 0
+Mover [GRUNT] X: 32 Y: 0
+Mover [PEON] X: 21 Y: 43
+Entregando Gold [PEON, GoldMiner]
+Mover [GRUNT] X: 0 Y: 0
+Mover [PEON] X: 21 Y: 43
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 41 Y: 30
+Entregando Gold [PEON, GoldMiner]
+##############
+Começando jogo: 5/29/2017 1:22:37 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 33 Y: 25
+Adicionar [Peon] X: 39 Y: 15
+Adicionar [Peon] X: 19 Y: 28
+Adicionar [Peon] X: 19 Y: 28
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 33 Y: 23
+Mover [PEON] X: 33 Y: 23
+Mover [PEON] X: 13 Y: 35
+Mover [PEON] X: 13 Y: 35
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 42 Y: 29
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 19 Y: 5
+Mover [PEON] X: 19 Y: 5
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 34 Y: 29
+##############
+Começando jogo: 5/29/2017 1:23:58 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 26 Y: 34
+Adicionar [Peon] X: 10 Y: 11
+Adicionar [Peon] X: 32 Y: 24
+Adicionar [Peon] X: 32 Y: 24
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 18 Y: 25
+Mover [PEON] X: 40 Y: 37
+Mover [PEON] X: 40 Y: 37
+Mover [PEON] X: 40 Y: 37
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 5 Y: 44
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 3 Y: 5
+Mover [PEON] X: 3 Y: 5
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 22 Y: 22
+##############
+Começando jogo: 5/29/2017 1:25:09 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 33 Y: 41
+Adicionar [Peon] X: 16 Y: 18
+Adicionar [Peon] X: 38 Y: 31
+Adicionar [Peon] X: 38 Y: 31
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 44 Y: 20
+Mover [PEON] X: 24 Y: 32
+Mover [PEON] X: 24 Y: 32
+Mover [PEON] X: 4 Y: 44
+##############
+Começando jogo: 5/29/2017 1:29:51 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 40 Y: 9
+Adicionar [Peon] X: 44 Y: 16
+Adicionar [Peon] X: 44 Y: 16
+Adicionar [Peon] X: 44 Y: 16
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 17 Y: 32
+Mover [PEON] X: 17 Y: 32
+Mover [PEON] X: 39 Y: 44
+Mover [PEON] X: 39 Y: 44
+##############
+Começando jogo: 5/29/2017 1:31:38 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 30 Y: 24
+Adicionar [Peon] X: 30 Y: 8
+Adicionar [Peon] X: 30 Y: 8
+Adicionar [Peon] X: 30 Y: 8
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 44 Y: 41
+Mover [PEON] X: 24 Y: 11
+Mover [PEON] X: 24 Y: 11
+Mover [PEON] X: 24 Y: 11
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 5 Y: 10
+Mover [PEON] X: 27 Y: 22
+Mover [PEON] X: 7 Y: 14
+##############
+Começando jogo: 5/29/2017 1:31:59 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 7 Y: 35
+Adicionar [Peon] X: 33 Y: 13
+Adicionar [Peon] X: 33 Y: 13
+Adicionar [Peon] X: 13 Y: 25
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 3 Y: 38
+Mover [PEON] X: 25 Y: 8
+Mover [PEON] X: 25 Y: 8
+Mover [PEON] X: 25 Y: 8
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 33 Y: 40
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 13 Y: 38
+Mover [PEON] X: 35 Y: 8
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 30 Y: 4
+##############
+Começando jogo: 5/29/2017 1:32:25 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 31 Y: 6
+Adicionar [Peon] X: 37 Y: 38
+Adicionar [Peon] X: 17 Y: 9
+Adicionar [Peon] X: 17 Y: 9
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 4 Y: 3
+Mover [PEON] X: 26 Y: 16
+Mover [PEON] X: 26 Y: 16
+Mover [PEON] X: 26 Y: 16
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 33 Y: 23
+Mover [PEON] X: 13 Y: 35
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 30 Y: 41
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 36 Y: 43
+##############
+Começando jogo: 5/29/2017 1:32:55 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 27 Y: 23
+Adicionar [Peon] X: 33 Y: 13
+Adicionar [Peon] X: 33 Y: 13
+Adicionar [Peon] X: 13 Y: 25
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 18 Y: 25
+Mover [PEON] X: 18 Y: 25
+Mover [PEON] X: 40 Y: 37
+Mover [PEON] X: 40 Y: 37
+##############
+Começando jogo: 5/29/2017 1:33:36 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 39 Y: 40
+Adicionar [Peon] X: 23 Y: 18
+Adicionar [Peon] X: 23 Y: 18
+Adicionar [Peon] X: 23 Y: 18
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 14 Y: 9
+Mover [PEON] X: 19 Y: 19
+Mover [PEON] X: 16 Y: 34
+Mover [PEON] X: 16 Y: 34
+##############
+Começando jogo: 5/29/2017 1:33:47 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 25 Y: 4
+Adicionar [Peon] X: 9 Y: 24
+Adicionar [Peon] X: 9 Y: 24
+Adicionar [Peon] X: 31 Y: 36
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 44 Y: 8
+Mover [PEON] X: 23 Y: 21
+Mover [PEON] X: 26 Y: 12
+Mover [PEON] X: 26 Y: 12
+##############
+Começando jogo: 5/29/2017 1:34:00 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 12 Y: 36
+Adicionar [Peon] X: 16 Y: 43
+Adicionar [Peon] X: 38 Y: 14
+Adicionar [Peon] X: 38 Y: 14
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 33 Y: 16
+Mover [PEON] X: 13 Y: 28
+Mover [PEON] X: 13 Y: 28
+Mover [PEON] X: 13 Y: 28
+##############
+Começando jogo: 5/29/2017 1:34:11 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 37 Y: 43
+Adicionar [Peon] X: 21 Y: 21
+Adicionar [Peon] X: 21 Y: 21
+Adicionar [Peon] X: 21 Y: 21
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 17 Y: 23
+Mover [PEON] X: 39 Y: 35
+Mover [PEON] X: 39 Y: 35
+Mover [PEON] X: 39 Y: 35
+##############
+Começando jogo: 5/29/2017 1:35:11 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 17 Y: 22
+Adicionar [Peon] X: 43 Y: 42
+Adicionar [Peon] X: 43 Y: 42
+Adicionar [Peon] X: 43 Y: 42
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 32 Y: 8
+Mover [PEON] X: 12 Y: 21
+Mover [PEON] X: 12 Y: 21
+Mover [PEON] X: 12 Y: 21
+##############
+Começando jogo: 5/29/2017 1:35:33 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 21 Y: 44
+Adicionar [Peon] X: 4 Y: 21
+Adicionar [Peon] X: 4 Y: 21
+Adicionar [Peon] X: 4 Y: 21
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 33 Y: 16
+Mover [PEON] X: 13 Y: 28
+Mover [PEON] X: 13 Y: 28
+Mover [PEON] X: 13 Y: 28
+##############
+Começando jogo: 5/29/2017 1:35:55 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 20 Y: 41
+Adicionar [Peon] X: 3 Y: 19
+Adicionar [Peon] X: 3 Y: 19
+Adicionar [Peon] X: 25 Y: 31
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 6 Y: 42
+Mover [PEON] X: 6 Y: 42
+Mover [PEON] X: 28 Y: 13
+Mover [PEON] X: 28 Y: 13
+##############
+Começando jogo: 5/29/2017 1:36:11 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 19 Y: 37
+Adicionar [Peon] X: 25 Y: 27
+Adicionar [Peon] X: 5 Y: 39
+Adicionar [Peon] X: 5 Y: 39
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 44 Y: 21
+Mover [PEON] X: 24 Y: 33
+Mover [PEON] X: 4 Y: 3
+Mover [PEON] X: 4 Y: 3
+##############
+Começando jogo: 5/29/2017 1:36:31 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 37 Y: 5
+Adicionar [Peon] X: 42 Y: 37
+Adicionar [Peon] X: 42 Y: 37
+Adicionar [Peon] X: 42 Y: 37
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 7 Y: 13
+Mover [PEON] X: 29 Y: 26
+Mover [PEON] X: 29 Y: 26
+Mover [PEON] X: 29 Y: 26
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 16 Y: 16
+Mover [PEON] X: 4 Y: 25
+Mover [PEON] X: 4 Y: 25
+##############
+Começando jogo: 5/29/2017 1:37:09 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 39 Y: 26
+Adicionar [Peon] X: 23 Y: 3
+Adicionar [Peon] X: 3 Y: 16
+Adicionar [Peon] X: 3 Y: 16
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 41 Y: 18
+Mover [PEON] X: 20 Y: 30
+Mover [PEON] X: 20 Y: 30
+Mover [PEON] X: 20 Y: 30
+##############
+Começando jogo: 5/29/2017 1:37:30 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 26 Y: 44
+Adicionar [Peon] X: 11 Y: 5
+Adicionar [Peon] X: 11 Y: 5
+Adicionar [Peon] X: 11 Y: 5
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 25 Y: 12
+Mover [PEON] X: 5 Y: 24
+Mover [PEON] X: 5 Y: 24
+Mover [PEON] X: 5 Y: 24
+##############
+Começando jogo: 5/29/2017 1:37:48 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 37 Y: 34
+Adicionar [Peon] X: 20 Y: 11
+Adicionar [Peon] X: 20 Y: 11
+Adicionar [Peon] X: 20 Y: 11
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 18 Y: 38
+Mover [PEON] X: 40 Y: 9
+Mover [PEON] X: 40 Y: 9
+Mover [PEON] X: 40 Y: 9
+##############
+Começando jogo: 5/29/2017 1:38:07 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 4 Y: 27
+Adicionar [Peon] X: 10 Y: 17
+Adicionar [Peon] X: 10 Y: 17
+Adicionar [Peon] X: 10 Y: 17
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 27 Y: 28
+Mover [PEON] X: 7 Y: 40
+Mover [PEON] X: 29 Y: 10
+Mover [PEON] X: 29 Y: 10
+##############
+Começando jogo: 5/29/2017 1:38:20 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 8 Y: 7
+Adicionar [Peon] X: 34 Y: 26
+Adicionar [Peon] X: 34 Y: 26
+Adicionar [Peon] X: 34 Y: 26
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 28 Y: 4
+Mover [PEON] X: 8 Y: 16
+Mover [PEON] X: 8 Y: 16
+Mover [PEON] X: 8 Y: 16
+##############
+Começando jogo: 5/29/2017 1:38:32 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 36 Y: 6
+Adicionar [Peon] X: 42 Y: 38
+Adicionar [Peon] X: 42 Y: 38
+Adicionar [Peon] X: 22 Y: 8
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 42 Y: 21
+Mover [PEON] X: 20 Y: 35
+Mover [PEON] X: 17 Y: 39
+Mover [PEON] X: 17 Y: 39
+##############
+Começando jogo: 5/29/2017 1:38:43 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 37 Y: 10
+Adicionar [Peon] X: 21 Y: 29
+Adicionar [Peon] X: 21 Y: 29
+Adicionar [Peon] X: 21 Y: 29
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 19 Y: 4
+Mover [PEON] X: 41 Y: 16
+Mover [PEON] X: 41 Y: 16
+Mover [PEON] X: 41 Y: 16
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 20 Y: 36
+##############
+Começando jogo: 5/29/2017 1:39:07 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 42 Y: 30
+Adicionar [Peon] X: 27 Y: 33
+Adicionar [Peon] X: 27 Y: 33
+Adicionar [Peon] X: 27 Y: 33
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 3 Y: 5
+Mover [PEON] X: 25 Y: 18
+Mover [PEON] X: 25 Y: 18
+Mover [PEON] X: 25 Y: 18
+##############
+Começando jogo: 5/29/2017 1:39:26 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 37 Y: 38
+Adicionar [Peon] X: 42 Y: 28
+Adicionar [Peon] X: 42 Y: 28
+Adicionar [Peon] X: 42 Y: 28
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 22 Y: 8
+Mover [PEON] X: 44 Y: 21
+Mover [PEON] X: 44 Y: 21
+Mover [PEON] X: 24 Y: 33
+##############
+Começando jogo: 5/29/2017 1:40:02 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 42 Y: 38
+Adicionar [Peon] X: 26 Y: 16
+Adicionar [Peon] X: 26 Y: 16
+Adicionar [Peon] X: 26 Y: 16
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 14 Y: 42
+Mover [PEON] X: 36 Y: 12
+Mover [PEON] X: 36 Y: 12
+Mover [PEON] X: 36 Y: 12
+##############
+Começando jogo: 5/29/2017 1:40:21 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 16 Y: 10
+Adicionar [Peon] X: 20 Y: 17
+Adicionar [Peon] X: 42 Y: 29
+Adicionar [Peon] X: 42 Y: 29
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 19 Y: 23
+Mover [PEON] X: 41 Y: 35
+Mover [PEON] X: 41 Y: 35
+Mover [PEON] X: 41 Y: 35
+##############
+Começando jogo: 5/29/2017 1:40:34 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 35 Y: 36
+Adicionar [Peon] X: 19 Y: 13
+Adicionar [Peon] X: 19 Y: 13
+Adicionar [Peon] X: 19 Y: 13
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 30 Y: 32
+Mover [PEON] X: 10 Y: 3
+Mover [PEON] X: 10 Y: 3
+Mover [PEON] X: 10 Y: 3
+##############
+Começando jogo: 5/29/2017 1:40:46 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 28 Y: 40
+Adicionar [Peon] X: 32 Y: 6
+Adicionar [Peon] X: 11 Y: 18
+Adicionar [Peon] X: 11 Y: 18
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 21 Y: 25
+Mover [PEON] X: 42 Y: 37
+Mover [PEON] X: 42 Y: 37
+Mover [PEON] X: 42 Y: 37
+##############
+Começando jogo: 5/29/2017 1:40:59 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 44 Y: 44
+Adicionar [Peon] X: 28 Y: 21
+Adicionar [Peon] X: 28 Y: 21
+Adicionar [Peon] X: 28 Y: 21
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 11 Y: 38
+Mover [PEON] X: 33 Y: 8
+Mover [PEON] X: 33 Y: 8
+Mover [PEON] X: 33 Y: 8
+##############
+Começando jogo: 5/29/2017 1:41:11 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 35 Y: 19
+Adicionar [Peon] X: 41 Y: 9
+Adicionar [Peon] X: 20 Y: 22
+Adicionar [Peon] X: 20 Y: 22
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 38 Y: 36
+Mover [PEON] X: 18 Y: 7
+Mover [PEON] X: 18 Y: 7
+Mover [PEON] X: 35 Y: 13
+##############
+Começando jogo: 5/29/2017 1:41:30 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 41 Y: 4
+Adicionar [Peon] X: 4 Y: 36
+Adicionar [Peon] X: 4 Y: 36
+Adicionar [Peon] X: 4 Y: 36
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 28 Y: 40
+Mover [PEON] X: 8 Y: 11
+Mover [PEON] X: 8 Y: 11
+Mover [PEON] X: 30 Y: 23
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 35 Y: 32
+Mover [PEON] X: 15 Y: 44
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 18 Y: 35
+##############
+Começando jogo: 5/29/2017 1:42:09 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 10 Y: 20
+Adicionar [Peon] X: 36 Y: 40
+Adicionar [Peon] X: 36 Y: 40
+Adicionar [Peon] X: 36 Y: 40
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 32 Y: 29
+Mover [PEON] X: 12 Y: 42
+Mover [PEON] X: 12 Y: 42
+Mover [PEON] X: 12 Y: 42
+##############
+Começando jogo: 5/29/2017 1:43:14 AM
+##############
+Começando jogo: 5/29/2017 1:43:34 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 26 Y: 36
+Adicionar [Peon] X: 31 Y: 26
+Adicionar [Peon] X: 11 Y: 38
+Adicionar [Peon] X: 11 Y: 38
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 29 Y: 7
+Mover [PEON] X: 8 Y: 19
+Mover [PEON] X: 8 Y: 19
+Mover [PEON] X: 8 Y: 19
+##############
+Começando jogo: 5/29/2017 1:43:59 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 44 Y: 41
+Adicionar [Peon] X: 28 Y: 18
+Adicionar [Peon] X: 28 Y: 18
+Adicionar [Peon] X: 42 Y: 6
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 26 Y: 18
+Mover [PEON] X: 43 Y: 43
+Mover [PEON] X: 43 Y: 43
+Mover [PEON] X: 43 Y: 43
+##############
+Começando jogo: 5/29/2017 1:44:20 AM
+##############
+Começando jogo: 5/29/2017 1:45:10 AM
+##############
+Começando jogo: 5/29/2017 1:45:26 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 12 Y: 35
+Adicionar [Peon] X: 38 Y: 13
+Adicionar [Peon] X: 38 Y: 13
+Adicionar [Peon] X: 38 Y: 13
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 6 Y: 9
+Mover [PEON] X: 28 Y: 21
+Mover [PEON] X: 28 Y: 10
+Mover [PEON] X: 28 Y: 10
+##############
+Começando jogo: 5/29/2017 1:45:54 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 13 Y: 44
+Adicionar [Peon] X: 11 Y: 8
+Adicionar [Peon] X: 11 Y: 8
+Adicionar [Peon] X: 11 Y: 8
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 29 Y: 34
+Mover [PEON] X: 9 Y: 5
+Mover [PEON] X: 9 Y: 5
+Mover [PEON] X: 9 Y: 5
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 35 Y: 15
+Mover [PEON] X: 7 Y: 23
+Mover [PEON] X: 37 Y: 39
+##############
+Começando jogo: 5/29/2017 1:46:19 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 36 Y: 31
+Adicionar [Peon] X: 14 Y: 37
+Adicionar [Peon] X: 14 Y: 37
+Adicionar [Peon] X: 14 Y: 37
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 12 Y: 4
+Mover [PEON] X: 25 Y: 10
+Mover [PEON] X: 25 Y: 10
+Mover [PEON] X: 25 Y: 10
+##############
+Começando jogo: 5/29/2017 1:46:36 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 27 Y: 23
+Adicionar [Peon] X: 13 Y: 25
+Adicionar [Peon] X: 13 Y: 25
+Adicionar [Peon] X: 13 Y: 25
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 36 Y: 30
+Mover [PEON] X: 16 Y: 42
+Mover [PEON] X: 16 Y: 42
+Mover [PEON] X: 16 Y: 42
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 25 Y: 32
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 23 Y: 21
+Mover [PEON] X: 3 Y: 33
+Mover [PEON] X: 3 Y: 33
+##############
+Começando jogo: 5/29/2017 1:47:58 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 44 Y: 17
+Adicionar [Peon] X: 8 Y: 7
+Adicionar [Peon] X: 30 Y: 19
+Adicionar [Peon] X: 30 Y: 19
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 42 Y: 42
+Mover [PEON] X: 12 Y: 13
+Mover [PEON] X: 12 Y: 13
+Mover [PEON] X: 34 Y: 25
+##############
+Começando jogo: 5/29/2017 1:52:22 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 5 Y: 16
+Adicionar [Peon] X: 9 Y: 24
+Adicionar [Peon] X: 31 Y: 36
+Adicionar [Peon] X: 31 Y: 36
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 11 Y: 5
+Mover [PEON] X: 33 Y: 18
+Mover [PEON] X: 33 Y: 18
+Mover [PEON] X: 33 Y: 18
+##############
+Começando jogo: 5/29/2017 1:54:23 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 33 Y: 32
+Adicionar [Peon] X: 11 Y: 8
+Adicionar [Peon] X: 11 Y: 8
+Adicionar [Peon] X: 11 Y: 8
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 39 Y: 11
+Mover [PEON] X: 23 Y: 9
+Mover [PEON] X: 41 Y: 35
+Mover [PEON] X: 41 Y: 35
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 9 Y: 28
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 3 Y: 34
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 44 Y: 7
+Mover [PEON] X: 44 Y: 7
+##############
+Começando jogo: 5/29/2017 1:55:05 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 43 Y: 33
+Adicionar [Peon] X: 6 Y: 23
+Adicionar [Peon] X: 6 Y: 23
+Adicionar [Peon] X: 6 Y: 23
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 18 Y: 44
+Mover [PEON] X: 40 Y: 14
+Mover [PEON] X: 40 Y: 14
+Mover [PEON] X: 40 Y: 14
+##############
+Começando jogo: 5/29/2017 1:55:53 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 18 Y: 16
+Adicionar [Peon] X: 24 Y: 6
+Adicionar [Peon] X: 3 Y: 19
+Adicionar [Peon] X: 3 Y: 19
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 13 Y: 15
+Mover [PEON] X: 35 Y: 27
+Mover [PEON] X: 35 Y: 27
+Mover [PEON] X: 35 Y: 27
+##############
+Começando jogo: 5/29/2017 1:56:44 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 19 Y: 37
+Adicionar [Peon] X: 3 Y: 15
+Adicionar [Peon] X: 3 Y: 15
+Adicionar [Peon] X: 3 Y: 15
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 42 Y: 34
+Mover [PEON] X: 13 Y: 11
+Mover [PEON] X: 13 Y: 11
+Mover [PEON] X: 17 Y: 10
+##############
+Começando jogo: 5/29/2017 1:57:17 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 3 Y: 27
+Adicionar [Peon] X: 7 Y: 14
+Adicionar [Peon] X: 29 Y: 5
+Adicionar [Peon] X: 29 Y: 5
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 10 Y: 9
+Mover [PEON] X: 14 Y: 13
+Mover [PEON] X: 14 Y: 13
+Mover [PEON] X: 14 Y: 13
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 34 Y: 19
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 42 Y: 34
+Mover [PEON] X: 22 Y: 4
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 18 Y: 11
+##############
+Começando jogo: 5/29/2017 1:58:07 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 26 Y: 8
+Adicionar [Peon] X: 29 Y: 15
+Adicionar [Peon] X: 29 Y: 15
+Adicionar [Peon] X: 29 Y: 15
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 5 Y: 26
+Mover [PEON] X: 44 Y: 39
+Mover [PEON] X: 44 Y: 39
+Mover [PEON] X: 44 Y: 39
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 8 Y: 37
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 30 Y: 9
+Mover [PEON] X: 10 Y: 21
+Mover [PEON] X: 10 Y: 21
+Mover [PEON] X: 0 Y: 1
+Mover [PEON] X: 6 Y: 33
+Começar Mineração [PEON, GoldMiner]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Mover [PEON] X: 5 Y: 26
+Entregando Gold [PEON, GoldMiner]
+Adicionar [Peon] X: 7 Y: 30
+Mover [PEON] X: 7 Y: 30
+Adicionar [Grunt] X: 9 Y: 40
+Mover [GRUNT] X: 9 Y: 40
+Mover [GRUNT] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 9 Y: 40
+Mover [TROLL_AXETHROWER] X: 9 Y: 40
+Mover [TROLL_AXETHROWER] X: 0 Y: 32
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 0 Y: 1
+Mover [PEON] X: 38 Y: 22
+Começar Mineração [PEON, GoldMiner]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Mover [PEON] X: 0 Y: 1
+Mover [PEON] X: 38 Y: 22
+Começar Mineração [PEON, GoldMiner]
+Mover [PEON] X: 0 Y: 1
+Mover [PEON] X: 38 Y: 22
+Começar Mineração [PEON, GoldMiner]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Mover [TROLL_AXETHROWER] X: 0 Y: 32
+Mover [TROLL_AXETHROWER] X: 0 Y: 32
+Mover [TROLL_AXETHROWER] X: 32 Y: 0
+Mover [PEON] X: 5 Y: 26
+Entregando Gold [PEON, GoldMiner]
+Adicionar [Peon] X: 46 Y: 43
+Mover [PEON] X: 46 Y: 43
+Adicionar [Grunt] X: 31 Y: 12
+Mover [GRUNT] X: 31 Y: 12
+Mover [GRUNT] X: 0 Y: 0
+Adicionar [TrollAxeTrower] X: 31 Y: 12
+Mover [TROLL_AXETHROWER] X: 31 Y: 12
+Mover [TROLL_AXETHROWER] X: 0 Y: 0
+Adicionar [Peon] X: 46 Y: 43
+Mover [PEON] X: 46 Y: 43
+Adicionar [Peon] X: 46 Y: 43
+Mover [PEON] X: 46 Y: 43
+Adicionar [Grunt] X: 11 Y: 24
+Mover [GRUNT] X: 11 Y: 24
+Mover [GRUNT] X: 32 Y: 0
+Adicionar [Grunt] X: 11 Y: 24
+Mover [GRUNT] X: 11 Y: 24
+Mover [GRUNT] X: 32 Y: 32
+Adicionar [TrollAxeTrower] X: 11 Y: 24
+Mover [TROLL_AXETHROWER] X: 11 Y: 24
+Mover [TROLL_AXETHROWER] X: 32 Y: 32
+Adicionar [TrollAxeTrower] X: 11 Y: 24
+Mover [TROLL_AXETHROWER] X: 11 Y: 24
+Mover [TROLL_AXETHROWER] X: 0 Y: 32
+Mover [TROLL_AXETHROWER] X: 0 Y: 0
+Mover [TROLL_AXETHROWER] X: 0 Y: 0
+Mover [TROLL_AXETHROWER] X: 0 Y: 0
+Mover [PEON] X: 44 Y: 39
+Entregando Gold [PEON, GoldMiner]
+Mover [TROLL_AXETHROWER] X: 0 Y: 0
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 44 Y: 39
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 44 Y: 39
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 5 Y: 26
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 44 Y: 39
+Entregando Gold [PEON, GoldMiner]
+Mover [GRUNT] X: 5 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [PEON] X: 5 Y: 26
+Entregando Gold [PEON, GoldMiner]
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 3
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 0
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 4 Y: 1
+Mover [GRUNT] X: 2 Y: 2
+Mover [GRUNT] X: 0 Y: 0
+Mover [GRUNT] X: 0 Y: 0
+Mover [GRUNT] X: 32 Y: 32
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 44 Y: 39
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 44 Y: 39
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 5 Y: 26
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 44 Y: 39
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 5 Y: 26
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 44 Y: 39
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 44 Y: 39
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [GRUNT] X: 0 Y: 0
+Mover [PEON] X: 5 Y: 26
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 44 Y: 39
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 6 Y: 33
+Minerando [PEON, GoldMiner]
+Mover [PEON] X: 5 Y: 26
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 44 Y: 39
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 44 Y: 39
+Entregando Gold [PEON, GoldMiner]
+Mover [PEON] X: 38 Y: 22
+Minerando [PEON, GoldMiner]
+##############
+Começando jogo: 5/29/2017 1:59:57 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 21 Y: 16
+Adicionar [Peon] X: 24 Y: 23
+Adicionar [Peon] X: 4 Y: 36
+Adicionar [Peon] X: 4 Y: 36
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 12 Y: 7
+Mover [PEON] X: 12 Y: 7
+Mover [PEON] X: 34 Y: 20
+Mover [PEON] X: 34 Y: 20
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 43 Y: 9
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 41 Y: 26
+##############
+Começando jogo: 5/29/2017 2:01:28 AM
+Adicionar [Peasant] X: 30 Y: 23
+Adicionar [Gold Mine] X: 6 Y: 33
+Adicionar [Gold Mine] X: 45 Y: 5
+Adicionar [Gold Mine] X: 38 Y: 22
+Adicionar [Peon] X: 9 Y: 24
+Adicionar [Peon] X: 12 Y: 31
+Adicionar [Peon] X: 34 Y: 31
+Adicionar [Peon] X: 34 Y: 31
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Construindo Predio [GREAT_HALL]
+Mover [PEON] X: 28 Y: 17
+Mover [PEON] X: 21 Y: 44
+Mover [PEON] X: 21 Y: 44
+Mover [PEON] X: 21 Y: 44
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 11 Y: 27
+Mover [PEON] X: 21 Y: 30
+Mover [PEON] X: 13 Y: 10
+Mover [PEON] X: 0 Y: 1
+Construindo Predio [ORC_BARRACKS]
+Mover [PEON] X: 16 Y: 19
+Mover [PEON] X: 0 Y: 1
+Mover [PEON] X: 6 Y: 33
+Começar Mineração [PEON, GoldMiner]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Mover [PEON] X: 0 Y: 1
+Mover [PEON] X: 38 Y: 22
+Começar Mineração [PEON, GoldMiner]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Mover [PEON] X: 0 Y: 1
+Mover [PEON] X: 6 Y: 33
+Começar Mineração [PEON, GoldMiner]
+Construir Unidade [PEON]
+Construir Unidade [PEON]
+Construir Unidade [PEON]

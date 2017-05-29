@@ -34,7 +34,7 @@ namespace Warcraft
 
 		public static Camera camera;
 
-        public static bool PLAYER = false;
+        public static bool PLAYER = true;
 
 		public Warcraft()
 		{
