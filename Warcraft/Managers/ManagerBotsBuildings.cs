@@ -13,14 +13,6 @@ namespace Warcraft.Managers
             : base(managerMouse, managerMap)
         {
             this.index = index;
-
-            Vector2 pos = Functions.CleanPosition(managerMap, 96, 96);
-            buildings.Add(new GoldMine((int)pos.X / 32, (int)pos.Y / 32, managerMouse, managerMap, null));
-        }
-
-        public override List<Building> GetSelected()
-        {
-            return new List<Building>();
         }
     }
 }

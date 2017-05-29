@@ -4,33 +4,41 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Warcraft.Managers;
 using Warcraft.Units.Humans;
+using Microsoft.Xna.Framework.Input;
 
 namespace Warcraft.UI.Units
 {
-    class Peasant : UI
+    class Builder : UI
     {
         Button buttonBuilder;
         Button buttonCancel;
 
         Button buttonMiner;
 
-        Builder builderUnit;
+        global::Warcraft.Units.Humans.Builder builderUnit;
 
         bool showBuilder = false;
         List<Button> builder = new List<Button>();
 
-        public Peasant(ManagerMouse managerMouse, Builder builderUnit)
+        public Builder(ManagerMouse managerMouse, global::Warcraft.Units.Humans.Builder builderUnit)
         {
-            buttonPortrait = new Button(0, 0);
-            buttonBuilder = new Button(0, 280, 7, 8);
-            buttonCancel = new Button(0, 400, 1, 9);
+            if (builderUnit is Peasant)
+            {
+                buttonPortrait = new Button(0, 0);
+                buttonBuilder = new Button(0, 280, 7, 8);
+                buttonCancel = new Button(0, 400, 1, 9);
 
-            builder.Add(new Button(0, 280, 0, 4));
-            builder.Add(new Button(50, 280, 2, 4));
-            builder.Add(new Button(100, 280, 8, 3));
-            builder.Add(new Button(0, 320, 2, 9));
+                builder.Add(new Button(0, 280, 0, 4));
+                builder.Add(new Button(50, 280, 2, 4));
+                builder.Add(new Button(100, 280, 8, 3));
+                builder.Add(new Button(0, 320, 2, 9));
 
-            buttonMiner = new Button(50, 280, 9, 8);
+                buttonMiner = new Button(50, 280, 9, 8);
+			}
+            else
+            {
+                buttonPortrait = new Button(1, 0);
+            }
 
             this.builderUnit = builderUnit;
 
@@ -45,19 +53,23 @@ namespace Warcraft.UI.Units
                 {
                     if (showBuilder && e.SelectRectangle.Intersects(builder[i].rectangle))
                     {
-                        builderUnit.commands[i].execute();
+                        Mouse.SetPosition(Mouse.GetState().X - 200, Mouse.GetState().Y);
+						builderUnit.commands[i].execute();
                         break;
                     }
                 }
 
-                if (!showBuilder && e.SelectRectangle.Intersects(buttonMiner.rectangle))
-                    builderUnit.commands[builderUnit.commands.Count - 1].execute();
+                if (buttonMiner != null)
+                {
+                    if (!showBuilder && e.SelectRectangle.Intersects(buttonMiner.rectangle))
+                        builderUnit.commands[builderUnit.commands.Count - 1].execute();
 
-                if (e.SelectRectangle.Intersects(buttonBuilder.rectangle))
-                    showBuilder = true;
+                    if (e.SelectRectangle.Intersects(buttonBuilder.rectangle))
+                        showBuilder = true;
 
-                if (e.SelectRectangle.Intersects(buttonCancel.rectangle))
-                    showBuilder = false;
+                    if (e.SelectRectangle.Intersects(buttonCancel.rectangle))
+                        showBuilder = false;
+                }
             }
         }
 
@@ -77,14 +89,18 @@ namespace Warcraft.UI.Units
             if (DrawIndividual)
             {
                 buttonPortrait.Draw(spriteBatch);
-                buttonMiner.Draw(spriteBatch);
 
-                if (!showBuilder)
-                    buttonBuilder.Draw(spriteBatch);
-                else
+                if (buttonMiner != null)
                 {
-                    builder.ForEach((b) => b.Draw(spriteBatch));
-                    buttonCancel.Draw(spriteBatch);
+                    buttonMiner.Draw(spriteBatch);
+
+                    if (!showBuilder)
+                        buttonBuilder.Draw(spriteBatch);
+                    else
+                    {
+                        builder.ForEach((b) => b.Draw(spriteBatch));
+                        buttonCancel.Draw(spriteBatch);
+                    }
                 }
 
                 spriteBatch.DrawString(font, builderUnit.information.Name, new Vector2(minX + 50, 100), Color.Black);

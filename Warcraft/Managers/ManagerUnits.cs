@@ -56,6 +56,16 @@ namespace Warcraft.Managers
             units.ForEach((u) => u.DrawUI(spriteBatch));
         }
 
-        public abstract List<Unit> GetSelected();
+        public List<Unit> GetSelected()
+        {
+			List<Unit> selecteds = new List<Unit>();
+			for (int i = 0; i < units.Count; i++)
+			{
+				if (units[i].selected)
+					selecteds.Add(units[i]);
+			}
+
+			return selecteds;
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Warcraft.Units;
 using Warcraft.Units.Humans;
+using Warcraft.Units.Orcs;
 using Warcraft.Util;
 
 namespace Warcraft.Managers
@@ -20,28 +21,16 @@ namespace Warcraft.Managers
 
         public override void Factory(Util.Units type, int x, int y, int targetX, int targetY)
         {
-            if (type == Util.Units.PEASANT)
-                units.Add(new Peasant(x, y, managerMouse, managerMap, this, managerBuildings));
-            else if (type == Util.Units.ELVEN_ARCHER)
-                units.Add(new ElvenArcher(x, y, managerMouse, managerMap, this));
-            else if (type == Util.Units.FOOTMAN)
-                units.Add(new Footman(x, y, managerMouse, managerMap, this));
+            if (type == Util.Units.PEON)
+                units.Add(new Peon(x, y, managerMouse, managerMap, this, managerBuildings));
+            else if (type == Util.Units.TROLL_AXETHROWER)
+                units.Add(new TrollAxethrower(x, y, managerMouse, managerMap, this));
+            else if (type == Util.Units.GRUNT)
+                units.Add(new Grunt(x, y, managerMouse, managerMap, this));
 
             units[units.Count - 1].Move(targetX, targetY);
 
             LoadContent();
-        }
-
-        public override List<Unit> GetSelected()
-        {
-            List<Unit> selecteds = new List<Unit>(); ;
-            for (int i = 0; i < units.Count; i++)
-            {
-                if (units[i].selected)
-                    selecteds.Add(units[i]);
-            }
-
-            return selecteds;
         }
     }
 }

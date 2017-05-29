@@ -10,8 +10,8 @@ namespace Warcraft.Units.Orcs
 {
     class TrollAxethrower : Unit
     {
-        public TrollAxethrower(InformationUnit information, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits) 
-            : base(1, 1, 52, 52, 1, managerMouse, managerMap, managerUnits)
+        public TrollAxethrower(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits) 
+            : base(tileX, tileY, 52, 52, 1, managerMouse, managerMap, managerUnits)
         {
             Dictionary<AnimationType, List<Sprite>> sprites = new Dictionary<AnimationType, List<Sprite>>();
             List<Sprite> spriteWalking = new List<Sprite>();
@@ -101,7 +101,7 @@ namespace Warcraft.Units.Orcs
             ui = new UI.Units.TrollAxethrower(managerMouse, this);
             textureName.Add(AnimationType.WALKING, "Troll Axethrower");
 
-            this.information = information;
+            information = new InformationUnit("Troll Axethrower", Race.FOREST_TROLL, Faction.HORDE, 60, 2, 360, 10, 500, 1, Util.Buildings.ORC_BARRACKS, 400, 14, 90, 4, 0, Util.Units.TROLL_AXETHROWER);
             Information = information;
 
             Data.Write("Adicionar [TrollAxeTrower] X: " + Math.Floor(position.X / 32) + " Y: " + Math.Floor(position.Y / 32));
@@ -125,7 +125,13 @@ namespace Warcraft.Units.Orcs
                 animations.speed = 5;
             else if (animations.currentAnimation == AnimationType.ATTACKING)
                 animations.speed = 7;
-        }
+
+            if (!transition && target == null && targetBuilding == null)
+			{
+				Vector2 pos = Util.Functions.CleanPosition(managerMap, width, height);
+				Move(Functions.Normalize(pos.X / 32), Functions.Normalize(pos.Y / 32));
+			}
+		}
 
         public override void Draw(SpriteBatch spriteBatch)
         {

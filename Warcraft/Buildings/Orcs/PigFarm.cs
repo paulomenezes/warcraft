@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
+using Warcraft.Buildings.Neutral;
 using Warcraft.Managers;
 using Warcraft.Util;
 
 namespace Warcraft.Buildings.Orcs
 {
-	class PigFarm : Building
+	class PigFarm : Farm
 	{
 		public PigFarm(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits) :
 			base(tileX, tileY, 64, 64, managerMouse, managerMap, managerUnits)
 		{
-            information = new InformationBuilding("Pig Farm", 800, 700, 450, Util.Units.PEON, 300, Util.Buildings.PIG_FARM);
+            information = new InformationBuilding("Pig Farm", 400, 500, 250, Util.Units.PEON, 300, Util.Buildings.PIG_FARM);
 
 			Dictionary<AnimationType, List<Sprite>> sprites = new Dictionary<AnimationType, List<Sprite>>();
 			List<Sprite> spriteBuilding = new List<Sprite>();

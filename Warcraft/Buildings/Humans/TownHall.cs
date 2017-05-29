@@ -5,6 +5,7 @@ using Warcraft.Managers;
 using Warcraft.Units.Humans;
 using Warcraft.Util;
 using Warcraft.Buildings.Neutral;
+using Warcraft.Units;
 
 namespace Warcraft.Buildings.Humans
 {
@@ -30,10 +31,9 @@ namespace Warcraft.Buildings.Humans
 
             this.animations = new Animation(sprites, animations, "building", width, height, false, information.BuildTime / sprites.Count);
 
-            ui = new UI.Buildings.TownHall(managerMouse, this);
             textureName = "Human Buildings (Summer)";
 
-            commands.Add(new BuilderUnits(Util.Units.PEASANT, managerUnits, Peasant.Information));
+            commands.Add(new BuilderUnits(Util.Units.PEASANT, managerUnits, Peasant.Information as InformationUnit));
         }
     }
 }

@@ -4,22 +4,29 @@ using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 using Warcraft.Commands;
 using Warcraft.Managers;
-using TownHallBuilding = Warcraft.Buildings.Humans.TownHall;
+using TownHallBuilding = Warcraft.Buildings.Neutral.CityHall;
+using Warcraft.Buildings.Humans;
 
 namespace Warcraft.UI.Buildings
 {
-    class TownHall : UI
+    class CityHall : UI
     {
         TownHallBuilding townHall;
 
         List<Button> builder = new List<Button>();
         List<ICommand> commandsOrder = new List<ICommand>();
 
-        public TownHall(ManagerMouse managerMouse, TownHallBuilding townHall)
+        public CityHall(ManagerMouse managerMouse, TownHallBuilding townHall)
         {
-            buttonPortrait = new Button(0, 4);
-
-            builder.Add(new Button(0, 260, 0, 0));
+            if (townHall is TownHall)
+            {
+				buttonPortrait = new Button(0, 4);
+				builder.Add(new Button(0, 260, 0, 0));
+            }
+            else
+            {
+				buttonPortrait = new Button(1, 4);
+			}
 
             this.townHall = townHall;
 
@@ -85,9 +92,7 @@ namespace Warcraft.UI.Buildings
                 }
 
                 spriteBatch.DrawString(font, townHall.information.Name, new Vector2(minX + 50, 100), Color.Black);
-                spriteBatch.DrawString(font, "Gold: " + 0, new Vector2(minX, 150), Color.Black);
-                spriteBatch.DrawString(font, "Wood: " + 0, new Vector2(minX, 170), Color.Black);
-                spriteBatch.DrawString(font, "Oil: " + 0, new Vector2(minX, 190), Color.Black);
+                spriteBatch.DrawString(font, "HP: " + townHall.information.HitPoints, new Vector2(minX, 150), Color.Black);
             }
         }
     }

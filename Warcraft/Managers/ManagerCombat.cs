@@ -1,15 +1,19 @@
 ﻿using Microsoft.Xna.Framework;
 using System;
+using System.Collections.Generic;
+using Warcraft.Units;
+using Warcraft.Buildings;
+using Warcraft.Units.Humans;
 
 namespace Warcraft.Managers
 {
     class ManagerCombat
     {
+        List<ManagerEnemies> managerEnemies;
         ManagerUnits managerUnits;
-        ManagerEnemies managerEnemies;
         ManagerBuildings managerBuildings;
 
-        public ManagerCombat(ManagerUnits managerUnits, ManagerEnemies managerEnemies, ManagerBuildings managerBuildings)
+        public ManagerCombat(List<ManagerEnemies> managerEnemies, ManagerUnits managerUnits, ManagerBuildings managerBuildings)
         {
             this.managerUnits = managerUnits;
             this.managerEnemies = managerEnemies;
@@ -18,30 +22,86 @@ namespace Warcraft.Managers
 
         public void Update()
         {
-            //for (int u = 0; u < managerUnits.units.Count; u++)
-            //{
-            //    for (int e = 0; e < managerEnemies.enemies.Count; e++)
-            //    {
-            //        float angle = MathHelper.ToDegrees((float)(Math.Atan2(managerUnits.units[u].position.Y - managerEnemies.enemies[e].position.Y,
-            //                                                              managerUnits.units[u].position.X - managerEnemies.enemies[e].position.X)));
-                    
-            //        float distance = Vector2.Distance(managerUnits.units[u].position, managerEnemies.enemies[e].position);
+            Dictionary<int, List<Unit>> allUnits = new Dictionary<int, List<Unit>>();
+            if (managerUnits != null)
+                allUnits.Add(-1, managerUnits.units);
 
-            //        if (distance < 32 * (managerEnemies.enemies[e].information.Range + 1) &&
-            //            angle >= 0 && angle <= managerEnemies.enemies[e].information.Sight &&
-            //            managerEnemies.enemies[e].information.HitPoints > 0 &&
-            //            managerUnits.units[u].information.HitPoints > 0 &&
-            //            managerUnits.units[u].workState == Units.WorkigState.NOTHING)
-            //        {
-            //            if (managerEnemies.enemies[e].target == null)
-            //                managerEnemies.enemies[e].target = managerUnits.units[u];
+            Dictionary<int, List<Building>> allBuildings = new Dictionary<int, List<Building>>();
+            if (managerBuildings != null)
+                allBuildings.Add(-1, managerBuildings.buildings);
 
-            //            if (managerUnits.units[u].information.Type != Util.Units.PEASANT)
-            //                if (managerUnits.units[u].target == null)
-            //                    managerUnits.units[u].target = managerEnemies.enemies[e];
-            //        }
-            //    }
-            //}
+            for (int i = 0; i < managerEnemies.Count; i++)
+            {
+                allUnits.Add(managerEnemies[i].index, managerEnemies[i].managerUnits.units);
+                allBuildings.Add(managerEnemies[i].index, managerEnemies[i].managerBuildings.buildings);
+            }
+
+            foreach (var item01 in allUnits)
+            {
+                foreach (var item02 in allUnits)
+                {
+                    if (item01.Key != item02.Key)
+                    {
+                        for (int i = 0; i < allUnits[item01.Key].Count; i++)
+                        {
+                            if (allUnits[item01.Key][i].target == null || allUnits[item01.Key][i].targetBuilding == null)
+                            {
+                                for (int j = 0; j < allUnits[item02.Key].Count; j++)
+                                {
+                                    //if (i != j)
+                                    {
+                                        Unit enemy1 = allUnits[item01.Key][i];
+                                        Unit enemy2 = allUnits[item02.Key][j];
+
+                                        float distance = Vector2.Distance(enemy1.position, enemy2.position);
+
+                                        int range = Math.Max(enemy1.information.Range, enemy2.information.Range);
+
+                                        if (distance < 32 * (range + 1) &&
+											enemy1.information.HitPoints > 0 &&
+											enemy2.information.HitPoints > 0 &&
+                                            enemy2.workState == WorkigState.NOTHING &&
+                                            enemy1.workState == WorkigState.NOTHING)
+                                        {
+                                            if (!(enemy1 is Builder) && enemy1.target == null)
+                                            {
+                                                enemy1.target = enemy2;
+                                                enemy1.targetBuilding = null;
+                                            }
+
+                                            if (!(enemy2 is Builder) && enemy2.target == null)
+                                            {
+                                                enemy2.target = enemy1;
+                                                enemy2.targetBuilding = null;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                for (int j = 0; j < allBuildings[item02.Key].Count; j++)
+                                {
+                                    Unit enemy = allUnits[item01.Key][i];
+                                    Building building = allBuildings[item02.Key][j];
+
+                                    if (enemy.target == null && enemy.targetBuilding == null)
+                                    {
+                                        float distance = Vector2.Distance(enemy.position, building.position);
+
+                                        if (distance < 32 * (enemy.information.Range + 1) &&
+                                            enemy.information.HitPoints > 0 &&
+                                            building.information.HitPoints > 0 &&
+                                            enemy.workState == WorkigState.NOTHING &&
+                                            building.isWorking)
+                                        {
+                                            enemy.targetBuilding = building;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

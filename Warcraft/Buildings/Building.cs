@@ -15,19 +15,22 @@ namespace Warcraft.Buildings
     abstract class Building
     {
         public static Dictionary<string, Texture2D> texture = new Dictionary<string, Texture2D>();
-        public Animation animations;
+		public Animation animations;
 
-        protected Point target;
-        private Vector2 position;
-        public Vector2 Position 
-        {
-            get { return position; }
-            set 
-            {
+		public Vector2 position;
+		public Vector2 Position
+		{
+			get { return position; }
+			set
+			{
 				position = value;
-                Data.Write("Mover [" + (information as InformationBuilding).Type + "] X: " + Math.Floor(position.X / 32) + " Y: " + Math.Floor(position.Y / 32));
-            }
-        }
+			}
+		}
+
+
+		public Information information;
+
+		protected Point unitDestination;
 
         public bool selected;
         public bool unselected = false;
@@ -38,8 +41,6 @@ namespace Warcraft.Buildings
 
         public UI.UI ui;
         protected string textureName;
-
-        public Information information;
 
         public bool isBuilding = false;
         public bool isPlaceSelected = false;
@@ -60,7 +61,7 @@ namespace Warcraft.Buildings
             this.managerUnits = managerUnits;
 
             position = new Vector2(tileX * Warcraft.TILE_SIZE, tileY * Warcraft.TILE_SIZE);
-            target = new Point(tileX + ((width / Warcraft.TILE_SIZE) / 2), tileY + ((height / Warcraft.TILE_SIZE) / 2));
+            unitDestination = new Point(tileX + ((width / Warcraft.TILE_SIZE) / 2), tileY + ((height / Warcraft.TILE_SIZE) / 2));
 
             managerMouse.MouseEventHandler += ManagerMouse_MouseEventHandler;
             managerMouse.MouseClickEventHandler += ManagerMouse_MouseClickEventHandler;
@@ -124,7 +125,7 @@ namespace Warcraft.Buildings
         private void ManagerMouse_MouseClickEventHandler(object sender, MouseClickEventArgs e)
         {
             if (selected)
-                target = new Point(e.XTile, e.YTile);
+                unitDestination = new Point(e.XTile, e.YTile);
         }
 
         public void StartBuilding()
@@ -134,7 +135,7 @@ namespace Warcraft.Buildings
 
             managerMap.AddWalls(position, width / 32, height / 32);
 
-            target = new Point(((int)position.X / 32) + ((width / Warcraft.TILE_SIZE) / 2), ((int)position.Y / 32) + ((height / Warcraft.TILE_SIZE)));
+            unitDestination = new Point(((int)position.X / 32) + ((width / Warcraft.TILE_SIZE) / 2), ((int)position.Y / 32) + ((height / Warcraft.TILE_SIZE)));
             rectangle = new Rectangle((int)position.X, (int)position.Y, width, height);
         }
 
@@ -174,17 +175,37 @@ namespace Warcraft.Buildings
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            if (isBuilding && !isPlaceSelected)
+            if (isBuilding && !isPlaceSelected) 
+            {
                 spriteBatch.Draw(texture[textureName], position, new Rectangle(animations.Last().x, animations.Last().y, animations.Last().width, animations.Last().height), Color.White);
+            }
             else if ((isBuilding && isPlaceSelected && isStartBuilding) || isWorking)
-                spriteBatch.Draw(texture[textureName], position, animations.rectangle, Color.White);
+            {
+				Color color = Color.White;
+                if (managerUnits != null)
+                {
+                    if (managerUnits.index == 0)
+                        color = Color.Red;
+                    else if (managerUnits.index == 1)
+						color = Color.Blue;
+					else if (managerUnits.index == 2)
+						color = Color.Green;
+					else if (managerUnits.index == 3)
+						color = Color.Yellow;
+                }
+
+                if (information.HitPoints <= 0)
+                    color = Color.Black;
+                
+				spriteBatch.Draw(texture[textureName], position, animations.rectangle, color);
+            }
 
             if (selected)
             {
                 SelectRectangle.Draw(spriteBatch, rectangle);
 
                 if (!unselected)
-                    SelectRectangle.DrawTarget(spriteBatch, new Rectangle(target.X * 32, target.Y * 32, 32, 32));
+                    SelectRectangle.DrawTarget(spriteBatch, new Rectangle(unitDestination.X * 32, unitDestination.Y * 32, 32, 32));
             }
         }
 

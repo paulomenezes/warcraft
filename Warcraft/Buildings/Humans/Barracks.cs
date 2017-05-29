@@ -4,6 +4,7 @@ using Warcraft.Commands;
 using Warcraft.Managers;
 using Warcraft.Units.Humans;
 using Warcraft.Util;
+using Warcraft.Units;
 
 namespace Warcraft.Buildings.Humans
 {
@@ -29,11 +30,10 @@ namespace Warcraft.Buildings.Humans
 
             this.animations = new Animation(sprites, animations, "building", width, height, false, information.BuildTime / sprites.Count);
 
-            ui = new UI.Buildings.Barracks(managerMouse, this);
             textureName = "Human Buildings (Summer)";
 
-            commands.Add(new BuilderUnits(Util.Units.ELVEN_ARCHER, managerUnits, ElvenArcher.Information));
-            commands.Add(new BuilderUnits(Util.Units.FOOTMAN, managerUnits, Footman.Information));
+            commands.Add(new BuilderUnits(Util.Units.ELVEN_ARCHER, managerUnits, ElvenArcher.Information as InformationUnit));
+            commands.Add(new BuilderUnits(Util.Units.FOOTMAN, managerUnits, Footman.Information as InformationUnit));
         }
     }
 }

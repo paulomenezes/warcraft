@@ -8,7 +8,6 @@ using Warcraft.Util;
 using Warcraft.Buildings;
 using Warcraft.Buildings.Neutral;
 using Warcraft.Units.Humans;
-using Warcraft.Units.Orcs.Actions;
 using Warcraft.Commands;
 using Microsoft.Xna.Framework;
 
@@ -18,18 +17,15 @@ namespace Warcraft.Managers
     {
         ManagerMouse managerMouse;
         ManagerMap managerMap;
-		ManagerBuildings managerBuildings;
-		ManagerUnits managerUnits;
-
-		//PeonBuilding peonBuilding;
-
-		List<int> actionsUnits = new List<int>();
-		List<Util.Buildings> typesBuilding = new List<Util.Buildings>();
-		List<int> actionsBuildings = new List<int>();
+		public ManagerBuildings managerBuildings;
+		public ManagerUnits managerUnits;
 
         Random random = new Random();
 
         public int index = 0;
+
+		List<EA.Gene> actionsUnits = new List<EA.Gene>();
+		Dictionary<int, List<EA.Gene>> GENE_DATA = new Dictionary<int, List<EA.Gene>>();
 
 		public ManagerEnemies(ManagerMouse managerMouse, ManagerMap managerMap, int index)
         {
@@ -39,18 +35,15 @@ namespace Warcraft.Managers
 			this.managerBuildings = new ManagerBotsBuildings(managerMouse, managerMap, index);
             this.managerUnits = new ManagerBotsUnits(managerMouse, managerMap, managerBuildings, index);
 
-			actionsUnits.Add(0);
-			actionsUnits.Add(1);
-			actionsUnits.Add(2);
-			actionsUnits.Add(3);
-			actionsUnits.Add(4);
+            actionsUnits.Add(new EA.GeneBuilding(0));
+            actionsUnits.Add(new EA.GeneBuilding(1));
+            actionsUnits.Add(new EA.GeneBuilding(4));
 
-			typesBuilding.Add(Util.Buildings.GREAT_HALL);
-            typesBuilding.Add(Util.Buildings.ORC_BARRACKS);
-            typesBuilding.Add(Util.Buildings.ORC_BARRACKS);
-			actionsBuildings.Add(0);
-			actionsBuildings.Add(0);
-			actionsBuildings.Add(1);
+			actionsUnits.Add(new EA.GeneUnit(Util.Buildings.GREAT_HALL, 0));
+            actionsUnits.Add(new EA.GeneUnit(Util.Buildings.ORC_BARRACKS, 0));
+            actionsUnits.Add(new EA.GeneUnit(Util.Buildings.ORC_BARRACKS, 1));
+
+            GENE_DATA.Add(index, new List<EA.Gene>());
 		}
 
         public void LoadContent(ContentManager content)
@@ -65,55 +58,72 @@ namespace Warcraft.Managers
             managerUnits.Update();
 
             // Actions for units (Peon, create new buildings and mining)
-            Builder builder = managerUnits.units.Find(u => u is Builder && u.workState == WorkigState.NOTHING) as Builder;
-            if (builder != null && actionsUnits.Count > 0) 
+            if (actionsUnits.Count > 0) 
             {
-                builder.commands[actionsUnits[0]].execute();
-
-                if (builder.commands[actionsUnits[0]] is BuilderBuildings)
+                if (actionsUnits[0] is EA.GeneUnit)
                 {
-                    Building building = (builder.commands[actionsUnits[0]] as BuilderBuildings).building;
-
-					building.isPlaceSelected = true;
-                    building.Position = Functions.CleanPosition(managerMap, building.width, building.height);
-				}
-                else if (builder.commands[actionsUnits[0]] is BuilderWalls)
-				{
-                    BuilderWalls walls = builder.commands[actionsUnits[0]] as BuilderWalls;
-                    walls.started = false;
-
-					int x1 = random.Next(3, Warcraft.MAP_SIZE - 3);
-					int y1 = random.Next(3, Warcraft.MAP_SIZE - 3);
-
-                    int x2 = random.Next(3, Warcraft.MAP_SIZE - 3);
-                    int y2 = random.Next(3, Warcraft.MAP_SIZE - 3);
-
-					walls.startPoint = new Vector2(x1 * 32, y1 * 32);
-                    walls.endPoint = new Vector2(x2 * 32, y2 * 32);
-
-                    walls.FinishWall();
-				}
-
-                actionsUnits.RemoveAt(0);
-			}
-
-            // Actions for buildings (build units)
-            if (actionsBuildings.Count > 0)
-			{
-                Building building = managerBuildings.buildings.Find(b => (b.information as InformationBuilding).Type == typesBuilding[0] && b.isWorking);
-                if (building != null) 
-                {
-                    building.commands[actionsBuildings[0]].execute();
-                    actionsBuildings.RemoveAt(0);
-                    typesBuilding.RemoveAt(0);
+                    Building building = managerBuildings.buildings.Find(b => (b.information as InformationBuilding).Type == (actionsUnits[0] as EA.GeneUnit).building && b.isWorking);
+					if (building != null)
+					{
+                        building.commands[actionsUnits[0].action].execute();
+                        actionsUnits.RemoveAt(0);
+					}
                 }
-            }
+                else
+                {
+                    Builder builder = managerUnits.units.Find(u => u is Builder && u.workState == WorkigState.NOTHING) as Builder;
+
+                    if (builder != null)
+                    {
+                        builder.commands[actionsUnits[0].action].execute();
+
+                        if (builder.commands[actionsUnits[0].action] is BuilderBuildings)
+                        {
+                            Building building = (builder.commands[actionsUnits[0].action] as BuilderBuildings).building;
+
+                            building.isPlaceSelected = true;
+                            building.Position = Functions.CleanPosition(managerMap, building.width, building.height);
+
+                            (actionsUnits[0] as EA.GeneBuilding).position = building.Position;
+                        }
+                        else if (builder.commands[actionsUnits[0].action] is BuilderWalls)
+                        {
+                            BuilderWalls walls = builder.commands[actionsUnits[0].action] as BuilderWalls;
+                            walls.started = false;
+
+                            int x1 = random.Next(3, Warcraft.MAP_SIZE - 3);
+                            int y1 = random.Next(3, Warcraft.MAP_SIZE - 3);
+
+                            int x2 = random.Next(3, Warcraft.MAP_SIZE - 3);
+                            int y2 = random.Next(3, Warcraft.MAP_SIZE - 3);
+
+                            walls.startPoint = new Vector2(x1 * 32, y1 * 32);
+                            walls.endPoint = new Vector2(x2 * 32, y2 * 32);
+
+                            walls.FinishWall();
+
+                            (actionsUnits[0] as EA.GeneBuildWall).start = walls.startPoint;
+                            (actionsUnits[0] as EA.GeneBuildWall).end = walls.endPoint;
+                        }
+
+                        // Wait for a builder?
+                        GENE_DATA[index].Add(actionsUnits[0]);
+                        actionsUnits.RemoveAt(0);
+                    }
+                }
+			}
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
             managerBuildings.Draw(spriteBatch);
             managerUnits.Draw(spriteBatch);
-        }
+		}
+
+		public void DrawUI(SpriteBatch spriteBatch)
+		{
+			managerBuildings.DrawUI(spriteBatch);
+			managerUnits.DrawUI(spriteBatch);
+		}
     }
 }

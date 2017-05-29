@@ -32,10 +32,10 @@ namespace Warcraft.Units
             Race = race;
             Faction = faction;
 
-            HitPoints = Math.Min(200, Math.Max(hitPoints, 1));
+            HitPoints = hitPoints;
             HitPointsTotal = HitPoints;
-            Armor = Math.Min(20, Math.Max(armor, 0));
-            Sight = Math.Min(360, Math.Max(sight, 1));
+            Armor = armor;
+            Sight = sight;
             MovementSpeed = movementSpeed;
             Range = range;
 
@@ -44,10 +44,10 @@ namespace Warcraft.Units
             ProduceAt = produceAt;
             BuildTime = buildTime;
 
-            Damage = Math.Min(20, Math.Max(damage, 0));
-            Precision = Math.Min(100, Math.Max(precision, 1));
+            Damage = damage;
+            Precision = precision;
 
-            Spawn = Math.Min(4, Math.Max(spawn, 0));
+            Spawn = spawn;
 
             Type = type;
         }

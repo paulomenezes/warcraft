@@ -48,17 +48,15 @@ namespace Warcraft.Managers
         public List<Tile> walls = new List<Tile>();
 		public List<Tile> water = new List<Tile>();
 
-		int[,,] metadata = new int[50, 50, 4];
-        
         public static Dictionary<int[], int[]> Mapping = new Dictionary<int[], int[]>(new MyEqualityComparer());
 
         public static SpriteFont font;
 
         public ManagerMap()
         {
-            float[,] noise = new float[Warcraft.MAP_SIZE, Warcraft.MAP_SIZE]; // Noise2D.GenerateNoiseMap(Warcraft.MAP_SIZE, Warcraft.MAP_SIZE, 20);
+            float[,] noise = new float[Warcraft.MAP_SIZE, Warcraft.MAP_SIZE]; 
 
-            String mapValues = "";
+			String mapValues = "";
 
             using (var filestream = File.Open("../../Content/map.txt", FileMode.Open))
             using (var binaryStream = new BinaryReader(filestream))
@@ -82,17 +80,15 @@ namespace Warcraft.Managers
                 }
             }
 
-            for (int i = 0; i < Warcraft.MAP_SIZE; i++)
+			//float[,] noise = Noise2D.GenerateNoiseMap(Warcraft.MAP_SIZE, Warcraft.MAP_SIZE, 20);
+
+			for (int i = 0; i < Warcraft.MAP_SIZE; i++)
             {
                 List<Tile> t = new List<Tile>();
                 for (int j = 0; j < Warcraft.MAP_SIZE; j++)
                 {
                     if (noise[i, j] < 0.2f)
-                    {
-                        Tile tile = new Tile(i, j, TileType.WATER);
-                        t.Add(tile);
-                        water.Add(tile);
-                    }
+                        t.Add(new Tile(i, j, TileType.WATER));
                     else if (noise[i, j] >= 0.2f && noise[i, j] < 0.4f)
                         t.Add(new Tile(i, j, TileType.DESERT));
                     else if (noise[i, j] >= 0.4f && noise[i, j] < 0.8f)
@@ -100,11 +96,7 @@ namespace Warcraft.Managers
                     else if (noise[i, j] >= 0.8f && noise[i, j] < 0.9f)
                         t.Add(new Tile(i, j, TileType.DESERT));
                     else if (noise[i, j] >= 0.9f)
-                    {
-						Tile tile = new Tile(i, j, TileType.WATER);
-						t.Add(tile);
-						water.Add(tile);
-					}
+                        t.Add(new Tile(i, j, TileType.GLASS));
                     //else if (noise[i, j] >= 0.8f)
                         //t.Add(new Tile(i, j, TileType.FLOREST));
                     //if (noise[i, j] < 0.5f)
@@ -146,7 +138,7 @@ namespace Warcraft.Managers
 			matches.Add(new int[] { 1, 1, 0, 0 }, new int[] { 2, 12 });
 			matches.Add(new int[] { 1, 1, 0, 1 }, new int[] { 5, 11 });
 			matches.Add(new int[] { 1, 1, 1, 0 }, new int[] { 12, 11 });
-            // Desert to Glass
+            // Desert to Grass
             matches.Add(new int[] { 1, 1, 1, 2 }, new int[] { 18, 14 });
 			matches.Add(new int[] { 1, 1, 2, 1 }, new int[] { 7, 15 });
 			matches.Add(new int[] { 1, 1, 2, 2 }, new int[] { 9, 14 });
@@ -166,38 +158,27 @@ namespace Warcraft.Managers
 			{
                 for (int j = 0; j < match[i].Count - 1; j++)
 				{
-                    for (int k = 0; k < matches.Count; k++)
+					int[] key = { match[i][j], match[i + 1][j], match[i][j + 1], match[i + 1][j + 1] };
+					for (int k = 0; k < matches.Count; k++)
                     {
-						int[] key = { match[i][j], match[i + 1][j], match[i][j + 1], match[i + 1][j + 1] };
                         if (matches.ContainsKey(key)) {
                             map[i][j].ChangeTexture(matches[key][0], matches[key][1]);
-
-                            if (match[i][j] == 0 || match[i + 1][j] == 0 || match[i][j + 1] == 0 || match[i + 1][j + 1] == 0)
-                            {
-                                water.Add(new Tile(i, j));
-                            }
+                            break;
                         }
                     }
+
+					if (key[0] == 0 || key[1] == 0 || 
+					    key[2] == 0 || key[3] == 0)
+					{
+					    water.Add(new Tile(i, j));
+					}
 				}
 			}
 
-            for (int i = water.Count - 1; i >= 0; i--)
-            {
-                for (int j = water.Count - 1; j >= 0; j--)
-                {
-					if (i != j)
-					{
-                        if (i < water.Count && j < water.Count && water[i].TileX == water[j].TileX && water[i].TileY == water[j].TileY)
-						{
-                            water.RemoveAt(i);
-						}
-					}
-				}
-            }
-
             for (int i = 0; i < water.Count; i++)
             {
-                AddWalls(water[i].position, 1, 1);
+                water[i].isWater = true;
+                walls.Add(water[i]);
             }
         }
 
@@ -213,13 +194,14 @@ namespace Warcraft.Managers
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < Warcraft.MAP_SIZE; i++)
             {
-                for (int j = 0; j < 50; j++)
+                for (int j = 0; j < Warcraft.MAP_SIZE; j++)
                 {
                     map[i][j].Draw(spriteBatch);
                 }
             }
+
             walls.ForEach((item) => item.Draw(spriteBatch));
         }
 

@@ -32,14 +32,7 @@ namespace Warcraft.UI.Buildings
             {
                 if (buttonCancel.rectangle.Intersects(e.SelectRectangle))
                 {
-                    for (int i = 0; i < goldMine.workers.Count; i++)
-                    {
-                        goldMine.workers[i].workState = WorkigState.NOTHING;
-                        goldMine.workers[i].animations.currentAnimation = Util.AnimationType.WALKING;
-                    }
-
-                    goldMine.workers.Clear();
-                    goldMine.animations.Change("normal");
+                    goldMine.Fire();
                 }
             }
         }
@@ -57,7 +50,8 @@ namespace Warcraft.UI.Buildings
                 buttonPortrait.Draw(spriteBatch);
                 buttonCancel.Draw(spriteBatch);
 
-                spriteBatch.DrawString(font, goldMine.information.Name, new Vector2(minX + 50, 100), Color.Black);
+				spriteBatch.DrawString(font, goldMine.information.Name, new Vector2(minX + 50, 100), Color.Black);
+                spriteBatch.DrawString(font, "Gold: " + goldMine.QUANITY, new Vector2(minX, 150), Color.Black);
             }
         }
     }

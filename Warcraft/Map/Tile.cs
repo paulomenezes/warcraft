@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
+using Warcraft.UI;
 
 namespace Warcraft.Map
 {
@@ -24,7 +25,8 @@ namespace Warcraft.Map
         public int TileX;
         public int TileY;
 
-        public bool isWall = false;
+		public bool isWall = false;
+		public bool isWater = false;
 
         public TileType tileType = TileType.NONE;
 
@@ -96,7 +98,7 @@ namespace Warcraft.Map
         {
             if (tileType != TileType.NONE)
             {
-                int[] nn = new int[4] { (int)n[0], (int)n[1], (int)n[2], (int)n[3] };
+                int[] nn = { (int)n[0], (int)n[1], (int)n[2], (int)n[3] };
                 if (Managers.ManagerMap.Mapping.ContainsKey(nn))
                 {
                     int[] t = Managers.ManagerMap.Mapping[nn];
@@ -115,6 +117,8 @@ namespace Warcraft.Map
         {
             if (rectangle.Width >= 0)
                 spriteBatch.Draw(texture, position, rectangle, Color.White);
+            //else
+            //    SelectRectangle.Draw(spriteBatch, new Rectangle(TileX * 32, TileY * 32, 32, 32));
         }
 
         private bool ArrayEquals(TileType[] arr1, TileType[] arr2)

@@ -17,17 +17,6 @@ namespace Warcraft.Managers
         public static List<int> BOT_FOOD = new List<int>();
         public static List<int> BOT_OIL = new List<int>();
 
-        public ManagerResources(int quantity)
-        {
-            for (int i = 0; i < quantity; i++)
-            {
-				BOT_GOLD.Add(5000);
-				BOT_WOOD.Add(99999);
-				BOT_FOOD.Add(5);
-				BOT_OIL.Add(99999);
-            }
-        }
-
 		public static bool CompareGold(int index, int quantity)
 		{
 			return ((index == -1 && PLAYER_GOLD >= quantity) || (index > -1 && BOT_GOLD[index] >= quantity));

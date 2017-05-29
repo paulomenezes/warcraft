@@ -3,11 +3,14 @@ using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 using Warcraft.Buildings;
 using Warcraft.Buildings.Neutral;
+using Microsoft.Xna.Framework;
+using Warcraft.Util;
 
 namespace Warcraft.Managers
 {
     abstract class ManagerBuildings
     {
+        public static List<GoldMine> goldMines = new List<GoldMine>();
         public List<Building> buildings = new List<Building>();
         public ManagerMap managerMap;
 
@@ -16,7 +19,7 @@ namespace Warcraft.Managers
         public ManagerBuildings(ManagerMouse managerMouse, ManagerMap managerMap)
         {
             this.managerMap = managerMap;
-        }
+		}
 
         public void AddBuilding(Building building)
         {
@@ -26,24 +29,38 @@ namespace Warcraft.Managers
         
         public void LoadContent(ContentManager content)
         {
-            buildings.ForEach((u) => u.LoadContent(content));
+			buildings.ForEach((u) => u.LoadContent(content));
+            goldMines.ForEach((u) => u.LoadContent(content));
         }
 
         public void Update()
         {
-            buildings.ForEach((u) => u.Update());
+			buildings.ForEach((u) => u.Update());
+            goldMines.ForEach((u) => u.Update());
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            buildings.ForEach((u) => u.Draw(spriteBatch));
+			buildings.ForEach((u) => u.Draw(spriteBatch));
+            goldMines.ForEach((u) => u.Draw(spriteBatch));
         }
 
         public void DrawUI(SpriteBatch spriteBatch)
         {
-            buildings.ForEach((u) => u.DrawUI(spriteBatch));
+			buildings.ForEach((u) => u.DrawUI(spriteBatch));
+            goldMines.ForEach((u) => u.DrawUI(spriteBatch));
         }
 
-        public abstract List<Building> GetSelected();
+        public List<Building> GetSelected()
+        {
+			List<Building> selecteds = new List<Building>();
+            for (int i = 0; i < goldMines.Count; i++)
+			{
+                if (goldMines[i].selected)
+                    selecteds.Add(goldMines[i]);
+			}
+
+			return selecteds;
+        }
     }
 }

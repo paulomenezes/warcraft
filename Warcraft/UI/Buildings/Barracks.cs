@@ -4,7 +4,8 @@ using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 using Warcraft.Commands;
 using Warcraft.Managers;
-using BarracksBuilding = Warcraft.Buildings.Humans.Barracks;
+using BarracksBuilding = Warcraft.Buildings.Neutral.Barracks;
+using HumansBarracksBuilding = Warcraft.Buildings.Humans.Barracks;
 
 namespace Warcraft.UI.Buildings
 {
@@ -17,9 +18,16 @@ namespace Warcraft.UI.Buildings
 
         public Barracks(ManagerMouse managerMouse, BarracksBuilding barracks)
         {
-            buttonPortrait = new Button(2, 4);
-            builder.Add(new Button(0, 260, 4, 0));
-            builder.Add(new Button(50, 260, 2, 0));
+            if (barracks is HumansBarracksBuilding)
+            {
+                buttonPortrait = new Button(2, 4);
+                builder.Add(new Button(0, 260, 4, 0));
+                builder.Add(new Button(50, 260, 2, 0));
+            }
+            else
+			{
+				buttonPortrait = new Button(3, 4);
+            }
 
             this.barracks = barracks;
 
@@ -86,6 +94,7 @@ namespace Warcraft.UI.Buildings
                 }
 
                 spriteBatch.DrawString(font, barracks.information.Name, new Vector2(minX + 50, 100), Color.Black);
+                spriteBatch.DrawString(font, "HP: " + barracks.information.HitPoints, new Vector2(minX, 150), Color.Black);
             }
         }
     }

@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework.Content;
+﻿using System.Collections.Generic;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Warcraft.UI;
 
@@ -8,9 +9,9 @@ namespace Warcraft.Managers
     {
         UI.UI ui;
 
-        public ManagerUI(ManagerMouse managerMouse, ManagerBuildings managerBuildings, ManagerUnits managerUnits)
+        public ManagerUI(ManagerMouse managerMouse, ManagerBuildings managerBuildings, ManagerUnits managerUnits, List<ManagerEnemies> managerEnemies)
         {
-            ui = new Main(managerUnits, managerBuildings, managerMouse);
+            ui = new Main(managerUnits, managerBuildings, managerMouse, managerEnemies);
         }
 
         public void LoadContent(ContentManager content)

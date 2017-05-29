@@ -97,12 +97,12 @@ namespace Warcraft.Units.Humans
 
 			this.animations = new Animation(sprites, animations, "down", width, height);
 
-			ui = new UI.Units.Peasant(managerMouse, this);
+			ui = new UI.Units.Builder(managerMouse, this);
 			textureName.Add(AnimationType.WALKING, "Peasant_walking");
 			textureName.Add(AnimationType.GOLD, "Peasant_gold");
 			textureName.Add(AnimationType.DYING, "Peasant_dying");
 
-            information = new InformationUnit("Peon", Race.ORC, Faction.HORDE, 30, 2, 4, 10, 400, 1, Util.Buildings.TOWN_HALL, 200, 1, 5, 1, 0, Util.Units.PEASANT);
+            information = new InformationUnit("Peon", Race.ORC, Faction.HORDE, 30, 0, 4, 10, 400, 1, Util.Buildings.GREAT_HALL, 200, 3, 5, 1, 0, Util.Units.PEON);
 			Information = information;
 
             commands.Add(new BuilderBuildings(Util.Buildings.GREAT_HALL, this, managerMouse, managerBuildings, managerUnits));

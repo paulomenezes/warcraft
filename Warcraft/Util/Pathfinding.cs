@@ -136,10 +136,8 @@ namespace Warcraft.Util
                 pointX + 1 > Warcraft.MAP_SIZE ||
                 pointY + 1 > Warcraft.MAP_SIZE)
                 return true;
-
-            bool t = managerMap.water.Any(i => i.TileX == pointX && i.TileY == pointY);
             
-            return managerMap.walls.Any(i => i.TileX == pointX && i.TileY == pointY) || t;
+            return managerMap.walls.Any(i => i.TileX == pointX && i.TileY == pointY);
         }
 
         private bool CheckOpen(int pointX, int pointY)

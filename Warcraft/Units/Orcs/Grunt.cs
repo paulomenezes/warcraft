@@ -10,8 +10,8 @@ namespace Warcraft.Units.Orcs
 {
     class Grunt : Unit
     {
-        public Grunt(InformationUnit information, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits) 
-            : base(1, 1, 52, 52, 1, managerMouse, managerMap, managerUnits)
+        public Grunt(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits) 
+            : base(tileX, tileY, 52, 52, 1, managerMouse, managerMap, managerUnits)
         {
             Dictionary<AnimationType, List<Sprite>> sprites = new Dictionary<AnimationType, List<Sprite>>();
             List<Sprite> spriteWalking = new List<Sprite>();
@@ -101,7 +101,7 @@ namespace Warcraft.Units.Orcs
             ui = new UI.Units.Grunt(managerMouse, this);
             textureName.Add(AnimationType.WALKING, "Grunt");
             
-            this.information = information;
+            information = new InformationUnit("GRUNT", Race.ORC, Faction.HORDE, 60, 6, 360, 10, 600, 1, Util.Buildings.ORC_BARRACKS, 300, 15, 90, 1, 0, Util.Units.GRUNT);
             Information = information;
 
             Data.Write("Adicionar [Grunt] X: " + Math.Floor(position.X / 32) + " Y: " + Math.Floor(position.Y / 32));
@@ -115,6 +115,17 @@ namespace Warcraft.Units.Orcs
                 texture.Add(AnimationType.DYING, texture[AnimationType.WALKING]);
             if (!texture.ContainsKey(AnimationType.ATTACKING))
                 texture.Add(AnimationType.ATTACKING, content.Load<Texture2D>(textureName[AnimationType.WALKING]));
+        }
+
+        public override void Update()
+        {
+            base.Update();
+
+            if (!transition && target == null && targetBuilding == null) 
+            {
+                Vector2 pos = Util.Functions.CleanPosition(managerMap, width, height);
+                Move(Functions.Normalize(pos.X / 32), Functions.Normalize(pos.Y / 32));
+            }
         }
     }
 }

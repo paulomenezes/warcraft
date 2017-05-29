@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Warcraft.Managers;
+using Warcraft.Units;
 using Warcraft.Units.Humans;
 using Warcraft.Util;
 
@@ -8,6 +9,7 @@ namespace Warcraft.Buildings.Neutral
     class GoldMine : Building
     {
         public List<Builder> workers = new List<Builder>();
+        public int QUANITY = 1000;
 
         public GoldMine(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits)
             : base(tileX, tileY, 96, 96, managerMouse, managerMap, managerUnits)
@@ -39,5 +41,17 @@ namespace Warcraft.Buildings.Neutral
 
             Data.Write("Adicionar [Gold Mine] X: " + tileX + " Y: " + tileY);
         }
+
+        public void Fire() 
+        {
+			for (int i = 0; i < workers.Count; i++)
+			{
+				workers[i].workState = WorkigState.NOTHING;
+				workers[i].animations.currentAnimation = Util.AnimationType.WALKING;
+			}
+
+			workers.Clear();
+			animations.Change("normal");
+		}
     }
 }

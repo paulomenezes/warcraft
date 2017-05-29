@@ -4,6 +4,8 @@ using Warcraft.Commands;
 using Warcraft.Managers;
 using Warcraft.Units.Humans;
 using Warcraft.Util;
+using Warcraft.Units.Orcs;
+using Warcraft.Units;
 
 namespace Warcraft.Buildings.Orcs
 {
@@ -12,7 +14,7 @@ namespace Warcraft.Buildings.Orcs
 		public Barracks(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits) :
 			base(tileX, tileY, 96, 96, managerMouse, managerMap, managerUnits)
 		{
-			information = new InformationBuilding("Barracks", 800, 700, 450, Util.Units.PEON, 500, Util.Buildings.ORC_BARRACKS);
+			information = new InformationBuilding("Barracks", 800, 700, 400, Util.Units.PEON, 500, Util.Buildings.ORC_BARRACKS);
 
 			Dictionary<AnimationType, List<Sprite>> sprites = new Dictionary<AnimationType, List<Sprite>>();
 			List<Sprite> spriteBuilding = new List<Sprite>();
@@ -29,8 +31,8 @@ namespace Warcraft.Buildings.Orcs
 
 			textureName = "Orc Buildings (Summer) ";
 
-            commands.Add(new BuilderUnits(Util.Units.ELVEN_ARCHER, managerUnits, ElvenArcher.Information));
-            commands.Add(new BuilderUnits(Util.Units.FOOTMAN, managerUnits, Footman.Information));
+            commands.Add(new BuilderUnits(Util.Units.GRUNT, managerUnits, Grunt.Information as InformationUnit));
+            commands.Add(new BuilderUnits(Util.Units.TROLL_AXETHROWER, managerUnits, TrollAxethrower.Information as InformationUnit));
 		}
 	}
 }

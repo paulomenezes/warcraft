@@ -1,4 +1,5 @@
-﻿using Warcraft.Buildings;
+﻿using Microsoft.Xna.Framework;
+using Warcraft.Buildings;
 using Warcraft.Buildings.Humans;
 using Warcraft.Buildings.Neutral;
 using Warcraft.Managers;
@@ -31,11 +32,6 @@ namespace Warcraft.Commands
 
         public Miner(ManagerBuildings managerBuildings, ManagerUnits managerUnits, Unit worker)
         {
-            goldMine = managerBuildings.buildings.Find((b) => (b.information as InformationBuilding).Type == Util.Buildings.GOLD_MINE) as GoldMine;
-			cityHall = managerBuildings.buildings.Find((b) => 
-                                                       (b.information as InformationBuilding).Type == Util.Buildings.TOWN_HALL ||
-													   (b.information as InformationBuilding).Type == Util.Buildings.GREAT_HALL) as TownHall;
-
             this.worker = worker;
             this.managerBuildings = managerBuildings;
             this.managerUnits = managerUnits;
@@ -49,16 +45,30 @@ namespace Warcraft.Commands
 
             if (cityHall != null)
             {
-                started = true;
+				float maxDistance = float.MaxValue;
+				for (int i = 0; i < ManagerBuildings.goldMines.Count; i++)
+				{
+                    float distance = Vector2.Distance(ManagerBuildings.goldMines[i].Position, cityHall.Position);
+                    if (distance < maxDistance && ManagerBuildings.goldMines[i].QUANITY > 0)
+					{
+						maxDistance = distance;
+						goldMine = ManagerBuildings.goldMines[i];
+					}
+				}
 
-                goldMine.workers.Add(worker as Builder);
-                worker.workState = WorkigState.GO_TO_WORK;
-                worker.Move((int)goldMine.Position.X / 32, (int)goldMine.Position.Y / 32);
-                worker.selected = false;
+                if (goldMine != null && goldMine.QUANITY > 0)
+                {
+                    started = true;
 
-                currentState = State.MINER;
+                    goldMine.workers.Add(worker as Builder);
+                    worker.workState = WorkigState.GO_TO_WORK;
+                    worker.Move((int)goldMine.Position.X / 32, (int)goldMine.Position.Y / 32);
+                    worker.selected = false;
 
-                Data.Write("Começar Mineração [" + (worker.information as InformationUnit).Type + ", GoldMiner]");
+                    currentState = State.MINER;
+
+                    Data.Write("Começar Mineração [" + (worker.information as InformationUnit).Type + ", GoldMiner]");
+                }
             }
         }
 
@@ -79,7 +89,8 @@ namespace Warcraft.Commands
                         worker.Move((int)cityHall.Position.X / 32, (int)cityHall.Position.Y / 32);
                         worker.animations.currentAnimation = Util.AnimationType.GOLD;
 
-                        goldMine.animations.Change("normal");
+						goldMine.QUANITY -= 100;
+						goldMine.animations.Change("normal");
                         currentState = State.TOWN_HALL;
 
                         Data.Write("Entregando Gold [" + (worker.information as InformationUnit).Type + ", GoldMiner]");
@@ -90,6 +101,11 @@ namespace Warcraft.Commands
                         worker.animations.currentAnimation = Util.AnimationType.WALKING;
 
                         ManagerResources.ReduceGold(managerUnits.index, -100);
+
+                        if (goldMine.QUANITY <= 0)
+                        {
+                            goldMine.Fire();
+                        }
 
                         goldMine.animations.Change("working");
                         currentState = State.MINER;

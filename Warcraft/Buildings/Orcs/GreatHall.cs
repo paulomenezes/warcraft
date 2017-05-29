@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework;
 using Warcraft.Buildings.Neutral;
 using Warcraft.Commands;
 using Warcraft.Managers;
+using Warcraft.Units;
 using Warcraft.Units.Humans;
 using Warcraft.Util;
 
@@ -33,7 +34,7 @@ namespace Warcraft.Buildings.Orcs
 
 			textureName = "Orc Buildings (Summer) ";
 
-            commands.Add(new BuilderUnits(Util.Units.PEON, managerUnits, Peon.Information));
+            commands.Add(new BuilderUnits(Util.Units.PEON, managerUnits, Peon.Information as InformationUnit));
 		}
 	}
 }

@@ -8,11 +8,11 @@ namespace Warcraft.Util
     public class Camera
     {
         public Matrix transform;
-        public Vector2 center = new Vector2(322, 480); // new Vector2(32 * 25 - Warcraft.WINDOWS_HEIGHT / 2, 32 * 32 - Warcraft.WINDOWS_HEIGHT / 2);
+        public Vector2 center = Vector2.Zero; //new Vector2(322, 480); // new Vector2(32 * 25 - Warcraft.WINDOWS_HEIGHT / 2, 32 * 32 - Warcraft.WINDOWS_HEIGHT / 2);
         Viewport view;
 
         float speed = 4;
-        float zoom = 1f;
+        float zoom = 0.5f;
 
         public Camera(Viewport viewport)
         {
@@ -34,11 +34,11 @@ namespace Warcraft.Util
             //if (mouse.X > 0 && mouse.X < 100) center.X -= speed;
             //if (mouse.Y > 0 && mouse.Y < 100) center.Y -= speed;
 
-            center.X = Math.Max(center.X, 0);
-            center.Y = Math.Max(center.Y, 0);
+            center.X = Math.Max(center.X, 0); //312
+            center.Y = Math.Max(center.Y, 0); //796
 
-            center.X = Math.Min(644, center.X);
-            center.Y = Math.Min(992, center.Y);
+            center.X = Math.Min(312, center.X);
+            center.Y = Math.Min(796, center.Y);
 
             transform = Matrix.CreateScale(new Vector3(1, 1, 0)) * 
                         Matrix.CreateScale(new Vector3(zoom, zoom, 1)) * 

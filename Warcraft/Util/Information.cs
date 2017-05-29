@@ -4,7 +4,8 @@
     {
         HUMAN,
         ORC,
-        HIGH_ELF
+        HIGH_ELF,
+        FOREST_TROLL
     }
 
     enum Faction

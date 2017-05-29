@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Warcraft.UI;
 using System;
+using Warcraft.Units.Humans;
 
 namespace Warcraft.Units
 {
@@ -33,8 +34,9 @@ namespace Warcraft.Units
 				Data.Write("Mover [" + (information as InformationUnit).Type + "] X: " + Math.Floor(position.X / 32) + " Y: " + Math.Floor(position.Y / 32));
 			}
 		}
-		
-        private Vector2 goal;
+
+		public Vector2 goal;
+        public Vector2 finalGoal;
 
         public WorkigState workState = WorkigState.NOTHING;
         public bool selected;
@@ -56,6 +58,7 @@ namespace Warcraft.Units
         List<Util.PathNode> path;
 
         public Unit target;
+        public Buildings.Building targetBuilding;
 
         Vector2 lastPosition;
 
@@ -69,6 +72,7 @@ namespace Warcraft.Units
         bool shoot = false;
         float angle = 0;
 
+        public ManagerMap managerMap;
         ManagerUnits managerUnits;
 
         public Unit(int tileX, int tileY, int width, int height, int speed, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits)
@@ -84,6 +88,7 @@ namespace Warcraft.Units
 
             rectangle = new Rectangle((int)position.X, (int)position.Y, width, height);
 
+            this.managerMap = managerMap;
             this.managerUnits = managerUnits;
         }
 
@@ -151,8 +156,12 @@ namespace Warcraft.Units
 
         public void Combat()
         {
-            if (target != null)
+            if ((target != null || targetBuilding != null) && !(this is Builder))
             {
+                Vector2 attackPosition = target != null ? target.position : targetBuilding.position;
+                int armor = target != null ? target.information.Armor : 0;
+                float hitPoints = target != null ? target.information.HitPoints : targetBuilding.information.HitPoints;
+
                 int x = 0, y = 0;
                 if (animations.current.ToLower().Contains("down"))
                     y = -1;
@@ -163,10 +172,10 @@ namespace Warcraft.Units
                 if (animations.current.ToLower().Contains("right"))
                     x = -1;
 
-                int adjustX = ((int)target.position.X - (int)position.X) / 32;
-                int adjustY = ((int)target.position.Y - (int)position.Y) / 32;
+                int adjustX = ((int)attackPosition.X - (int)position.X) / 32;
+                int adjustY = ((int)attackPosition.Y - (int)position.Y) / 32;
 
-                float distance = Vector2.Distance(target.position, position);
+                float distance = Vector2.Distance(attackPosition, position);
 
                 if (adjustX == 5 && oldAdjust.X == 6 && adjustY == 6 && oldAdjust.Y == 5)
                 {
@@ -179,8 +188,8 @@ namespace Warcraft.Units
 
                 if ((Math.Abs(adjustX) > information.Range || Math.Abs(adjustY) > information.Range) && lastPosition != position)
                 {
-                    Move((int)Math.Max(0, target.position.X / 32 + information.Range * x),
-                         (int)Math.Max(0, target.position.Y / 32 + information.Range * y));
+                    Move((int)Math.Max(0, attackPosition.X / 32 + information.Range * x),
+                         (int)Math.Max(0, attackPosition.Y / 32 + information.Range * y));
                     lastPosition = position;
 
                     animations.currentAnimation = AnimationType.WALKING;
@@ -189,7 +198,7 @@ namespace Warcraft.Units
                     if (information.Type == Util.Units.TROLL_AXETHROWER)
                     {
                         missilePosition = position;
-                        targetPosition = target.position;
+                        targetPosition = attackPosition;
                         shoot = false;
                     }
                 }
@@ -198,7 +207,7 @@ namespace Warcraft.Units
                     if (information.Type == Util.Units.TROLL_AXETHROWER || information.Type == Util.Units.ELVEN_ARCHER)
                     {
                         if (targetPosition == Vector2.Zero)
-                            targetPosition = target.position;
+                            targetPosition = attackPosition;
 
                         transition = false;
                         shoot = true;
@@ -207,8 +216,8 @@ namespace Warcraft.Units
                             angle += 0.1f;
                         else
                         {
-                            double opposite = Math.Abs(position.Y - target.position.Y);
-                            double adjacent = Math.Abs(position.X - target.position.X);
+                            double opposite = Math.Abs(position.Y - attackPosition.Y);
+                            double adjacent = Math.Abs(position.X - attackPosition.X);
 
                             angle = (float)Math.Atan(opposite / adjacent);// (float)(Math.Atan2(position.X, -position.Y));
                         }
@@ -223,17 +232,17 @@ namespace Warcraft.Units
                             angle = 0;
 
                             missilePosition = position;
-                            targetPosition = target.position;
+                            targetPosition = attackPosition;
 
-                            float reduce = ((information.Damage * ((float)information.Precision / 100)) - target.information.Armor) / 30;
-                            target.information.HitPoints -= reduce < 0 ? 0.01f : reduce;
+                            float reduce = ((information.Damage * ((float)information.Precision / 100)) - armor); // / 30;
+                            ReduceHitPoints(reduce < 0 ? 0.01f : reduce);
                             information.Fitness += reduce < 0 ? 0.01f : reduce;
                         }
                     }
                     else
                     {
-                        float reduce = ((information.Damage * ((float)information.Precision / 100)) - target.information.Armor) / 30;
-                        target.information.HitPoints -= reduce < 0 ? 0.01f : reduce;
+                        float reduce = ((information.Damage * ((float)information.Precision / 100)) - armor); // / 30;
+                        ReduceHitPoints(reduce < 0 ? 0.01f : reduce);
                         information.Fitness += reduce < 0 ? 0.01f : reduce;
                     }
 
@@ -253,15 +262,28 @@ namespace Warcraft.Units
                 oldAdjust = new Point(adjustX, adjustY);
 
                 if (Math.Abs(adjustX) > 4 + information.Range || Math.Abs(adjustY) > 4 + information.Range || 
-                    target.information.HitPoints <= 0 || information.HitPoints <= 0 ||
-                    target.workState != WorkigState.NOTHING)
+                    hitPoints <= 0 || information.HitPoints <= 0 ||
+                    (target != null && target.workState != WorkigState.NOTHING))
                 {
                     target = null;
+                    targetBuilding = null;
                     shoot = false;
 
                     animations.currentAnimation = AnimationType.WALKING;
                     animations.Play(animations.current);
                 }
+            }
+        }
+
+        private void ReduceHitPoints(float quantity)
+        {
+            if (target != null)
+            {
+                target.information.HitPoints -= quantity;
+            }
+            else if (targetBuilding != null)
+            {
+                targetBuilding.information.HitPoints -= quantity;
             }
         }
 
@@ -279,17 +301,28 @@ namespace Warcraft.Units
                     else if (information.Type == Util.Units.ELVEN_ARCHER)
                         spriteBatch.Draw(missileElven, missilePosition + new Vector2(15, 15), new Rectangle(19, 4, 3, 30), Color.White, angle, new Vector2(1.5f, 15), 1f, SpriteEffects.None, 0);
                 }
-            }
-            
+
+				//SelectRectangle.DrawLine(spriteBatch, position, finalGoal);
+			}
 
             if (workState != WorkigState.WORKING)
             {
+                Color color = Color.White;
+                if (managerUnits.index == 0)
+                    color = Color.Red;
+                else if (managerUnits.index == 1)
+					color = Color.Blue;
+				else if (managerUnits.index == 2)
+                    color = Color.Green;
+				else if (managerUnits.index == 3)
+                    color = Color.Yellow;
+
                 if (animations.FlipX())
-                    spriteBatch.Draw(texture[animations.currentAnimation], position, animations.rectangle, Color.White, 0, Vector2.Zero, 1, SpriteEffects.FlipHorizontally, 0);
+                    spriteBatch.Draw(texture[animations.currentAnimation], position, animations.rectangle, color, 0, Vector2.Zero, 1, SpriteEffects.FlipHorizontally, 0);
                 else if (animations.FlipY())
-                    spriteBatch.Draw(texture[animations.currentAnimation], position, animations.rectangle, Color.White, 0, Vector2.Zero, 1, SpriteEffects.FlipVertically, 0);
+                    spriteBatch.Draw(texture[animations.currentAnimation], position, animations.rectangle, color, 0, Vector2.Zero, 1, SpriteEffects.FlipVertically, 0);
                 else
-                    spriteBatch.Draw(texture[animations.currentAnimation], position, animations.rectangle, Color.White);
+                    spriteBatch.Draw(texture[animations.currentAnimation], position, animations.rectangle, color);
             }
         }
 
@@ -318,6 +351,8 @@ namespace Warcraft.Units
                     {
                         if (path.Count > 0)
                         {
+                            finalGoal = new Vector2(path.Last().x * 32, path.Last().y * 32);
+
                             transition = true;
                             goal = new Vector2(path.First().x * 32, path.First().y * 32);
                             path.RemoveAt(0);
@@ -396,9 +431,9 @@ namespace Warcraft.Units
                     animations.Play("up");
                 }
 
-                if (position.X == goal.X && position.Y == goal.Y)
+                if (Math.Abs(position.X - goal.X) < 1 && Math.Abs(position.Y - goal.Y) < 1)
                 {
-                    if (path.Count > 0)
+                    if (path != null && path.Count > 0)
                     {
                         goal = new Vector2(path.First().x * 32, path.First().y * 32);
                         path.RemoveAt(0);
