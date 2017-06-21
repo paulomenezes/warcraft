@@ -129,7 +129,7 @@ namespace Warcraft.Units.Orcs
             if (!transition && target == null && targetBuilding == null)
 			{
 				Vector2 pos = Util.Functions.CleanPosition(managerMap, width, height);
-				Move(Functions.Normalize(pos.X / 32), Functions.Normalize(pos.Y / 32));
+				Move(Functions.Normalize(pos.X) / 32, Functions.Normalize(pos.Y) / 32);
 			}
 		}
 

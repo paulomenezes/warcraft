@@ -87,20 +87,19 @@ namespace Warcraft.Managers
                 List<Tile> t = new List<Tile>();
                 for (int j = 0; j < Warcraft.MAP_SIZE; j++)
                 {
-                    if (noise[i, j] < 0.1f)
-                        t.Add(new Tile(i, j, TileType.FLOREST));
-                    else if (noise[i, j] >= 0.1f && noise[i, j] < 0.3f)
-                        t.Add(new Tile(i, j, TileType.GRASS));
-                    else if (noise[i, j] >= 0.3f && noise[i, j] < 0.7f)
-                        t.Add(new Tile(i, j, TileType.DESERT));
-                    else if (noise[i, j] >= 0.7f)
-                        t.Add(new Tile(i, j, TileType.WATER));
-                    //else if (noise[i, j] >= 0.8f)
-                        //t.Add(new Tile(i, j, TileType.FLOREST));
-                    //if (noise[i, j] < 0.5f)
-                    //    t.Add(new Tile(i, j, TileType.GLASS));
-                    //else if (noise[i, j] >= 0.5f)
-                        //t.Add(new Tile(i, j, TileType.DESERT));
+					if (noise[i, j] < 0.4f)
+						t.Add(new Tile(i, j, TileType.GRASS));
+					else if (noise[i, j] >= 0.4f)
+						t.Add(new Tile(i, j, TileType.DESERT));
+                    
+                    //if (noise[i, j] < 0.1f)
+                    //    t.Add(new Tile(i, j, TileType.FLOREST));
+                    //else if (noise[i, j] >= 0.1f && noise[i, j] < 0.3f)
+                    //    t.Add(new Tile(i, j, TileType.GRASS));
+                    //else if (noise[i, j] >= 0.3f && noise[i, j] < 0.7f)
+                    //    t.Add(new Tile(i, j, TileType.DESERT));
+                    //else if (noise[i, j] >= 0.7f)
+                        //t.Add(new Tile(i, j, TileType.WATER));
                 }
 
                 map.Add(t);

@@ -91,10 +91,10 @@ namespace Warcraft.UI
             for (int i = 0; i < ManagerResources.BOT_GOLD.Count; i++)
             {
 				int totalUnits = managerEnemies[i].managerUnits.units.Count;
-                int aliveUnits = managerEnemies[i].managerUnits.units.FindAll(u => u.information.HitPoints > 0).Count;
+                //int aliveUnits = managerEnemies[i].managerUnits.units.FindAll(u => u.information.HitPoints > 0).Count;
 
 				int totalBuildings = managerEnemies[i].managerBuildings.buildings.Count;
-				int aliveBuildings = managerEnemies[i].managerBuildings.buildings.FindAll(u => u.information.HitPoints > 0).Count;
+				//int aliveBuildings = managerEnemies[i].managerBuildings.buildings.FindAll(u => u.information.HitPoints > 0).Count;
 
                 float fitness = 0;
                 managerEnemies[i].managerUnits.units.ForEach(u => fitness += u.information.Fitness);
@@ -102,8 +102,8 @@ namespace Warcraft.UI
 				spriteBatch.DrawString(font, "Enemy: " + i, new Vector2(minX, 190 + 140 * i), Color.Black);
 				spriteBatch.DrawString(font, "Gold: " + ManagerResources.BOT_GOLD[i], new Vector2(minX, 210 + 140 * i), Color.Black);
 				spriteBatch.DrawString(font, "Food: " + ManagerResources.BOT_FOOD[i], new Vector2(minX, 230 + 140 * i), Color.Black);
-                spriteBatch.DrawString(font, "Units: " + aliveUnits + "/" + totalUnits, new Vector2(minX, 250 + 140 * i), Color.Black);
-				spriteBatch.DrawString(font, "Buildings: " + aliveBuildings + "/" + totalBuildings, new Vector2(minX, 270 + 140 * i), Color.Black);
+                spriteBatch.DrawString(font, "Units: " + totalUnits, new Vector2(minX, 250 + 140 * i), Color.Black);
+				spriteBatch.DrawString(font, "Buildings: " + totalBuildings, new Vector2(minX, 270 + 140 * i), Color.Black);
                 spriteBatch.DrawString(font, "Fitness: " + fitness, new Vector2(minX, 290 + 140 * i), Color.Black);
 			}
 

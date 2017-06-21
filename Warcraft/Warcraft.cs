@@ -34,7 +34,7 @@ namespace Warcraft
 
 		public static Camera camera;
 
-        public static bool PLAYER = true;
+        public static bool PLAYER = false;
 
 		public Warcraft()
 		{
@@ -72,7 +72,7 @@ namespace Warcraft
 			ManagerBuildings.goldMines.Add(new Buildings.Neutral.GoldMine(45, 5, managerMouse, managerMap, null));
 			ManagerBuildings.goldMines.Add(new Buildings.Neutral.GoldMine(38, 22, managerMouse, managerMap, null));
 
-			for (int i = 0; i < 4; i++)
+			for (int i = 0; i < 2; i++)
 			{
                 ManagerResources.BOT_GOLD.Add(5000);
 				ManagerResources.BOT_WOOD.Add(99999);
@@ -86,6 +86,8 @@ namespace Warcraft
             managerCombat = new ManagerCombat(managerEnemies, managerPlayerUnits, managerPlayerBuildings);
 
             camera = new Camera(GraphicsDevice.Viewport);
+
+            new ManagerEA();
 
 			base.Initialize();
 		}

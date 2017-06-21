@@ -84,33 +84,44 @@ namespace Warcraft.Commands
                 {
                     worker.workState = WorkigState.GO_TO_WORK;
 
-                    if (currentState == State.MINER)
+					cityHall = managerBuildings.buildings.Find((b) =>
+									   (b.information as InformationBuilding).Type == Util.Buildings.TOWN_HALL ||
+									   (b.information as InformationBuilding).Type == Util.Buildings.GREAT_HALL) as CityHall;
+
+                    if (cityHall == null)
                     {
-                        worker.Move((int)cityHall.Position.X / 32, (int)cityHall.Position.Y / 32);
-                        worker.animations.currentAnimation = Util.AnimationType.GOLD;
-
-						goldMine.QUANITY -= 100;
-						goldMine.animations.Change("normal");
-                        currentState = State.TOWN_HALL;
-
-                        Data.Write("Entregando Gold [" + (worker.information as InformationUnit).Type + ", GoldMiner]");
+                        goldMine.Fire();
                     }
                     else
                     {
-                        worker.Move((int)goldMine.Position.X / 32, (int)goldMine.Position.Y / 32);
-                        worker.animations.currentAnimation = Util.AnimationType.WALKING;
-
-                        ManagerResources.ReduceGold(managerUnits.index, -100);
-
-                        if (goldMine.QUANITY <= 0)
+                        if (currentState == State.MINER)
                         {
-                            goldMine.Fire();
+                            worker.Move((int)cityHall.Position.X / 32, (int)cityHall.Position.Y / 32);
+                            worker.animations.currentAnimation = Util.AnimationType.GOLD;
+
+                            goldMine.QUANITY -= 100;
+                            goldMine.animations.Change("normal");
+                            currentState = State.TOWN_HALL;
+
+                            Data.Write("Entregando Gold [" + (worker.information as InformationUnit).Type + ", GoldMiner]");
                         }
+                        else
+                        {
+                            worker.Move((int)goldMine.Position.X / 32, (int)goldMine.Position.Y / 32);
+                            worker.animations.currentAnimation = Util.AnimationType.WALKING;
 
-                        goldMine.animations.Change("working");
-                        currentState = State.MINER;
+                            ManagerResources.ReduceGold(managerUnits.index, -100);
 
-                        Data.Write("Minerando [" + (worker.information as InformationUnit).Type + ", GoldMiner]");
+                            if (goldMine.QUANITY <= 0)
+                            {
+                                goldMine.Fire();
+                            }
+
+                            goldMine.animations.Change("working");
+                            currentState = State.MINER;
+
+                            Data.Write("Minerando [" + (worker.information as InformationUnit).Type + ", GoldMiner]");
+                        }
                     }
 
                     elapsed = 0;

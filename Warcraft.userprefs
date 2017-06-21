@@ -1,34 +1,31 @@
 ﻿<Properties StartupConfiguration="{13F82A3A-108E-4ECC-80BB-B2E7274ECB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Units/Unit.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Managers/ManagerUnits.cs">
     <Files>
-      <File FileName="Warcraft/Managers/ManagerMap.cs" Line="202" Column="1" />
-      <File FileName="Warcraft/Map/Tile.cs" Line="121" Column="100" />
-      <File FileName="Warcraft/Units/Orcs/Peon.cs" Line="80" Column="46" />
-      <File FileName="Warcraft/Units/Unit.cs" Line="325" Column="107" />
+      <File FileName="Warcraft/Warcraft.cs" Line="82" Column="16" />
+      <File FileName="Warcraft/Managers/ManagerEnemies.cs" Line="43" Column="42" />
+      <File FileName="Warcraft/EA/PeasantController.cs" Line="90" Column="24" />
+      <File FileName="Warcraft/EA/CityHallController.cs" Line="25" Column="45" />
+      <File FileName="Warcraft/EA/BarracksController.cs" Line="53" Column="1" />
+      <File FileName="Warcraft/Buildings/Neutral/GoldMine.cs" Line="12" Column="32" />
+      <File FileName="Warcraft/Units/Orcs/TrollAxethrower.cs" Line="132" Column="21" />
+      <File FileName="Warcraft/Units/Unit.cs" Line="261" Column="17" />
+      <File FileName="Warcraft/Units/Orcs/Grunt.cs" Line="127" Column="1" />
+      <File FileName="Warcraft/Util/Functions.cs" Line="54" Column="21" />
+      <File FileName="Warcraft/Util/Pathfinding.cs" Line="27" Column="1" />
+      <File FileName="Warcraft/UI/Main.cs" Line="94" Column="19" />
+      <File FileName="Warcraft/Managers/ManagerCombat.cs" Line="85" Column="37" />
+      <File FileName="Warcraft/Managers/ManagerBuildings.cs" Line="38" Column="1" />
+      <File FileName="Warcraft/Managers/ManagerBotsBuildings.cs" Line="1" Column="1" />
+      <File FileName="Warcraft/Managers/ManagerBotsUnits.cs" Line="1" Column="1" />
+      <File FileName="Warcraft/Commands/Miner.cs" Line="111" Column="1" />
+      <File FileName="Warcraft/Managers/ManagerUnits.cs" Line="46" Column="21" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Warcraft" expanded="True">
-            <Node name="Warcraft" expanded="True">
-              <Node name="EA" expanded="True" />
-              <Node name="Managers" expanded="True" />
-              <Node name="Map" expanded="True" />
-              <Node name="Units" expanded="True">
-                <Node name="Orcs" expanded="True" />
-                <Node name="Unit.cs" selected="True" />
-              </Node>
-              <Node name="Util" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/Map/GenerateRooms.cs" relfile="Warcraft/Map/GenerateRooms.cs" line="117" column="1" />
+      <Breakpoint file="/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/Commands/Miner.cs" relfile="Warcraft/Commands/Miner.cs" line="111" column="45" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>

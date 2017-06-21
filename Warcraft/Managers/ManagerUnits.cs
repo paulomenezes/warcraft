@@ -42,9 +42,15 @@ namespace Warcraft.Managers
         }
 
         public void Update()
-        {
-            units.ForEach((u) => u.Update());
-        }
+		{
+			for (int i = units.Count - 1; i >= 0; i--)
+			{
+				units[i].Update();
+                if (units[i].information.HitPoints <= 0)
+					units.RemoveAt(i);
+			}
+
+		}
 
         public void Draw(SpriteBatch spriteBatch)
         {

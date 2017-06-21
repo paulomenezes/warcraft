@@ -24,8 +24,9 @@ namespace Warcraft.Managers
 
         public int index = 0;
 
-		List<EA.Gene> actionsUnits = new List<EA.Gene>();
-		Dictionary<int, List<EA.Gene>> GENE_DATA = new Dictionary<int, List<EA.Gene>>();
+        EA.PeasantController peasantController;
+        EA.CityHallController cityHallController;
+        EA.BarracksController barracksController;
 
 		public ManagerEnemies(ManagerMouse managerMouse, ManagerMap managerMap, int index)
         {
@@ -35,15 +36,17 @@ namespace Warcraft.Managers
 			this.managerBuildings = new ManagerBotsBuildings(managerMouse, managerMap, index);
             this.managerUnits = new ManagerBotsUnits(managerMouse, managerMap, managerBuildings, index);
 
-            actionsUnits.Add(new EA.GeneBuilding(0));
-            actionsUnits.Add(new EA.GeneBuilding(1));
-            actionsUnits.Add(new EA.GeneBuilding(4));
+            peasantController = new EA.PeasantController(index, managerMap, managerBuildings, managerUnits);
+            peasantController.SetTownHall(random.Next(0, 4));
+            peasantController.SetBaracks(1000, 5, 0, 1);
+            peasantController.SetFarms(500, 5, 1);
+            peasantController.SetMiner(0, 1);
 
-			actionsUnits.Add(new EA.GeneUnit(Util.Buildings.GREAT_HALL, 0));
-            actionsUnits.Add(new EA.GeneUnit(Util.Buildings.ORC_BARRACKS, 0));
-            actionsUnits.Add(new EA.GeneUnit(Util.Buildings.ORC_BARRACKS, 1));
+            cityHallController = new EA.CityHallController(500, 3, 0, index, managerMap, managerBuildings, managerUnits);
 
-            GENE_DATA.Add(index, new List<EA.Gene>());
+            barracksController = new EA.BarracksController(index, managerMap, managerBuildings, managerUnits);
+            barracksController.SetArcher(500, 3, 0);
+            barracksController.SetWarrior(500, 3, 0);
 		}
 
         public void LoadContent(ContentManager content)
@@ -57,62 +60,73 @@ namespace Warcraft.Managers
             managerBuildings.Update();
             managerUnits.Update();
 
-            // Actions for units (Peon, create new buildings and mining)
-            if (actionsUnits.Count > 0) 
+            Builder builder = managerUnits.units.Find(u => u is Builder && u.workState == WorkigState.NOTHING) as Builder;
+            Building greatHall = managerBuildings.buildings.Find(b => (b.information as InformationBuilding).Type == Util.Buildings.GREAT_HALL && b.isWorking);
+			Barracks barrack = managerBuildings.buildings.Find(b => (b.information as InformationBuilding).Type == Util.Buildings.ORC_BARRACKS && b.isWorking) as Barracks;
+			
+            if (builder != null)
             {
-                if (actionsUnits[0] is EA.GeneUnit)
+                if (greatHall == null)
                 {
-                    Building building = managerBuildings.buildings.Find(b => (b.information as InformationBuilding).Type == (actionsUnits[0] as EA.GeneUnit).building && b.isWorking);
-					if (building != null)
-					{
-                        building.commands[actionsUnits[0].action].execute();
-                        actionsUnits.RemoveAt(0);
-					}
+                    builder.commands[0].execute();
+
+                    Building building = (builder.commands[0] as BuilderBuildings).building;
+                    building.isPlaceSelected = true;
+                    building.Position = peasantController.BuildTownHall(builder);
                 }
                 else
                 {
-                    Builder builder = managerUnits.units.Find(u => u is Builder && u.workState == WorkigState.NOTHING) as Builder;
-
-                    if (builder != null)
+                    if (peasantController.BuildBarracks()) 
                     {
-                        builder.commands[actionsUnits[0].action].execute();
+                        builder.commands[1].execute();
 
-                        if (builder.commands[actionsUnits[0].action] is BuilderBuildings)
-                        {
-                            Building building = (builder.commands[actionsUnits[0].action] as BuilderBuildings).building;
+						Building building = (builder.commands[1] as BuilderBuildings).building;
+						building.isPlaceSelected = true;
+                        building.Position = Functions.CleanPosition(managerMap, building.width, building.height);
 
-                            building.isPlaceSelected = true;
-                            building.Position = Functions.CleanPosition(managerMap, building.width, building.height);
+                        peasantController.MultiplyBarracks(2);
+					}
+                    else if (peasantController.BuildFarms())
+                    {
+                        builder.commands[2].execute();
 
-                            (actionsUnits[0] as EA.GeneBuilding).position = building.Position;
-                        }
-                        else if (builder.commands[actionsUnits[0].action] is BuilderWalls)
-                        {
-                            BuilderWalls walls = builder.commands[actionsUnits[0].action] as BuilderWalls;
-                            walls.started = false;
+						Building building = (builder.commands[2] as BuilderBuildings).building;
+						building.isPlaceSelected = true;
+						building.Position = Functions.CleanPosition(managerMap, building.width, building.height);
 
-                            int x1 = random.Next(3, Warcraft.MAP_SIZE - 3);
-                            int y1 = random.Next(3, Warcraft.MAP_SIZE - 3);
-
-                            int x2 = random.Next(3, Warcraft.MAP_SIZE - 3);
-                            int y2 = random.Next(3, Warcraft.MAP_SIZE - 3);
-
-                            walls.startPoint = new Vector2(x1 * 32, y1 * 32);
-                            walls.endPoint = new Vector2(x2 * 32, y2 * 32);
-
-                            walls.FinishWall();
-
-                            (actionsUnits[0] as EA.GeneBuildWall).start = walls.startPoint;
-                            (actionsUnits[0] as EA.GeneBuildWall).end = walls.endPoint;
-                        }
-
-                        // Wait for a builder?
-                        GENE_DATA[index].Add(actionsUnits[0]);
-                        actionsUnits.RemoveAt(0);
+                        peasantController.MultiplyFarms(2);
+                    }
+                    else if (peasantController.Miner())
+                    {
+                        builder.commands[4].execute();
                     }
                 }
-			}
-        }
+            }
+
+            if (greatHall != null)
+            {
+                if (cityHallController.BuildPeon())
+                {
+					if (greatHall != null)
+					{
+						greatHall.commands[0].execute();
+					}
+				}
+            }
+
+            if (barrack != null)
+            {
+                if (barracksController.BuildWarrior())
+                {
+                    barrack.commands[0].execute();
+                }
+
+                if (barracksController.BuildArcher())
+                {
+                    barrack.commands[1].execute();
+                }
+            }
+		}
 
         public void Draw(SpriteBatch spriteBatch)
         {

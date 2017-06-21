@@ -35,7 +35,13 @@ namespace Warcraft.Managers
 
         public void Update()
         {
-			buildings.ForEach((u) => u.Update());
+            for (int i = buildings.Count - 1; i >= 0; i--)
+            {
+                buildings[i].Update();
+                if (buildings[i].information.HitPoints <= 0)
+                    buildings.RemoveAt(i);
+            }
+
             goldMines.ForEach((u) => u.Update());
         }
 
