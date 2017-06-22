@@ -15,15 +15,29 @@ namespace Warcraft.EA
 
 		private int index;
 		private ManagerMap managerMap;
-		private ManagerBuildings managerBuildings;
-		private ManagerUnits managerUnits;
+		public ManagerUnits managerUnits;
 
-		public BarracksController(int index, ManagerMap managerMap, ManagerBuildings managerBuildings, ManagerUnits managerUnits)
+		public BarracksController(int index, ManagerMap managerMap)
 		{
 			this.index = index;
 			this.managerMap = managerMap;
-			this.managerBuildings = managerBuildings;
-			this.managerUnits = managerUnits;
+		}
+
+		public String[][] GetGenes()
+		{
+			String[][] genes = new String[2][];
+
+			genes[0] = new String[3];
+			genes[0][0] = GeneticUtil.IntToBinary(WARRIOR_GOLD, 12);
+            genes[0][1] = GeneticUtil.IntToBinary(WARRIOR_FOOD, 4);
+            genes[0][2] = GeneticUtil.IntToBinary(WARRIOR_ARMY, 7);
+
+			genes[1] = new String[3];
+            genes[1][0] = GeneticUtil.IntToBinary(ARCHER_GOLD, 12);
+            genes[1][1] = GeneticUtil.IntToBinary(ARCHER_FOOD, 4);
+            genes[1][2] = GeneticUtil.IntToBinary(ARCHER_ARMY, 7);
+
+			return genes;
 		}
 
 		public void SetArcher(int gold, int food, int army)

@@ -308,14 +308,14 @@ namespace Warcraft.Units
             if (workState != WorkigState.WORKING)
             {
                 Color color = Color.White;
-                if (managerUnits.index == 0)
-                    color = Color.Red;
-                else if (managerUnits.index == 1)
-					color = Color.Blue;
-				else if (managerUnits.index == 2)
-                    color = Color.Green;
-				else if (managerUnits.index == 3)
-                    color = Color.Yellow;
+    //            if (managerUnits.index == 0)
+    //                color = Color.Red;
+    //            else if (managerUnits.index == 1)
+				//	color = Color.Blue;
+				//else if (managerUnits.index == 2)
+    //                color = Color.Green;
+				//else if (managerUnits.index == 3)
+                    //color = Color.Yellow;
 
                 if (animations.FlipX())
                     spriteBatch.Draw(texture[animations.currentAnimation], position, animations.rectangle, color, 0, Vector2.Zero, 1, SpriteEffects.FlipHorizontally, 0);

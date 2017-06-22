@@ -11,10 +11,9 @@ namespace Warcraft.EA
 		
         private int index;
 		private ManagerMap managerMap;
-		private ManagerBuildings managerBuildings;
-		private ManagerUnits managerUnits;
+		public ManagerUnits managerUnits;
 
-		public CityHallController(int gold, int food, int mining, int index, ManagerMap managerMap, ManagerBuildings managerBuildings, ManagerUnits managerUnits)
+		public CityHallController(int gold, int food, int mining, int index, ManagerMap managerMap)
         {
             GOLD = gold;
             FOOD = food;
@@ -22,11 +21,21 @@ namespace Warcraft.EA
 
 			this.index = index;
 			this.managerMap = managerMap;
-			this.managerBuildings = managerBuildings;
-			this.managerUnits = managerUnits;
 		}
-		
-        public bool BuildPeon()
+
+		public String[][] GetGenes()
+		{
+			String[][] genes = new String[1][];
+
+			genes[0] = new String[3];
+			genes[0][0] = GeneticUtil.IntToBinary(GOLD, 12);
+            genes[0][1] = GeneticUtil.IntToBinary(FOOD, 4);
+            genes[0][2] = GeneticUtil.IntToBinary(MINING, 7);
+
+			return genes;
+		}
+
+		public bool BuildPeon()
 		{
             return (ManagerResources.BOT_GOLD[index] >= GOLD && ManagerResources.BOT_FOOD[index] >= FOOD && PeonMining() >= MINING);
 		}

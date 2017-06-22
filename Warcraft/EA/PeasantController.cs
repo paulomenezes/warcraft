@@ -26,15 +26,37 @@ namespace Warcraft.EA
 
         private int index;
         private ManagerMap managerMap;
-        private ManagerBuildings managerBuildings;
-        private ManagerUnits managerUnits;
+        public ManagerUnits managerUnits;
 
-        public PeasantController(int index, ManagerMap managerMap, ManagerBuildings managerBuildings, ManagerUnits managerUnits)
+        public PeasantController(int index, ManagerMap managerMap)
         {
             this.index = index;
             this.managerMap = managerMap;
-            this.managerBuildings = managerBuildings;
-            this.managerUnits = managerUnits;
+        }
+
+        public String[][] GetGenes()
+        {
+            String[][] genes = new String[4][];
+
+            genes[0] = new String[1];
+			genes[0][0] = GeneticUtil.IntToBinary(TOWN_HALL, 2);
+
+			genes[1] = new String[4];
+			genes[1][0] = GeneticUtil.IntToBinary(BARRACKS_GOLD, 12);
+            genes[1][1] = GeneticUtil.IntToBinary(BARRACKS_FOOD, 4);
+            genes[1][2] = GeneticUtil.IntToBinary(BARRACKS_ARMY, 7);
+			genes[1][3] = GeneticUtil.IntToBinary(BARRACKS_IDLE, 7);
+
+			genes[2] = new String[3];
+            genes[2][0] = GeneticUtil.IntToBinary(FARMS_GOLD, 12);
+            genes[2][1] = GeneticUtil.IntToBinary(FARMS_FOOD, 4);
+			genes[2][2] = GeneticUtil.IntToBinary(FARMS_IDLE, 7);
+
+			genes[3] = new String[2];
+            genes[3][0] = GeneticUtil.IntToBinary(MINER_GOLD, 12);
+            genes[3][1] = GeneticUtil.IntToBinary(MINER_IDLE, 7);
+
+            return genes;
         }
 
         public void SetTownHall(int townHall) 

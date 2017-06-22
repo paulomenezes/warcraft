@@ -19,7 +19,7 @@ namespace Warcraft
 		ManagerMouse managerMouse = new ManagerMouse();
 
 		ManagerUI managerUI;
-        List<ManagerEnemies> managerEnemies = new List<ManagerEnemies>();
+        ManagerEA managerEA;
 
         ManagerUnits managerPlayerUnits;
         ManagerBuildings managerPlayerBuildings;
@@ -72,22 +72,11 @@ namespace Warcraft
 			ManagerBuildings.goldMines.Add(new Buildings.Neutral.GoldMine(45, 5, managerMouse, managerMap, null));
 			ManagerBuildings.goldMines.Add(new Buildings.Neutral.GoldMine(38, 22, managerMouse, managerMap, null));
 
-			for (int i = 0; i < 2; i++)
-			{
-                ManagerResources.BOT_GOLD.Add(5000);
-				ManagerResources.BOT_WOOD.Add(99999);
-				ManagerResources.BOT_FOOD.Add(5);
-				ManagerResources.BOT_OIL.Add(99999);
-
-				managerEnemies.Add(new ManagerEnemies(managerMouse, managerMap, i));
-			}
-
-            managerUI = new ManagerUI(managerMouse, managerPlayerBuildings, managerPlayerUnits, managerEnemies);
-            managerCombat = new ManagerCombat(managerEnemies, managerPlayerUnits, managerPlayerBuildings);
+			managerEA = new ManagerEA(2, managerMouse, managerMap);
+            managerUI = new ManagerUI(managerMouse, managerPlayerBuildings, managerPlayerUnits, managerEA.managerEnemies);
+            managerCombat = new ManagerCombat(managerEA.managerEnemies, managerPlayerUnits, managerPlayerBuildings);
 
             camera = new Camera(GraphicsDevice.Viewport);
-
-            new ManagerEA();
 
 			base.Initialize();
 		}
@@ -102,7 +91,7 @@ namespace Warcraft
                 managerPlayerUnits.LoadContent(Content);
                 managerPlayerBuildings.LoadContent(Content);
             }
-            managerEnemies.ForEach(e => e.LoadContent(Content));
+            managerEA.LoadContent(Content);
 			managerUI.LoadContent(Content);
 
 			SelectRectangle.LoadContent(Content);
@@ -119,7 +108,7 @@ namespace Warcraft
 				managerPlayerUnits.Update();
                 managerPlayerBuildings.Update();
             }
-            managerEnemies.ForEach(e => e.Update());
+            managerEA.Update(gameTime);
 			managerUI.Update();
 
 			managerCombat.Update();
@@ -137,7 +126,7 @@ namespace Warcraft
 			spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null, null, camera.transform);
 			managerMap.Draw(spriteBatch);
 
-            managerEnemies.ForEach(e => e.Draw(spriteBatch));
+            managerEA.Draw(spriteBatch);
             if (PLAYER)
             {
                 managerPlayerUnits.Draw(spriteBatch);
@@ -149,7 +138,7 @@ namespace Warcraft
 			spriteBatch.Begin();
 			managerUI.DrawBack(spriteBatch);
 			managerUI.Draw(spriteBatch);
-			managerEnemies.ForEach(e => e.DrawUI(spriteBatch));
+            managerEA.DrawUI(spriteBatch);
             if (PLAYER)
             {
                 managerPlayerUnits.DrawUI(spriteBatch);

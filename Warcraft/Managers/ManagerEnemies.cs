@@ -24,11 +24,11 @@ namespace Warcraft.Managers
 
         public int index = 0;
 
-        EA.PeasantController peasantController;
-        EA.CityHallController cityHallController;
-        EA.BarracksController barracksController;
+        public EA.PeasantController peasantController;
+        public EA.CityHallController cityHallController;
+        public EA.BarracksController barracksController;
 
-		public ManagerEnemies(ManagerMouse managerMouse, ManagerMap managerMap, int index)
+		public ManagerEnemies(ManagerMouse managerMouse, ManagerMap managerMap, int index, EA.PeasantController peasantController, EA.CityHallController cityHallController, EA.BarracksController barracksController)
         {
             this.index = index;
             this.managerMap = managerMap;
@@ -36,17 +36,14 @@ namespace Warcraft.Managers
 			this.managerBuildings = new ManagerBotsBuildings(managerMouse, managerMap, index);
             this.managerUnits = new ManagerBotsUnits(managerMouse, managerMap, managerBuildings, index);
 
-            peasantController = new EA.PeasantController(index, managerMap, managerBuildings, managerUnits);
-            peasantController.SetTownHall(random.Next(0, 4));
-            peasantController.SetBaracks(1000, 5, 0, 1);
-            peasantController.SetFarms(500, 5, 1);
-            peasantController.SetMiner(0, 1);
+            this.peasantController = peasantController;
+            this.peasantController.managerUnits = managerUnits;
 
-            cityHallController = new EA.CityHallController(500, 3, 0, index, managerMap, managerBuildings, managerUnits);
+            this.cityHallController = cityHallController;
+            this.cityHallController.managerUnits = managerUnits;
 
-            barracksController = new EA.BarracksController(index, managerMap, managerBuildings, managerUnits);
-            barracksController.SetArcher(500, 3, 0);
-            barracksController.SetWarrior(500, 3, 0);
+            this.barracksController = barracksController;
+            this.barracksController.managerUnits = managerUnits;
 		}
 
         public void LoadContent(ContentManager content)

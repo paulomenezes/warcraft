@@ -46,8 +46,8 @@ namespace Warcraft.Managers
 			for (int i = units.Count - 1; i >= 0; i--)
 			{
 				units[i].Update();
-                if (units[i].information.HitPoints <= 0)
-					units.RemoveAt(i);
+                //if (units[i].information.HitPoints <= 0)
+				//	units.RemoveAt(i);
 			}
 
 		}

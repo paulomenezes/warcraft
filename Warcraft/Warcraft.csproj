@@ -35,6 +35,8 @@
     <Reference Include="MonoGame.Framework">
       <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Warcraft.cs" />
@@ -111,19 +113,12 @@
     <Compile Include="Util\Functions.cs" />
     <Compile Include="Util\Base.cs" />
     <Compile Include="Buildings\Neutral\Farm.cs" />
-    <Compile Include="EA\GeneBuilding.cs" />
-    <Compile Include="EA\GeneBuildWall.cs" />
     <Compile Include="EA\Gene.cs" />
-    <Compile Include="EA\GeneUnit.cs" />
-    <Compile Include="EA\Start\Start.cs" />
-    <Compile Include="EA\Resources\Resource.cs" />
-    <Compile Include="EA\Combat\Combat.cs" />
-    <Compile Include="EA\Building\Building.cs" />
-    <Compile Include="EA\Defense\Defense.cs" />
     <Compile Include="Managers\ManagerEA.cs" />
     <Compile Include="EA\PeasantController.cs" />
     <Compile Include="EA\CityHallController.cs" />
     <Compile Include="EA\BarracksController.cs" />
+    <Compile Include="EA\GeneticUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.manifest" />
@@ -194,11 +189,6 @@
   <ItemGroup>
     <Folder Include="Buildings\Orcs\" />
     <Folder Include="EA\" />
-    <Folder Include="EA\Start\" />
-    <Folder Include="EA\Resources\" />
-    <Folder Include="EA\Combat\" />
-    <Folder Include="EA\Building\" />
-    <Folder Include="EA\Defense\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
