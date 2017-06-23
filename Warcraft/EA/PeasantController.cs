@@ -116,12 +116,12 @@ namespace Warcraft.EA
 
         public bool BuildBarracks()
         {
-            return (ManagerResources.BOT_GOLD[index] >= BARRACKS_GOLD && ManagerResources.BOT_FOOD[index] <= BARRACKS_FOOD && PeonIdle() >= BARRACKS_IDLE && Army() >= BARRACKS_ARMY);
+            return (ManagerResources.BOT_GOLD[index] >= BARRACKS_GOLD && ManagerResources.BOT_FOOD[index] <= BARRACKS_FOOD/* && PeonIdle() >= BARRACKS_IDLE && Army() >= BARRACKS_ARMY*/);
 		}
 
 		public bool BuildFarms()
 		{
-            return (ManagerResources.BOT_GOLD[index] >= FARMS_GOLD && ManagerResources.BOT_FOOD[index] <= FARMS_FOOD && PeonIdle() >= FARMS_IDLE);
+            return (ManagerResources.BOT_GOLD[index] >= FARMS_GOLD && ManagerResources.BOT_FOOD[index] <= FARMS_FOOD/* && PeonIdle() >= FARMS_IDLE*/);
 		}
 
 		public bool Miner()

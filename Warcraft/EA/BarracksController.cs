@@ -56,12 +56,12 @@ namespace Warcraft.EA
 
 		public bool BuildArcher()
 		{
-            return (ManagerResources.BOT_GOLD[index] >= ARCHER_GOLD && ManagerResources.BOT_FOOD[index] >= ARCHER_FOOD && Army() >= ARCHER_ARMY);
+            return (ManagerResources.BOT_GOLD[index] >= ARCHER_GOLD && ManagerResources.BOT_FOOD[index] >= ARCHER_FOOD/* && Army() >= ARCHER_ARMY*/);
 		}
 
 		public bool BuildWarrior()
 		{
-            return (ManagerResources.BOT_GOLD[index] >= WARRIOR_GOLD && ManagerResources.BOT_FOOD[index] >= WARRIOR_FOOD && Army() >= WARRIOR_ARMY);
+            return (ManagerResources.BOT_GOLD[index] >= WARRIOR_GOLD && ManagerResources.BOT_FOOD[index] >= WARRIOR_FOOD/* && Army() >= WARRIOR_ARMY*/);
 		}
 
 		private int Army()

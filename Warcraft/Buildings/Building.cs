@@ -182,20 +182,20 @@ namespace Warcraft.Buildings
             else if ((isBuilding && isPlaceSelected && isStartBuilding) || isWorking)
             {
 				Color color = Color.White;
-     //           if (managerUnits != null)
-     //           {
-     //               if (managerUnits.index == 0)
-     //                   color = Color.Red;
-     //               else if (managerUnits.index == 1)
-					//	color = Color.Blue;
+                if (managerUnits != null)
+                {
+                    if (managerUnits.index % 2 == 0)
+                        color = Color.Red;
+                    else if (managerUnits.index % 2 == 1)
+						color = Color.Blue;
 					//else if (managerUnits.index == 2)
 					//	color = Color.Green;
 					//else if (managerUnits.index == 3)
 						//color = Color.Yellow;
-                //}
+                }
 
-                //if (information.HitPoints <= 0)
-                    //color = Color.Black;
+                if (information.HitPoints <= 0)
+                    color = Color.Black;
                 
 				spriteBatch.Draw(texture[textureName], position, animations.rectangle, color);
             }

@@ -88,7 +88,8 @@ namespace Warcraft.UI
             //spriteBatch.DrawString(font, "Wood: " + Warcraft.WOOD, new Vector2(minX, 50), Color.Black);
             //spriteBatch.DrawString(font, "Oil: " + Warcraft.OIL, new Vector2(minX, 70), Color.Black);
 
-            for (int i = 0; i < ManagerResources.BOT_GOLD.Count; i++)
+            int j = 0;
+            for (int i = ManagerEA.index; i < ManagerEA.index + 2; i++)
             {
 				int totalUnits = managerEnemies[i].managerUnits.units.Count;
                 //int aliveUnits = managerEnemies[i].managerUnits.units.FindAll(u => u.information.HitPoints > 0).Count;
@@ -99,12 +100,14 @@ namespace Warcraft.UI
                 float fitness = 0;
                 managerEnemies[i].managerUnits.units.ForEach(u => fitness += u.information.Fitness);
 
-				spriteBatch.DrawString(font, "Enemy: " + i, new Vector2(minX, 190 + 140 * i), Color.Black);
-				spriteBatch.DrawString(font, "Gold: " + ManagerResources.BOT_GOLD[i], new Vector2(minX, 210 + 140 * i), Color.Black);
-				spriteBatch.DrawString(font, "Food: " + ManagerResources.BOT_FOOD[i], new Vector2(minX, 230 + 140 * i), Color.Black);
-                spriteBatch.DrawString(font, "Units: " + totalUnits, new Vector2(minX, 250 + 140 * i), Color.Black);
-				spriteBatch.DrawString(font, "Buildings: " + totalBuildings, new Vector2(minX, 270 + 140 * i), Color.Black);
-                spriteBatch.DrawString(font, "Fitness: " + fitness, new Vector2(minX, 290 + 140 * i), Color.Black);
+				spriteBatch.DrawString(font, "Enemy: " + i, new Vector2(minX, 190 + 140 * j), Color.Black);
+				spriteBatch.DrawString(font, "Gold: " + ManagerResources.BOT_GOLD[i], new Vector2(minX, 210 + 140 * j), Color.Black);
+				spriteBatch.DrawString(font, "Food: " + ManagerResources.BOT_FOOD[i], new Vector2(minX, 230 + 140 * j), Color.Black);
+                spriteBatch.DrawString(font, "Units: " + totalUnits, new Vector2(minX, 250 + 140 * j), Color.Black);
+				spriteBatch.DrawString(font, "Buildings: " + totalBuildings, new Vector2(minX, 270 + 140 * j), Color.Black);
+                spriteBatch.DrawString(font, "Fitness: " + fitness, new Vector2(minX, 290 + 140 * j), Color.Black);
+
+                j++;
 			}
 
             if (!DrawIndividual)

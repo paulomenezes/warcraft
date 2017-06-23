@@ -12,5 +12,10 @@ namespace Warcraft.EA
         {
             return Convert.ToString(value, 2).PadLeft(size, '0'); // 0011
 		}
+
+        public static int BinaryToInt(string value)
+        {
+			return Convert.ToInt32(value, 2);
+		}
     }
 }

@@ -30,7 +30,7 @@ namespace Warcraft.Managers
             if (managerBuildings != null)
                 allBuildings.Add(-1, managerBuildings.buildings);
 
-            for (int i = 0; i < managerEnemies.Count; i++)
+            for (int i = ManagerEA.index; i < ManagerEA.index + 2; i++)
             {
                 allUnits.Add(managerEnemies[i].index, managerEnemies[i].managerUnits.units);
                 allBuildings.Add(managerEnemies[i].index, managerEnemies[i].managerBuildings.buildings);
