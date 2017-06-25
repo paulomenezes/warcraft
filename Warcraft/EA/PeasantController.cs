@@ -102,9 +102,14 @@ namespace Warcraft.EA
 
         public Vector2 BuildTownHall(Builder builder)
 		{
+            GoldMine goldMine = NearGoldMine(builder);
+
             switch (TOWN_HALL) {
                 case 1:
-					return NearGoldMine(builder).position + new Vector2(0, 4 * 32);
+                    if (goldMine != null)
+					    return goldMine.position + new Vector2(0, 4 * 32);
+                    else
+                        return Functions.CleanPosition(managerMap, 128, 128);
 				case 2:
                     return (ManagerBuildings.goldMines[0].position + ManagerBuildings.goldMines[1].position) / 2;
 				case 3:
@@ -114,19 +119,19 @@ namespace Warcraft.EA
             }
         }
 
-        public bool BuildBarracks()
+        public bool BuildBarracks(int count)
         {
-            return (ManagerResources.BOT_GOLD[index] >= BARRACKS_GOLD && ManagerResources.BOT_FOOD[index] <= BARRACKS_FOOD/* && PeonIdle() >= BARRACKS_IDLE && Army() >= BARRACKS_ARMY*/);
+            return (ManagerResources.BOT_GOLD[index] >= BARRACKS_GOLD * count && ManagerResources.BOT_FOOD[index] <= BARRACKS_FOOD/* && PeonIdle() >= BARRACKS_IDLE && Army() >= BARRACKS_ARMY*/);
 		}
 
-		public bool BuildFarms()
+		public bool BuildFarms(int count)
 		{
-            return (ManagerResources.BOT_GOLD[index] >= FARMS_GOLD && ManagerResources.BOT_FOOD[index] <= FARMS_FOOD/* && PeonIdle() >= FARMS_IDLE*/);
+            return (ManagerResources.BOT_GOLD[index] >= FARMS_GOLD * count && ManagerResources.BOT_FOOD[index] <= FARMS_FOOD/* && PeonIdle() >= FARMS_IDLE*/);
 		}
 
-		public bool Miner()
+		public bool Miner(int count)
 		{
-            return (ManagerResources.BOT_GOLD[index] >= MINER_GOLD && PeonIdle() >= MINER_IDLE);
+            return (ManagerResources.BOT_GOLD[index] >= MINER_GOLD * count && PeonIdle() >= MINER_IDLE * count);
 		}
 
         private GoldMine NearGoldMine(Builder builder)

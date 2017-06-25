@@ -103,8 +103,6 @@ namespace Warcraft.Units.Orcs
 
             information = new InformationUnit("Troll Axethrower", Race.FOREST_TROLL, Faction.HORDE, 60, 2, 360, 10, 500, 1, Util.Buildings.ORC_BARRACKS, 400, 14, 90, 4, 0, Util.Units.TROLL_AXETHROWER);
             Information = information;
-
-            Data.Write("Adicionar [TrollAxeTrower] X: " + Math.Floor(position.X / 32) + " Y: " + Math.Floor(position.Y / 32));
         }
 
         public override void LoadContent(ContentManager content)

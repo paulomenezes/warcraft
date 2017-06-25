@@ -89,8 +89,6 @@ namespace Warcraft.Commands
         {
             if (ManagerResources.CompareGold(managerUnits.index, 100))
             {
-                Data.Write("Construindo muro X: " + Normalize(position.X) + " Y: " + Normalize(position.Y));
-
                 ManagerResources.ReduceGold(managerUnits.index, 100);
                 managerUnits.managerMap.AddWalls(position, textureOffset);
             }

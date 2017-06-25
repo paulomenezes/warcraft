@@ -110,8 +110,6 @@ namespace Warcraft.Units.Humans
             commands.Add(new BuilderBuildings(Util.Buildings.CHICKEN_FARM, this, managerMouse, managerBuildings, managerUnits));
             commands.Add(new BuilderWalls(this, managerMouse, managerBuildings, managerUnits));
             commands.Add(new Miner(managerBuildings, managerUnits, this));
-
-            Data.Write("Adicionar [Peasant] X: " + tileX + " Y: " + tileY);
         }
     }
 }

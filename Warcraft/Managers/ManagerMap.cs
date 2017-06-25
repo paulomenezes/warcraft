@@ -224,6 +224,11 @@ namespace Warcraft.Managers
                     walls.Add(new Tile(((int)position.X / 32) + i, ((int)position.Y / 32) + j));
         }
 
+        public void ResetWalls()
+        {
+            walls.Clear();
+        }
+
         public void AddWalls(Vector2 position, Rectangle rectangle)
         {
             int tileX = ((int)position.X / 32);

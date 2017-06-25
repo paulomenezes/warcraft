@@ -103,8 +103,6 @@ namespace Warcraft.Units.Orcs
             
             information = new InformationUnit("GRUNT", Race.ORC, Faction.HORDE, 60, 6, 360, 10, 600, 1, Util.Buildings.ORC_BARRACKS, 300, 15, 90, 1, 0, Util.Units.GRUNT);
             Information = information;
-
-            Data.Write("Adicionar [Grunt] X: " + Math.Floor(position.X / 32) + " Y: " + Math.Floor(position.Y / 32));
         }
 
         public override void LoadContent(ContentManager content)

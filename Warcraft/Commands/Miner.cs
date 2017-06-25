@@ -66,8 +66,6 @@ namespace Warcraft.Commands
                     worker.selected = false;
 
                     currentState = State.MINER;
-
-                    Data.Write("Começar Mineração [" + (worker.information as InformationUnit).Type + ", GoldMiner]");
                 }
             }
         }
@@ -102,8 +100,6 @@ namespace Warcraft.Commands
                             goldMine.QUANITY -= 100;
                             goldMine.animations.Change("normal");
                             currentState = State.TOWN_HALL;
-
-                            Data.Write("Entregando Gold [" + (worker.information as InformationUnit).Type + ", GoldMiner]");
                         }
                         else
                         {
@@ -119,8 +115,6 @@ namespace Warcraft.Commands
 
                             goldMine.animations.Change("working");
                             currentState = State.MINER;
-
-                            Data.Write("Minerando [" + (worker.information as InformationUnit).Type + ", GoldMiner]");
                         }
                     }
 

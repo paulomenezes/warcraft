@@ -38,8 +38,6 @@ namespace Warcraft.Commands
                     (building.information as InformationBuilding).Type == Util.Buildings.PIG_FARM)
                     ManagerResources.ReduceFood(managerUnits.index, -5);
 
-				Data.Write("Construindo Predio [" + (building.information as InformationBuilding).Type + "]");
-
                 builder.workState = WorkigState.WAITING_PLACE;
                 building.builder();
             }

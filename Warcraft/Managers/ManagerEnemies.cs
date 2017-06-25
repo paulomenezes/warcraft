@@ -60,7 +60,7 @@ namespace Warcraft.Managers
             Builder builder = managerUnits.units.Find(u => u is Builder && u.workState == WorkigState.NOTHING) as Builder;
             Building greatHall = managerBuildings.buildings.Find(b => (b.information as InformationBuilding).Type == Util.Buildings.GREAT_HALL && b.isWorking);
 			Barracks barrack = managerBuildings.buildings.Find(b => (b.information as InformationBuilding).Type == Util.Buildings.ORC_BARRACKS && b.isWorking) as Barracks;
-			
+
             if (builder != null)
             {
                 if (greatHall == null)
@@ -73,7 +73,11 @@ namespace Warcraft.Managers
                 }
                 else
                 {
-                    if (peasantController.BuildBarracks()) 
+					int farmCount = managerBuildings.buildings.FindAll(b => (b.information as InformationBuilding).Type == Util.Buildings.PIG_FARM).Count;
+					int minerCount = managerUnits.units.FindAll(u => u is Builder).Count;
+					int barrackCount = managerBuildings.buildings.FindAll(b => (b.information as InformationBuilding).Type == Util.Buildings.ORC_BARRACKS).Count;
+
+					if (peasantController.BuildBarracks(barrackCount == 0 ? 0 : 1)) 
                     {
                         builder.commands[1].execute();
 
@@ -81,9 +85,9 @@ namespace Warcraft.Managers
 						building.isPlaceSelected = true;
                         building.Position = Functions.CleanPosition(managerMap, building.width, building.height);
 
-                        peasantController.MultiplyBarracks(2);
+                        //peasantController.MultiplyBarracks(2);
 					}
-                    else if (peasantController.BuildFarms())
+                    else if (peasantController.BuildFarms(farmCount == 0 ? 0 : 1))
                     {
                         builder.commands[2].execute();
 
@@ -91,9 +95,9 @@ namespace Warcraft.Managers
 						building.isPlaceSelected = true;
 						building.Position = Functions.CleanPosition(managerMap, building.width, building.height);
 
-                        peasantController.MultiplyFarms(2);
+                        //peasantController.MultiplyFarms(2);
                     }
-                    else if (peasantController.Miner())
+                    else if (peasantController.Miner(minerCount == 0 ? 0 : 1))
                     {
                         builder.commands[4].execute();
                     }

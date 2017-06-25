@@ -32,8 +32,6 @@ namespace Warcraft.Commands
                 ManagerResources.ReduceGold(managerUnits.index, informationUnit.CostGold);
                 ManagerResources.ReduceFood(managerUnits.index, informationUnit.CostFood);
 
-                Data.Write("Construir Unidade [" + informationUnit.Type + "]");
-
                 go = true;
                 completed = false;
                 remove = false;

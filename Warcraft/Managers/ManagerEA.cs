@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using Warcraft.Util;
 
 namespace Warcraft.Managers
 {
@@ -12,6 +13,7 @@ namespace Warcraft.Managers
 
         float elapsed = 0;
         public static int index = 0;
+        int generation = 1;
 
         ManagerMap managerMap;
         ManagerMouse managerMouse;
@@ -79,14 +81,18 @@ namespace Warcraft.Managers
         {
             elapsed += gameTime.ElapsedGameTime.Milliseconds;
 
-            if (elapsed >= 50000f)
+            if (elapsed >= 60000f)
             {
-                if (index > 0 && index % 8 == 0)
+                if (index > 0 && generation * 10 - 2 == index)
                 {
-                    Reproduce();
+					index += 2;
+					Reproduce();
                 }
+                else 
+                {
+					index += 2;
+				}
 
-                index += 2;
                 elapsed = 0;
             }
             else
@@ -116,10 +122,14 @@ namespace Warcraft.Managers
 
         private void Reproduce()
         {
+            managerMap.ResetWalls();
+
             ManagerBuildings.goldMines.ForEach(g => g.QUANITY = 10000);
 
             List<String[]>[] genes = new List<string[]>[managerEnemies.Count];
             List<KeyValue> allFitness = new List<KeyValue>();
+
+            float total = 0;
 
             for (int i = managerEnemies.Count - 10; i < managerEnemies.Count; i++)
 			{
@@ -140,50 +150,178 @@ namespace Warcraft.Managers
                 fitness += ManagerResources.BOT_FOOD[managerEnemies[i].index];
 
                 allFitness.Add(new KeyValue(i, fitness));
+
+                total += fitness;
 			}
 
             allFitness.Sort((x, y) => x.value.CompareTo(y.value));
             allFitness.Reverse();
 
-            for (int i = 0; i < allFitness.Count; i += 2)
+
+            Data.Write("#######-----#######");
+			Data.Write("Geração " + generation);
+			Data.Write("Média " + (total / 10));
+            String fPrint = "";
+            allFitness.ForEach(f => fPrint += f.value.ToString() + ", ");
+            Data.Write("Values " + fPrint);
+			generation++;
+
+            //List<String[]> parent01 = genes[allFitness[0].key];
+            //List<String[]> parent02 = genes[allFitness[1].key];
+            //         managerEnemies.Add(NewEnemy(parent01));
+            //         managerEnemies.Add(NewEnemy(parent02));
+            //String p1 = "", p2 = "";
+            //parent01.ForEach(c => p1 += string.Join(",", c) + " - ");
+            //parent02.ForEach(c => p2 += string.Join(",", c) + " - ");
+            //Data.Write("B1: " + p1);
+            //Data.Write("B2: " + p2);
+
+            List<ManagerEnemies> newEnemies = new List<ManagerEnemies>();
+
+			for (int i = 0; i < allFitness.Count; i += 2)
             {
-                List<String[]> parent01 = genes[allFitness[i].key];
-                List<String[]> parent02 = genes[allFitness[i + 1].key];
+				String c1 = "", c2 = "";
 
-                List<String[]> children01 = parent01.GetRange(0, 4);
-                children01.AddRange(parent02.GetRange(4, 3));
+                KeyValue[] parents = RouletteWheelSelection(allFitness);
 
-                List<String[]> children02 = parent02.GetRange(0, 4);
-                children02.AddRange(parent01.GetRange(4, 3));
+                List<String[]> parent01 = genes[parents[0].key]; // genes[allFitness[i].key];
+                List<String[]> parent02 = genes[parents[1].key]; // genes[allFitness[i + 1].key];
 
-				String p1 = "", p2 = "", c1 = "", c2 = "";
-                parent01.ForEach(c => p1 += string.Join(",", c) + " - ");
-                parent02.ForEach(c => p2 += string.Join(",", c) + " - ");
-                children01.ForEach(c => c1 += string.Join(",", c) + " - ");
-				children02.ForEach(c => c2 += string.Join(",", c) + " - ");
+                if (random.NextDouble() >= 0.2)
+                {
+                    int cut = random.Next(2, 5);
 
-                managerEnemies.Add(NewEnemy(children01));
-                managerEnemies.Add(NewEnemy(children02));
+                    List<String[]> children01 = parent01.GetRange(0, cut);
+                    children01.AddRange(parent02.GetRange(cut, cut - 1));
+
+                    List<String[]> children02 = parent02.GetRange(0, cut);
+                    children02.AddRange(parent01.GetRange(cut, cut - 1));
+
+                    children01.ForEach(c => c1 += string.Join(",", c) + " - ");
+                    children02.ForEach(c => c2 += string.Join(",", c) + " - ");
+                    Data.Write(c1);
+                    Data.Write(c2);
+
+                    newEnemies.Add(NewEnemy(children01));
+                    newEnemies.Add(NewEnemy(children02));
+                }
+                else
+                {
+                    parent01.ForEach(c => c1 += string.Join(",", c) + " - ");
+                    parent02.ForEach(c => c2 += string.Join(",", c) + " - ");
+
+                    Data.Write(c1);
+					Data.Write(c2);
+
+                    newEnemies.Add(NewEnemy(parent01));
+                    newEnemies.Add(NewEnemy(parent02));
+				}
 			}
+
+            //newEnemies = Shuffle(newEnemies);
+
+            managerEnemies.AddRange(newEnemies);
         }
 
-        private ManagerEnemies NewEnemy(List<String[]> children01)
+		private KeyValue[] RouletteWheelSelection(List<KeyValue> enemies)
+		{
+			float[] fitness = new float[enemies.Count];
+			for (int i = 0; i < fitness.Length; i++)
+			{
+				if (i == 0)
+                    fitness[i] = enemies[i].value;
+				else
+                    fitness[i] = fitness[i - 1] + enemies[i].value;
+			}
+
+			Random random = new Random();
+			double value01 = random.NextDouble() * fitness[fitness.Length - 1];
+			double value02 = random.NextDouble() * fitness[fitness.Length - 1];
+
+			int[] index = new int[2];
+			index[0] = -1;
+			index[1] = -1;
+
+			for (int i = 0; i < fitness.Length; i++)
+			{
+				if (index[0] == -1 && fitness[i] > value01)
+					index[0] = i;
+
+				if (index[1] == -1 && fitness[i] > value02)
+					index[1] = i;
+
+				if (index[0] != -1 && index[1] != -1)
+					break;
+			}
+
+			if (index[0] == index[1])
+				index = noRepeat(index, fitness);
+
+			return new KeyValue[2] { enemies[index[0]], enemies[index[1]] };
+		}
+
+		private static int[] noRepeat(int[] indexes, float[] fitness)
+		{
+			Random random = new Random();
+
+			while (indexes[0] == indexes[1])
+			{
+				indexes[1] = -1;
+
+				double value01 = random.NextDouble() * fitness[fitness.Length - 1];
+
+				for (int i = 0; i < fitness.Length; i++)
+				{
+					if (indexes[1] == -1 && fitness[i] > value01)
+						indexes[1] = i;
+
+					if (indexes[1] != -1)
+						break;
+				}
+			}
+
+			return indexes;
+		}
+
+        public List<ManagerEnemies> Shuffle(List<ManagerEnemies> list)
+		{
+			int n = list.Count;
+			while (n > 1)
+			{
+				n--;
+				int k = random.Next(n + 1);
+                ManagerEnemies value = list[k];
+				list[k] = list[n];
+				list[n] = value;
+			}
+
+            return list;
+		}
+
+		private ManagerEnemies NewEnemy(List<String[]> children01)
         {
             for (int i = 0; i < children01.Count; i++)
             {
                 for (int j = 0; j < children01[i].Length; j++)
                 {
-                    if (random.NextDouble() <= 0.2)
+                    char[] chars = children01[i][j].ToCharArray();
+
+                    for (int k = 0; k < chars.Length; k++)
                     {
-                        if (children01[i][j].Equals("1"))
-                        {
-                            children01[i][j] = "0";
-                        }
-                        else
-                        {
-                            children01[i][j] = "1";   
-                        }
-                    }
+						if (random.NextDouble() <= 0.2)
+						{
+                            if (chars[k].Equals("1"))
+							{
+                                chars[k] = '0';
+							}
+							else
+							{
+								chars[k] = '1';
+							}
+						}
+					}
+
+                    children01[i][j] = new string(chars);
                 }
             }
 

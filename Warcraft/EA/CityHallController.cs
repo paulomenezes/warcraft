@@ -37,7 +37,7 @@ namespace Warcraft.EA
 
 		public bool BuildPeon()
 		{
-            return (ManagerResources.BOT_GOLD[index] >= GOLD && ManagerResources.BOT_FOOD[index] >= FOOD && PeonMining() >= MINING);
+            return (ManagerResources.BOT_GOLD[index] >= GOLD/* && ManagerResources.BOT_FOOD[index] >= FOOD && PeonMining() >= MINING*/);
 		}
 
 		private int PeonMining()

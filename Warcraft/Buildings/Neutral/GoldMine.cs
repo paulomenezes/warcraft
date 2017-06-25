@@ -38,8 +38,6 @@ namespace Warcraft.Buildings.Neutral
             isWorking = true;
 
             managerMap.AddWalls(Position, width / 32, height / 32);
-
-            Data.Write("Adicionar [Gold Mine] X: " + tileX + " Y: " + tileY);
         }
 
         public void Fire() 

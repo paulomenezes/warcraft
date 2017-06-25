@@ -109,7 +109,6 @@ namespace Warcraft.Buildings
                     !managerMap.CheckWalls(position, width / 32, height / 32))
                 {
 					isPlaceSelected = true;
-					Data.Write("Adicionar [" + (information as InformationBuilding).Type + "] X: " + Math.Floor(position.X / 32) + " Y: " + Math.Floor(position.Y / 32));
                 }
 
                 if (isWorking)

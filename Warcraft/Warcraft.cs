@@ -57,7 +57,7 @@ namespace Warcraft
 		protected override void Initialize()
 		{
 			Data.Write("##############");
-			Data.Write("Começando jogo: " + DateTime.Now);
+			Data.Write("Começando jogo cada: " + DateTime.Now);
 
             managerMap = new ManagerMap();
             Functions.managerMap = managerMap;
