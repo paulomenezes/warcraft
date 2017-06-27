@@ -61,6 +61,30 @@ namespace Warcraft.Managers
             Building greatHall = managerBuildings.buildings.Find(b => (b.information as InformationBuilding).Type == Util.Buildings.GREAT_HALL && b.isWorking);
 			Barracks barrack = managerBuildings.buildings.Find(b => (b.information as InformationBuilding).Type == Util.Buildings.ORC_BARRACKS && b.isWorking) as Barracks;
 
+            if (greatHall != null)
+            {
+                if (cityHallController.BuildPeon())
+                {
+                    if (greatHall != null)
+                    {
+                        greatHall.commands[0].execute();
+                    }
+                }
+            }
+
+            if (barrack != null)
+            {
+                if (barracksController.BuildWarrior())
+                {
+                    barrack.commands[0].execute();
+                }
+
+                if (barracksController.BuildArcher())
+                {
+                    barrack.commands[1].execute();
+                }
+            }
+
             if (builder != null)
             {
                 if (greatHall == null)
@@ -76,8 +100,12 @@ namespace Warcraft.Managers
 					int farmCount = managerBuildings.buildings.FindAll(b => (b.information as InformationBuilding).Type == Util.Buildings.PIG_FARM).Count;
 					int minerCount = managerUnits.units.FindAll(u => u is Builder).Count;
 					int barrackCount = managerBuildings.buildings.FindAll(b => (b.information as InformationBuilding).Type == Util.Buildings.ORC_BARRACKS).Count;
-
-					if (peasantController.BuildBarracks(barrackCount == 0 ? 0 : 1)) 
+					
+                    if (peasantController.Miner(minerCount == 0 ? 0 : 1))
+					{
+						builder.commands[4].execute();
+					}
+					else if (peasantController.BuildBarracks(barrackCount == 0 ? 0 : 1)) 
                     {
                         builder.commands[1].execute();
 
@@ -97,36 +125,10 @@ namespace Warcraft.Managers
 
                         //peasantController.MultiplyFarms(2);
                     }
-                    else if (peasantController.Miner(minerCount == 0 ? 0 : 1))
-                    {
-                        builder.commands[4].execute();
-                    }
+
                 }
             }
 
-            if (greatHall != null)
-            {
-                if (cityHallController.BuildPeon())
-                {
-					if (greatHall != null)
-					{
-						greatHall.commands[0].execute();
-					}
-				}
-            }
-
-            if (barrack != null)
-            {
-                if (barracksController.BuildWarrior())
-                {
-                    barrack.commands[0].execute();
-                }
-
-                if (barracksController.BuildArcher())
-                {
-                    barrack.commands[1].execute();
-                }
-            }
 		}
 
         public void Draw(SpriteBatch spriteBatch)

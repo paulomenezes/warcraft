@@ -2,11 +2,12 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Managers/ManagerEA.cs">
     <Files>
       <File FileName="Warcraft/Warcraft.cs" Line="60" Column="35" />
-      <File FileName="Warcraft/Managers/ManagerEA.cs" Line="363" Column="43" />
-      <File FileName="Warcraft/Managers/ManagerEnemies.cs" Line="98" Column="27" />
-      <File FileName="Warcraft/EA/PeasantController.cs" Line="40" Column="13" />
+      <File FileName="Warcraft/Managers/ManagerEA.cs" Line="198" Column="67" />
+      <File FileName="Warcraft/Managers/ManagerEnemies.cs" Line="62" Column="7" />
+      <File FileName="Warcraft/EA/PeasantController.cs" Line="123" Column="10" />
       <File FileName="Warcraft/EA/CityHallController.cs" Line="40" Column="63" />
-      <File FileName="Warcraft/EA/BarracksController.cs" Line="64" Column="111" />
+      <File FileName="Warcraft/EA/BarracksController.cs" Line="59" Column="119" />
+      <File FileName="Warcraft/Buildings/Neutral/Barracks.cs" Line="10" Column="8" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

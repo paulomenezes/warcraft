@@ -81,7 +81,7 @@ namespace Warcraft.Managers
         {
             elapsed += gameTime.ElapsedGameTime.Milliseconds;
 
-            if (elapsed >= 60000f)
+            if (elapsed >= 10000f)
             {
                 if (index > 0 && generation * 10 - 2 == index)
                 {
@@ -192,10 +192,10 @@ namespace Warcraft.Managers
                     int cut = random.Next(2, 5);
 
                     List<String[]> children01 = parent01.GetRange(0, cut);
-                    children01.AddRange(parent02.GetRange(cut, cut - 1));
+                    children01.AddRange(parent02.GetRange(cut, 7 - cut));
 
                     List<String[]> children02 = parent02.GetRange(0, cut);
-                    children02.AddRange(parent01.GetRange(cut, cut - 1));
+                    children02.AddRange(parent01.GetRange(cut, 7 - cut));
 
                     children01.ForEach(c => c1 += string.Join(",", c) + " - ");
                     children02.ForEach(c => c2 += string.Join(",", c) + " - ");
