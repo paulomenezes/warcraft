@@ -1,14 +1,32 @@
 ﻿<Properties StartupConfiguration="{13F82A3A-108E-4ECC-80BB-B2E7274ECB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Managers/ManagerEA.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Util/Camera.cs">
     <Files>
       <File FileName="Warcraft/Warcraft.cs" Line="60" Column="35" />
-      <File FileName="Warcraft/Managers/ManagerEA.cs" Line="198" Column="67" />
+      <File FileName="Warcraft/Managers/ManagerEA.cs" Line="191" Column="47" />
       <File FileName="Warcraft/Managers/ManagerEnemies.cs" Line="62" Column="7" />
       <File FileName="Warcraft/EA/PeasantController.cs" Line="123" Column="10" />
       <File FileName="Warcraft/EA/CityHallController.cs" Line="40" Column="63" />
-      <File FileName="Warcraft/EA/BarracksController.cs" Line="59" Column="119" />
+      <File FileName="Warcraft/EA/BarracksController.cs" Line="52" Column="33" />
       <File FileName="Warcraft/Buildings/Neutral/Barracks.cs" Line="10" Column="8" />
+      <File FileName="Warcraft/Managers/ManagerMap.cs" Line="221" Column="17" />
+      <File FileName="Warcraft/Map/Tile.cs" Line="121" Column="32" />
+      <File FileName="Warcraft/Util/Camera.cs" Line="15" Column="27" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Warcraft" expanded="True">
+            <Node name="Warcraft" expanded="True">
+              <Node name="Managers" expanded="True" />
+              <Node name="Map" expanded="True" />
+              <Node name="Util" expanded="True">
+                <Node name="Camera.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

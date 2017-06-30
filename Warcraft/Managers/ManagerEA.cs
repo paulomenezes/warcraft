@@ -81,8 +81,10 @@ namespace Warcraft.Managers
         {
             elapsed += gameTime.ElapsedGameTime.Milliseconds;
 
-            if (elapsed >= 10000f)
+            if (elapsed >= 60000f)
             {
+                managerMap.ResetWalls();
+
                 if (index > 0 && generation * 10 - 2 == index)
                 {
 					index += 2;
@@ -122,8 +124,6 @@ namespace Warcraft.Managers
 
         private void Reproduce()
         {
-            managerMap.ResetWalls();
-
             ManagerBuildings.goldMines.ForEach(g => g.QUANITY = 10000);
 
             List<String[]>[] genes = new List<string[]>[managerEnemies.Count];
@@ -145,9 +145,9 @@ namespace Warcraft.Managers
                 float fitness = 0;
 
 				managerEnemies[i].managerUnits.units.ForEach(u => fitness += u.information.Fitness);
+                fitness *= 0.05f;
                 fitness += managerEnemies[i].managerUnits.units.Count;
                 fitness += managerEnemies[i].managerBuildings.buildings.Count;
-                fitness += ManagerResources.BOT_FOOD[managerEnemies[i].index];
 
                 allFitness.Add(new KeyValue(i, fitness));
 
@@ -178,7 +178,11 @@ namespace Warcraft.Managers
 
             List<ManagerEnemies> newEnemies = new List<ManagerEnemies>();
 
-			for (int i = 0; i < allFitness.Count; i += 2)
+            String el = "";
+            genes[allFitness[0].key].ForEach(c => el += string.Join(",", c) + " - ");
+            Data.Write("E: " + el);
+
+			for (int i = 0; i < allFitness.Count / 2; i++)
             {
 				String c1 = "", c2 = "";
 
@@ -202,8 +206,8 @@ namespace Warcraft.Managers
                     Data.Write(c1);
                     Data.Write(c2);
 
-                    newEnemies.Add(NewEnemy(children01));
-                    newEnemies.Add(NewEnemy(children02));
+                    newEnemies.Add(NewEnemy(children01, true));
+                    newEnemies.Add(NewEnemy(children02, true));
                 }
                 else
                 {
@@ -213,13 +217,14 @@ namespace Warcraft.Managers
                     Data.Write(c1);
 					Data.Write(c2);
 
-                    newEnemies.Add(NewEnemy(parent01));
-                    newEnemies.Add(NewEnemy(parent02));
+                    newEnemies.Add(NewEnemy(parent01, true));
+                    newEnemies.Add(NewEnemy(parent02, true));
 				}
 			}
 
-            //newEnemies = Shuffle(newEnemies);
+            newEnemies.Insert(0, NewEnemy(genes[allFitness[0].key], false));
 
+            newEnemies.RemoveAt(newEnemies.Count - 1);
             managerEnemies.AddRange(newEnemies);
         }
 
@@ -298,30 +303,33 @@ namespace Warcraft.Managers
             return list;
 		}
 
-		private ManagerEnemies NewEnemy(List<String[]> children01)
+        private ManagerEnemies NewEnemy(List<String[]> children01, bool mutate)
         {
-            for (int i = 0; i < children01.Count; i++)
+            if (mutate)
             {
-                for (int j = 0; j < children01[i].Length; j++)
+                for (int i = 0; i < children01.Count; i++)
                 {
-                    char[] chars = children01[i][j].ToCharArray();
-
-                    for (int k = 0; k < chars.Length; k++)
+                    for (int j = 0; j < children01[i].Length; j++)
                     {
-						if (random.NextDouble() <= 0.2)
-						{
-                            if (chars[k].Equals("1"))
-							{
-                                chars[k] = '0';
-							}
-							else
-							{
-								chars[k] = '1';
-							}
-						}
-					}
+                        char[] chars = children01[i][j].ToCharArray();
 
-                    children01[i][j] = new string(chars);
+                        for (int k = 0; k < chars.Length; k++)
+                        {
+                            if (random.NextDouble() <= 0.2)
+                            {
+                                if (chars[k].Equals("1"))
+                                {
+                                    chars[k] = '0';
+                                }
+                                else
+                                {
+                                    chars[k] = '1';
+                                }
+                            }
+                        }
+
+                        children01[i][j] = new string(chars);
+                    }
                 }
             }
 

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using System;
 using System.IO;
+using Warcraft.UI;
 
 namespace Warcraft.Managers
 {
@@ -214,7 +215,11 @@ namespace Warcraft.Managers
                 }
             }
 
-            walls.ForEach((item) => item.Draw(spriteBatch));
+            walls.ForEach((item) =>
+            {
+                item.Draw(spriteBatch);
+
+          });
         }
 
         public void AddWalls(Vector2 position, int xQuantity, int yQuantity)

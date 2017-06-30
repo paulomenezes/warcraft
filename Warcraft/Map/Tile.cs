@@ -117,8 +117,8 @@ namespace Warcraft.Map
         {
             if (rectangle.Width >= 0)
                 spriteBatch.Draw(texture, position, rectangle, Color.White);
-            //else
-              //  SelectRectangle.Draw(spriteBatch, new Rectangle(TileX * 32, TileY * 32, 32, 32));
+            else
+                SelectRectangle.Draw(spriteBatch, new Rectangle(TileX * 32, TileY * 32, 32, 32));
         }
 
         private bool ArrayEquals(TileType[] arr1, TileType[] arr2)
