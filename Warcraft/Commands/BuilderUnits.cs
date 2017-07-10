@@ -27,7 +27,7 @@ namespace Warcraft.Commands
 
         public void execute()
         {
-            if (ManagerResources.CompareGold(managerUnits.index, informationUnit.CostGold) && ManagerResources.CompareFood(managerUnits.index, informationUnit.CostFood))
+            if (!go && ManagerResources.CompareGold(managerUnits.index, informationUnit.CostGold) && ManagerResources.CompareFood(managerUnits.index, informationUnit.CostFood))
             {
                 ManagerResources.ReduceGold(managerUnits.index, informationUnit.CostGold);
                 ManagerResources.ReduceFood(managerUnits.index, informationUnit.CostFood);
