@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
@@ -26,13 +26,9 @@ namespace Warcraft.Managers
             this.managerMap = managerMap;
             this.managerMouse = managerMouse;
 
+            int k = 0;
             for (int i = 0; i < 10; i++)
 			{
-				ManagerResources.BOT_GOLD.Add(5000);
-				ManagerResources.BOT_WOOD.Add(99999);
-				ManagerResources.BOT_FOOD.Add(5);
-				ManagerResources.BOT_OIL.Add(99999);
-
 				EA.PeasantController peasantController = new EA.PeasantController(i, managerMap);
 				peasantController.SetTownHall(random.Next(0, 4));
 				peasantController.SetBaracks(random.Next(0, 500), random.Next(0, 4), random.Next(0, 10), random.Next(0, 10));
@@ -45,7 +41,16 @@ namespace Warcraft.Managers
 				barracksController.SetArcher(random.Next(0, 500), random.Next(0, 4), random.Next(0, 10));
 				barracksController.SetWarrior(random.Next(0, 500), random.Next(0, 4), random.Next(0, 10));
 
-                managerEnemies.Add(new ManagerEnemies(managerMouse, managerMap, i, peasantController, cityHallController, barracksController));
+                for (int j = 0; j < 2; j++)
+                {
+					ManagerResources.BOT_GOLD.Add(5000);
+					ManagerResources.BOT_WOOD.Add(99999);
+					ManagerResources.BOT_FOOD.Add(5);
+					ManagerResources.BOT_OIL.Add(99999);
+
+					managerEnemies.Add(new ManagerEnemies(managerMouse, managerMap, k, peasantController, cityHallController, barracksController));
+                    k++;
+				}
 			}
 
 			// Peasants controller
@@ -84,8 +89,9 @@ namespace Warcraft.Managers
             if (elapsed >= 60000f)
             {
                 managerMap.ResetWalls();
+                ManagerBuildings.goldMines.ForEach(g => g.QUANITY = 10000);
 
-                if (index > 0 && generation * 10 - 2 == index)
+                if (index > 0 && generation * 20 - 2 == index)
                 {
 					index += 2;
 					Reproduce();
@@ -124,14 +130,12 @@ namespace Warcraft.Managers
 
         private void Reproduce()
         {
-            ManagerBuildings.goldMines.ForEach(g => g.QUANITY = 10000);
-
             List<String[]>[] genes = new List<string[]>[managerEnemies.Count];
             List<KeyValue> allFitness = new List<KeyValue>();
 
             float total = 0;
 
-            for (int i = managerEnemies.Count - 10; i < managerEnemies.Count; i++)
+            for (int i = managerEnemies.Count - 20; i < managerEnemies.Count; i++)
 			{
 				String[][] genes01 = managerEnemies[i].peasantController.GetGenes();
 				String[][] genes02 = managerEnemies[i].cityHallController.GetGenes();
@@ -154,15 +158,23 @@ namespace Warcraft.Managers
                 total += fitness;
 			}
 
-            allFitness.Sort((x, y) => x.value.CompareTo(y.value));
-            allFitness.Reverse();
+            List<KeyValue> newAllFitness = new List<KeyValue>();
+            for (int i = 0; i < allFitness.Count; i += 2)
+            {
+                allFitness[i].value += allFitness[i + 1].value;
+                allFitness[i].value /= 2;
 
+                newAllFitness.Add(allFitness[i]);
+            }
+
+            newAllFitness.Sort((x, y) => x.value.CompareTo(y.value));
+            newAllFitness.Reverse();
 
             Data.Write("#######-----#######");
 			Data.Write("Geração " + generation);
 			Data.Write("Média " + (total / 10));
             String fPrint = "";
-            allFitness.ForEach(f => fPrint += f.value.ToString() + ", ");
+            newAllFitness.ForEach(f => fPrint += f.value.ToString() + ", ");
             Data.Write("Values " + fPrint);
 			generation++;
 
@@ -179,17 +191,19 @@ namespace Warcraft.Managers
             List<ManagerEnemies> newEnemies = new List<ManagerEnemies>();
 
             String el = "";
-            genes[allFitness[0].key].ForEach(c => el += string.Join(",", c) + " - ");
+            genes[newAllFitness[0].key].ForEach(c => el += string.Join(",", c) + " - ");
             Data.Write("E: " + el);
 
-			for (int i = 0; i < allFitness.Count / 2; i++)
+			for (int i = 0; i < newAllFitness.Count / 2; i++)
             {
 				String c1 = "", c2 = "";
 
-                KeyValue[] parents = RouletteWheelSelection(allFitness);
+                KeyValue[] parents = RouletteWheelSelection(newAllFitness);
 
                 List<String[]> parent01 = genes[parents[0].key]; // genes[allFitness[i].key];
                 List<String[]> parent02 = genes[parents[1].key]; // genes[allFitness[i + 1].key];
+
+                //ManagerEnemies e1, e2;
 
                 if (random.NextDouble() >= 0.2)
                 {
@@ -206,8 +220,17 @@ namespace Warcraft.Managers
                     Data.Write(c1);
                     Data.Write(c2);
 
-                    newEnemies.Add(NewEnemy(children01, true));
-                    newEnemies.Add(NewEnemy(children02, true));
+                    children01 = Mutate(children01);
+                    children02 = Mutate(children02);
+
+					newEnemies.Add(NewEnemy(children01));
+					newEnemies.Add(NewEnemy(children01));
+
+					newEnemies.Add(NewEnemy(children02));
+					newEnemies.Add(NewEnemy(children02));
+
+                    //e1 = NewEnemy(children01, true); //newEnemies.Add(NewEnemy(children01, true));
+                    //e2 = NewEnemy(children02, true); //newEnemies.Add(NewEnemy(children02, true));
                 }
                 else
                 {
@@ -217,14 +240,31 @@ namespace Warcraft.Managers
                     Data.Write(c1);
 					Data.Write(c2);
 
-                    newEnemies.Add(NewEnemy(parent01, true));
-                    newEnemies.Add(NewEnemy(parent02, true));
+					parent01 = Mutate(parent01);
+					parent02 = Mutate(parent02);
+
+					newEnemies.Add(NewEnemy(parent01));
+					newEnemies.Add(NewEnemy(parent01));
+
+					newEnemies.Add(NewEnemy(parent02));
+					newEnemies.Add(NewEnemy(parent02));
+
+                    //e1 = NewEnemy(parent01, true); //newEnemies.Add(NewEnemy(parent01, true));
+                    //e2 = NewEnemy(parent02, true); //newEnemies.Add(NewEnemy(parent02, true));
 				}
+
+				//newEnemies.Add(e1);
+				//newEnemies.Add(e1);
+				//newEnemies.Add(e2);
+				//newEnemies.Add(e2);
 			}
 
-            newEnemies.Insert(0, NewEnemy(genes[allFitness[0].key], false));
+            newEnemies.Insert(0, NewEnemy(genes[allFitness[0].key]));
+            newEnemies.Insert(1, NewEnemy(genes[allFitness[0].key]));
 
-            newEnemies.RemoveAt(newEnemies.Count - 1);
+			newEnemies.RemoveAt(newEnemies.Count - 1);
+			newEnemies.RemoveAt(newEnemies.Count - 1);
+
             managerEnemies.AddRange(newEnemies);
         }
 
@@ -303,44 +343,46 @@ namespace Warcraft.Managers
             return list;
 		}
 
-        private ManagerEnemies NewEnemy(List<String[]> children01, bool mutate)
+        private List<String[]> Mutate(List<String[]> children01)
         {
-            if (mutate)
+            for (int i = 0; i < children01.Count; i++)
             {
-                for (int i = 0; i < children01.Count; i++)
+                for (int j = 0; j < children01[i].Length; j++)
                 {
-                    for (int j = 0; j < children01[i].Length; j++)
-                    {
-                        char[] chars = children01[i][j].ToCharArray();
+                    char[] chars = children01[i][j].ToCharArray();
 
-                        for (int k = 0; k < chars.Length; k++)
+                    for (int k = 0; k < chars.Length; k++)
+                    {
+                        if (random.NextDouble() <= 0.2)
                         {
-                            if (random.NextDouble() <= 0.2)
+                            if (chars[k].Equals("1"))
                             {
-                                if (chars[k].Equals("1"))
-                                {
-                                    chars[k] = '0';
-                                }
-                                else
-                                {
-                                    chars[k] = '1';
-                                }
+                                chars[k] = '0';
+                            }
+                            else
+                            {
+                                chars[k] = '1';
                             }
                         }
-
-                        children01[i][j] = new string(chars);
                     }
+
+                    children01[i][j] = new string(chars);
                 }
             }
 
+            return children01;
+        }
+
+        private ManagerEnemies NewEnemy(List<String[]> children01)
+        {
             ManagerResources.BOT_GOLD.Add(5000);
 			ManagerResources.BOT_WOOD.Add(99999);
 			ManagerResources.BOT_FOOD.Add(5);
 			ManagerResources.BOT_OIL.Add(99999);
 
-            int index = ManagerResources.BOT_GOLD.Count - 1;
+            int newIndex = ManagerResources.BOT_GOLD.Count - 1;
 
-            EA.PeasantController peasantController = new EA.PeasantController(index, managerMap);
+            EA.PeasantController peasantController = new EA.PeasantController(newIndex, managerMap);
             peasantController.SetTownHall(EA.GeneticUtil.BinaryToInt(children01[0][0]));
 
             peasantController.SetBaracks(EA.GeneticUtil.BinaryToInt(children01[1][0]),
@@ -356,9 +398,9 @@ namespace Warcraft.Managers
 
             EA.CityHallController cityHallController = new EA.CityHallController(EA.GeneticUtil.BinaryToInt(children01[4][0]),
                                                                                  EA.GeneticUtil.BinaryToInt(children01[4][1]),
-                                                                                 EA.GeneticUtil.BinaryToInt(children01[4][2]), index, managerMap);
+                                                                                 EA.GeneticUtil.BinaryToInt(children01[4][2]), newIndex, managerMap);
 
-            EA.BarracksController barracksController = new EA.BarracksController(index, managerMap);
+            EA.BarracksController barracksController = new EA.BarracksController(newIndex, managerMap);
             barracksController.SetArcher(EA.GeneticUtil.BinaryToInt(children01[5][0]),
                                          EA.GeneticUtil.BinaryToInt(children01[5][1]),
                                          EA.GeneticUtil.BinaryToInt(children01[5][2]));
@@ -367,7 +409,7 @@ namespace Warcraft.Managers
                                           EA.GeneticUtil.BinaryToInt(children01[6][1]),
                                           EA.GeneticUtil.BinaryToInt(children01[6][2]));
 
-            ManagerEnemies newEnemy = new ManagerEnemies(managerMouse, managerMap, index, peasantController, cityHallController, barracksController);
+            ManagerEnemies newEnemy = new ManagerEnemies(managerMouse, managerMap, newIndex, peasantController, cityHallController, barracksController);
             newEnemy.LoadContent(content);
 
             return newEnemy;
