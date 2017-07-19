@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
@@ -84,6 +84,7 @@ namespace Warcraft.Managers
             if (elapsed >= 60000f)
             {
                 managerMap.ResetWalls();
+                ManagerBuildings.goldMines.ForEach(g => g.QUANITY = 10000);
 
                 if (index > 0 && generation * 10 - 2 == index)
                 {
@@ -124,8 +125,6 @@ namespace Warcraft.Managers
 
         private void Reproduce()
         {
-            ManagerBuildings.goldMines.ForEach(g => g.QUANITY = 10000);
-
             List<String[]>[] genes = new List<string[]>[managerEnemies.Count];
             List<KeyValue> allFitness = new List<KeyValue>();
 

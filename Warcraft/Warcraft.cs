@@ -36,6 +36,8 @@ namespace Warcraft
 
         public static bool PLAYER = false;
 
+        GenerateRooms rooms;
+
 		public Warcraft()
 		{
 			graphics = new GraphicsDeviceManager(this);
@@ -78,6 +80,8 @@ namespace Warcraft
 
             camera = new Camera(GraphicsDevice.Viewport);
 
+            rooms = new GenerateRooms();
+
 			base.Initialize();
 		}
 
@@ -116,6 +120,8 @@ namespace Warcraft
 			if (IsActive)
 				camera.Update(gameTime);
 
+            rooms.Update();
+
 			base.Update(gameTime);
 		}
 
@@ -133,6 +139,9 @@ namespace Warcraft
                 managerPlayerBuildings.Draw(spriteBatch);
             }
 			managerMouse.Draw(spriteBatch);
+
+            rooms.Draw(spriteBatch);
+
 			spriteBatch.End();
 
 			spriteBatch.Begin();

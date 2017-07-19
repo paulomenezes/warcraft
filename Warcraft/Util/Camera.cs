@@ -12,7 +12,7 @@ namespace Warcraft.Util
         Viewport view;
 
         float speed = 4;
-        float zoom = Warcraft.PLAYER ? 1 : 0.5f;
+        float zoom = 1; // Warcraft.PLAYER ? 1 : 0.5f;
 
         public Camera(Viewport viewport)
         {
