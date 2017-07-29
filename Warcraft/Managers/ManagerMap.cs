@@ -44,182 +44,184 @@ namespace Warcraft.Managers
     class ManagerMap
     {
         private Texture2D texture;
-        public List<List<Tile>> map = new List<List<Tile>>();
-		private List<List<int>> match = new List<List<int>>();
         public List<Tile> walls = new List<Tile>();
-		public List<Tile> water = new List<Tile>();
+        List<List<Tile>> FULL_MAP = new List<List<Tile>>();
 
         public static Dictionary<int[], int[]> Mapping = new Dictionary<int[], int[]>(new MyEqualityComparer());
 
         public static SpriteFont font;
+        private List<Room> rooms;
 
-        public ManagerMap()
+        public ManagerMap(List<Room> rooms)
         {
-            float[,] noise = new float[Warcraft.MAP_SIZE, Warcraft.MAP_SIZE]; 
+            this.rooms = rooms;
 
-			String mapValues = "";
+            Random rng = new Random();
 
-            using (var filestream = File.Open("../../Content/map.txt", FileMode.Open))
-            using (var binaryStream = new BinaryReader(filestream))
+            for (int i = 0; i < rooms.Count; i++)
             {
-            	while (binaryStream.PeekChar() != -1)
-            	{
-                    mapValues += binaryStream.ReadChar();
-            	}
+                CreateInsland(rooms[i].rectangle.X / 32, rooms[i].rectangle.Y / 32, rooms[i].rectangle.Width / 32, rooms[i].rectangle.Height / 32);
             }
+        }
 
-            String[] values = mapValues.Split(',');
-            int vX = 0, vY = 0;
-            for (int i = 0; i < values.Length; i++)
+        public void CreateInsland(int x, int y, int width, int height) {
+            List<List<Tile>> map = new List<List<Tile>>();
+            List<List<int>> match = new List<List<int>>();
+            List<Tile> water = new List<Tile>();
+
+            float[,] noise = Noise2D.GenerateNoiseMap(width, height, 20);
+            for (int i = 0; i < width; i++)
             {
-                noise[vX, vY] = (float)Convert.ToDouble(values[i]);
+                for (int j = 0; j < height; j++)
+                {
+                    float distance_x = Math.Abs(i - width * 0.5f);
+                    float distance_y = Math.Abs(j - height * 0.5f);
+                    double distance = Math.Sqrt(distance_x * distance_x + distance_y * distance_y);
 
-                vX++;
-                if (vX == 50) {
-                    vY++;
-                    vX = 0;
+                    float max_width = width * 0.5f;
+                    double delta = distance / max_width;
+                    double gradient = delta * delta;
+
+                    noise[i, j] *= (float)Math.Max(0.0f, 1.0f - gradient);
                 }
             }
 
-			//float[,] noise = Noise2D.GenerateNoiseMap(Warcraft.MAP_SIZE, Warcraft.MAP_SIZE, 20);
-
-			for (int i = 0; i < Warcraft.MAP_SIZE; i++)
+            for (int i = 0; i < width; i++)
             {
                 List<Tile> t = new List<Tile>();
-                for (int j = 0; j < Warcraft.MAP_SIZE; j++)
+                for (int j = 0; j < height; j++)
                 {
-					if (noise[i, j] < 0.4f)
-						t.Add(new Tile(i, j, TileType.GRASS));
-					else if (noise[i, j] >= 0.4f)
-						t.Add(new Tile(i, j, TileType.DESERT));
-                    
-                    //if (noise[i, j] < 0.1f)
-                    //    t.Add(new Tile(i, j, TileType.FLOREST));
-                    //else if (noise[i, j] >= 0.1f && noise[i, j] < 0.3f)
-                    //    t.Add(new Tile(i, j, TileType.GRASS));
-                    //else if (noise[i, j] >= 0.3f && noise[i, j] < 0.7f)
-                    //    t.Add(new Tile(i, j, TileType.DESERT));
-                    //else if (noise[i, j] >= 0.7f)
-                        //t.Add(new Tile(i, j, TileType.WATER));
+                    if (noise[i, j] < 0.1f)
+                        t.Add(new Tile(x + i, y + j, TileType.WATER));
+                    else if (noise[i, j] >= 0.1f && noise[i, j] < 0.4f)
+                        t.Add(new Tile(x + i, y + j, TileType.DESERT));
+                    else if (noise[i, j] >= 0.4f && noise[i, j] < 0.9f)
+                        t.Add(new Tile(x + i, y + j, TileType.GRASS));
+                    else if (noise[i, j] >= 0.9f)
+                        t.Add(new Tile(x + i, y + j, TileType.FLOREST));
                 }
 
                 map.Add(t);
             }
 
-            for (int i = 1; i < Warcraft.MAP_SIZE + 2; i++)
+
+            for (int i = 1; i < width + 2; i++)
             {
                 List<int> t = new List<int>();
-                for (int j = 1; j < Warcraft.MAP_SIZE + 2; j++)
-				{
-					int x = Math.Min(i, Warcraft.MAP_SIZE);
-					int y = Math.Min(j, Warcraft.MAP_SIZE);
+                for (int j = 1; j < height + 2; j++)
+                {
+                    int X = Math.Min(i, width);
+                    int Y = Math.Min(j, height);
 
-					t.Add((int)map[x - 1][y - 1].tileType);
+                    t.Add((int)map[X - 1][Y - 1].tileType);
                 }
 
                 match.Add(t);
             }
 
             Dictionary<int[], int[]> matches = new Dictionary<int[], int[]>(new MyEqualityComparer());
-			// Water to Desert
-			matches.Add(new int[] { 0, 0, 0, 1 }, new int[] { 11, 11 });
-			matches.Add(new int[] { 0, 0, 1, 0 }, new int[] { 0, 12 });
-			matches.Add(new int[] { 0, 0, 1, 1 }, new int[] { 2, 11 });
-			matches.Add(new int[] { 0, 1, 0, 0 }, new int[] { 5, 12 });
-			matches.Add(new int[] { 0, 1, 0, 1 }, new int[] { 7, 11 });
-			matches.Add(new int[] { 0, 1, 1, 0 }, new int[] { 14, 11 });
-			matches.Add(new int[] { 0, 1, 1, 1 }, new int[] { 17, 10 });
-			matches.Add(new int[] { 1, 0, 0, 0 }, new int[] { 6, 12 });
-			matches.Add(new int[] { 1, 0, 0, 1 }, new int[] { 8, 12 });
-			matches.Add(new int[] { 1, 0, 1, 0 }, new int[] { 16, 11 });
-			matches.Add(new int[] { 1, 0, 1, 1 }, new int[] { 0, 11 });
-			matches.Add(new int[] { 1, 1, 0, 0 }, new int[] { 2, 12 });
-			matches.Add(new int[] { 1, 1, 0, 1 }, new int[] { 5, 11 });
-			matches.Add(new int[] { 1, 1, 1, 0 }, new int[] { 12, 11 });
+            // Water to Desert
+            matches.Add(new int[] { 0, 0, 0, 1 }, new int[] { 11, 11 });
+            matches.Add(new int[] { 0, 0, 1, 0 }, new int[] { 0, 12 });
+            matches.Add(new int[] { 0, 0, 1, 1 }, new int[] { 2, 11 });
+            matches.Add(new int[] { 0, 1, 0, 0 }, new int[] { 5, 12 });
+            matches.Add(new int[] { 0, 1, 0, 1 }, new int[] { 7, 11 });
+            matches.Add(new int[] { 0, 1, 1, 0 }, new int[] { 14, 11 });
+            matches.Add(new int[] { 0, 1, 1, 1 }, new int[] { 17, 10 });
+            matches.Add(new int[] { 1, 0, 0, 0 }, new int[] { 6, 12 });
+            matches.Add(new int[] { 1, 0, 0, 1 }, new int[] { 8, 12 });
+            matches.Add(new int[] { 1, 0, 1, 0 }, new int[] { 16, 11 });
+            matches.Add(new int[] { 1, 0, 1, 1 }, new int[] { 0, 11 });
+            matches.Add(new int[] { 1, 1, 0, 0 }, new int[] { 2, 12 });
+            matches.Add(new int[] { 1, 1, 0, 1 }, new int[] { 5, 11 });
+            matches.Add(new int[] { 1, 1, 1, 0 }, new int[] { 12, 11 });
             // Desert to Grass
             matches.Add(new int[] { 1, 1, 1, 2 }, new int[] { 18, 14 });
-			matches.Add(new int[] { 1, 1, 2, 1 }, new int[] { 7, 15 });
-			matches.Add(new int[] { 1, 1, 2, 2 }, new int[] { 9, 14 });
-			matches.Add(new int[] { 1, 2, 1, 1 }, new int[] { 11, 15 });
-			matches.Add(new int[] { 1, 2, 1, 2 }, new int[] { 13, 14 });
-			matches.Add(new int[] { 1, 2, 2, 1 }, new int[] { 3, 15 }); //
-			matches.Add(new int[] { 1, 2, 2, 2 }, new int[] { 4, 14 });
-			matches.Add(new int[] { 2, 1, 1, 1 }, new int[] { 13, 15 });
-			matches.Add(new int[] { 2, 1, 1, 2 }, new int[] { 17, 14 });
-			matches.Add(new int[] { 2, 1, 2, 1 }, new int[] { 5, 15 });
-			matches.Add(new int[] { 2, 1, 2, 2 }, new int[] { 6, 14 });
-			matches.Add(new int[] { 2, 2, 1, 1 }, new int[] { 8, 15 });
-			matches.Add(new int[] { 2, 2, 1, 2 }, new int[] { 11, 14 });
-			matches.Add(new int[] { 2, 2, 2, 1 }, new int[] { 0, 15 });
-			// Grass to Florest
-			matches.Add(new int[] { 2, 2, 2, 3 }, new int[] { 3, 7 });
-			matches.Add(new int[] { 2, 2, 3, 2 }, new int[] { 18, 6 });
-			matches.Add(new int[] { 2, 2, 3, 3 }, new int[] { 11, 5 }); //
-			matches.Add(new int[] { 2, 3, 2, 2 }, new int[] { 16, 6 });
-			matches.Add(new int[] { 2, 3, 2, 3 }, new int[] { 2, 7 });
-			//matches.Add(new int[] { 2, 3, 3, 2 }, new int[] { 0, 0 }); //
-			matches.Add(new int[] { 2, 3, 3, 3 }, new int[] { 10, 5 }); ////
-			matches.Add(new int[] { 3, 2, 2, 2 }, new int[] { 15, 6 }); //
-			//matches.Add(new int[] { 3, 2, 2, 3 }, new int[] { 0, 0 });
-			matches.Add(new int[] { 3, 2, 3, 2 }, new int[] { 0, 7 });
-			//matches.Add(new int[] { 3, 2, 3, 3 }, new int[] { 12, 5 });
-			matches.Add(new int[] { 3, 3, 2, 2 }, new int[] { 10, 6 });
-			matches.Add(new int[] { 3, 3, 2, 3 }, new int[] { 13, 5 });//
-			matches.Add(new int[] { 3, 3, 3, 2 }, new int[] { 0, 6 });
+            matches.Add(new int[] { 1, 1, 2, 1 }, new int[] { 7, 15 });
+            matches.Add(new int[] { 1, 1, 2, 2 }, new int[] { 9, 14 });
+            matches.Add(new int[] { 1, 2, 1, 1 }, new int[] { 11, 15 });
+            matches.Add(new int[] { 1, 2, 1, 2 }, new int[] { 13, 14 });
+            matches.Add(new int[] { 1, 2, 2, 1 }, new int[] { 3, 15 }); //
+            matches.Add(new int[] { 1, 2, 2, 2 }, new int[] { 4, 14 });
+            matches.Add(new int[] { 2, 1, 1, 1 }, new int[] { 13, 15 });
+            matches.Add(new int[] { 2, 1, 1, 2 }, new int[] { 17, 14 });
+            matches.Add(new int[] { 2, 1, 2, 1 }, new int[] { 5, 15 });
+            matches.Add(new int[] { 2, 1, 2, 2 }, new int[] { 6, 14 });
+            matches.Add(new int[] { 2, 2, 1, 1 }, new int[] { 8, 15 });
+            matches.Add(new int[] { 2, 2, 1, 2 }, new int[] { 11, 14 });
+            matches.Add(new int[] { 2, 2, 2, 1 }, new int[] { 0, 15 });
+            // Grass to Florest
+            matches.Add(new int[] { 2, 2, 2, 3 }, new int[] { 3, 7 });
+            matches.Add(new int[] { 2, 2, 3, 2 }, new int[] { 18, 6 });
+            matches.Add(new int[] { 2, 2, 3, 3 }, new int[] { 11, 5 }); //
+            matches.Add(new int[] { 2, 3, 2, 2 }, new int[] { 16, 6 });
+            matches.Add(new int[] { 2, 3, 2, 3 }, new int[] { 2, 7 });
+            //matches.Add(new int[] { 2, 3, 3, 2 }, new int[] { 0, 0 }); //
+            matches.Add(new int[] { 2, 3, 3, 3 }, new int[] { 10, 5 }); ////
+            matches.Add(new int[] { 3, 2, 2, 2 }, new int[] { 15, 6 }); //
+                                                                        //matches.Add(new int[] { 3, 2, 2, 3 }, new int[] { 0, 0 });
+            matches.Add(new int[] { 3, 2, 3, 2 }, new int[] { 0, 7 });
+            //matches.Add(new int[] { 3, 2, 3, 3 }, new int[] { 12, 5 });
+            matches.Add(new int[] { 3, 3, 2, 2 }, new int[] { 10, 6 });
+            matches.Add(new int[] { 3, 3, 2, 3 }, new int[] { 13, 5 });//
+            matches.Add(new int[] { 3, 3, 3, 2 }, new int[] { 0, 6 });
 
-			for (int i = 0; i < match.Count - 1; i++)
-			{
+            for (int i = 0; i < match.Count - 1; i++)
+            {
                 for (int j = 0; j < match[i].Count - 1; j++)
-				{
-					int[] key = { match[i][j], match[i + 1][j], match[i][j + 1], match[i + 1][j + 1] };
-					for (int k = 0; k < matches.Count; k++)
+                {
+                    int[] key = { match[i][j], match[i + 1][j], match[i][j + 1], match[i + 1][j + 1] };
+                    for (int k = 0; k < matches.Count; k++)
                     {
-                        if (matches.ContainsKey(key)) {
+                        if (matches.ContainsKey(key))
+                        {
                             map[i][j].ChangeTexture(matches[key][0], matches[key][1]);
                             break;
                         }
                     }
 
-					if (key[0] == 0 || key[1] == 0 || key[2] == 0 || key[3] == 0 || 
+                    if (key[0] == 0 || key[1] == 0 || key[2] == 0 || key[3] == 0 ||
                         key[0] == 3 || key[1] == 3 || key[2] == 3 || key[3] == 3)
-					{
-					    water.Add(new Tile(i, j));
-					}
-				}
-			}
+                    {
+                        water.Add(new Tile(i, j));
+                    }
+                }
+            }
 
             for (int i = 0; i < water.Count; i++)
             {
                 water[i].isWater = true;
                 walls.Add(water[i]);
             }
-        }
 
+            FULL_MAP.AddRange(map);
+        }
 
         public void LoadContent(ContentManager content)
         {
             texture = content.Load<Texture2D>("Summer Tiles");
             font = content.Load<SpriteFont>("Font");
 
-            map.ForEach((item) => item.ForEach((tile) => tile.LoadContent(texture)));
+            FULL_MAP.ForEach((item) => item.ForEach((tile) => tile.LoadContent(texture)));
             walls.ForEach((item) => item.LoadContent(texture));
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            for (int i = 0; i < Warcraft.MAP_SIZE; i++)
+            //spriteBatch.Draw(Tile.texture, new Rectangle(0, 0, 5000, 5000), new Rectangle(5 * Warcraft.TILE_SIZE + 1, 17 * Warcraft.TILE_SIZE + 1, Warcraft.TILE_SIZE, Warcraft.TILE_SIZE), Color.White);
+
+            for (int i = 0; i < FULL_MAP.Count; i++)
             {
-                for (int j = 0; j < Warcraft.MAP_SIZE; j++)
+                for (int j = 0; j < FULL_MAP[i].Count; j++)
                 {
-                    map[i][j].Draw(spriteBatch);
+                    FULL_MAP[i][j].Draw(spriteBatch);
                 }
             }
 
             walls.ForEach((item) =>
             {
                 item.Draw(spriteBatch);
-
-          });
+            });
         }
 
         public void AddWalls(Vector2 position, int xQuantity, int yQuantity)

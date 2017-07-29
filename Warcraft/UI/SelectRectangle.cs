@@ -13,7 +13,12 @@ namespace Warcraft.UI
         public static void LoadContent(ContentManager content)
         {
             texture = content.Load<Texture2D>("Cursor");
-        }
+		}
+
+		public static void DrawFilled(SpriteBatch spriteBatch, Rectangle rectangle)
+		{
+            spriteBatch.Draw(texture, rectangle, Color.Black);
+		}
 
         public static void Draw(SpriteBatch spriteBatch, Rectangle rectangle)
         {

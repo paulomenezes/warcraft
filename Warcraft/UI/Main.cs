@@ -88,7 +88,7 @@ namespace Warcraft.UI
             //spriteBatch.DrawString(font, "Wood: " + Warcraft.WOOD, new Vector2(minX, 50), Color.Black);
             //spriteBatch.DrawString(font, "Oil: " + Warcraft.OIL, new Vector2(minX, 70), Color.Black);
 
-            int j = 0;
+            /*int j = 0;
             for (int i = ManagerEA.index; i < ManagerEA.index + 2; i++)
             {
 				int totalUnits = managerEnemies[i].managerUnits.units.Count;
@@ -108,7 +108,7 @@ namespace Warcraft.UI
                 spriteBatch.DrawString(font, "Fitness: " + fitness, new Vector2(minX, 290 + 140 * j), Color.Black);
 
                 j++;
-			}
+			}*/
 
             if (!DrawIndividual)
                 buttons.ForEach((b) => b.Draw(spriteBatch));

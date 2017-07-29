@@ -1,17 +1,14 @@
 ﻿<Properties StartupConfiguration="{13F82A3A-108E-4ECC-80BB-B2E7274ECB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Map/GenerateRooms.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Map/Tile.cs">
     <Files>
-      <File FileName="Warcraft/Managers/ManagerEA.cs" Line="27" Column="12" />
-      <File FileName="Warcraft/Managers/ManagerCombat.cs" Line="35" Column="1" />
-      <File FileName="Warcraft/UI/Main.cs" Line="104" Column="1" />
-      <File FileName="Warcraft/Managers/ManagerEnemies.cs" Line="82" Column="54" />
-      <File FileName="Warcraft/EA/CityHallController.cs" Line="41" Column="1" />
-      <File FileName="Warcraft/EA/BarracksController.cs" Line="41" Column="1" />
-      <File FileName="Warcraft/EA/GeneticUtil.cs" Line="14" Column="1" />
-      <File FileName="Warcraft/Util/Data.cs" Line="14" Column="1" />
-      <File FileName="Warcraft/Map/Room.cs" Line="52" Column="1" />
-      <File FileName="Warcraft/Map/GenerateRooms.cs" Line="112" Column="23" />
-      <File FileName="Warcraft/Warcraft.cs" Line="123" Column="28" />
+      <File FileName="Warcraft/Map/GenerateRooms.cs" Line="56" Column="15" />
+      <File FileName="Warcraft/Warcraft.cs" Line="18" Column="10" />
+      <File FileName="Warcraft/Util/Camera.cs" Line="32" Column="72" />
+      <File FileName="Warcraft/Map/Room.cs" Line="19" Column="39" />
+      <File FileName="Warcraft/UI/SelectRectangle.cs" Line="20" Column="48" />
+      <File FileName="Warcraft/Managers/ManagerMap.cs" Line="206" Column="24" />
+      <File FileName="Warcraft/Map/Noise2D.cs" Line="123" Column="22" />
+      <File FileName="Warcraft/Map/Tile.cs" Line="120" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

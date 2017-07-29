@@ -19,12 +19,12 @@ namespace Warcraft
 		ManagerMouse managerMouse = new ManagerMouse();
 
 		ManagerUI managerUI;
-        ManagerEA managerEA;
+        // ManagerEA managerEA;
 
         ManagerUnits managerPlayerUnits;
         ManagerBuildings managerPlayerBuildings;
 
-        ManagerCombat managerCombat;
+        // ManagerCombat managerCombat;
 
 		public static int WINDOWS_WIDTH = 1280;
 		public static int WINDOWS_HEIGHT = 800;
@@ -33,8 +33,6 @@ namespace Warcraft
 		public static int MAP_SIZE = 50;
 
 		public static Camera camera;
-
-        public static bool PLAYER = false;
 
         GenerateRooms rooms;
 
@@ -60,27 +58,23 @@ namespace Warcraft
 		{
 			Data.Write("##############");
 			Data.Write("Começando jogo cada: " + DateTime.Now);
+			rooms = new GenerateRooms();
 
-            managerMap = new ManagerMap();
+            managerMap = new ManagerMap(rooms.Rooms);
             Functions.managerMap = managerMap;
 
-            if (PLAYER)
-            {
-                managerPlayerBuildings = new ManagerPlayerBuildings(managerMouse, managerMap);
-                managerPlayerUnits = new ManagerPlayerUnits(managerMouse, managerMap, managerPlayerBuildings);
-            }
+            managerPlayerBuildings = new ManagerPlayerBuildings(managerMouse, managerMap);
+            managerPlayerUnits = new ManagerPlayerUnits(managerMouse, managerMap, managerPlayerBuildings);
 
 			ManagerBuildings.goldMines.Add(new Buildings.Neutral.GoldMine(6, 33, managerMouse, managerMap, null));
 			ManagerBuildings.goldMines.Add(new Buildings.Neutral.GoldMine(45, 5, managerMouse, managerMap, null));
 			ManagerBuildings.goldMines.Add(new Buildings.Neutral.GoldMine(38, 22, managerMouse, managerMap, null));
 
-			managerEA = new ManagerEA(2, managerMouse, managerMap);
-            managerUI = new ManagerUI(managerMouse, managerPlayerBuildings, managerPlayerUnits, managerEA.managerEnemies);
-            managerCombat = new ManagerCombat(managerEA.managerEnemies, managerPlayerUnits, managerPlayerBuildings);
+			// managerEA = new ManagerEA(2, managerMouse, managerMap);
+            managerUI = new ManagerUI(managerMouse, managerPlayerBuildings, managerPlayerUnits, null);
+            // managerCombat = new ManagerCombat(managerEA.managerEnemies, managerPlayerUnits, managerPlayerBuildings);
 
             camera = new Camera(GraphicsDevice.Viewport);
-
-            rooms = new GenerateRooms();
 
 			base.Initialize();
 		}
@@ -90,12 +84,8 @@ namespace Warcraft
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
 			managerMap.LoadContent(Content);
-            if (PLAYER)
-            {
-                managerPlayerUnits.LoadContent(Content);
-                managerPlayerBuildings.LoadContent(Content);
-            }
-            managerEA.LoadContent(Content);
+            managerPlayerUnits.LoadContent(Content);
+            managerPlayerBuildings.LoadContent(Content);
 			managerUI.LoadContent(Content);
 
 			SelectRectangle.LoadContent(Content);
@@ -106,22 +96,16 @@ namespace Warcraft
 			if (Keyboard.GetState().IsKeyDown(Keys.Escape))
 				Exit();
 
-            if (PLAYER)
-            {
-				managerMouse.Update();
-				managerPlayerUnits.Update();
-                managerPlayerBuildings.Update();
-            }
-            managerEA.Update(gameTime);
+			managerMouse.Update();
+			managerPlayerUnits.Update();
+            managerPlayerBuildings.Update();
 			managerUI.Update();
 
-			managerCombat.Update();
+			// managerCombat.Update();
 
 			if (IsActive)
 				camera.Update(gameTime);
-
-            rooms.Update();
-
+            
 			base.Update(gameTime);
 		}
 
@@ -130,29 +114,20 @@ namespace Warcraft
 			GraphicsDevice.Clear(Color.CornflowerBlue);
 
 			spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null, null, camera.transform);
-			managerMap.Draw(spriteBatch);
 
-            managerEA.Draw(spriteBatch);
-            if (PLAYER)
-            {
-                managerPlayerUnits.Draw(spriteBatch);
-                managerPlayerBuildings.Draw(spriteBatch);
-            }
+            managerMap.Draw(spriteBatch);
+            //managerEA.Draw(spriteBatch);
+            managerPlayerUnits.Draw(spriteBatch);
+            managerPlayerBuildings.Draw(spriteBatch);
 			managerMouse.Draw(spriteBatch);
-
-            rooms.Draw(spriteBatch);
 
 			spriteBatch.End();
 
 			spriteBatch.Begin();
 			managerUI.DrawBack(spriteBatch);
 			managerUI.Draw(spriteBatch);
-            managerEA.DrawUI(spriteBatch);
-            if (PLAYER)
-            {
-                managerPlayerUnits.DrawUI(spriteBatch);
-                managerPlayerBuildings.DrawUI(spriteBatch);
-            }
+            managerPlayerUnits.DrawUI(spriteBatch);
+            managerPlayerBuildings.DrawUI(spriteBatch);
 			spriteBatch.End();
 
 			base.Draw(gameTime);

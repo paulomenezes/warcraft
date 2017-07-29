@@ -37,8 +37,8 @@ namespace Warcraft.Util
             center.X = Math.Max(center.X, 0); //312
             center.Y = Math.Max(center.Y, 0); //796
 
-            center.X = Math.Min(312, center.X);
-            center.Y = Math.Min(796, center.Y);
+            //center.X = Math.Min(312, center.X);
+            //center.Y = Math.Min(796, center.Y);
 
             transform = Matrix.CreateScale(new Vector3(1, 1, 0)) * 
                         Matrix.CreateScale(new Vector3(zoom, zoom, 1)) * 
