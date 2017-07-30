@@ -44,30 +44,25 @@ namespace Warcraft.Managers
     class ManagerMap
     {
         private Texture2D texture;
-        public List<Tile> walls = new List<Tile>();
-        List<List<Tile>> FULL_MAP = new List<List<Tile>>();
+        public List<Tile> WALLS = new List<Tile>();
+        public List<List<Tile>> FULL_MAP = new List<List<Tile>>();
 
         public static Dictionary<int[], int[]> Mapping = new Dictionary<int[], int[]>(new MyEqualityComparer());
 
         public static SpriteFont font;
-        private List<Room> rooms;
 
-        public ManagerMap(List<Room> rooms)
+        public ManagerMap(Room room)
         {
-            this.rooms = rooms;
-
             Random rng = new Random();
 
-            for (int i = 0; i < rooms.Count; i++)
-            {
-                CreateInsland(rooms[i].rectangle.X / 32, rooms[i].rectangle.Y / 32, rooms[i].rectangle.Width / 32, rooms[i].rectangle.Height / 32);
-            }
+            CreateInsland(room.rectangle.X / 32, room.rectangle.Y / 32, room.rectangle.Width / 32, room.rectangle.Height / 32);
         }
 
         public void CreateInsland(int x, int y, int width, int height) {
             List<List<Tile>> map = new List<List<Tile>>();
             List<List<int>> match = new List<List<int>>();
             List<Tile> water = new List<Tile>();
+            List<Tile> walls = new List<Tile>();
 
             float[,] noise = Noise2D.GenerateNoiseMap(width, height, 20);
             for (int i = 0; i < width; i++)
@@ -194,7 +189,8 @@ namespace Warcraft.Managers
                 walls.Add(water[i]);
             }
 
-            FULL_MAP.AddRange(map);
+            FULL_MAP = map;
+            WALLS = walls;
         }
 
         public void LoadContent(ContentManager content)
@@ -202,38 +198,37 @@ namespace Warcraft.Managers
             texture = content.Load<Texture2D>("Summer Tiles");
             font = content.Load<SpriteFont>("Font");
 
-            FULL_MAP.ForEach((item) => item.ForEach((tile) => tile.LoadContent(texture)));
-            walls.ForEach((item) => item.LoadContent(texture));
+            Tile.texture = texture;
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
             //spriteBatch.Draw(Tile.texture, new Rectangle(0, 0, 5000, 5000), new Rectangle(5 * Warcraft.TILE_SIZE + 1, 17 * Warcraft.TILE_SIZE + 1, Warcraft.TILE_SIZE, Warcraft.TILE_SIZE), Color.White);
 
-            for (int i = 0; i < FULL_MAP.Count; i++)
-            {
-                for (int j = 0; j < FULL_MAP[i].Count; j++)
+                for (int i = 0; i < FULL_MAP.Count; i++)
                 {
-                    FULL_MAP[i][j].Draw(spriteBatch);
+                    for (int j = 0; j < FULL_MAP[i].Count; j++)
+                    {
+                        FULL_MAP[i][j].Draw(spriteBatch);
+                    }
                 }
-            }
 
-            walls.ForEach((item) =>
+            WALLS.ForEach((item) =>
             {
                 item.Draw(spriteBatch);
             });
-        }
+		}
 
         public void AddWalls(Vector2 position, int xQuantity, int yQuantity)
         {
             for (int i = 0; i < xQuantity; i++)
                 for (int j = 0; j < yQuantity; j++)
-                    walls.Add(new Tile(((int)position.X / 32) + i, ((int)position.Y / 32) + j));
+                    WALLS.Add(new Tile(((int)position.X / 32) + i, ((int)position.Y / 32) + j));
         }
 
         public void ResetWalls()
         {
-            walls.Clear();
+            WALLS.Clear();
         }
 
         public void AddWalls(Vector2 position, Rectangle rectangle)
@@ -245,7 +240,7 @@ namespace Warcraft.Managers
             int textureY = rectangle.Y / 32;
 
             if (!CheckWalls(tileX, tileY))
-                walls.Add(new Tile(tileX, tileY, textureX, textureY));
+                WALLS.Add(new Tile(tileX, tileY, textureX, textureY));
         }
 
         private bool ArrayEquals(int[] arr1, int[] arr2)
@@ -260,28 +255,28 @@ namespace Warcraft.Managers
 
         public void OrganizeWalls()
         {
-            for (int i = 0; i < walls.Count; i++)
+            for (int i = 0; i < WALLS.Count; i++)
             {
-                if (walls[i].isWall)
+                if (WALLS[i].isWall)
                 {
-                    int[] n = GetNeighbourhood(walls[i].TileX, walls[i].TileY);
+                    int[] n = GetNeighbourhood(WALLS[i].TileX, WALLS[i].TileY);
 
-                         if (ArrayEquals(n, new int[] { 0, 1, 1, 0 })) walls[i].ChangeTexture(0, 1);
-                    else if (ArrayEquals(n, new int[] { 0, 0, 0, 1 })) walls[i].ChangeTexture(1, 1);
-                    else if (ArrayEquals(n, new int[] { 0, 1, 0, 1 })) walls[i].ChangeTexture(2, 1);
-                    else if (ArrayEquals(n, new int[] { 0, 0, 1, 1 })) walls[i].ChangeTexture(4, 1);
-                    else if (ArrayEquals(n, new int[] { 0, 1, 1, 1 })) walls[i].ChangeTexture(5, 1);
-                    else if (ArrayEquals(n, new int[] { 1, 0, 0, 0 })) walls[i].ChangeTexture(6, 1);
-                    else if (ArrayEquals(n, new int[] { 1, 1, 0, 0 })) walls[i].ChangeTexture(7, 1);
-                    else if (ArrayEquals(n, new int[] { 1, 0, 1, 0 })) walls[i].ChangeTexture(8, 1);
-                    else if (ArrayEquals(n, new int[] { 1, 1, 1, 0 })) walls[i].ChangeTexture(10, 1);
-                    else if (ArrayEquals(n, new int[] { 1, 0, 0, 1 })) walls[i].ChangeTexture(11, 1);
-                    else if (ArrayEquals(n, new int[] { 1, 1, 0, 1 })) walls[i].ChangeTexture(12, 1);
-                    else if (ArrayEquals(n, new int[] { 1, 0, 1, 1 })) walls[i].ChangeTexture(13, 1);
-                    else if (ArrayEquals(n, new int[] { 1, 1, 1, 1 })) walls[i].ChangeTexture(14, 1);
-                    else if (ArrayEquals(n, new int[] { 0, 0, 0, 0 })) walls[i].ChangeTexture(16, 0);
-                    else if (ArrayEquals(n, new int[] { 0, 1, 0, 0 })) walls[i].ChangeTexture(17, 0);
-                    else if (ArrayEquals(n, new int[] { 0, 0, 1, 0 })) walls[i].ChangeTexture(18, 0);
+                         if (ArrayEquals(n, new int[] { 0, 1, 1, 0 })) WALLS[i].ChangeTexture(0, 1);
+                    else if (ArrayEquals(n, new int[] { 0, 0, 0, 1 })) WALLS[i].ChangeTexture(1, 1);
+                    else if (ArrayEquals(n, new int[] { 0, 1, 0, 1 })) WALLS[i].ChangeTexture(2, 1);
+                    else if (ArrayEquals(n, new int[] { 0, 0, 1, 1 })) WALLS[i].ChangeTexture(4, 1);
+                    else if (ArrayEquals(n, new int[] { 0, 1, 1, 1 })) WALLS[i].ChangeTexture(5, 1);
+                    else if (ArrayEquals(n, new int[] { 1, 0, 0, 0 })) WALLS[i].ChangeTexture(6, 1);
+                    else if (ArrayEquals(n, new int[] { 1, 1, 0, 0 })) WALLS[i].ChangeTexture(7, 1);
+                    else if (ArrayEquals(n, new int[] { 1, 0, 1, 0 })) WALLS[i].ChangeTexture(8, 1);
+                    else if (ArrayEquals(n, new int[] { 1, 1, 1, 0 })) WALLS[i].ChangeTexture(10, 1);
+                    else if (ArrayEquals(n, new int[] { 1, 0, 0, 1 })) WALLS[i].ChangeTexture(11, 1);
+                    else if (ArrayEquals(n, new int[] { 1, 1, 0, 1 })) WALLS[i].ChangeTexture(12, 1);
+                    else if (ArrayEquals(n, new int[] { 1, 0, 1, 1 })) WALLS[i].ChangeTexture(13, 1);
+                    else if (ArrayEquals(n, new int[] { 1, 1, 1, 1 })) WALLS[i].ChangeTexture(14, 1);
+                    else if (ArrayEquals(n, new int[] { 0, 0, 0, 0 })) WALLS[i].ChangeTexture(16, 0);
+                    else if (ArrayEquals(n, new int[] { 0, 1, 0, 0 })) WALLS[i].ChangeTexture(17, 0);
+                    else if (ArrayEquals(n, new int[] { 0, 0, 1, 0 })) WALLS[i].ChangeTexture(18, 0);
                 }
             }
         }
@@ -290,14 +285,14 @@ namespace Warcraft.Managers
         {
             int[] neighbourhood = new int[4];
             
-            for (int i = 0; i < walls.Count; i++)
+            for (int i = 0; i < WALLS.Count; i++)
             {
-                if (walls[i].isWall)
+                if (WALLS[i].isWall)
                 {
-                    if (walls[i].TileX == tileX && walls[i].TileY + 1 == tileY) neighbourhood[3] = 1;
-                    if (walls[i].TileX == tileX && walls[i].TileY - 1 == tileY) neighbourhood[1] = 1;
-                    if (walls[i].TileX - 1 == tileX && walls[i].TileY == tileY) neighbourhood[2] = 1;
-                    if (walls[i].TileX + 1 == tileX && walls[i].TileY == tileY) neighbourhood[0] = 1;
+                    if (WALLS[i].TileX == tileX && WALLS[i].TileY + 1 == tileY) neighbourhood[3] = 1;
+                    if (WALLS[i].TileX == tileX && WALLS[i].TileY - 1 == tileY) neighbourhood[1] = 1;
+                    if (WALLS[i].TileX - 1 == tileX && WALLS[i].TileY == tileY) neighbourhood[2] = 1;
+                    if (WALLS[i].TileX + 1 == tileX && WALLS[i].TileY == tileY) neighbourhood[0] = 1;
                 }
             }
 
@@ -314,11 +309,11 @@ namespace Warcraft.Managers
                 pointY + 1 > Warcraft.MAP_SIZE)
                 return true;
 
-            for (int k = 0; k < walls.Count; k++)
+            for (int k = 0; k < WALLS.Count; k++)
             {
                 for (int i = 0; i < xQuantity; i++)
                     for (int j = 1; j < yQuantity; j++)
-                        if (walls[k].TileX == pointX + i && walls[k].TileY == pointY + j)
+                        if (WALLS[k].TileX == pointX + i && WALLS[k].TileY == pointY + j)
                             return true;
             }
 
@@ -332,9 +327,9 @@ namespace Warcraft.Managers
                 pointY + 1 > Warcraft.MAP_SIZE)
                 return true;
 
-            for (int k = 0; k < walls.Count; k++)
+            for (int k = 0; k < WALLS.Count; k++)
             {
-                if (walls[k].TileX == pointX && walls[k].TileY == pointY)
+                if (WALLS[k].TileX == pointX && WALLS[k].TileY == pointY)
                     return true;
             }
 

@@ -15,7 +15,8 @@ namespace Warcraft
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
-		ManagerMap managerMap;
+        ManagerIsland managerIsland;
+		// ManagerMap managerMap;
 		ManagerMouse managerMouse = new ManagerMouse();
 
 		ManagerUI managerUI;
@@ -32,9 +33,11 @@ namespace Warcraft
 		public static int TILE_SIZE = 32;
 		public static int MAP_SIZE = 50;
 
+		public static int PLAYER_ISLAND = 0;
+
 		public static Camera camera;
 
-        GenerateRooms rooms;
+        // GenerateRooms rooms;
 
 		public Warcraft()
 		{
@@ -45,30 +48,16 @@ namespace Warcraft
 			Content.RootDirectory = "Content";
 
 			IsMouseVisible = true;
-
-            if (!PLAYER)
-            {
-                TargetElapsedTime = TimeSpan.FromSeconds(1.0f / 100.0f);
-                IsFixedTimeStep = false;
-                graphics.SynchronizeWithVerticalRetrace = false;
-            }
 		}
 
 		protected override void Initialize()
 		{
 			Data.Write("##############");
 			Data.Write("Começando jogo cada: " + DateTime.Now);
-			rooms = new GenerateRooms();
+            managerIsland = new ManagerIsland(managerMouse);
 
-            managerMap = new ManagerMap(rooms.Rooms);
-            Functions.managerMap = managerMap;
-
-            managerPlayerBuildings = new ManagerPlayerBuildings(managerMouse, managerMap);
-            managerPlayerUnits = new ManagerPlayerUnits(managerMouse, managerMap, managerPlayerBuildings);
-
-			ManagerBuildings.goldMines.Add(new Buildings.Neutral.GoldMine(6, 33, managerMouse, managerMap, null));
-			ManagerBuildings.goldMines.Add(new Buildings.Neutral.GoldMine(45, 5, managerMouse, managerMap, null));
-			ManagerBuildings.goldMines.Add(new Buildings.Neutral.GoldMine(38, 22, managerMouse, managerMap, null));
+            managerPlayerBuildings = new ManagerPlayerBuildings(managerMouse, managerIsland.CurrentMap());
+            managerPlayerUnits = new ManagerPlayerUnits(managerMouse, managerIsland.CurrentMap(), managerPlayerBuildings);
 
 			// managerEA = new ManagerEA(2, managerMouse, managerMap);
             managerUI = new ManagerUI(managerMouse, managerPlayerBuildings, managerPlayerUnits, null);
@@ -83,7 +72,7 @@ namespace Warcraft
 		{
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
-			managerMap.LoadContent(Content);
+            managerIsland.LoadContent(Content);
             managerPlayerUnits.LoadContent(Content);
             managerPlayerBuildings.LoadContent(Content);
 			managerUI.LoadContent(Content);
@@ -115,7 +104,7 @@ namespace Warcraft
 
 			spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null, null, camera.transform);
 
-            managerMap.Draw(spriteBatch);
+            managerIsland.Draw(spriteBatch);
             //managerEA.Draw(spriteBatch);
             managerPlayerUnits.Draw(spriteBatch);
             managerPlayerBuildings.Draw(spriteBatch);

@@ -128,18 +128,6 @@
 /processorParam:TextureFormat=Color
 /build:Icons.png
 
-#begin Knight.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Knight.png
-
 #begin Mage.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -259,4 +247,16 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Peon_walking.png
+
+#begin Knight.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Knight.png
 

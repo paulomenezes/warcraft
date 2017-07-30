@@ -119,6 +119,7 @@
     <Compile Include="EA\CityHallController.cs" />
     <Compile Include="EA\BarracksController.cs" />
     <Compile Include="EA\GeneticUtil.cs" />
+    <Compile Include="Managers\ManagerIsland.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.manifest" />

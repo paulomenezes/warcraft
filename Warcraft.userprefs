@@ -1,14 +1,18 @@
 ﻿<Properties StartupConfiguration="{13F82A3A-108E-4ECC-80BB-B2E7274ECB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Map/Tile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Units/Humans/Peasant.cs">
     <Files>
-      <File FileName="Warcraft/Map/GenerateRooms.cs" Line="56" Column="15" />
-      <File FileName="Warcraft/Warcraft.cs" Line="18" Column="10" />
-      <File FileName="Warcraft/Util/Camera.cs" Line="32" Column="72" />
-      <File FileName="Warcraft/Map/Room.cs" Line="19" Column="39" />
-      <File FileName="Warcraft/UI/SelectRectangle.cs" Line="20" Column="48" />
-      <File FileName="Warcraft/Managers/ManagerMap.cs" Line="206" Column="24" />
-      <File FileName="Warcraft/Map/Noise2D.cs" Line="123" Column="22" />
-      <File FileName="Warcraft/Map/Tile.cs" Line="120" Column="1" />
+      <File FileName="Warcraft/Warcraft.cs" Line="57" Column="61" />
+      <File FileName="Warcraft/Managers/ManagerMap.cs" Line="305" Column="36" />
+      <File FileName="Warcraft/Map/Tile.cs" Line="56" Column="26" />
+      <File FileName="Warcraft/Util/Functions.cs" Line="29" Column="22" />
+      <File FileName="Warcraft/Buildings/Neutral/GoldMine.cs" Line="14" Column="25" />
+      <File FileName="Warcraft/Commands/BuilderWalls.cs" Line="82" Column="42" />
+      <File FileName="Warcraft/EA/PeasantController.cs" Line="112" Column="42" />
+      <File FileName="Warcraft/Util/Pathfinding.cs" Line="140" Column="36" />
+      <File FileName="Warcraft/Util/Camera.cs" Line="49" Column="1" />
+      <File FileName="Warcraft/Map/GenerateRooms.cs" Line="26" Column="66" />
+      <File FileName="Warcraft/Managers/ManagerIsland.cs" Line="34" Column="89" />
+      <File FileName="Warcraft/Units/Humans/Peasant.cs" Line="101" Column="56" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

@@ -15,15 +15,15 @@ namespace Warcraft.Map
         {
 			Random rng = new Random();
 
-            int w = rng.Next(32 * 30, 32 * 50);
+            int w = rng.Next(32 * 80, 32 * 100);
             Rooms.Add(new Room(0, 0, w, w));
 
             while (Rooms.Count < 14)
             {
-                w = rng.Next(32 * 30, 32 * 50);
+                w = rng.Next(32 * 80, 32 * 100);
 
-                int x = rng.Next(0, (Warcraft.WINDOWS_WIDTH  * 8) - w);
-                int y = rng.Next(0, (Warcraft.WINDOWS_HEIGHT * 8) - w);
+                int x = rng.Next(0, (Warcraft.WINDOWS_WIDTH  * 20) - w);
+                int y = rng.Next(0, (Warcraft.WINDOWS_HEIGHT * 20) - w);
 
                 x = Functions.Normalize(x);
                 y = Functions.Normalize(y);

@@ -14,7 +14,7 @@ namespace Warcraft.Util
         private static List<int> tabuListX = new List<int>();
         private static List<int> tabuListY = new List<int>();
 
-		public static Vector2 CleanPosition()
+        public static Vector2 CleanPosition(ManagerMap map, Rectangle area)
 		{
 			Random random = new Random(DateTime.Now.Millisecond);
 
@@ -24,10 +24,15 @@ namespace Warcraft.Util
 			{
 				x = random.Next(3, Warcraft.MAP_SIZE - 5);
 				y = random.Next(3, Warcraft.MAP_SIZE - 5);
-			} while (managerMap.CheckWalls(new Vector2(x * 32, y * 32), 3, 3));
+			} while (map.CheckWalls(new Vector2(x * 32, y * 32), 3, 3));
 
 			return new Vector2(x * 32, y * 32);
 		}
+
+		//public static Vector2 CleanPosition()
+		//{
+  //          return CleanPosition(Warcraft.PLAYER_ISLAND);
+		//}
 
 		public static Vector2 CleanPosition(ManagerMap managerMap, int width, int height)
         {
@@ -40,10 +45,6 @@ namespace Warcraft.Util
 				x = random.Next(3, Warcraft.MAP_SIZE - 5);
                 y = random.Next(3, Warcraft.MAP_SIZE - 5);
             } while (managerMap.CheckWalls(new Vector2(x * 32, y * 32), width / 32, height / 32));
-
-            if (tabuListX.Contains(x) && tabuListY.Contains(y)) {
-                var a = 2;
-            }
 
             tabuListX.Add(x);
             tabuListY.Add(y);
