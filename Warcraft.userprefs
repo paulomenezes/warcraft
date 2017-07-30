@@ -1,18 +1,18 @@
 ﻿<Properties StartupConfiguration="{13F82A3A-108E-4ECC-80BB-B2E7274ECB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Units/Humans/Peasant.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Util/Camera.cs">
     <Files>
-      <File FileName="Warcraft/Warcraft.cs" Line="57" Column="61" />
-      <File FileName="Warcraft/Managers/ManagerMap.cs" Line="305" Column="36" />
-      <File FileName="Warcraft/Map/Tile.cs" Line="56" Column="26" />
-      <File FileName="Warcraft/Util/Functions.cs" Line="29" Column="22" />
-      <File FileName="Warcraft/Buildings/Neutral/GoldMine.cs" Line="14" Column="25" />
-      <File FileName="Warcraft/Commands/BuilderWalls.cs" Line="82" Column="42" />
-      <File FileName="Warcraft/EA/PeasantController.cs" Line="112" Column="42" />
-      <File FileName="Warcraft/Util/Pathfinding.cs" Line="140" Column="36" />
-      <File FileName="Warcraft/Util/Camera.cs" Line="49" Column="1" />
-      <File FileName="Warcraft/Map/GenerateRooms.cs" Line="26" Column="66" />
-      <File FileName="Warcraft/Managers/ManagerIsland.cs" Line="34" Column="89" />
-      <File FileName="Warcraft/Units/Humans/Peasant.cs" Line="101" Column="56" />
+      <File FileName="Warcraft/Units/Humans/Peasant.cs" Line="10" Column="26" />
+      <File FileName="Warcraft/Units/Humans/Knight.cs" Line="105" Column="1" />
+      <File FileName="Warcraft/Units/Humans/Ballista.cs" Line="65" Column="32" />
+      <File FileName="Warcraft/Units/Humans/Dwarven.cs" Line="53" Column="47" />
+      <File FileName="Warcraft/Units/Builder.cs" Line="10" Column="20" />
+      <File FileName="Warcraft/Managers/ManagerPlayerUnits.cs" Line="19" Column="41" />
+      <File FileName="Warcraft/Units/Unit.cs" Line="285" Column="66" />
+      <File FileName="Warcraft/UI/Units/Knight.cs" Line="58" Column="1" />
+      <File FileName="Warcraft/UI/Units/Grunt.cs" Line="58" Column="1" />
+      <File FileName="Warcraft/UI/Units/Ballista.cs" Line="58" Column="1" />
+      <File FileName="Warcraft/UI/Units/Dwarven.cs" Line="15" Column="33" />
+      <File FileName="Warcraft/Util/Camera.cs" Line="15" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

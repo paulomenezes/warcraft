@@ -14,6 +14,9 @@ namespace Warcraft.Managers
 			managerMouse.MouseClickEventHandler += ManagerMouse_MouseClickEventHandler;
 
             units.Add(new Peasant(30, 23, managerMouse, managerMap, this, managerBuildings));
+            units.Add(new Knight(30, 25, managerMouse, managerMap, this, managerBuildings));
+            units.Add(new Ballista(25, 25, managerMouse, managerMap, this, managerBuildings));
+            units.Add(new Dwarven(30, 28, managerMouse, managerMap, this, managerBuildings));
 		}
 
 		private void ManagerMouse_MouseClickEventHandler(object sender, Events.MouseClickEventArgs e)

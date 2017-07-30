@@ -291,7 +291,7 @@ namespace Warcraft.Units
             if (information.HitPoints > 0)
             { 
                 if (selected)
-                    SelectRectangle.Draw(spriteBatch, new Rectangle(rectangle.X, rectangle.Y, 32, 32));
+                    SelectRectangle.Draw(spriteBatch, new Rectangle(rectangle.X, rectangle.Y, width, height));
 
                 if (shoot && animations.currentAnimation == AnimationType.ATTACKING)
                 {

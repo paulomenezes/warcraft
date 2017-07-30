@@ -79,3 +79,4 @@
 /Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Peon.xnb
 /Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Troll Axethrower.xnb
 /Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Orcs/Troll Destroyer.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Ballista.xnb

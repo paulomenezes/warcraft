@@ -120,6 +120,12 @@
     <Compile Include="EA\BarracksController.cs" />
     <Compile Include="EA\GeneticUtil.cs" />
     <Compile Include="Managers\ManagerIsland.cs" />
+    <Compile Include="Units\Humans\Knight.cs" />
+    <Compile Include="Units\Humans\Ballista.cs" />
+    <Compile Include="Units\Humans\Dwarven.cs" />
+    <Compile Include="UI\Units\Knight.cs" />
+    <Compile Include="UI\Units\Ballista.cs" />
+    <Compile Include="UI\Units\Dwarven.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.manifest" />
