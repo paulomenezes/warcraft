@@ -1,16 +1,15 @@
 ﻿<Properties StartupConfiguration="{13F82A3A-108E-4ECC-80BB-B2E7274ECB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Managers/ManagerEnemies.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Managers/ManagerCombat.cs">
     <Files>
-      <File FileName="Warcraft/Util/Camera.cs" Line="41" Column="117" />
-      <File FileName="Warcraft/Map/GenerateRooms.cs" Line="1" Column="1" />
-      <File FileName="Warcraft/Managers/ManagerMap.cs" Line="1" Column="1" />
-      <File FileName="Warcraft/Managers/ManagerIsland.cs" Line="37" Column="6" />
-      <File FileName="Warcraft/Managers/ManagerBuildings.cs" Line="46" Column="10" />
-      <File FileName="Warcraft/Warcraft.cs" Line="1" Column="1" />
-      <File FileName="Warcraft/UI/Main.cs" Line="81" Column="84" />
-      <File FileName="Warcraft/Managers/ManagerEA.cs" Line="1" Column="1" />
-      <File FileName="Warcraft/Managers/ManagerBotsUnits.cs" Line="1" Column="1" />
-      <File FileName="Warcraft/Managers/ManagerEnemies.cs" Line="82" Column="33" />
+      <File FileName="Warcraft/Warcraft.cs" Line="62" Column="42" />
+      <File FileName="Warcraft/Managers/ManagerEnemies.cs" Line="69" Column="10" />
+      <File FileName="Warcraft/Units/Orcs/Peon.cs" Line="1" Column="1" />
+      <File FileName="Warcraft/Util/Functions.cs" Line="56" Column="94" />
+      <File FileName="Warcraft/EA/ActionType.cs" Line="8" Column="16" />
+      <File FileName="Warcraft/Managers/ManagerUnits.cs" Line="57" Column="38" />
+      <File FileName="Warcraft/Managers/ManagerPlayerUnits.cs" Line="18" Column="101" />
+      <File FileName="Warcraft/Managers/ManagerBotsUnits.cs" Line="19" Column="89" />
+      <File FileName="Warcraft/Managers/ManagerCombat.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

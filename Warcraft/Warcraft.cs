@@ -20,12 +20,12 @@ namespace Warcraft
 		ManagerMouse managerMouse = new ManagerMouse();
 
 		ManagerUI managerUI;
-        ManagerEA managerEA;
+        ManagerEnemies managerEnemies;
 
         ManagerUnits managerPlayerUnits;
         ManagerBuildings managerPlayerBuildings;
 
-        // ManagerCombat managerCombat;
+        ManagerCombat managerCombat;
 
 		public static int WINDOWS_WIDTH = 1280;
 		public static int WINDOWS_HEIGHT = 800;
@@ -59,9 +59,9 @@ namespace Warcraft
             managerPlayerBuildings = new ManagerPlayerBuildings(managerMouse, managerIsland.CurrentMap());
             managerPlayerUnits = new ManagerPlayerUnits(managerMouse, managerIsland.CurrentMap(), managerPlayerBuildings);
 
-            managerEA = new ManagerEA(1, managerMouse, managerIsland.CurrentMap());
+            managerEnemies = new ManagerEnemies(managerMouse, managerIsland.CurrentMap(), 0);
             managerUI = new ManagerUI(managerMouse, managerPlayerBuildings, managerPlayerUnits, null);
-            //managerCombat = new ManagerCombat(managerEA.managerEnemies, managerPlayerUnits, managerPlayerBuildings);
+            managerCombat = new ManagerCombat(managerEnemies, managerPlayerUnits, managerPlayerBuildings);
 
             camera = new Camera(GraphicsDevice.Viewport);
 
@@ -76,7 +76,7 @@ namespace Warcraft
             managerPlayerUnits.LoadContent(Content);
             managerPlayerBuildings.LoadContent(Content);
 			managerUI.LoadContent(Content);
-            managerEA.LoadContent(Content);
+            managerEnemies.LoadContent(Content);
 
 			SelectRectangle.LoadContent(Content);
 		}
@@ -90,9 +90,9 @@ namespace Warcraft
 			managerPlayerUnits.Update();
             managerPlayerBuildings.Update();
 			managerUI.Update();
-            managerEA.Update(gameTime);
+            managerEnemies.Update();
 
-			// managerCombat.Update();
+			managerCombat.Update();
 
 			if (IsActive)
 				camera.Update(gameTime);
@@ -110,7 +110,7 @@ namespace Warcraft
             //managerEA.Draw(spriteBatch);
             managerPlayerUnits.Draw(spriteBatch);
             managerPlayerBuildings.Draw(spriteBatch);
-            managerEA.Draw(spriteBatch);
+            managerEnemies.Draw(spriteBatch);
 			managerMouse.Draw(spriteBatch);
 
 			spriteBatch.End();
@@ -120,7 +120,7 @@ namespace Warcraft
 			managerUI.Draw(spriteBatch);
             managerPlayerUnits.DrawUI(spriteBatch);
             managerPlayerBuildings.DrawUI(spriteBatch);
-            managerEA.DrawUI(spriteBatch);
+            managerEnemies.DrawUI(spriteBatch);
 			spriteBatch.End();
 
 			base.Draw(gameTime);

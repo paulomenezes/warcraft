@@ -18,7 +18,7 @@ namespace Warcraft.Map
             int w = rng.Next(32 * 80, 32 * 100);
             Rooms.Add(new Room(0, 0, w, w));
 
-            while (Rooms.Count < 14)
+            while (Rooms.Count < 1)
             {
                 w = rng.Next(32 * 80, 32 * 100);
 

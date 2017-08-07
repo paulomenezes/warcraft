@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework;
 using Warcraft.Units;
 using Warcraft.Units.Humans;
 using Warcraft.Util;
@@ -13,10 +14,9 @@ namespace Warcraft.Managers
 		{
 			managerMouse.MouseClickEventHandler += ManagerMouse_MouseClickEventHandler;
 
-            units.Add(new Peasant(30, 23, managerMouse, managerMap, this, managerBuildings));
-            units.Add(new Knight(30, 25, managerMouse, managerMap, this, managerBuildings));
-            units.Add(new Ballista(25, 25, managerMouse, managerMap, this, managerBuildings));
-            units.Add(new Dwarven(30, 28, managerMouse, managerMap, this, managerBuildings));
+            Vector2 goldMinePos = Functions.CleanHalfPosition(managerMap, ManagerBuildings.goldMines[0].position);
+            units.Add(new Peasant(Functions.TilePos(goldMinePos.X), Functions.TilePos(goldMinePos.Y), managerMouse, managerMap, this, managerBuildings));
+            units.Add(new Knight(Functions.TilePos(goldMinePos.X) - 2, Functions.TilePos(goldMinePos.Y) - 2, managerMouse, managerMap, this, managerBuildings));
 		}
 
 		private void ManagerMouse_MouseClickEventHandler(object sender, Events.MouseClickEventArgs e)

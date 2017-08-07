@@ -43,7 +43,7 @@ namespace Warcraft.Managers
 				barracksController.SetArcher(random.Next(0, 500), random.Next(0, 4), random.Next(0, 10));
 				barracksController.SetWarrior(random.Next(0, 500), random.Next(0, 4), random.Next(0, 10));
 
-                managerEnemies.Add(new ManagerEnemies(managerMouse, managerMap, i, peasantController, cityHallController, barracksController));
+                managerEnemies.Add(new ManagerEnemies(managerMouse, managerMap, i));
 			}
 		}
 

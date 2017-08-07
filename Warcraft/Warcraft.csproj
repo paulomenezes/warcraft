@@ -126,6 +126,7 @@
     <Compile Include="UI\Units\Knight.cs" />
     <Compile Include="UI\Units\Ballista.cs" />
     <Compile Include="UI\Units\Dwarven.cs" />
+    <Compile Include="EA\ActionType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.manifest" />

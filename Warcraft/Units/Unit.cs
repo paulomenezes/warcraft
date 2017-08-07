@@ -307,10 +307,10 @@ namespace Warcraft.Units
             if (workState != WorkigState.WORKING)
             {
                 Color color = Color.White;
-                if (managerUnits.index % 2 == 0)
-                    color = Color.Red;
-                else if (managerUnits.index % 2 == 1)
-					color = Color.Blue;
+     //           if (managerUnits.index % 2 == 0)
+     //               color = Color.Red;
+     //           else if (managerUnits.index % 2 == 1)
+					//color = Color.Blue;
 				//else if (managerUnits.index == 2)
     //                color = Color.Green;
 				//else if (managerUnits.index == 3)

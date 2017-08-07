@@ -26,11 +26,14 @@ namespace Warcraft.Managers
 
             Functions.managerMap = CurrentMap();
 
+            int[] min = new int[2] { 3, rooms[0].rectangle.Width / 3 };
+            int[] max = new int[2] { rooms[0].rectangle.Height / 2 + rooms[0].rectangle.Height / 3, rooms[0].rectangle.Height };
+
             for (int i = 0; i < managerMap.Count; i++)
             {
                 for (int j = 0; j < 2; j++)
                 {
-                    Vector2 pos = Functions.CleanPosition(managerMap[i], rooms[i].rectangle);
+                    Vector2 pos = Functions.CleanHalfPosition(managerMap[i], min[j], max[j]);
                     pos = pos + new Vector2(rooms[i].rectangle.X, rooms[i].rectangle.Y);
 
 					ManagerBuildings.goldMines.Add(new Buildings.Neutral.GoldMine((int)(pos.X / Warcraft.TILE_SIZE), (int)(pos.Y / Warcraft.TILE_SIZE), managerMouse, managerMap[i], null));

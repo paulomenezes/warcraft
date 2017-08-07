@@ -29,10 +29,35 @@ namespace Warcraft.Util
 			return new Vector2(x * 32, y * 32);
 		}
 
-		//public static Vector2 CleanPosition()
-		//{
-  //          return CleanPosition(Warcraft.PLAYER_ISLAND);
-		//}
+        public static Vector2 CleanHalfPosition(ManagerMap map, int min, int max)
+		{
+			Random random = new Random(DateTime.Now.Millisecond);
+
+			int x = 0;
+			int y = 0;
+			do
+			{
+                x = Normalize(random.Next(min, max));
+                y = Normalize(random.Next(min, max));
+			} while (map.CheckWalls(new Vector2(x, y), 3, 3));
+
+			return new Vector2(x, y);
+		}
+
+		public static Vector2 CleanHalfPosition(ManagerMap map, Vector2 center)
+		{
+			Random random = new Random(DateTime.Now.Millisecond);
+
+			int x = 0;
+			int y = 0;
+			do
+			{
+                x = Normalize(random.Next(Normalize(center.X - (10 * 32)), Normalize(center.X + (10 * 32))));
+				y = Normalize(random.Next(Normalize(center.Y - (10 * 32)), Normalize(center.Y + (10 * 32))));
+			} while (map.CheckWalls(new Vector2(x, y), 3, 3));
+
+			return new Vector2(x, y);
+		}
 
 		public static Vector2 CleanPosition(ManagerMap managerMap, int width, int height)
         {
@@ -55,6 +80,11 @@ namespace Warcraft.Util
 		public static int Normalize(float value)
 		{
 			return (int)(value / 32) * 32;
+		}
+
+		public static int TilePos(float value)
+		{
+			return (int)(value / 32);
 		}
 
 		static int RandomNext(int min, int max)

@@ -18,6 +18,7 @@ namespace Warcraft.Util
         public Camera(Viewport viewport)
         {
             view = viewport;
+            center = ManagerBuildings.goldMines[0].position - new Vector2(Warcraft.WINDOWS_WIDTH / 2, Warcraft.WINDOWS_HEIGHT / 2);
         }
 
         public void Update(GameTime gameTime)

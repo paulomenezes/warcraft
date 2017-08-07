@@ -9,11 +9,11 @@ namespace Warcraft.Managers
 {
     class ManagerCombat
     {
-        List<ManagerEnemies> managerEnemies;
+        ManagerEnemies managerEnemies;
         ManagerUnits managerUnits;
         ManagerBuildings managerBuildings;
 
-        public ManagerCombat(List<ManagerEnemies> managerEnemies, ManagerUnits managerUnits, ManagerBuildings managerBuildings)
+        public ManagerCombat(ManagerEnemies managerEnemies, ManagerUnits managerUnits, ManagerBuildings managerBuildings)
         {
             this.managerUnits = managerUnits;
             this.managerEnemies = managerEnemies;
@@ -23,18 +23,13 @@ namespace Warcraft.Managers
         public void Update()
         {
             Dictionary<int, List<Unit>> allUnits = new Dictionary<int, List<Unit>>();
-            if (managerUnits != null)
-                allUnits.Add(-1, managerUnits.units);
-
             Dictionary<int, List<Building>> allBuildings = new Dictionary<int, List<Building>>();
-            if (managerBuildings != null)
-                allBuildings.Add(-1, managerBuildings.buildings);
 
-            for (int i = ManagerEA.index; i < ManagerEA.index + 2; i++)
-            {
-                allUnits.Add(managerEnemies[i].index, managerEnemies[i].managerUnits.units);
-                allBuildings.Add(managerEnemies[i].index, managerEnemies[i].managerBuildings.buildings);
-            }
+            allUnits.Add(-1, managerUnits.units);
+			allUnits.Add(managerEnemies.index, managerEnemies.managerUnits.units);
+			
+            allBuildings.Add(-1, managerBuildings.buildings);
+			allBuildings.Add(managerEnemies.index, managerEnemies.managerBuildings.buildings);
 
             foreach (var item01 in allUnits)
             {

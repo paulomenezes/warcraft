@@ -24,26 +24,42 @@ namespace Warcraft.Managers
 
         public int index = 0;
 
-        public EA.PeasantController peasantController;
-        public EA.CityHallController cityHallController;
-        public EA.BarracksController barracksController;
+        List<EA.ActionType> actionsTypes = new List<EA.ActionType>();
+        List<int> actions = new List<int>();
 
-		public ManagerEnemies(ManagerMouse managerMouse, ManagerMap managerMap, int index, EA.PeasantController peasantController, EA.CityHallController cityHallController, EA.BarracksController barracksController)
+		public ManagerEnemies(ManagerMouse managerMouse, ManagerMap managerMap, int index)
         {
-            this.index = index;
+			ManagerResources.BOT_GOLD.Add(5000);
+			ManagerResources.BOT_WOOD.Add(99999);
+			ManagerResources.BOT_FOOD.Add(5);
+			ManagerResources.BOT_OIL.Add(99999);
+
+			this.index = index;
             this.managerMap = managerMap;
             this.managerMouse = managerMouse;
 			this.managerBuildings = new ManagerBotsBuildings(managerMouse, managerMap, index);
             this.managerUnits = new ManagerBotsUnits(managerMouse, managerMap, managerBuildings, index);
 
-            this.peasantController = peasantController;
-            this.peasantController.managerUnits = managerUnits;
+            actionsTypes.Add(EA.ActionType.BUILDING);
+            actions.Add(0);
 
-            this.cityHallController = cityHallController;
-            this.cityHallController.managerUnits = managerUnits;
+            actionsTypes.Add(EA.ActionType.BUILDING);
+			actions.Add(1);
 
-            this.barracksController = barracksController;
-            this.barracksController.managerUnits = managerUnits;
+            actionsTypes.Add(EA.ActionType.BUILDING);
+			actions.Add(2);
+
+            actionsTypes.Add(EA.ActionType.MINING);
+			actions.Add(4);
+
+            actionsTypes.Add(EA.ActionType.TOWN_HALL);
+			actions.Add(0);
+
+            actionsTypes.Add(EA.ActionType.BARRACKS);
+			actions.Add(0);
+
+            actionsTypes.Add(EA.ActionType.BARRACKS);
+			actions.Add(1);
 		}
 
         public void LoadContent(ContentManager content)
@@ -61,74 +77,52 @@ namespace Warcraft.Managers
             Building greatHall = managerBuildings.buildings.Find(b => (b.information as InformationBuilding).Type == Util.Buildings.GREAT_HALL && b.isWorking);
 			Barracks barrack = managerBuildings.buildings.Find(b => (b.information as InformationBuilding).Type == Util.Buildings.ORC_BARRACKS && b.isWorking) as Barracks;
 
-            if (greatHall != null)
+            if (actionsTypes.Count > 0) 
             {
-                if (cityHallController.BuildPeon())
+                switch (actionsTypes[0]) 
                 {
-                    if (greatHall != null)
-                    {
-                        greatHall.commands[0].execute();
-                    }
+                    case EA.ActionType.BUILDING:
+                        if (builder != null)
+                        {
+                            Building building = (builder.commands[actions[0]] as BuilderBuildings).building;
+							building.isPlaceSelected = true;
+
+                            if (actionsTypes[0] == 0)
+                                building.Position = Functions.CleanHalfPosition(managerMap, ManagerBuildings.goldMines[1].position);
+                            else
+                                building.Position = Functions.CleanHalfPosition(managerMap, greatHall.position);
+                            
+                            builder.commands[actions[0]].execute();
+							actionsTypes.RemoveAt(0);
+                            actions.RemoveAt(0);
+                        }
+                        break;
+                    case EA.ActionType.MINING:
+                        if (builder != null)
+                        {
+							builder.commands[actions[0]].execute();
+							actionsTypes.RemoveAt(0);
+							actions.RemoveAt(0);
+                        }
+						break;
+                    case EA.ActionType.BARRACKS:
+                        if (barrack != null)
+						{
+                            barrack.commands[actions[0]].execute();
+							actionsTypes.RemoveAt(0);
+							actions.RemoveAt(0);
+						}
+						break;
+                    case EA.ActionType.TOWN_HALL:
+                        if (greatHall != null)
+						{
+                            greatHall.commands[actions[0]].execute();
+							actionsTypes.RemoveAt(0);
+							actions.RemoveAt(0);
+						}
+						break;
                 }
             }
-
-            if (barrack != null)
-            {
-                if (barracksController.BuildWarrior())
-                {
-                    barrack.commands[0].execute();
-                }
-
-                if (barracksController.BuildArcher())
-                {
-                    barrack.commands[1].execute();
-                }
-            }
-
-            if (builder != null)
-            {
-                if (greatHall == null)
-                {
-                    builder.commands[0].execute();
-
-                    Building building = (builder.commands[0] as BuilderBuildings).building;
-                    building.isPlaceSelected = true;
-                    building.Position = peasantController.BuildTownHall(builder);
-                }
-                else
-                {
-					int farmCount = managerBuildings.buildings.FindAll(b => (b.information as InformationBuilding).Type == Util.Buildings.PIG_FARM).Count;
-					int minerCount = managerUnits.units.FindAll(u => u is Builder).Count;
-					int barrackCount = managerBuildings.buildings.FindAll(b => (b.information as InformationBuilding).Type == Util.Buildings.ORC_BARRACKS).Count;
-					
-                    if (peasantController.Miner(minerCount == 0 ? 0 : 1))
-					{
-						builder.commands[4].execute();
-					}
-					else if (peasantController.BuildBarracks(barrackCount == 0 ? 0 : 1)) 
-                    {
-                        builder.commands[1].execute();
-
-						Building building = (builder.commands[1] as BuilderBuildings).building;
-						building.isPlaceSelected = true;
-                        building.Position = Functions.CleanPosition(managerMap, building.width, building.height);
-
-                        //peasantController.MultiplyBarracks(2);
-					}
-                    else if (peasantController.BuildFarms(farmCount == 0 ? 0 : 1))
-                    {
-                        builder.commands[2].execute();
-
-						Building building = (builder.commands[2] as BuilderBuildings).building;
-						building.isPlaceSelected = true;
-						building.Position = Functions.CleanPosition(managerMap, building.width, building.height);
-
-                        //peasantController.MultiplyFarms(2);
-                    }
-
-                }
-            }
-
 		}
 
         public void Draw(SpriteBatch spriteBatch)
