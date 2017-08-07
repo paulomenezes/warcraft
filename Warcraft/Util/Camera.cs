@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
+using Warcraft.Managers;
 
 namespace Warcraft.Util
 {
@@ -12,7 +13,7 @@ namespace Warcraft.Util
         Viewport view;
 
         float speed = 4;
-        float zoom = 0.2f; // Warcraft.PLAYER ? 1 : 0.5f;
+        float zoom = 1; // Warcraft.PLAYER ? 1 : 0.5f;
 
         public Camera(Viewport viewport)
         {
@@ -37,8 +38,8 @@ namespace Warcraft.Util
             center.X = Math.Max(center.X, 0); //312
             center.Y = Math.Max(center.Y, 0); //796
 
-            //center.X = Math.Min(312, center.X);
-            //center.Y = Math.Min(796, center.Y);
+            center.X = Math.Min(ManagerIsland.rooms[Warcraft.PLAYER_ISLAND].rectangle.Width - Warcraft.WINDOWS_WIDTH, center.X);
+            center.Y = Math.Min(ManagerIsland.rooms[Warcraft.PLAYER_ISLAND].rectangle.Height - Warcraft.WINDOWS_HEIGHT, center.Y);
 
             transform = Matrix.CreateScale(new Vector3(1, 1, 0)) * 
                         Matrix.CreateScale(new Vector3(zoom, zoom, 1)) * 

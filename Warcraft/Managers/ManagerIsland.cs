@@ -11,7 +11,7 @@ namespace Warcraft.Managers
     class ManagerIsland
     {
         List<ManagerMap> managerMap = new List<ManagerMap>();
-        List<Room> rooms = new List<Room>();
+        public static List<Room> rooms = new List<Room>();
 
         public ManagerIsland(ManagerMouse managerMouse)
         {
@@ -51,7 +51,7 @@ namespace Warcraft.Managers
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            managerMap.ForEach(mp => mp.Draw(spriteBatch));
+            CurrentMap().Draw(spriteBatch);
         }
     }
 }

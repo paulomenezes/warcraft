@@ -20,7 +20,7 @@ namespace Warcraft
 		ManagerMouse managerMouse = new ManagerMouse();
 
 		ManagerUI managerUI;
-        // ManagerEA managerEA;
+        ManagerEA managerEA;
 
         ManagerUnits managerPlayerUnits;
         ManagerBuildings managerPlayerBuildings;
@@ -59,9 +59,9 @@ namespace Warcraft
             managerPlayerBuildings = new ManagerPlayerBuildings(managerMouse, managerIsland.CurrentMap());
             managerPlayerUnits = new ManagerPlayerUnits(managerMouse, managerIsland.CurrentMap(), managerPlayerBuildings);
 
-			// managerEA = new ManagerEA(2, managerMouse, managerMap);
+            managerEA = new ManagerEA(1, managerMouse, managerIsland.CurrentMap());
             managerUI = new ManagerUI(managerMouse, managerPlayerBuildings, managerPlayerUnits, null);
-            // managerCombat = new ManagerCombat(managerEA.managerEnemies, managerPlayerUnits, managerPlayerBuildings);
+            //managerCombat = new ManagerCombat(managerEA.managerEnemies, managerPlayerUnits, managerPlayerBuildings);
 
             camera = new Camera(GraphicsDevice.Viewport);
 
@@ -76,6 +76,7 @@ namespace Warcraft
             managerPlayerUnits.LoadContent(Content);
             managerPlayerBuildings.LoadContent(Content);
 			managerUI.LoadContent(Content);
+            managerEA.LoadContent(Content);
 
 			SelectRectangle.LoadContent(Content);
 		}
@@ -89,6 +90,7 @@ namespace Warcraft
 			managerPlayerUnits.Update();
             managerPlayerBuildings.Update();
 			managerUI.Update();
+            managerEA.Update(gameTime);
 
 			// managerCombat.Update();
 
@@ -108,6 +110,7 @@ namespace Warcraft
             //managerEA.Draw(spriteBatch);
             managerPlayerUnits.Draw(spriteBatch);
             managerPlayerBuildings.Draw(spriteBatch);
+            managerEA.Draw(spriteBatch);
 			managerMouse.Draw(spriteBatch);
 
 			spriteBatch.End();
@@ -117,6 +120,7 @@ namespace Warcraft
 			managerUI.Draw(spriteBatch);
             managerPlayerUnits.DrawUI(spriteBatch);
             managerPlayerBuildings.DrawUI(spriteBatch);
+            managerEA.DrawUI(spriteBatch);
 			spriteBatch.End();
 
 			base.Draw(gameTime);
