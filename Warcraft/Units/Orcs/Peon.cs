@@ -102,7 +102,7 @@ namespace Warcraft.Units.Humans
 			textureName.Add(AnimationType.GOLD, "Orcs/Peon");
 			textureName.Add(AnimationType.DYING, "Orcs/Peon");
 
-            information = new InformationUnit("Peon", Race.ORC, Faction.HORDE, 30, 0, 4, 10, 400, 1, Util.Buildings.GREAT_HALL, 200, 3, 5, 1, 0, Util.Units.PEON);
+            information = new InformationUnit("Peon", Race.ORC, Faction.HORDE, 30, 0, 4, 10, 400, 1, Util.Buildings.GREAT_HALL, 45 * Warcraft.FPS, 3, 100, 1, 0, Util.Units.PEON);
 			Information = information;
 
             commands.Add(new BuilderBuildings(Util.Buildings.GREAT_HALL, this, managerMouse, managerBuildings, managerUnits));

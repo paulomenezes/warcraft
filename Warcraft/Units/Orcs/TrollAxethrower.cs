@@ -101,7 +101,7 @@ namespace Warcraft.Units.Orcs
             ui = new UI.Units.TrollAxethrower(managerMouse, this);
             textureName.Add(AnimationType.WALKING, "Troll Axethrower");
 
-            information = new InformationUnit("Troll Axethrower", Race.FOREST_TROLL, Faction.HORDE, 60, 2, 360, 10, 500, 1, Util.Buildings.ORC_BARRACKS, 400, 14, 90, 4, 0, Util.Units.TROLL_AXETHROWER);
+            information = new InformationUnit("Troll Axethrower", Race.FOREST_TROLL, Faction.HORDE, 50, 2, 360, 10, 500, 1, Util.Buildings.ORC_BARRACKS, 70 * Warcraft.FPS, 3, 100, 4, 0, Util.Units.TROLL_AXETHROWER);
             Information = information;
         }
 

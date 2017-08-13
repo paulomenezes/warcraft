@@ -9,6 +9,8 @@
         GRUNT,
         TROLL_AXETHROWER,
         PEON,
-        SKELETON
+        SKELETON,
+        BALLISTA,
+        KNIGHT
     }
 }

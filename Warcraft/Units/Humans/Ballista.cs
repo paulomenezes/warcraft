@@ -67,7 +67,7 @@ namespace Warcraft.Units.Humans
 			textureName.Add(AnimationType.ATTACKING, "Ballista");
 			textureName.Add(AnimationType.DYING, "Ballista");
 
-			information = new InformationUnit("Ballista", Race.HUMAN, Faction.ALLIANCE, 30, 0, 4, 10, 400, 1, Util.Buildings.TOWN_HALL, 200, 3, 5, 1, 0, Util.Units.PEASANT);
+            information = new InformationUnit("Ballista", Race.HUMAN, Faction.ALLIANCE, 110, 0, 360, 5, 900, 1, Util.Buildings.BARRACKS, 250 * Warcraft.FPS, 80, 100, 8, 0, Util.Units.BALLISTA);
 			Information = information;
 		}
 	}
