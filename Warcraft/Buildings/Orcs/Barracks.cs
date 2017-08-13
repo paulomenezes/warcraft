@@ -14,20 +14,22 @@ namespace Warcraft.Buildings.Orcs
 		public Barracks(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits) :
 			base(tileX, tileY, 96, 96, managerMouse, managerMap, managerUnits)
 		{
-			information = new InformationBuilding("Barracks", 800, 700, 400, Util.Units.PEON, 500, Util.Buildings.ORC_BARRACKS);
+			information = new InformationBuilding("Barracks", 800, 700, 400, Util.Units.PEON, 200 * Warcraft.FPS, Util.Buildings.ORC_BARRACKS);
 
 			Dictionary<AnimationType, List<Sprite>> sprites = new Dictionary<AnimationType, List<Sprite>>();
 			List<Sprite> spriteBuilding = new List<Sprite>();
 			// BUILDING
+			spriteBuilding.Add(new Sprite(560, 737, 48, 39));
+			spriteBuilding.Add(new Sprite(556, 865, 61, 52));
 			spriteBuilding.Add(new Sprite(18, 260, 88, 77));
 			spriteBuilding.Add(new Sprite(109, 242, 95, 96));
 
 			sprites.Add(AnimationType.WALKING, spriteBuilding);
 
 			Dictionary<string, Frame> animations = new Dictionary<string, Frame>();
-			animations.Add("building", new Frame(0, 2));
+			animations.Add("building", new Frame(0, 4));
 
-			this.animations = new Animation(sprites, animations, "building", width, height, false, information.BuildTime / sprites.Count);
+			this.animations = new Animation(sprites, animations, "building", width, height, false, information.BuildTime / spriteBuilding.Count);
 
 			textureName = "Orc Buildings (Summer) ";
 

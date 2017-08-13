@@ -21,6 +21,7 @@ namespace Warcraft.UI
         List<Button> buttons = new List<Button>();
 
         Texture2D background;
+        Texture2D sidebar;
 
         public Main(ManagerUnits managerUnits, ManagerBuildings managerBuildings, ManagerMouse managerMouse, List<ManagerEnemies> managerEnemies)
         {
@@ -37,6 +38,7 @@ namespace Warcraft.UI
             base.LoadContent(content);
 
             background = content.Load<Texture2D>("Cursor");
+            sidebar = content.Load<Texture2D>("sidebar");
         }
 
         private void ManagerMouse_MouseEventHandler(object sender, Events.MouseEventArgs e)
@@ -78,13 +80,13 @@ namespace Warcraft.UI
 
         public void DrawBack(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(background, new Rectangle(Warcraft.WINDOWS_WIDTH, 0, 200, Warcraft.WINDOWS_HEIGHT), Color.CornflowerBlue);
+            spriteBatch.Draw(sidebar, new Rectangle(Warcraft.WINDOWS_WIDTH, 0, 200, Warcraft.WINDOWS_HEIGHT), Color.White);
         }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.DrawString(font, "Gold: " + ManagerResources.PLAYER_GOLD, new Vector2(minX, 10), Color.Black);
-            spriteBatch.DrawString(font, "Food: " + ManagerResources.PLAYER_FOOD, new Vector2(minX, 30), Color.Black);
+            spriteBatch.DrawString(font, "Gold: " + ManagerResources.PLAYER_GOLD, new Vector2(minX + 30, 20), Color.Black);
+            spriteBatch.DrawString(font, "Food: " + ManagerResources.PLAYER_FOOD, new Vector2(minX + 30, 40), Color.Black);
             //spriteBatch.DrawString(font, "Wood: " + Warcraft.WOOD, new Vector2(minX, 50), Color.Black);
             //spriteBatch.DrawString(font, "Oil: " + Warcraft.OIL, new Vector2(minX, 70), Color.Black);
 

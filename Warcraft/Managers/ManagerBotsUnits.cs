@@ -17,6 +17,8 @@ namespace Warcraft.Managers
 
             Vector2 goldMinePos = Functions.CleanHalfPosition(managerMap, ManagerBuildings.goldMines[1].position);
 			units.Add(new Peon(Functions.TilePos(goldMinePos.X), Functions.TilePos(goldMinePos.Y), managerMouse, managerMap, this, managerBuildings));
+
+            units.Add(new Units.Neutral.Skeleton(Functions.TilePos(goldMinePos.X), Functions.TilePos(goldMinePos.Y), managerMouse, managerMap, this));
         }
 
         public override void Factory(Util.Units type, int x, int y, int targetX, int targetY)

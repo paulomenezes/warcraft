@@ -24,7 +24,7 @@ namespace Warcraft.Util
 			{
 				x = random.Next(3, Warcraft.MAP_SIZE - 5);
 				y = random.Next(3, Warcraft.MAP_SIZE - 5);
-			} while (map.CheckWalls(new Vector2(x * 32, y * 32), 3, 3));
+			} while (map.CheckWalls(new Vector2(x * 32, y * 32), 4, 4));
 
 			return new Vector2(x * 32, y * 32);
 		}
@@ -39,7 +39,7 @@ namespace Warcraft.Util
 			{
                 x = Normalize(random.Next(min, max));
                 y = Normalize(random.Next(min, max));
-			} while (map.CheckWalls(new Vector2(x, y), 3, 3));
+			} while (map.CheckWalls(new Vector2(x, y), 4, 4));
 
 			return new Vector2(x, y);
 		}
@@ -54,7 +54,7 @@ namespace Warcraft.Util
 			{
                 x = Normalize(random.Next(Normalize(center.X - (10 * 32)), Normalize(center.X + (10 * 32))));
 				y = Normalize(random.Next(Normalize(center.Y - (10 * 32)), Normalize(center.Y + (10 * 32))));
-			} while (map.CheckWalls(new Vector2(x, y), 3, 3));
+			} while (map.CheckWalls(new Vector2(x, y), 4, 4));
 
 			return new Vector2(x, y);
 		}

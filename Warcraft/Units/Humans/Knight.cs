@@ -73,32 +73,45 @@ namespace Warcraft.Units.Humans
 			spriteAttacking.Add(new Sprite(226, 453, 52, 48));
 			spriteAttacking.Add(new Sprite(233, 527, 48, 48));
 			spriteAttacking.Add(new Sprite(236, 608, 56, 47));
-			sprites.Add(AnimationType.GOLD, spriteAttacking);
+            sprites.Add(AnimationType.ATTACKING, spriteAttacking);
 
 			List<Sprite> spriteDie = new List<Sprite>();
 			spriteDie.Add(new Sprite(11, 752, 57, 39));
 			sprites.Add(AnimationType.DYING, spriteDie);
 
+			Dictionary<AnimationType, int> framesCount = new Dictionary<AnimationType, int>();
+			framesCount.Add(AnimationType.WALKING, 5);
+			framesCount.Add(AnimationType.ATTACKING, 4);
+			framesCount.Add(AnimationType.DYING, 1);
+
 			Dictionary<string, Frame> animations = new Dictionary<string, Frame>();
-			animations.Add("up", new Frame(0, 5));
-			animations.Add("down", new Frame(5, 5));
-			animations.Add("right", new Frame(10, 5));
-			animations.Add("left", new Frame(10, 5, true));
-			animations.Add("upRight", new Frame(15, 5));
-			animations.Add("downRight", new Frame(20, 5));
-			animations.Add("upLeft", new Frame(15, 5, true));
-			animations.Add("downLeft", new Frame(20, 5, true));
+			animations.Add("up", new Frame(framesCount));
+			animations.Add("down", new Frame(framesCount));
+			animations.Add("right", new Frame(framesCount));
+			animations.Add("left", new Frame(framesCount, true));
+			animations.Add("upRight", new Frame(framesCount));
+			animations.Add("downRight", new Frame(framesCount));
+			animations.Add("upLeft", new Frame(framesCount, true));
+			animations.Add("downLeft", new Frame(framesCount, true));
 			animations.Add("dying", new Frame(0, 1));
 
 			this.animations = new Animation(sprites, animations, "down", width, height);
 
             ui = new UI.Units.Knight(managerMouse, this);
 			textureName.Add(AnimationType.WALKING, "Knight");
-            textureName.Add(AnimationType.ATTACKING, "Knight");
-			textureName.Add(AnimationType.DYING, "Knight");
 
 			information = new InformationUnit("Knight", Race.HUMAN, Faction.ALLIANCE, 30, 0, 4, 10, 400, 1, Util.Buildings.TOWN_HALL, 200, 3, 5, 1, 0, Util.Units.PEASANT);
 			Information = information;
+		}
+
+		public override void LoadContent(ContentManager content)
+		{
+			base.LoadContent(content);
+
+			if (!texture.ContainsKey(AnimationType.DYING))
+				texture.Add(AnimationType.DYING, texture[AnimationType.WALKING]);
+			if (!texture.ContainsKey(AnimationType.ATTACKING))
+				texture.Add(AnimationType.ATTACKING, content.Load<Texture2D>(textureName[AnimationType.WALKING]));
 		}
 	}
 }

@@ -52,6 +52,8 @@ namespace Warcraft.Buildings
 
         public List<ICommand> commands = new List<ICommand>();
 
+        Progress progress;
+
         public Building(int tileX, int tileY, int width, int height, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits)
         {
             this.width = width;
@@ -67,6 +69,8 @@ namespace Warcraft.Buildings
             managerMouse.MouseClickEventHandler += ManagerMouse_MouseClickEventHandler;
 
             rectangle = new Rectangle((int)position.X, (int)position.Y, width, height);
+
+            progress = new Progress(width, 5);
         }
 
         public static Building Factory(Util.Buildings type, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits)
@@ -136,6 +140,8 @@ namespace Warcraft.Buildings
 
             unitDestination = new Point(((int)position.X / 32) + ((width / Warcraft.TILE_SIZE) / 2), ((int)position.Y / 32) + ((height / Warcraft.TILE_SIZE)));
             rectangle = new Rectangle((int)position.X, (int)position.Y, width, height);
+
+            progress.Start(position + new Vector2(0, height), information.BuildTime);
         }
 
         public virtual void LoadContent(ContentManager content)
@@ -144,6 +150,8 @@ namespace Warcraft.Buildings
             {
                 texture.Add(textureName, content.Load<Texture2D>(textureName));
             }
+
+            progress.LoadContent(content);
 
             if (ui != null)
                 ui.LoadContent(content);
@@ -156,6 +164,18 @@ namespace Warcraft.Buildings
             if (ui != null)
                 ui.Update();
 
+            if (progress != null)
+            {
+                if (progress.start && !progress.finish)
+                {
+                    progress.Update();
+                }
+                else if (progress.finish)
+                {
+                    progress.HP(information.HitPoints, information.HitPointsTotal);
+                }
+            }
+
             if (animations.completed && !isWorking)
             {
                 isBuilding = false;
@@ -163,6 +183,8 @@ namespace Warcraft.Buildings
                 isStartBuilding = false;
 
                 isWorking = true;
+
+                progress.finish = true;
             }
 
             if (isBuilding && !isPlaceSelected)
@@ -197,7 +219,10 @@ namespace Warcraft.Buildings
                     color = Color.Black;
                 
 				spriteBatch.Draw(texture[textureName], position, animations.rectangle, color);
-            }
+
+                if (progress.start || progress.finish)
+					progress.Draw(spriteBatch);
+			}
 
             if (selected)
             {

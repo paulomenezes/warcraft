@@ -8,6 +8,7 @@
         NONE,
         GRUNT,
         TROLL_AXETHROWER,
-        PEON
+        PEON,
+        SKELETON
     }
 }

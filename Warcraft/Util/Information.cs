@@ -2,6 +2,7 @@
 {
     enum Race
     {
+        NEUTRAL,
         HUMAN,
         ORC,
         HIGH_ELF,
@@ -10,6 +11,7 @@
 
     enum Faction
     {
+        NEUTRAL,
         ALLIANCE,
         HORDE
     }

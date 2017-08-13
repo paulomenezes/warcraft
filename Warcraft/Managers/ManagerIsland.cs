@@ -23,7 +23,6 @@ namespace Warcraft.Managers
                 managerMap.Add(new ManagerMap(rooms[i]));
             }
 
-
             Functions.managerMap = CurrentMap();
 
             int[] min = new int[2] { 3, rooms[0].rectangle.Width / 3 };
@@ -31,12 +30,34 @@ namespace Warcraft.Managers
 
             for (int i = 0; i < managerMap.Count; i++)
             {
+                Warcraft.MAP_SIZE = rooms[i].rectangle.Width / Warcraft.TILE_SIZE;
+
+                Vector2[] pos = { Vector2.Zero, Vector2.Zero };
+
+                for (int j = 0; j < managerMap[i].FULL_MAP.Count; j++)
+                {
+                    for (int k = 0; k < managerMap[i].FULL_MAP[j].Count; k++)
+                    {
+                        if (managerMap[i].FULL_MAP[j][k].tileType != TileType.WATER && !managerMap[i].FULL_MAP[j][k].isWall && !managerMap[i].FULL_MAP[j][k].isWater) 
+                        {
+                            if (pos[0] == Vector2.Zero)
+                            {
+                                pos[0] = managerMap[i].FULL_MAP[j][k].position;
+                            }
+                            else
+                            {
+                                pos[1] = managerMap[i].FULL_MAP[j][k].position;
+                            }
+                        }
+                    }
+                }
+
                 for (int j = 0; j < 2; j++)
                 {
-                    Vector2 pos = Functions.CleanHalfPosition(managerMap[i], min[j], max[j]);
-                    pos = pos + new Vector2(rooms[i].rectangle.X, rooms[i].rectangle.Y);
+                    Vector2 place = Functions.CleanHalfPosition(managerMap[i], pos[j]);
+                    place = place + new Vector2(rooms[i].rectangle.X, rooms[i].rectangle.Y);
 
-					ManagerBuildings.goldMines.Add(new Buildings.Neutral.GoldMine((int)(pos.X / Warcraft.TILE_SIZE), (int)(pos.Y / Warcraft.TILE_SIZE), managerMouse, managerMap[i], null));
+					ManagerBuildings.goldMines.Add(new Buildings.Neutral.GoldMine((int)(place.X / Warcraft.TILE_SIZE), (int)(place.Y / Warcraft.TILE_SIZE), managerMouse, managerMap[i], null));
 				}
 			}
 

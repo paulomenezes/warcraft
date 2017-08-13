@@ -7,7 +7,7 @@ namespace Warcraft.UI
     {
         public static SpriteFont font;
         public static Texture2D portraits;
-        protected int minX = Warcraft.WINDOWS_WIDTH + 10;
+        protected int minX = Warcraft.WINDOWS_WIDTH + 30;
 
         public Button buttonPortrait;
 

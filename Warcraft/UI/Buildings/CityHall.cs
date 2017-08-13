@@ -92,7 +92,7 @@ namespace Warcraft.UI.Buildings
                 }
 
                 spriteBatch.DrawString(font, townHall.information.Name, new Vector2(minX + 50, 100), Color.Black);
-                spriteBatch.DrawString(font, "HP: " + townHall.information.HitPoints, new Vector2(minX, 150), Color.Black);
+                spriteBatch.DrawString(font, "HP: " + townHall.information.HitPoints + "/" + townHall.information.HitPointsTotal, new Vector2(minX, 150), Color.Black);
             }
         }
     }

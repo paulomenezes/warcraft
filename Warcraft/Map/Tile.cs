@@ -45,7 +45,7 @@ namespace Warcraft.Map
             TileX = tileX;
             TileY = tileY;
 
-            isWall = true;
+            // isWall = true;
 
             tileType = type;
 

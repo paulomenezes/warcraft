@@ -12,6 +12,7 @@ namespace Warcraft.Buildings
             Name = name;
 
             HitPoints = hitPoints;
+            HitPointsTotal = hitPoints;
 
             CostGold = costGold;
             CostFood = costFood;

@@ -1,15 +1,19 @@
 ﻿<Properties StartupConfiguration="{13F82A3A-108E-4ECC-80BB-B2E7274ECB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Managers/ManagerCombat.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Util/Progress.cs">
     <Files>
-      <File FileName="Warcraft/Warcraft.cs" Line="62" Column="42" />
-      <File FileName="Warcraft/Managers/ManagerEnemies.cs" Line="69" Column="10" />
-      <File FileName="Warcraft/Units/Orcs/Peon.cs" Line="1" Column="1" />
-      <File FileName="Warcraft/Util/Functions.cs" Line="56" Column="94" />
-      <File FileName="Warcraft/EA/ActionType.cs" Line="8" Column="16" />
-      <File FileName="Warcraft/Managers/ManagerUnits.cs" Line="57" Column="38" />
-      <File FileName="Warcraft/Managers/ManagerPlayerUnits.cs" Line="18" Column="101" />
-      <File FileName="Warcraft/Managers/ManagerBotsUnits.cs" Line="19" Column="89" />
-      <File FileName="Warcraft/Managers/ManagerCombat.cs" Line="1" Column="1" />
+      <File FileName="Warcraft/Warcraft.cs" Line="33" Column="34" />
+      <File FileName="Warcraft/Buildings/Humans/TownHall.cs" Line="32" Column="138" />
+      <File FileName="Warcraft/Buildings/Building.cs" Line="175" Column="84" />
+      <File FileName="Warcraft/Buildings/Orcs/GreatHall.cs" Line="33" Column="129" />
+      <File FileName="Warcraft/Util/Camera.cs" Line="52" Column="124" />
+      <File FileName="Warcraft/Buildings/Humans/Barracks.cs" Line="31" Column="138" />
+      <File FileName="Warcraft/Buildings/Humans/ChickenFarm.cs" Line="28" Column="138" />
+      <File FileName="Warcraft/Buildings/Orcs/PigFarm.cs" Line="28" Column="129" />
+      <File FileName="Warcraft/Buildings/Orcs/Barracks.cs" Line="33" Column="13" />
+      <File FileName="Warcraft/UI/Buildings/CityHall.cs" Line="95" Column="129" />
+      <File FileName="Warcraft/Util/Information.cs" Line="19" Column="11" />
+      <File FileName="Warcraft/Buildings/InformationBuilding.cs" Line="15" Column="40" />
+      <File FileName="Warcraft/Util/Progress.cs" Line="51" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

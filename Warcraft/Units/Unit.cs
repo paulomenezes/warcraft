@@ -109,13 +109,16 @@ namespace Warcraft.Units
             missileTroll = content.Load<Texture2D>("axe");
             missileElven = content.Load<Texture2D>("arrow");
 
-            ui.LoadContent(content);
+            if (ui != null)
+                ui.LoadContent(content);
         }
 
         public virtual void Update()
         {
             animations.Update();
-            ui.Update();
+
+            if (ui != null)
+                ui.Update();
 
             if (information.HitPoints > 0)
             {
@@ -327,7 +330,7 @@ namespace Warcraft.Units
 
         public virtual void DrawUI(SpriteBatch spriteBatch)
         {
-            if (selected)
+            if (ui != null && selected)
             {
                 ui.Draw(spriteBatch);
             }

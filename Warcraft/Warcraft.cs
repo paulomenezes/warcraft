@@ -30,6 +30,7 @@ namespace Warcraft
 		public static int WINDOWS_WIDTH = 1280;
 		public static int WINDOWS_HEIGHT = 800;
 
+        public static int FPS = 10;
 		public static int TILE_SIZE = 32;
 		public static int MAP_SIZE = 50;
 

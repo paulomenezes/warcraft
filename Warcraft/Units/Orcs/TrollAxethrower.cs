@@ -124,11 +124,11 @@ namespace Warcraft.Units.Orcs
             else if (animations.currentAnimation == AnimationType.ATTACKING)
                 animations.speed = 7;
 
-            if (!transition && target == null && targetBuilding == null)
-			{
-				Vector2 pos = Util.Functions.CleanPosition(managerMap, width, height);
-				Move(Functions.Normalize(pos.X) / 32, Functions.Normalize(pos.Y) / 32);
-			}
+   //         if (!transition && target == null && targetBuilding == null)
+			//{
+			//	Vector2 pos = Util.Functions.CleanPosition(managerMap, width, height);
+			//	Move(Functions.Normalize(pos.X) / 32, Functions.Normalize(pos.Y) / 32);
+			//}
 		}
 
         public override void Draw(SpriteBatch spriteBatch)
