@@ -10,6 +10,9 @@ namespace Warcraft.Managers
 {
     class ManagerBotsUnits : ManagerUnits
     {
+        List<int> defense = new List<int>();
+        List<int> attack = new List<int>();
+
         public ManagerBotsUnits(ManagerMouse managerMouse, ManagerMap managerMap, ManagerBuildings managerBuildings, int index)
             : base(managerMouse, managerMap, managerBuildings)
         {
@@ -18,7 +21,7 @@ namespace Warcraft.Managers
             Vector2 goldMinePos = Functions.CleanHalfPosition(managerMap, ManagerBuildings.goldMines[1].position);
 			units.Add(new Peon(Functions.TilePos(goldMinePos.X), Functions.TilePos(goldMinePos.Y), managerMouse, managerMap, this, managerBuildings));
 
-            units.Add(new Units.Neutral.Skeleton(Functions.TilePos(goldMinePos.X), Functions.TilePos(goldMinePos.Y), managerMouse, managerMap, this));
+            units.Add(new Units.Neutral.Skeleton(Functions.TilePos(ManagerBuildings.darkPortal.position.X) + 4, Functions.TilePos(ManagerBuildings.darkPortal.position.Y) + 4, managerMouse, managerMap, this));
         }
 
         public override void Factory(Util.Units type, int x, int y, int targetX, int targetY)
@@ -30,9 +33,57 @@ namespace Warcraft.Managers
             else if (type == Util.Units.GRUNT)
                 units.Add(new Grunt(x, y, managerMouse, managerMap, this));
 
+            if (type != Util.Units.PEON)
+            {
+                Random rng = new Random();
+                if (rng.NextDouble() > 0.5)
+                {
+                    defense.Add(units.Count - 1);
+                }
+                else
+                {
+                    attack.Add(units.Count - 1);
+                }
+            }
+
             units[units.Count - 1].Move(targetX, targetY);
 
             LoadContent();
+        }
+
+        public override void Update()
+        {
+            base.Update();
+
+            if (attack.Count >= 10) 
+            {
+                Vector2 pos = Vector2.Zero;
+                for (int i = 0; i < attack.Count; i++)
+                {
+                    if (!units[attack[i]].transition && units[attack[i]].target == null && units[attack[i]].targetBuilding == null)
+					{
+                        if (pos == Vector2.Zero)
+						    pos = Functions.CleanPosition(managerMap, 32, 32);
+
+                        units[attack[i]].Move((Functions.Normalize(pos.X) / 32) + i, (Functions.Normalize(pos.Y) / 32) + i);
+                    }
+                }
+			}
+
+            if (defense.Count > 3) 
+            {
+				Vector2 pos = Vector2.Zero;
+                for (int i = 0; i < defense.Count; i++)
+				{
+                    if (!units[defense[i]].transition && units[defense[i]].target == null && units[defense[i]].targetBuilding == null)
+					{
+						if (pos == Vector2.Zero)
+                            pos = Functions.CleanPosition(managerMap, ManagerBuildings.goldMines[1].position, 32, 32, 10);
+
+						units[defense[i]].Move((Functions.Normalize(pos.X) / 32) + i, (Functions.Normalize(pos.Y) / 32) + i);
+					}
+				}
+            }
         }
     }
 }

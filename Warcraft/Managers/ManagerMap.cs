@@ -50,8 +50,9 @@ namespace Warcraft.Managers
         public static Dictionary<int[], int[]> Mapping = new Dictionary<int[], int[]>(new MyEqualityComparer());
 
         public static SpriteFont font;
+		List<Tile> water = new List<Tile>();
 
-        public ManagerMap(Room room)
+		public ManagerMap(Room room)
         {
             Random rng = new Random();
 
@@ -61,7 +62,6 @@ namespace Warcraft.Managers
         public void CreateInsland(int x, int y, int width, int height) {
             List<List<Tile>> map = new List<List<Tile>>();
             List<List<int>> match = new List<List<int>>();
-            List<Tile> water = new List<Tile>();
             List<Tile> walls = new List<Tile>();
 
             float[,] noise = Noise2D.GenerateNoiseMap(width, height, 20);
@@ -175,19 +175,32 @@ namespace Warcraft.Managers
                         }
                     }
 
-                    if (key[0] == 0 || key[1] == 0 || key[2] == 0 || key[3] == 0 ||
-                        key[0] == 3 || key[1] == 3 || key[2] == 3 || key[3] == 3)
+					if (key[0] == 0 && key[1] == 0 && key[2] == 0 && key[3] == 0) //  || key[0] == 3 || key[1] == 3 || key[2] == 3 || key[3] == 3
                     {
                         water.Add(new Tile(i, j));
                     }
                 }
             }
 
-            for (int i = 0; i < water.Count; i++)
-            {
-                water[i].isWater = true;
-                walls.Add(water[i]);
-            }
+            //for (int i = 0; i < water.Count; i++)
+            //{
+            //    water[i].isWater = true;
+            //    walls.Add(water[i]);
+            //}
+
+     //       for (int i = map.Count - 1; i >= 0; i--)
+     //       {
+     //           for (int j = map[i].Count - 1; j >= 0; j--)
+     //           {
+					//for (int k = 0; k < water.Count; k++)
+					//{
+						//if (i == water[k].TileX && j == water[k].TileY)
+            //            {
+            //                map[i].RemoveAt(j);
+            //            }
+            //        }
+            //    }
+            //}
 
             FULL_MAP = map;
             WALLS = walls;
@@ -205,13 +218,15 @@ namespace Warcraft.Managers
         {
             //spriteBatch.Draw(Tile.texture, new Rectangle(0, 0, 5000, 5000), new Rectangle(5 * Warcraft.TILE_SIZE + 1, 17 * Warcraft.TILE_SIZE + 1, Warcraft.TILE_SIZE, Warcraft.TILE_SIZE), Color.White);
 
-                for (int i = 0; i < FULL_MAP.Count; i++)
+            //water.ForEach(w => w.Draw(spriteBatch));
+
+            for (int i = 0; i < FULL_MAP.Count; i++)
+            {
+                for (int j = 0; j < FULL_MAP[i].Count; j++)
                 {
-                    for (int j = 0; j < FULL_MAP[i].Count; j++)
-                    {
-                        FULL_MAP[i][j].Draw(spriteBatch);
-                    }
+                    FULL_MAP[i][j].Draw(spriteBatch);
                 }
+            }
 
             WALLS.ForEach((item) =>
             {
@@ -313,7 +328,7 @@ namespace Warcraft.Managers
             {
                 for (int i = 0; i < xQuantity; i++)
                     for (int j = 1; j < yQuantity; j++)
-                        if (WALLS[k].TileX == pointX + i && WALLS[k].TileY == pointY + j)
+                        if (WALLS[k].TileX == pointX + i && WALLS[k].TileY == pointY + j) // && FULL_MAP[pointX + i][pointY + j].tileType != TileType.WATER)
                             return true;
             }
 

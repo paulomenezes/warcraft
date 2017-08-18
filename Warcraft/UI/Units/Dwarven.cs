@@ -46,7 +46,7 @@ namespace Warcraft.UI.Units
 
 				spriteBatch.DrawString(font, dwarven.information.Name, new Vector2(minX + 50, 100), Color.Black);
 				spriteBatch.DrawString(font, "Armor: " + dwarven.information.Armor, new Vector2(minX, 150), Color.Black);
-				spriteBatch.DrawString(font, "Damage: " + dwarven.information.Damage + " (" + dwarven.information.Precision + "%)", new Vector2(minX, 170), Color.Black);
+				spriteBatch.DrawString(font, "Damage: " + dwarven.information.Damage, new Vector2(minX, 170), Color.Black);
 				spriteBatch.DrawString(font, "Range: " + dwarven.information.Range, new Vector2(minX, 190), Color.Black);
 				spriteBatch.DrawString(font, "Sight: " + dwarven.information.Sight, new Vector2(minX, 210), Color.Black);
 				spriteBatch.DrawString(font, "Speed: " + dwarven.information.MovementSpeed, new Vector2(minX, 230), Color.Black);

@@ -77,6 +77,21 @@ namespace Warcraft.Util
             return new Vector2(x * 32, y * 32);
 		}
 
+        public static Vector2 CleanPosition(ManagerMap managerMap, Vector2 center, int width, int height, int radius)
+		{
+			Random random = new Random(DateTime.Now.Millisecond);
+
+			int x = 0;
+			int y = 0;
+			do
+			{
+				x = Normalize(random.Next(Normalize(center.X - (radius * 32)), Normalize(center.X + (radius * 32))));
+                y = Normalize(random.Next(Normalize(center.Y - (radius * 32)), Normalize(center.Y + (radius * 32))));
+			} while (managerMap.CheckWalls(new Vector2(x, y), width / 32, height / 32));
+
+			return new Vector2(x, y);
+		}
+
 		public static int Normalize(float value)
 		{
 			return (int)(value / 32) * 32;

@@ -46,7 +46,7 @@ namespace Warcraft.UI.Units
                 
                 spriteBatch.DrawString(font, elvenArcher.information.Name, new Vector2(minX + 50, 100), Color.Black);
                 spriteBatch.DrawString(font, "Armor: " + elvenArcher.information.Armor, new Vector2(minX, 150), Color.Black);
-                spriteBatch.DrawString(font, "Damage: " + elvenArcher.information.Damage + " (" + elvenArcher.information.Precision + "%)", new Vector2(minX, 170), Color.Black);
+                spriteBatch.DrawString(font, "Damage: " + elvenArcher.information.Damage, new Vector2(minX, 170), Color.Black);
                 spriteBatch.DrawString(font, "Range: " + elvenArcher.information.Range + "sq", new Vector2(minX, 190), Color.Black);
                 spriteBatch.DrawString(font, "Sight: " + elvenArcher.information.Sight + "º", new Vector2(minX, 210), Color.Black);
                 spriteBatch.DrawString(font, "Speed: " + elvenArcher.information.MovementSpeed, new Vector2(minX, 230), Color.Black);

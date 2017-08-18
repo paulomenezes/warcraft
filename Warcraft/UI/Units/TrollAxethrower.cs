@@ -46,7 +46,7 @@ namespace Warcraft.UI.Units
 
                 spriteBatch.DrawString(font, trollAxethrower.information.Name, new Vector2(minX + 50, 100), Color.Black);
                 spriteBatch.DrawString(font, "Armor: " + trollAxethrower.information.Armor, new Vector2(minX, 150), Color.Black);
-                spriteBatch.DrawString(font, "Damage: " + trollAxethrower.information.Damage + " (" + trollAxethrower.information.Precision + "%)", new Vector2(minX, 170), Color.Black);
+                spriteBatch.DrawString(font, "Damage: " + trollAxethrower.information.Damage, new Vector2(minX, 170), Color.Black);
                 spriteBatch.DrawString(font, "Range: " + trollAxethrower.information.Range, new Vector2(minX, 190), Color.Black);
                 spriteBatch.DrawString(font, "Sight: " + trollAxethrower.information.Sight, new Vector2(minX, 210), Color.Black);
                 spriteBatch.DrawString(font, "Speed: " + trollAxethrower.information.MovementSpeed, new Vector2(minX, 230), Color.Black);

@@ -100,7 +100,7 @@ namespace Warcraft.Units.Humans
             ui = new UI.Units.Knight(managerMouse, this);
 			textureName.Add(AnimationType.WALKING, "Knight");
 
-            information = new InformationUnit("Knight", Race.HUMAN, Faction.ALLIANCE, 90, 8, 360, 13, 800, 1, Util.Buildings.BARRACKS, 90 * Warcraft.FPS, 8, 100, 1, 0, Util.Units.KNIGHT);
+            information = new InformationUnit("Knight", Race.HUMAN, Faction.ALLIANCE, 90, 8, 360, 13, 800, 1, Util.Buildings.BARRACKS, 90 * Warcraft.FPS, 8, 1, Util.Units.KNIGHT);
 			Information = information;
 		}
 

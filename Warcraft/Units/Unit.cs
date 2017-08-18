@@ -236,16 +236,14 @@ namespace Warcraft.Units
                             missilePosition = position;
                             targetPosition = attackPosition;
 
-                            float reduce = ((information.Damage * ((float)information.Precision / 100)) - armor); // / 30;
+                            float reduce = (information.Damage - armor) / 30f;
                             ReduceHitPoints(reduce < 0 ? 0.01f : reduce);
-                            information.Fitness += reduce < 0 ? 0.01f : reduce;
                         }
                     }
                     else
                     {
-                        float reduce = ((information.Damage * ((float)information.Precision / 100)) - armor); // / 30;
+                        float reduce = (information.Damage - armor) / 30f;
                         ReduceHitPoints(reduce < 0 ? 0.01f : reduce);
-                        information.Fitness += reduce < 0 ? 0.01f : reduce;
                     }
 
                     if (adjustX > 0 && adjustY == 0) animations.Change("right");

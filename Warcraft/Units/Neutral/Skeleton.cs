@@ -11,7 +11,7 @@ namespace Warcraft.Units.Neutral
     class Skeleton : Unit
     {
         public Skeleton(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits)
-            : base(tileX, tileY, 52, 52, 1, managerMouse, managerMap, managerUnits)
+            : base(tileX, tileY, 40, 40, 1, managerMouse, managerMap, managerUnits)
         {
             Dictionary<AnimationType, List<Sprite>> sprites = new Dictionary<AnimationType, List<Sprite>>();
             List<Sprite> spriteWalking = new List<Sprite>();
@@ -100,7 +100,7 @@ namespace Warcraft.Units.Neutral
 
             textureName.Add(AnimationType.WALKING, "Skeleton");
 
-            information = new InformationUnit("Skeleton", Race.NEUTRAL, Faction.NEUTRAL, 40, 0, 360, 10, 0, 0, Util.Buildings.NONE, 300, 6, 100, 1, 0, Util.Units.SKELETON);
+            information = new InformationUnit("Skeleton", Race.NEUTRAL, Faction.NEUTRAL, 40, 0, 360, 10, 0, 0, Util.Buildings.NONE, 300, 6, 1, Util.Units.SKELETON);
             Information = information;
         }
 

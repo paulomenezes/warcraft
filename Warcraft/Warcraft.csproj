@@ -129,6 +129,7 @@
     <Compile Include="EA\ActionType.cs" />
     <Compile Include="Units\Neutral\Skeleton.cs" />
     <Compile Include="Util\Progress.cs" />
+    <Compile Include="Buildings\Neutral\DarkPortal.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.manifest" />

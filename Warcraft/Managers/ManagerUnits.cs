@@ -41,7 +41,7 @@ namespace Warcraft.Managers
             units.ForEach((u) => u.LoadContent(content));
         }
 
-        public void Update()
+        public virtual void Update()
 		{
 			for (int i = units.Count - 1; i >= 0; i--)
 			{

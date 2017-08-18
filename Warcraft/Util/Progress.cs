@@ -60,8 +60,11 @@ namespace Warcraft.Util
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, new Rectangle((int)position.X, (int)position.Y, width, height), Color.Black);
-            spriteBatch.Draw(texture, new Rectangle((int)position.X + 1, (int)position.Y + 1, (int)current, height - 2), new Color(1 - progress, progress, 0));
+            if (texture != null)
+            {
+                spriteBatch.Draw(texture, new Rectangle((int)position.X, (int)position.Y, width, height), Color.Black);
+                spriteBatch.Draw(texture, new Rectangle((int)position.X + 1, (int)position.Y + 1, (int)current, height - 2), new Color(1 - progress, progress, 0));
+            }
         }
     }
 }

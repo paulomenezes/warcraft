@@ -43,17 +43,29 @@ namespace Warcraft.Managers
             actionsTypes.Add(EA.ActionType.BUILDING);
             actions.Add(0);
 
-            actionsTypes.Add(EA.ActionType.BUILDING);
-			actions.Add(1);
+            actionsTypes.Add(EA.ActionType.TOWN_HALL);
+            actions.Add(0);
 
             actionsTypes.Add(EA.ActionType.BUILDING);
 			actions.Add(2);
 
+			actionsTypes.Add(EA.ActionType.TOWN_HALL);
+			actions.Add(0);
+
+			actionsTypes.Add(EA.ActionType.BUILDING);
+			actions.Add(2);
+
+            actionsTypes.Add(EA.ActionType.BUILDING);
+			actions.Add(1);
+
+			actionsTypes.Add(EA.ActionType.TOWN_HALL);
+			actions.Add(0);
+
             actionsTypes.Add(EA.ActionType.MINING);
 			actions.Add(4);
 
-            actionsTypes.Add(EA.ActionType.TOWN_HALL);
-			actions.Add(0);
+			actionsTypes.Add(EA.ActionType.MINING);
+			actions.Add(4);
 
             actionsTypes.Add(EA.ActionType.BARRACKS);
 			actions.Add(0);
@@ -121,6 +133,28 @@ namespace Warcraft.Managers
 							actions.RemoveAt(0);
 						}
 						break;
+                }
+            } 
+            else
+			{
+
+				if (ManagerResources.BOT_FOOD[0] == 0)
+				{
+					actionsTypes.Add(EA.ActionType.BUILDING);
+					actions.Add(2);
+				}
+
+                for (int i = 0; i < 5; i++)
+                {
+					actionsTypes.Add(EA.ActionType.BARRACKS);
+                    if (random.NextDouble() > 0.5)
+                    {
+                        actions.Add(0);
+                    }
+                    else
+                    {
+                        actions.Add(1);
+                    }
                 }
             }
 		}

@@ -9,6 +9,7 @@
         NONE,
         GREAT_HALL,
         PIG_FARM,
-        ORC_BARRACKS
+        ORC_BARRACKS,
+        DARK_PORTAL
     }
 }

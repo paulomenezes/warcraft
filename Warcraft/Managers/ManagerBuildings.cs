@@ -5,12 +5,15 @@ using Warcraft.Buildings;
 using Warcraft.Buildings.Neutral;
 using Microsoft.Xna.Framework;
 using Warcraft.Util;
+using Warcraft.Map;
 
 namespace Warcraft.Managers
 {
     abstract class ManagerBuildings
     {
         public static List<GoldMine> goldMines = new List<GoldMine>();
+        public static DarkPortal darkPortal;
+
         public List<Building> buildings = new List<Building>();
         public ManagerMap managerMap;
 
@@ -19,6 +22,20 @@ namespace Warcraft.Managers
         public ManagerBuildings(ManagerMouse managerMouse, ManagerMap managerMap)
         {
             this.managerMap = managerMap;
+
+            int minX = 999, minY = 999;
+            for (int i = 0; i < managerMap.FULL_MAP.Count; i++)
+            {
+                for (int j = 0; j < managerMap.FULL_MAP[i].Count; j++)
+                {
+                    if (managerMap.FULL_MAP[i][j].tileType != TileType.WATER && !managerMap.FULL_MAP[i][j].isWall && !managerMap.FULL_MAP[i][j].isWater && j < minY)
+                    {
+                        minX = i;
+                        minY = j;
+                    }
+				}
+            }
+            darkPortal = new DarkPortal(minX, minY, managerMouse, managerMap, null);
 		}
 
         public void AddBuilding(Building building)
@@ -31,6 +48,7 @@ namespace Warcraft.Managers
         {
 			buildings.ForEach((u) => u.LoadContent(content));
             goldMines.ForEach((u) => u.LoadContent(content));
+            darkPortal.LoadContent(content);
         }
 
         public void Update()
@@ -43,12 +61,14 @@ namespace Warcraft.Managers
             }
 
             goldMines.ForEach((u) => u.Update());
+            darkPortal.Update();
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
 			buildings.ForEach((u) => u.Draw(spriteBatch));
             goldMines.ForEach((u) => u.Draw(spriteBatch));
+            darkPortal.Draw(spriteBatch);
         }
 
         public void DrawUI(SpriteBatch spriteBatch)

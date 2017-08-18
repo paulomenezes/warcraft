@@ -101,7 +101,7 @@ namespace Warcraft.Units.Orcs
             ui = new UI.Units.Grunt(managerMouse, this);
             textureName.Add(AnimationType.WALKING, "Grunt");
             
-            information = new InformationUnit("GRUNT", Race.ORC, Faction.HORDE, 60, 6, 360, 10, 600, 1, Util.Buildings.ORC_BARRACKS, 60 * Warcraft.FPS, 6, 100, 1, 0, Util.Units.GRUNT);
+            information = new InformationUnit("GRUNT", Race.ORC, Faction.HORDE, 60, 6, 360, 10, 600, 1, Util.Buildings.ORC_BARRACKS, 60 * Warcraft.FPS, 6, 1, Util.Units.GRUNT);
             Information = information;
         }
 

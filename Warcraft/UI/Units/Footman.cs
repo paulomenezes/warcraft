@@ -46,7 +46,7 @@ namespace Warcraft.UI.Units
                 
                 spriteBatch.DrawString(font, footman.information.Name, new Vector2(minX + 50, 100), Color.Black);
                 spriteBatch.DrawString(font, "Armor: " + footman.information.Armor, new Vector2(minX, 150), Color.Black);
-                spriteBatch.DrawString(font, "Damage: " + footman.information.Damage + " (" + footman.information.Precision + "%)", new Vector2(minX, 170), Color.Black);
+                spriteBatch.DrawString(font, "Damage: " + footman.information.Damage, new Vector2(minX, 170), Color.Black);
                 spriteBatch.DrawString(font, "Range: " + footman.information.Range + "sq", new Vector2(minX, 190), Color.Black);
                 spriteBatch.DrawString(font, "Sight: " + footman.information.Sight + "º", new Vector2(minX, 210), Color.Black);
                 spriteBatch.DrawString(font, "Speed: " + footman.information.MovementSpeed, new Vector2(minX, 230), Color.Black);

@@ -46,7 +46,7 @@ namespace Warcraft.UI.Units
 
 				spriteBatch.DrawString(font, knight.information.Name, new Vector2(minX + 50, 100), Color.Black);
 				spriteBatch.DrawString(font, "Armor: " + knight.information.Armor, new Vector2(minX, 150), Color.Black);
-				spriteBatch.DrawString(font, "Damage: " + knight.information.Damage + " (" + knight.information.Precision + "%)", new Vector2(minX, 170), Color.Black);
+				spriteBatch.DrawString(font, "Damage: " + knight.information.Damage, new Vector2(minX, 170), Color.Black);
 				spriteBatch.DrawString(font, "Range: " + knight.information.Range, new Vector2(minX, 190), Color.Black);
 				spriteBatch.DrawString(font, "Sight: " + knight.information.Sight, new Vector2(minX, 210), Color.Black);
 				spriteBatch.DrawString(font, "Speed: " + knight.information.MovementSpeed, new Vector2(minX, 230), Color.Black);
