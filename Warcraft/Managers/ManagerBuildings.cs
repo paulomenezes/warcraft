@@ -57,7 +57,10 @@ namespace Warcraft.Managers
             {
                 buildings[i].Update();
                 if (buildings[i].information.HitPoints <= 0)
+                {
+                    managerMap.RemoveWalls(buildings[i].position, buildings[i].width / 32, buildings[i].height / 32);
                     buildings.RemoveAt(i);
+                }
             }
 
             goldMines.ForEach((u) => u.Update());

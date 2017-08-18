@@ -93,7 +93,6 @@
     <Compile Include="Util\PathNode.cs" />
     <Compile Include="Util\Sprite.cs" />
     <Compile Include="Util\Units.cs" />
-    <Compile Include="Util\Data.cs" />
     <Compile Include="Util\SimpleRNG.cs" />
     <Compile Include="Map\Room.cs" />
     <Compile Include="Map\GenerateRooms.cs" />

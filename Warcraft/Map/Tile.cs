@@ -35,7 +35,7 @@ namespace Warcraft.Map
             TileX = tileX;
             TileY = tileY;
 
-            isWall = false;
+            isWall = true;
 
             rectangle = new Rectangle(0, 0, -1, -1);
         }

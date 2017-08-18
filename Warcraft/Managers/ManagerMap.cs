@@ -175,7 +175,7 @@ namespace Warcraft.Managers
                         }
                     }
 
-					if (key[0] == 0 && key[1] == 0 && key[2] == 0 && key[3] == 0) //  || key[0] == 3 || key[1] == 3 || key[2] == 3 || key[3] == 3
+					if (key[0] == 0 || key[1] == 0 || key[2] == 0 || key[3] == 0) //  || key[0] == 3 || key[1] == 3 || key[2] == 3 || key[3] == 3
                     {
                         water.Add(new Tile(i, j));
                     }
@@ -239,6 +239,27 @@ namespace Warcraft.Managers
             for (int i = 0; i < xQuantity; i++)
                 for (int j = 0; j < yQuantity; j++)
                     WALLS.Add(new Tile(((int)position.X / 32) + i, ((int)position.Y / 32) + j));
+        }
+
+
+        public void RemoveWalls(Vector2 position, int xQuantity, int yQuantity)
+        {
+			int tileX = ((int)position.X / 32);
+			int tileY = ((int)position.Y / 32);
+
+			for (int i = 0; i < xQuantity; i++)
+            {
+                for (int j = 0; j < yQuantity; j++)
+                {
+                    for (int k = WALLS.Count - 1; k >= 0; k--)
+                    {
+                        if (WALLS[k].TileX == tileX + i && WALLS[k].TileY == tileY + j)
+                        {
+                            WALLS.RemoveAt(k);
+                        }
+                    }
+                }
+            }
         }
 
         public void ResetWalls()
@@ -324,12 +345,18 @@ namespace Warcraft.Managers
                 pointY + 1 > Warcraft.MAP_SIZE)
                 return true;
 
-            for (int k = 0; k < WALLS.Count; k++)
+            for (int i = 0; i < xQuantity; i++)
             {
-                for (int i = 0; i < xQuantity; i++)
-                    for (int j = 1; j < yQuantity; j++)
-                        if (WALLS[k].TileX == pointX + i && WALLS[k].TileY == pointY + j) // && FULL_MAP[pointX + i][pointY + j].tileType != TileType.WATER)
+                for (int j = 0; j < yQuantity; j++)
+                {
+					for (int k = 0; k < WALLS.Count; k++)
+					{
+						if ((WALLS[k].TileX == pointX + i && WALLS[k].TileY == pointY + j) || FULL_MAP[pointX + i][pointY + j].tileType == TileType.WATER)
+                        {
                             return true;
+                        }
+                    }
+                }
             }
 
             return false;
@@ -344,7 +371,7 @@ namespace Warcraft.Managers
 
             for (int k = 0; k < WALLS.Count; k++)
             {
-                if (WALLS[k].TileX == pointX && WALLS[k].TileY == pointY)
+                if ((WALLS[k].TileX == pointX && WALLS[k].TileY == pointY) || FULL_MAP[pointX][pointY].tileType == TileType.WATER)
                     return true;
             }
 

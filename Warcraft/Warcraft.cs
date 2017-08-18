@@ -53,8 +53,6 @@ namespace Warcraft
 
 		protected override void Initialize()
 		{
-			Data.Write("##############");
-			Data.Write("Começando jogo cada: " + DateTime.Now);
             managerIsland = new ManagerIsland(managerMouse);
 
             managerPlayerBuildings = new ManagerPlayerBuildings(managerMouse, managerIsland.CurrentMap());

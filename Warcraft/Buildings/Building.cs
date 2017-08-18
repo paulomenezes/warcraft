@@ -220,8 +220,10 @@ namespace Warcraft.Buildings
                 
 				spriteBatch.Draw(texture[textureName], position, animations.rectangle, color);
 
-                if (progress.start || progress.finish)
-					progress.Draw(spriteBatch);
+                if ((progress.start && !progress.finish) || (progress.finish && information.HitPoints < information.HitPointsTotal))
+                {
+                    progress.Draw(spriteBatch);
+                }
 			}
 
             if (selected)
