@@ -21,7 +21,15 @@ namespace Warcraft.Managers
             Vector2 goldMinePos = Functions.CleanHalfPosition(managerMap, ManagerBuildings.goldMines[1].position);
 			units.Add(new Peon(Functions.TilePos(goldMinePos.X), Functions.TilePos(goldMinePos.Y), managerMouse, managerMap, this, managerBuildings));
 
+            AddSkeleton();
+        }
+
+        private void AddSkeleton()
+        {
             units.Add(new Units.Neutral.Skeleton(Functions.TilePos(ManagerBuildings.darkPortal.position.X) + 4, Functions.TilePos(ManagerBuildings.darkPortal.position.Y) + 4, managerMouse, managerMap, this));
+
+            if (content != null)
+                LoadContent();
         }
 
         public override void Factory(Util.Units type, int x, int y, int targetX, int targetY)
@@ -55,7 +63,21 @@ namespace Warcraft.Managers
         {
             base.Update();
 
-            if (attack.Count >= 10) 
+            for (int i = units.Count - 1; i >= 0; i--)
+            {
+                if (units[i].information.HitPoints <= 0 && units[i] is Units.Neutral.Skeleton)
+                {
+                    units.RemoveAt(i);
+                    AddSkeleton();
+
+                    if (i % 2 == 0) 
+                    {
+                        AddSkeleton();
+                    }
+                }
+            }
+
+            if (attack.Count >= 6) 
             {
                 Vector2 pos = Vector2.Zero;
                 for (int i = 0; i < attack.Count; i++)

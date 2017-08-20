@@ -2,12 +2,12 @@
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/Content/Skeleton.png</SourceFile>
   <SourceTime>2017-05-29T08:05:30-03:00</SourceTime>
-  <DestFile>/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/Content/bin/DesktopGL/Skeleton.xnb</DestFile>
-  <DestTime>2017-08-12T17:42:28-03:00</DestTime>
+  <DestFile>/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/Content/./Skeleton.xnb</DestFile>
+  <DestTime>2017-08-20T10:54:44-03:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2017-03-01T12:06:24-03:00</ImporterTime>
+  <ImporterTime>2017-07-29T23:38:02-03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2017-03-01T12:06:24-03:00</ProcessorTime>
+  <ProcessorTime>2017-07-29T23:38:02-03:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>

@@ -60,7 +60,6 @@ namespace Warcraft.Managers
 					ManagerBuildings.goldMines.Add(new Buildings.Neutral.GoldMine((int)(place.X / Warcraft.TILE_SIZE), (int)(place.Y / Warcraft.TILE_SIZE), managerMouse, managerMap[i], null));
 				}
 			}
-
 		}
 
         public void LoadContent(ContentManager content)

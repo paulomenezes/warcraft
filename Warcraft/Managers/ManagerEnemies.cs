@@ -27,6 +27,8 @@ namespace Warcraft.Managers
         List<EA.ActionType> actionsTypes = new List<EA.ActionType>();
         List<int> actions = new List<int>();
 
+        int nivel = 0;
+
 		public ManagerEnemies(ManagerMouse managerMouse, ManagerMap managerMap, int index)
         {
 			ManagerResources.BOT_GOLD.Add(5000);
@@ -137,23 +139,29 @@ namespace Warcraft.Managers
             } 
             else
 			{
+                nivel++;
 
-				if (ManagerResources.BOT_FOOD[0] == 0)
-				{
-					actionsTypes.Add(EA.ActionType.BUILDING);
-					actions.Add(2);
-				}
-
-                for (int i = 0; i < 5; i++)
+                if (nivel >= 50 * Warcraft.FPS)
                 {
-					actionsTypes.Add(EA.ActionType.BARRACKS);
-                    if (random.NextDouble() > 0.5)
+                    nivel = 0;
+
+                    if (ManagerResources.BOT_FOOD[0] == 0)
                     {
-                        actions.Add(0);
+                        actionsTypes.Add(EA.ActionType.BUILDING);
+                        actions.Add(2);
                     }
-                    else
+
+                    for (int i = 0; i < 5; i++)
                     {
-                        actions.Add(1);
+                        actionsTypes.Add(EA.ActionType.BARRACKS);
+                        if (random.NextDouble() > 0.5)
+                        {
+                            actions.Add(0);
+                        }
+                        else
+                        {
+                            actions.Add(1);
+                        }
                     }
                 }
             }

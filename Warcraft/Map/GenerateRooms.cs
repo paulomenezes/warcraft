@@ -15,35 +15,35 @@ namespace Warcraft.Map
         {
 			Random rng = new Random();
 
-            int w = rng.Next(32 * 80, 32 * 100);
+            int w = rng.Next(32 * 100, 32 * 128);
             Rooms.Add(new Room(0, 0, w, w));
 
-            while (Rooms.Count < 1)
-            {
-                w = rng.Next(32 * 80, 32 * 100);
+   //         while (Rooms.Count < 1)
+   //         {
+   //             w = rng.Next(32 * 80, 32 * 100);
 
-                int x = rng.Next(0, (Warcraft.WINDOWS_WIDTH  * 20) - w);
-                int y = rng.Next(0, (Warcraft.WINDOWS_HEIGHT * 20) - w);
+   //             int x = rng.Next(0, (Warcraft.WINDOWS_WIDTH  * 20) - w);
+   //             int y = rng.Next(0, (Warcraft.WINDOWS_HEIGHT * 20) - w);
 
-                x = Functions.Normalize(x);
-                y = Functions.Normalize(y);
+   //             x = Functions.Normalize(x);
+   //             y = Functions.Normalize(y);
 
-                Room room = new Room(x, y, w, w);
+   //             Room room = new Room(x, y, w, w);
 
-                bool intersect = false;
-                for (int j = 0; j < Rooms.Count; j++)
-                {
-                    if (Rooms[j].rectangle.Intersects(room.rectangle)) {
-                        intersect = true;
-                        break;
-                    }
-                }
+   //             bool intersect = false;
+   //             for (int j = 0; j < Rooms.Count; j++)
+   //             {
+   //                 if (Rooms[j].rectangle.Intersects(room.rectangle)) {
+   //                     intersect = true;
+   //                     break;
+   //                 }
+   //             }
 
-                if (!intersect)
-                {
-                    Rooms.Add(room);
-                }
-			}
+   //             if (!intersect)
+   //             {
+   //                 Rooms.Add(room);
+   //             }
+			//}
         }
     }
 }

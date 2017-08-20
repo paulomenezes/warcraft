@@ -73,7 +73,7 @@ namespace Warcraft.Managers
                     float distance_y = Math.Abs(j - height * 0.5f);
                     double distance = Math.Sqrt(distance_x * distance_x + distance_y * distance_y);
 
-                    float max_width = width * 0.5f;
+                    float max_width = width * 0.4f;
                     double delta = distance / max_width;
                     double gradient = delta * delta;
 
@@ -349,9 +349,14 @@ namespace Warcraft.Managers
             {
                 for (int j = 0; j < yQuantity; j++)
                 {
+                    if (FULL_MAP[pointX + i][pointY + j].tileType == TileType.WATER)
+                    {
+                        return true;
+                    }
+
 					for (int k = 0; k < WALLS.Count; k++)
 					{
-						if ((WALLS[k].TileX == pointX + i && WALLS[k].TileY == pointY + j) || FULL_MAP[pointX + i][pointY + j].tileType == TileType.WATER)
+						if ((WALLS[k].TileX == pointX + i && WALLS[k].TileY == pointY + j))
                         {
                             return true;
                         }
@@ -369,9 +374,14 @@ namespace Warcraft.Managers
                 pointY + 1 > Warcraft.MAP_SIZE)
                 return true;
 
+            if (FULL_MAP[pointX][pointY].tileType == TileType.WATER)
+            {
+                return true;
+            }
+
             for (int k = 0; k < WALLS.Count; k++)
             {
-                if ((WALLS[k].TileX == pointX && WALLS[k].TileY == pointY) || FULL_MAP[pointX][pointY].tileType == TileType.WATER)
+                if ((WALLS[k].TileX == pointX && WALLS[k].TileY == pointY))
                     return true;
             }
 
