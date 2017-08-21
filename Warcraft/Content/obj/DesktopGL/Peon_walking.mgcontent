@@ -2,12 +2,12 @@
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/Content/Peon_walking.png</SourceFile>
   <SourceTime>2017-05-26T21:21:39-03:00</SourceTime>
-  <DestFile>/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/Content/./Peon_walking.xnb</DestFile>
-  <DestTime>2017-08-20T10:54:44-03:00</DestTime>
+  <DestFile>/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/Content/bin/DesktopGL/Peon_walking.xnb</DestFile>
+  <DestTime>2017-08-20T11:09:05-03:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2017-07-29T23:38:02-03:00</ImporterTime>
+  <ImporterTime>2017-03-01T12:06:24-03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2017-07-29T23:38:02-03:00</ProcessorTime>
+  <ProcessorTime>2017-03-01T12:06:24-03:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>

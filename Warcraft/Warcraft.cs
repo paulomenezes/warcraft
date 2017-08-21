@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Input;
 using Warcraft.Managers;
 using Warcraft.Map;
 using Warcraft.UI;
+using Warcraft.Units.Humans;
 using Warcraft.Util;
 
 namespace Warcraft
@@ -39,6 +40,13 @@ namespace Warcraft
 		public static Camera camera;
 
         // GenerateRooms rooms;
+        float increment = 0.1f;
+        float fadeOut = 0;
+
+        Texture2D cursor;
+
+        bool showSummary = false;
+        Summary summary = new Summary();
 
 		public Warcraft()
 		{
@@ -55,10 +63,11 @@ namespace Warcraft
 		{
             managerIsland = new ManagerIsland(managerMouse);
 
+			managerEnemies = new ManagerEnemies(managerMouse, managerIsland.CurrentMap(), 0);
+			
             managerPlayerBuildings = new ManagerPlayerBuildings(managerMouse, managerIsland.CurrentMap());
-            managerPlayerUnits = new ManagerPlayerUnits(managerMouse, managerIsland.CurrentMap(), managerPlayerBuildings);
+            managerPlayerUnits = new ManagerPlayerUnits(managerMouse, managerIsland.CurrentMap(), managerPlayerBuildings, managerEnemies);
 
-            managerEnemies = new ManagerEnemies(managerMouse, managerIsland.CurrentMap(), 0);
             managerUI = new ManagerUI(managerMouse, managerPlayerBuildings, managerPlayerUnits, null);
             managerCombat = new ManagerCombat(managerEnemies, managerPlayerUnits, managerPlayerBuildings);
 
@@ -78,6 +87,8 @@ namespace Warcraft
             managerEnemies.LoadContent(Content);
 
 			SelectRectangle.LoadContent(Content);
+
+            cursor = Content.Load<Texture2D>("Cursor");
 		}
 
 		protected override void Update(GameTime gameTime)
@@ -85,16 +96,33 @@ namespace Warcraft
 			if (Keyboard.GetState().IsKeyDown(Keys.Escape))
 				Exit();
 
-			managerMouse.Update();
-			managerPlayerUnits.Update();
-            managerPlayerBuildings.Update();
-			managerUI.Update();
-            managerEnemies.Update();
-
-			managerCombat.Update();
-
 			if (IsActive)
 				camera.Update(gameTime);
+
+            managerPlayerUnits.Update();
+			if (Battleship.move)
+            {
+                increment += 1;
+
+                if (fadeOut < 0.8f)
+                {
+					fadeOut += (float)Math.Pow(1.05, increment) / 100;
+				}
+
+                if (fadeOut > 0.6 && !showSummary)
+                {
+                    showSummary = true;
+                }
+            }
+            else
+            {
+                managerMouse.Update();
+                managerPlayerBuildings.Update();
+                managerUI.Update();
+                managerEnemies.Update();
+
+                managerCombat.Update();
+            }
             
 			base.Update(gameTime);
 		}
@@ -120,6 +148,18 @@ namespace Warcraft
             managerPlayerUnits.DrawUI(spriteBatch);
             managerPlayerBuildings.DrawUI(spriteBatch);
             managerEnemies.DrawUI(spriteBatch);
+
+
+            if (Battleship.move)
+            {
+                spriteBatch.Draw(cursor, new Rectangle(0, 0, WINDOWS_WIDTH, WINDOWS_WIDTH), new Color(0, 0, 0, fadeOut));
+
+                if (showSummary)
+                {
+                    summary.Draw(spriteBatch, managerPlayerUnits, managerEnemies.managerUnits);
+                }
+            }
+
 			spriteBatch.End();
 
 			base.Draw(gameTime);

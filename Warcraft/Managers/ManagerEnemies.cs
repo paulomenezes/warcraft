@@ -141,7 +141,7 @@ namespace Warcraft.Managers
 			{
                 nivel++;
 
-                if (nivel >= 50 * Warcraft.FPS)
+                if (nivel >= 200 * Warcraft.FPS)
                 {
                     nivel = 0;
 

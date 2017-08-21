@@ -129,6 +129,8 @@
     <Compile Include="Units\Neutral\Skeleton.cs" />
     <Compile Include="Util\Progress.cs" />
     <Compile Include="Buildings\Neutral\DarkPortal.cs" />
+    <Compile Include="Units\Humans\Battleship.cs" />
+    <Compile Include="UI\Summary.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.manifest" />

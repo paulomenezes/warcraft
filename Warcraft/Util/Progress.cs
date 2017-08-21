@@ -7,15 +7,15 @@ namespace Warcraft.Util
 {
     class Progress
     {
-        Vector2 position;
+        public Vector2 position;
         int max;
         int width;
         int height;
 
         Texture2D texture;
 
-        float current = 0;
-        float progress = 0;
+        public float current = 0;
+        public float progress = 0;
 
         public bool start;
         public bool finish;

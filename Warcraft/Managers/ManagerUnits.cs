@@ -33,7 +33,7 @@ namespace Warcraft.Managers
             units.ForEach((u) => u.LoadContent(content));
         }
 
-        public void LoadContent(ContentManager content)
+        public virtual void LoadContent(ContentManager content)
         {
             if (this.content == null)
                 this.content = content;
@@ -52,7 +52,7 @@ namespace Warcraft.Managers
 
 		}
 
-        public void Draw(SpriteBatch spriteBatch)
+        public virtual void Draw(SpriteBatch spriteBatch)
         {
             units.ForEach((u) => u.Draw(spriteBatch));
         }

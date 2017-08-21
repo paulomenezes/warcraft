@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
+using Warcraft.UI;
 using Warcraft.Units;
 using Warcraft.Units.Humans;
 using Warcraft.Units.Orcs;
@@ -67,6 +68,7 @@ namespace Warcraft.Managers
             {
                 if (units[i].information.HitPoints <= 0 && units[i] is Units.Neutral.Skeleton)
                 {
+                    Summary.SKELETONS++;
                     units.RemoveAt(i);
                     AddSkeleton();
 

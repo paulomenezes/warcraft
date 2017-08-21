@@ -74,6 +74,8 @@ namespace Warcraft.Units
         public ManagerMap managerMap;
         ManagerUnits managerUnits;
 
+        Progress progress;
+
         public Unit(int tileX, int tileY, int width, int height, int speed, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits)
         {
             this.width = width;
@@ -89,6 +91,8 @@ namespace Warcraft.Units
 
             this.managerMap = managerMap;
             this.managerUnits = managerUnits;
+
+            progress = new Progress(width, 5);
         }
 
         private void ManagerMouse_MouseEventHandler(object sender, Events.MouseEventArgs e)
@@ -109,6 +113,9 @@ namespace Warcraft.Units
             missileTroll = content.Load<Texture2D>("axe");
             missileElven = content.Load<Texture2D>("arrow");
 
+            progress.Start(position + new Vector2(0, height), (int)information.HitPointsTotal);
+			progress.LoadContent(content);
+
             if (ui != null)
                 ui.LoadContent(content);
         }
@@ -116,6 +123,10 @@ namespace Warcraft.Units
         public virtual void Update()
         {
             animations.Update();
+
+            progress.Update();
+            progress.position = position + new Vector2(0, height);
+            progress.HP(information.HitPoints, information.HitPointsTotal);
 
             if (ui != null)
                 ui.Update();
@@ -308,14 +319,19 @@ namespace Warcraft.Units
             if (workState != WorkigState.WORKING)
             {
                 Color color = Color.White;
-     //           if (managerUnits.index % 2 == 0)
-     //               color = Color.Red;
-     //           else if (managerUnits.index % 2 == 1)
-					//color = Color.Blue;
-				//else if (managerUnits.index == 2)
-    //                color = Color.Green;
-				//else if (managerUnits.index == 3)
-                    //color = Color.Yellow;
+                //           if (managerUnits.index % 2 == 0)
+                //               color = Color.Red;
+                //           else if (managerUnits.index % 2 == 1)
+                //color = Color.Blue;
+                //else if (managerUnits.index == 2)
+                //                color = Color.Green;
+                //else if (managerUnits.index == 3)
+                //color = Color.Yellow;
+
+                if (information.HitPoints > 0 && information.HitPoints < information.HitPointsTotal)
+                {
+                    progress.Draw(spriteBatch);
+                }
 
                 if (animations.FlipX())
                     spriteBatch.Draw(texture[animations.currentAnimation], position, animations.rectangle, color, 0, Vector2.Zero, 1, SpriteEffects.FlipHorizontally, 0);

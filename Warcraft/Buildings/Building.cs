@@ -99,7 +99,7 @@ namespace Warcraft.Buildings
 					break;
             }
 
-            return building;
+			return building;
         }
 
         private void ManagerMouse_MouseEventHandler(object sender, MouseEventArgs e)
@@ -141,7 +141,22 @@ namespace Warcraft.Buildings
             unitDestination = new Point(((int)position.X / 32) + ((width / Warcraft.TILE_SIZE) / 2), ((int)position.Y / 32) + ((height / Warcraft.TILE_SIZE)));
             rectangle = new Rectangle((int)position.X, (int)position.Y, width, height);
 
-            progress.Start(position + new Vector2(0, height), information.BuildTime);
+			progress.Start(position + new Vector2(0, height), information.BuildTime);
+
+            switch ((information as InformationBuilding).Type)
+			{
+				case Util.Buildings.TOWN_HALL:
+				case Util.Buildings.BARRACKS:
+				case Util.Buildings.CHICKEN_FARM:
+					Summary.BUILDINGS++;
+					break;
+
+				case Util.Buildings.GREAT_HALL:
+				case Util.Buildings.ORC_BARRACKS:
+				case Util.Buildings.PIG_FARM:
+					Summary.ENEMEY_BUILDINGS++;
+					break;
+			}
         }
 
         public virtual void LoadContent(ContentManager content)
@@ -190,7 +205,7 @@ namespace Warcraft.Buildings
             if (isBuilding && !isPlaceSelected)
             {
                 MouseState mouse = Mouse.GetState();
-                position = new Vector2(Normalize(mouse.X - width / 2), Normalize(mouse.Y - height / 2)) + Warcraft.camera.center;
+                position = new Vector2(Normalize(mouse.X - width / 2), Normalize(mouse.Y - height / 2)) +   Warcraft.camera.center;
             }
         }
 
