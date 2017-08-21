@@ -73,6 +73,11 @@ namespace Warcraft
 
             camera = new Camera(GraphicsDevice.Viewport);
 
+			increment = 0.1f;
+			fadeOut = 0;
+			showSummary = false;
+            Battleship.move = false;
+
 			base.Initialize();
 		}
 
@@ -89,6 +94,14 @@ namespace Warcraft
 			SelectRectangle.LoadContent(Content);
 
             cursor = Content.Load<Texture2D>("Cursor");
+
+            managerMouse.MouseEventHandler += (sender, e) => {
+                if (showSummary)
+                {
+                    ManagerBuildings.goldMines.Clear();
+                    this.Initialize();
+                }
+            };
 		}
 
 		protected override void Update(GameTime gameTime)
@@ -109,8 +122,9 @@ namespace Warcraft
 					fadeOut += (float)Math.Pow(1.05, increment) / 100;
 				}
 
-                if (fadeOut > 0.6 && !showSummary)
+                if (fadeOut > 0.6)
                 {
+                    managerMouse.Update();
                     showSummary = true;
                 }
             }
