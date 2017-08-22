@@ -100,7 +100,7 @@ namespace Warcraft.Units.Neutral
 
             textureName.Add(AnimationType.WALKING, "Skeleton");
 
-            information = new InformationUnit("Skeleton", Race.NEUTRAL, Faction.NEUTRAL, 40, 0, 360, 10, 0, 0, Util.Buildings.NONE, 300, 6, 1, Util.Units.SKELETON);
+            information = new InformationUnit("Skeleton", Race.NEUTRAL, Faction.NEUTRAL, 40, 0, 360, 10, 0, 0, Util.Buildings.NONE, 300, 6, 1, Util.Units.SKELETON, 3);
             Information = information;
         }
 

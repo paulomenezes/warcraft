@@ -82,7 +82,7 @@ namespace Warcraft.Units.Humans
 			textureName.Add(AnimationType.ATTACKING, "Dwarven");
 			textureName.Add(AnimationType.DYING, "Dwarven");
 
-            information = new InformationUnit("Dwarven", Race.HUMAN, Faction.ALLIANCE, 30, 0, 4, 10, 400, 1, Util.Buildings.TOWN_HALL, 200 * Warcraft.FPS, 3, 1, Util.Units.PEASANT);
+            information = new InformationUnit("Dwarven", Race.HUMAN, Faction.ALLIANCE, 30, 0, 4, 10, 400, 1, Util.Buildings.TOWN_HALL, 200 * Warcraft.FPS, 3, 1, Util.Units.PEASANT, 2);
 			Information = information;
 		}
 	}

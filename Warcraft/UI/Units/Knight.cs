@@ -12,7 +12,7 @@ namespace Warcraft.UI.Units
 
         public Knight(ManagerMouse managerMouse, KnightUnit knight)
 		{
-			buttonPortrait = new Button(4, 3);
+			buttonPortrait = new Button(8, 0);
 
 			this.knight = knight;
 

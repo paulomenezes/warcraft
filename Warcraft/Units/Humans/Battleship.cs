@@ -37,7 +37,7 @@ namespace Warcraft.Units.Humans
 
 			textureName.Add(AnimationType.WALKING, "Battleship");
 
-            information = new InformationUnit("Battleship", Race.HUMAN, Faction.ALLIANCE, 9999, 0, 0, 10, 0, 0, Util.Buildings.NONE, 0, 0, 0, Util.Units.BATTLESHIP);
+            information = new InformationUnit("Battleship", Race.HUMAN, Faction.ALLIANCE, 9999, 0, 0, 10, 0, 0, Util.Buildings.NONE, 0, 0, 0, Util.Units.BATTLESHIP, 0);
 			Information = information;
 
             managerMouse.MouseEventHandler += (sender, e) => {
@@ -55,10 +55,12 @@ namespace Warcraft.Units.Humans
 
                     if (total == dead && managerEnemies.managerBuildings.buildings.Count == 0)
                     {
+						goal = new Vector2(lastX * Warcraft.TILE_SIZE, position.Y + 5 * Warcraft.TILE_SIZE);
+						transition = true;
+						move = true;
+
+						Warcraft.ISLAND++;
 					}
-					goal = new Vector2(lastX * Warcraft.TILE_SIZE, position.Y + 5 * Warcraft.TILE_SIZE);
-					transition = true;
-					move = true;
                 }
             };
 		}

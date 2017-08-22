@@ -24,7 +24,7 @@ namespace Warcraft.UI
         {
             base.Draw(spriteBatch);
 
-            spriteBatch.DrawString(font, "Resumo ilha 01", new Vector2(100, 100), Color.White);
+            spriteBatch.DrawString(font, "Resumo ilha " + (Warcraft.ISLAND), new Vector2(100, 100), Color.White);
             spriteBatch.DrawString(font, "Unidades: " + playerUnits.units.Count, new Vector2(100, 140), Color.White);
             spriteBatch.DrawString(font, "Construções: " + BUILDINGS, new Vector2(100, 160), Color.White);
 

@@ -247,13 +247,13 @@ namespace Warcraft.Units
                             missilePosition = position;
                             targetPosition = attackPosition;
 
-                            float reduce = (information.Damage - armor) / 30f;
+                            float reduce = ((information.Damage - armor) + information.Piercing) / 30f;
                             ReduceHitPoints(reduce < 0 ? 0.01f : reduce);
                         }
                     }
                     else
                     {
-                        float reduce = (information.Damage - armor) / 30f;
+                        float reduce = ((information.Damage - armor) + information.Piercing) / 30f;
                         ReduceHitPoints(reduce < 0 ? 0.01f : reduce);
                     }
 

@@ -10,7 +10,8 @@ namespace Warcraft.Units
         public Race Race;
         public Faction Faction;
 
-        public int Damage;
+		public int Damage;
+		public int Piercing;
 
         public int Armor;
         public int Sight;
@@ -20,7 +21,7 @@ namespace Warcraft.Units
         public Util.Units Type;
 
         public InformationUnit(string name, Race race, Faction faction, float hitPoints, int armor, int sight, int movementSpeed,
-                            int costGold, int costFood, Util.Buildings produceAt, int buildTime, int damage, int range, Util.Units type)
+                            int costGold, int costFood, Util.Buildings produceAt, int buildTime, int damage, int range, Util.Units type, int piercing)
         {
             Name = name;
 
@@ -40,6 +41,7 @@ namespace Warcraft.Units
             BuildTime = buildTime;
 
             Damage = damage;
+            Piercing = piercing;
 
             Type = type;
         }

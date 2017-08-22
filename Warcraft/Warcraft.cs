@@ -36,6 +36,7 @@ namespace Warcraft
 		public static int MAP_SIZE = 50;
 
 		public static int PLAYER_ISLAND = 0;
+		public static int ISLAND = 0;
 
 		public static Camera camera;
 
