@@ -110,6 +110,7 @@ namespace Warcraft.Units.Humans
             commands.Add(new BuilderBuildings(Util.Buildings.PIG_FARM, this, managerMouse, managerBuildings, managerUnits));
 			commands.Add(new BuilderWalls(this, managerMouse, managerBuildings, managerUnits));
             commands.Add(new Miner(managerBuildings, managerUnits, this));
+            commands.Add(new BuilderBuildings(Util.Buildings.ALTAR_OF_STORMS, this, managerMouse, managerBuildings, managerUnits));
 		}
 	}
 }

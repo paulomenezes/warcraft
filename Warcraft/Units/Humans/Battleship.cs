@@ -60,6 +60,11 @@ namespace Warcraft.Units.Humans
 						move = true;
 
 						Warcraft.ISLAND++;
+
+                        if (Warcraft.ISLAND > 2) 
+                        {
+                            Warcraft.ISLAND = 0;
+                        }
 					}
                 }
             };

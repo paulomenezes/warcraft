@@ -10,6 +10,8 @@
         GREAT_HALL,
         PIG_FARM,
         ORC_BARRACKS,
-        DARK_PORTAL
+        DARK_PORTAL,
+        CHURCH,
+        ALTAR_OF_STORMS
     }
 }

@@ -17,8 +17,8 @@ namespace Warcraft.Managers
     {
         ManagerMouse managerMouse;
         ManagerMap managerMap;
-		public ManagerBuildings managerBuildings;
-		public ManagerUnits managerUnits;
+        public ManagerBuildings managerBuildings;
+        public ManagerUnits managerUnits;
 
         Random random = new Random();
 
@@ -28,6 +28,8 @@ namespace Warcraft.Managers
         List<int> actions = new List<int>();
 
         int nivel = 0;
+
+        int[] times = { 200, 150, 100 };
 
 		public ManagerEnemies(ManagerMouse managerMouse, ManagerMap managerMap, int index)
         {
@@ -74,6 +76,9 @@ namespace Warcraft.Managers
 
             actionsTypes.Add(EA.ActionType.BARRACKS);
 			actions.Add(1);
+
+			actionsTypes.Add(EA.ActionType.BUILDING);
+			actions.Add(5);
 		}
 
         public void LoadContent(ContentManager content)
@@ -141,7 +146,7 @@ namespace Warcraft.Managers
 			{
                 nivel++;
 
-                if (nivel >= 200 * Warcraft.FPS)
+                if (nivel >= times[Warcraft.ISLAND] * Warcraft.FPS)
                 {
                     nivel = 0;
 

@@ -1,31 +1,40 @@
 ﻿<Properties StartupConfiguration="{13F82A3A-108E-4ECC-80BB-B2E7274ECB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/UI/Units/Knight.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Units/Orcs/Peon.cs">
     <Files>
-      <File FileName="Warcraft/Warcraft.cs" Line="174" Column="30" />
-      <File FileName="Warcraft/Managers/ManagerBuildings.cs" Line="74" Column="42" />
-      <File FileName="Warcraft/Managers/ManagerIsland.cs" Line="60" Column="1" />
-      <File FileName="Warcraft/Units/Humans/Battleship.cs" Line="40" Column="167" />
-      <File FileName="Warcraft/UI/Summary.cs" Line="18" Column="23" />
-      <File FileName="Warcraft/Units/Unit.cs" Line="251" Column="1" />
-      <File FileName="Warcraft/Units/Humans/Peasant.cs" Line="105" Column="182" />
-      <File FileName="Warcraft/Units/InformationUnit.cs" Line="44" Column="33" />
-      <File FileName="Warcraft/Units/Neutral/Skeleton.cs" Line="103" Column="166" />
-      <File FileName="Warcraft/Units/Humans/ElvenArcher.cs" Line="92" Column="196" />
-      <File FileName="Warcraft/Units/Orcs/TrollAxethrower.cs" Line="104" Column="209" />
-      <File FileName="Warcraft/Units/Humans/Dwarven.cs" Line="85" Column="183" />
-      <File FileName="Warcraft/Units/Orcs/Grunt.cs" Line="104" Column="178" />
-      <File FileName="Warcraft/Units/Humans/Ballista.cs" Line="70" Column="187" />
-      <File FileName="Warcraft/Units/Humans/Footman.cs" Line="101" Column="183" />
-      <File FileName="Warcraft/Units/Humans/Knight.cs" Line="103" Column="181" />
-      <File FileName="Warcraft/Units/Orcs/Peon.cs" Line="105" Column="172" />
-      <File FileName="Warcraft/UI/Units/Knight.cs" Line="1" Column="1" />
+      <File FileName="Warcraft/Warcraft.cs" Line="23" Column="6" />
+      <File FileName="Warcraft/Managers/ManagerEnemies.cs" Line="48" Column="28" />
+      <File FileName="Warcraft/Managers/ManagerBotsUnits.cs" Line="117" Column="56" />
+      <File FileName="Warcraft/Units/Humans/Battleship.cs" Line="64" Column="49" />
+      <File FileName="Warcraft/Managers/ManagerBotsBuildings.cs" Line="32" Column="41" />
+      <File FileName="Warcraft/Buildings/Orcs/DarkPortal.cs" Line="30" Column="28" />
+      <File FileName="Warcraft/Buildings/Orcs/Barracks.cs" Line="34" Column="4" />
+      <File FileName="Warcraft/Buildings/Building.cs" Line="203" Column="41" />
+      <File FileName="Warcraft/Buildings/Neutral/Church.cs" Line="51" Column="21" />
+      <File FileName="Warcraft/Buildings/Neutral/CityHall.cs" Line="13" Column="4" />
+      <File FileName="Warcraft/Buildings/Humans/Church.cs" Line="8" Column="31" />
+      <File FileName="Warcraft/Buildings/Humans/Barracks.cs" Line="13" Column="9" />
+      <File FileName="Warcraft/Buildings/Orcs/AltarOfStorms.cs" Line="13" Column="152" />
+      <File FileName="Warcraft/Buildings/Orcs/GreatHall.cs" Line="1" Column="1" />
+      <File FileName="Warcraft/Buildings/Orcs/PigFarm.cs" Line="1" Column="1" />
+      <File FileName="Warcraft/UI/Buildings/Church.cs" Line="33" Column="3" />
+      <File FileName="Warcraft/UI/Buildings/Barracks.cs" Line="1" Column="1" />
+      <File FileName="Warcraft/UI/Buildings/GoldMine.cs" Line="10" Column="19" />
+      <File FileName="Warcraft/UI/Buildings/AltarOfStorms.cs" Line="14" Column="36" />
+      <File FileName="Warcraft/Units/Humans/Peasant.cs" Line="113" Column="4" />
+      <File FileName="Warcraft/Commands/BuilderBuildings.cs" Line="33" Column="1" />
+      <File FileName="Warcraft/UI/Units/Builder.cs" Line="57" Column="1" />
+      <File FileName="Warcraft/Units/Builder.cs" Line="1" Column="1" />
+      <File FileName="Warcraft/Buildings/Neutral/Barracks.cs" Line="1" Column="1" />
+      <File FileName="Warcraft/Buildings/Neutral/Farm.cs" Line="1" Column="1" />
+      <File FileName="Warcraft/Buildings/Humans/ChickenFarm.cs" Line="1" Column="1" />
+      <File FileName="Warcraft/Commands/Miner.cs" Line="41" Column="1" />
+      <File FileName="Warcraft/UI/SelectRectangle.cs" Line="31" Column="22" />
+      <File FileName="Warcraft/Units/Orcs/Peon.cs" Line="113" Column="62" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/Units/Unit.cs" relfile="Warcraft/Units/Unit.cs" line="251" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

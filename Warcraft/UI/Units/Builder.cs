@@ -32,6 +32,7 @@ namespace Warcraft.UI.Units
                 builder.Add(new Button(50, 280, 2, 4));
                 builder.Add(new Button(100, 280, 8, 3));
                 builder.Add(new Button(0, 320, 2, 9));
+                builder.Add(new Button(50, 320, 2, 6));
 
                 buttonMiner = new Button(50, 280, 9, 8);
 			}

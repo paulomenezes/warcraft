@@ -86,7 +86,10 @@ namespace Warcraft.Buildings
                     break;
                 case Util.Buildings.CHICKEN_FARM:
                     building = new Humans.ChickenFarm(0, 0, managerMouse, managerMap, managerUnits);
-                    break;
+					break;
+                case Util.Buildings.CHURCH:
+                    building = new Humans.Church(0, 0, managerMouse, managerMap, managerUnits);
+					break;
 
                 case Util.Buildings.GREAT_HALL:
                     building = new Orcs.GreatHall(0, 0, managerMouse, managerMap, managerUnits);
@@ -96,6 +99,9 @@ namespace Warcraft.Buildings
 					break;
                 case Util.Buildings.PIG_FARM:
                     building = new Orcs.PigFarm(0, 0, managerMouse, managerMap, managerUnits);
+					break;
+                case Util.Buildings.ALTAR_OF_STORMS:
+                    building = new Orcs.AltarOfStorms(0, 0, managerMouse, managerMap, managerUnits);
 					break;
             }
 
@@ -209,7 +215,7 @@ namespace Warcraft.Buildings
             }
         }
 
-        public void Draw(SpriteBatch spriteBatch)
+        public virtual void Draw(SpriteBatch spriteBatch)
         {
             if (isBuilding && !isPlaceSelected) 
             {
@@ -252,7 +258,7 @@ namespace Warcraft.Buildings
 
         public void DrawUI(SpriteBatch spriteBatch)
         {
-            if (selected)
+            if (selected && ui != null)
             {
                 ui.Draw(spriteBatch);
             }

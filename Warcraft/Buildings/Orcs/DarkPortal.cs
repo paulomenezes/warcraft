@@ -1,16 +1,16 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using Warcraft.Managers;
 using Warcraft.Util;
 
-namespace Warcraft.Buildings.Neutral
+namespace Warcraft.Buildings.Orcs
 {
     class DarkPortal : Building
     {
         public DarkPortal(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits)
             : base(tileX, tileY, 128, 128, managerMouse, managerMap, managerUnits)
         {
-			information = new InformationBuilding("Dark Portal", 25500, 0, 0, Util.Units.NONE, 0, Util.Buildings.DARK_PORTAL);
+			information = new InformationBuilding("Dark Portal", 1000, 0, 0, Util.Units.NONE, 0, Util.Buildings.DARK_PORTAL);
 
 			Dictionary<AnimationType, List<Sprite>> sprites = new Dictionary<AnimationType, List<Sprite>>();
 			List<Sprite> spriteBuilding = new List<Sprite>();
@@ -26,7 +26,10 @@ namespace Warcraft.Buildings.Neutral
 
 			textureName = "Human Buildings (Summer)";
 
-			unselected = true;
+			isBuilding = false;
+			isPlaceSelected = false;
+			isStartBuilding = false;
+
 			isWorking = true;
 
 			managerMap.AddWalls(Position, width / 32, height / 32);
