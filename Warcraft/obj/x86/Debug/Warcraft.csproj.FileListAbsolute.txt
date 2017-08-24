@@ -82,3 +82,6 @@
 /Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Ballista.xnb
 /Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/sidebar.xnb
 /Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Battleship.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Exit.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Play.xnb
+/Users/paulomenezes/Documents/repositories/warcraft/Warcraft/bin/Debug/Content/Risland.xnb

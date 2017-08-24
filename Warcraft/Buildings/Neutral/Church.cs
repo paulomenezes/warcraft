@@ -47,7 +47,7 @@ namespace Warcraft.Buildings.Neutral
                         index = -1;
                         elapsed = 0;
                     }
-                    else if (elapsed >= 100 * Warcraft.FPS)
+                    else if (elapsed >= 10 * Warcraft.FPS)
                     {
                         elapsed = 0;
                         managerUnits.units[index].information.HitPoints += 0.1f;

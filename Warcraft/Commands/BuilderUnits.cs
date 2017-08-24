@@ -25,7 +25,7 @@ namespace Warcraft.Commands
             this.managerUnits = managerUnits;
         }
 
-        public void execute()
+        public bool execute()
         {
             if (!go && ManagerResources.CompareGold(managerUnits.index, informationUnit.CostGold) && ManagerResources.CompareFood(managerUnits.index, informationUnit.CostFood))
             {
@@ -35,7 +35,11 @@ namespace Warcraft.Commands
                 go = true;
                 completed = false;
                 remove = false;
+
+                return true;
             }
+
+            return false;
         }
 
         public void Update()

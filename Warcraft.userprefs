@@ -1,35 +1,14 @@
 ﻿<Properties StartupConfiguration="{13F82A3A-108E-4ECC-80BB-B2E7274ECB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Units/Orcs/Peon.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Warcraft/Map/Tile.cs">
     <Files>
-      <File FileName="Warcraft/Warcraft.cs" Line="23" Column="6" />
-      <File FileName="Warcraft/Managers/ManagerEnemies.cs" Line="48" Column="28" />
-      <File FileName="Warcraft/Managers/ManagerBotsUnits.cs" Line="117" Column="56" />
-      <File FileName="Warcraft/Units/Humans/Battleship.cs" Line="64" Column="49" />
-      <File FileName="Warcraft/Managers/ManagerBotsBuildings.cs" Line="32" Column="41" />
-      <File FileName="Warcraft/Buildings/Orcs/DarkPortal.cs" Line="30" Column="28" />
-      <File FileName="Warcraft/Buildings/Orcs/Barracks.cs" Line="34" Column="4" />
-      <File FileName="Warcraft/Buildings/Building.cs" Line="203" Column="41" />
-      <File FileName="Warcraft/Buildings/Neutral/Church.cs" Line="51" Column="21" />
-      <File FileName="Warcraft/Buildings/Neutral/CityHall.cs" Line="13" Column="4" />
-      <File FileName="Warcraft/Buildings/Humans/Church.cs" Line="8" Column="31" />
-      <File FileName="Warcraft/Buildings/Humans/Barracks.cs" Line="13" Column="9" />
-      <File FileName="Warcraft/Buildings/Orcs/AltarOfStorms.cs" Line="13" Column="152" />
-      <File FileName="Warcraft/Buildings/Orcs/GreatHall.cs" Line="1" Column="1" />
-      <File FileName="Warcraft/Buildings/Orcs/PigFarm.cs" Line="1" Column="1" />
-      <File FileName="Warcraft/UI/Buildings/Church.cs" Line="33" Column="3" />
-      <File FileName="Warcraft/UI/Buildings/Barracks.cs" Line="1" Column="1" />
-      <File FileName="Warcraft/UI/Buildings/GoldMine.cs" Line="10" Column="19" />
-      <File FileName="Warcraft/UI/Buildings/AltarOfStorms.cs" Line="14" Column="36" />
-      <File FileName="Warcraft/Units/Humans/Peasant.cs" Line="113" Column="4" />
-      <File FileName="Warcraft/Commands/BuilderBuildings.cs" Line="33" Column="1" />
-      <File FileName="Warcraft/UI/Units/Builder.cs" Line="57" Column="1" />
-      <File FileName="Warcraft/Units/Builder.cs" Line="1" Column="1" />
-      <File FileName="Warcraft/Buildings/Neutral/Barracks.cs" Line="1" Column="1" />
-      <File FileName="Warcraft/Buildings/Neutral/Farm.cs" Line="1" Column="1" />
-      <File FileName="Warcraft/Buildings/Humans/ChickenFarm.cs" Line="1" Column="1" />
-      <File FileName="Warcraft/Commands/Miner.cs" Line="41" Column="1" />
-      <File FileName="Warcraft/UI/SelectRectangle.cs" Line="31" Column="22" />
-      <File FileName="Warcraft/Units/Orcs/Peon.cs" Line="113" Column="62" />
+      <File FileName="Warcraft/Scenes/WarcraftGame.cs" Line="63" Column="59" />
+      <File FileName="Warcraft/Warcraft.cs" Line="63" Column="9" />
+      <File FileName="Warcraft/Scenes/Scene.cs" Line="15" Column="58" />
+      <File FileName="Warcraft/Util/Camera.cs" Line="31" Column="1" />
+      <File FileName="Warcraft/Scenes/Menu.cs" Line="22" Column="35" />
+      <File FileName="Warcraft/Units/Unit.cs" Line="341" Column="1" />
+      <File FileName="Warcraft/Managers/ManagerMap.cs" Line="59" Column="31" />
+      <File FileName="Warcraft/Map/Tile.cs" Line="119" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

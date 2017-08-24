@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
+using Warcraft.Buildings.Orcs;
 using Warcraft.Managers;
 using Warcraft.Units.Neutral;
 using Warcraft.Util;
@@ -41,7 +42,7 @@ namespace Warcraft.Units.Humans
 			Information = information;
 
             managerMouse.MouseEventHandler += (sender, e) => {
-                if (e.SelectRectangle.Intersects(rectangle)) 
+                if (e.SelectRectangle.Intersects(rectangle) && !move) 
                 {
                     int total = 0, dead = 0;
                     managerEnemies.managerUnits.units.ForEach(unit => {
@@ -53,17 +54,20 @@ namespace Warcraft.Units.Humans
                         }
                     });
 
-                    if (total == dead && managerEnemies.managerBuildings.buildings.Count == 0)
+                    if (total == dead && managerEnemies.managerBuildings.buildings.Count < 2)
                     {
-						goal = new Vector2(lastX * Warcraft.TILE_SIZE, position.Y + 5 * Warcraft.TILE_SIZE);
-						transition = true;
-						move = true;
-
-						Warcraft.ISLAND++;
-
-                        if (Warcraft.ISLAND > 2) 
+                        if (managerEnemies.managerBuildings.buildings.Count == 0 || (managerEnemies.managerBuildings.buildings.Count == 1 && managerEnemies.managerBuildings.buildings[0] is DarkPortal))
                         {
-                            Warcraft.ISLAND = 0;
+                            goal = new Vector2(lastX * Warcraft.TILE_SIZE, position.Y + 5 * Warcraft.TILE_SIZE);
+                            transition = true;
+                            move = true;
+
+                            Warcraft.ISLAND++;
+
+                            if (Warcraft.ISLAND > 2)
+                            {
+                                Warcraft.ISLAND = 0;
+                            }
                         }
 					}
                 }

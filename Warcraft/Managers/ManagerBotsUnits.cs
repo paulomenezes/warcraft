@@ -27,6 +27,11 @@ namespace Warcraft.Managers
             Vector2 goldMinePos = Functions.CleanHalfPosition(managerMap, ManagerBuildings.goldMines[1].position);
 			units.Add(new Peon(Functions.TilePos(goldMinePos.X), Functions.TilePos(goldMinePos.Y), managerMouse, managerMap, this, managerBuildings));
 
+            if (Warcraft.ISLAND == 2)
+            {
+                units.Add(new Daemon(Functions.TilePos(goldMinePos.X), Functions.TilePos(goldMinePos.Y), managerMouse, managerMap, this));
+            }
+
             AddSkeleton();
         }
 
@@ -34,10 +39,13 @@ namespace Warcraft.Managers
         {
             Building darkPortal = managerBuildings.buildings.Find(b => b is DarkPortal);
 
-            units.Add(new Units.Neutral.Skeleton(Functions.TilePos(darkPortal.position.X) + 4, Functions.TilePos(darkPortal.position.Y) + 4, managerMouse, managerMap, this));
+            if (darkPortal != null)
+            {
+                units.Add(new Units.Neutral.Skeleton(Functions.TilePos(darkPortal.position.X) + 4, Functions.TilePos(darkPortal.position.Y) + 4, managerMouse, managerMap, this));
 
-            if (content != null)
-                LoadContent();
+                if (content != null)
+                    LoadContent();
+            }
         }
 
         public override void Factory(Util.Units type, int x, int y, int targetX, int targetY)

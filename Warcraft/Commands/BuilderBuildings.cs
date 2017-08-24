@@ -28,9 +28,9 @@ namespace Warcraft.Commands
             this.building = Buildings.Building.Factory(building, managerMouse, managerBuildings.managerMap, managerUnits);
         }
 
-        public void execute()
+        public bool execute()
         {
-            if (ManagerResources.CompareGold(managerUnits.index, building.information.CostGold) && ManagerResources.CompareFood(managerUnits.index, building.information.CostWood))
+            if (ManagerResources.CompareGold(managerUnits.index, building.information.CostGold)) // && ManagerResources.CompareFood(managerUnits.index, building.information.CostWood))
             {
                 ManagerResources.ReduceGold(managerUnits.index, building.information.CostGold);
 
@@ -40,7 +40,11 @@ namespace Warcraft.Commands
 
                 builder.workState = WorkigState.WAITING_PLACE;
                 building.builder();
+
+                return true;
             }
+
+            return false;
         }
 
         public void LoadContent(ContentManager content)

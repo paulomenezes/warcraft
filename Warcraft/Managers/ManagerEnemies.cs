@@ -33,10 +33,18 @@ namespace Warcraft.Managers
 
 		public ManagerEnemies(ManagerMouse managerMouse, ManagerMap managerMap, int index)
         {
-			ManagerResources.BOT_GOLD.Add(5000);
-			ManagerResources.BOT_WOOD.Add(99999);
-			ManagerResources.BOT_FOOD.Add(5);
-			ManagerResources.BOT_OIL.Add(99999);
+            if (ManagerResources.BOT_FOOD.Count == 0)
+            {
+                ManagerResources.BOT_GOLD.Add(5000);
+                ManagerResources.BOT_WOOD.Add(99999);
+                ManagerResources.BOT_FOOD.Add(5);
+                ManagerResources.BOT_OIL.Add(99999);
+            }
+            else
+            {
+				ManagerResources.BOT_GOLD[0] = 5000;
+				ManagerResources.BOT_FOOD[0] = 5;
+			}
 
 			this.index = index;
             this.managerMap = managerMap;
@@ -48,13 +56,16 @@ namespace Warcraft.Managers
             actions.Add(0);
 
             actionsTypes.Add(EA.ActionType.TOWN_HALL);
-            actions.Add(0);
-
-            actionsTypes.Add(EA.ActionType.BUILDING);
-			actions.Add(2);
+			actions.Add(0);
 
 			actionsTypes.Add(EA.ActionType.TOWN_HALL);
 			actions.Add(0);
+
+			actionsTypes.Add(EA.ActionType.TOWN_HALL);
+			actions.Add(0);
+
+            actionsTypes.Add(EA.ActionType.BUILDING);
+			actions.Add(2);
 
 			actionsTypes.Add(EA.ActionType.BUILDING);
 			actions.Add(2);
@@ -62,8 +73,14 @@ namespace Warcraft.Managers
             actionsTypes.Add(EA.ActionType.BUILDING);
 			actions.Add(1);
 
-			actionsTypes.Add(EA.ActionType.TOWN_HALL);
-			actions.Add(0);
+			if (Warcraft.ISLAND > 0)
+			{
+				actionsTypes.Add(EA.ActionType.TOWN_HALL);
+				actions.Add(0);
+
+				actionsTypes.Add(EA.ActionType.TOWN_HALL);
+				actions.Add(0);
+			}
 
             actionsTypes.Add(EA.ActionType.MINING);
 			actions.Add(4);
@@ -77,8 +94,11 @@ namespace Warcraft.Managers
             actionsTypes.Add(EA.ActionType.BARRACKS);
 			actions.Add(1);
 
-			actionsTypes.Add(EA.ActionType.BUILDING);
-			actions.Add(5);
+            if (Warcraft.ISLAND > 0)
+            {
+                actionsTypes.Add(EA.ActionType.BUILDING);
+                actions.Add(5);
+            }
 		}
 
         public void LoadContent(ContentManager content)
@@ -111,33 +131,46 @@ namespace Warcraft.Managers
                             else
                                 building.Position = Functions.CleanHalfPosition(managerMap, greatHall.position);
                             
-                            builder.commands[actions[0]].execute();
-							actionsTypes.RemoveAt(0);
-                            actions.RemoveAt(0);
+                            bool r = builder.commands[actions[0]].execute();
+
+                            if (r)
+                            {
+                                actionsTypes.RemoveAt(0);
+                                actions.RemoveAt(0);
+                            }
                         }
                         break;
                     case EA.ActionType.MINING:
                         if (builder != null)
                         {
-							builder.commands[actions[0]].execute();
-							actionsTypes.RemoveAt(0);
-							actions.RemoveAt(0);
+							bool r = builder.commands[actions[0]].execute();
+                            if (r)
+                            {
+                                actionsTypes.RemoveAt(0);
+                                actions.RemoveAt(0);
+                            }
                         }
 						break;
                     case EA.ActionType.BARRACKS:
                         if (barrack != null)
 						{
-                            barrack.commands[actions[0]].execute();
-							actionsTypes.RemoveAt(0);
-							actions.RemoveAt(0);
+                            bool r = barrack.commands[actions[0]].execute();
+                            if (r)
+                            {
+                                actionsTypes.RemoveAt(0);
+                                actions.RemoveAt(0);
+                            }
 						}
 						break;
                     case EA.ActionType.TOWN_HALL:
                         if (greatHall != null)
 						{
-                            greatHall.commands[actions[0]].execute();
-							actionsTypes.RemoveAt(0);
-							actions.RemoveAt(0);
+                            bool r = greatHall.commands[actions[0]].execute();
+                            if (r)
+                            {
+                                actionsTypes.RemoveAt(0);
+                                actions.RemoveAt(0);
+                            }
 						}
 						break;
                 }

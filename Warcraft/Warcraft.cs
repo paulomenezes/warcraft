@@ -5,179 +5,109 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Warcraft.Managers;
 using Warcraft.Map;
+using Warcraft.Scenes;
 using Warcraft.UI;
 using Warcraft.Units.Humans;
 using Warcraft.Util;
 
 namespace Warcraft
 {
-	public class Warcraft : Game
-	{
-		GraphicsDeviceManager graphics;
-		SpriteBatch spriteBatch;
+    public class Warcraft : Game
+    {
+        GraphicsDeviceManager graphics;
+        SpriteBatch spriteBatch;
 
-        ManagerIsland managerIsland;
-		// ManagerMap managerMap;
-		ManagerMouse managerMouse = new ManagerMouse();
+        public static int WINDOWS_WIDTH = 1280;
+        public static int WINDOWS_HEIGHT = 800;
 
-		ManagerUI managerUI;
-        ManagerEnemies managerEnemies;
+        public static int FPS = 1;
+        public static int TILE_SIZE = 32;
+        public static int MAP_SIZE = 50;
 
-        ManagerUnits managerPlayerUnits;
-        ManagerBuildings managerPlayerBuildings;
+        public static int PLAYER_ISLAND = 0;
+        public static int ISLAND = 0;
 
-        ManagerCombat managerCombat;
+        public static Camera camera;
 
-		public static int WINDOWS_WIDTH = 1280;
-		public static int WINDOWS_HEIGHT = 800;
-
-        public static int FPS = 10;
-		public static int TILE_SIZE = 32;
-		public static int MAP_SIZE = 50;
-
-		public static int PLAYER_ISLAND = 0;
-		public static int ISLAND = 0;
-
-		public static Camera camera;
-
-        // GenerateRooms rooms;
-        float increment = 0.1f;
-        float fadeOut = 0;
-
-        Texture2D cursor;
-
-        bool showSummary = false;
-        Summary summary = new Summary();
+        Scene scene;
+		MouseState oldState;
 
 		public Warcraft()
-		{
-			graphics = new GraphicsDeviceManager(this);
-			graphics.PreferredBackBufferWidth = WINDOWS_WIDTH + 200;
-			graphics.PreferredBackBufferHeight = WINDOWS_HEIGHT;
+        {
+            graphics = new GraphicsDeviceManager(this);
+            graphics.PreferredBackBufferWidth = WINDOWS_WIDTH + 200;
+            graphics.PreferredBackBufferHeight = WINDOWS_HEIGHT;
 
-			Content.RootDirectory = "Content";
+            Content.RootDirectory = "Content";
 
-			IsMouseVisible = true;
-		}
+            IsMouseVisible = true;
+        }
 
-		protected override void Initialize()
-		{
-            managerIsland = new ManagerIsland(managerMouse);
+        protected override void Initialize()
+        {
+            ManagerResources.PLAYER_FOOD = 5;
 
-			managerEnemies = new ManagerEnemies(managerMouse, managerIsland.CurrentMap(), 0);
+            scene = new Menu();
+            scene.Initializer();
+
+			camera = new Camera(GraphicsDevice.Viewport);
+
+            base.Initialize();
+        }
+
+        protected override void LoadContent()
+        {
+            spriteBatch = new SpriteBatch(GraphicsDevice);
+            scene.LoadContent(Content);
+        }
+
+        protected override void Update(GameTime gameTime)
+        {
+            if (Keyboard.GetState().IsKeyDown(Keys.Escape))
+                Exit();
+
+			if (scene is Menu)
+			{
+				if (Mouse.GetState().LeftButton == ButtonState.Pressed && oldState.LeftButton == ButtonState.Released)
+                {
+                    if ((scene as Menu).rPlay.Intersects(new Rectangle(Mouse.GetState().X, Mouse.GetState().Y, 1, 1)))
+                    {
+                        scene = new WarcraftGame();
+                        scene.Initializer();
+                        scene.LoadContent(Content);
+                    }
+                    else if ((scene as Menu).rExit.Intersects(new Rectangle(Mouse.GetState().X, Mouse.GetState().Y, 1, 1)))
+					{
+                        Exit();
+					}
+                }
+
+				oldState = Mouse.GetState();
+            }
+            else if (scene is WarcraftGame)
+            {
+                WarcraftGame game = scene as WarcraftGame;
+                Knight olivaw = game.managerPlayerUnits.units.Find(unit => unit is Knight) as Knight;
+                if (olivaw.information.HitPoints <= 0 || ISLAND > 2)
+                {
+                    scene = new Menu();
+                    scene.Initializer();
+                    scene.LoadContent(Content);
+                }
+            }
 			
-            managerPlayerBuildings = new ManagerPlayerBuildings(managerMouse, managerIsland.CurrentMap());
-            managerPlayerUnits = new ManagerPlayerUnits(managerMouse, managerIsland.CurrentMap(), managerPlayerBuildings, managerEnemies);
+            scene.Update();
 
-            managerUI = new ManagerUI(managerMouse, managerPlayerBuildings, managerPlayerUnits, null);
-            managerCombat = new ManagerCombat(managerEnemies, managerPlayerUnits, managerPlayerBuildings);
-
-            camera = new Camera(GraphicsDevice.Viewport);
-
-			increment = 0.1f;
-			fadeOut = 0;
-			showSummary = false;
-            Battleship.move = false;
-
-			base.Initialize();
-		}
-
-		protected override void LoadContent()
-		{
-			spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            managerIsland.LoadContent(Content);
-            managerPlayerUnits.LoadContent(Content);
-            managerPlayerBuildings.LoadContent(Content);
-			managerUI.LoadContent(Content);
-            managerEnemies.LoadContent(Content);
-
-			SelectRectangle.LoadContent(Content);
-
-            cursor = Content.Load<Texture2D>("Cursor");
-
-            managerMouse.MouseEventHandler += (sender, e) => {
-                if (showSummary)
-                {
-                    ManagerBuildings.goldMines.Clear();
-                    this.Initialize();
-                }
-            };
-		}
-
-		protected override void Update(GameTime gameTime)
-		{
-			if (Keyboard.GetState().IsKeyDown(Keys.Escape))
-				Exit();
-
-			if (IsActive)
-				camera.Update(gameTime);
-
-            managerPlayerUnits.Update();
-			if (Battleship.move)
-            {
-                increment += 1;
-
-                if (fadeOut < 0.8f)
-                {
-					fadeOut += (float)Math.Pow(1.05, increment) / 100;
-				}
-
-                if (fadeOut > 0.6)
-                {
-                    managerMouse.Update();
-                    showSummary = true;
-                }
-            }
-            else
-            {
-                managerMouse.Update();
-                managerPlayerBuildings.Update();
-                managerUI.Update();
-                managerEnemies.Update();
-
-                managerCombat.Update();
-            }
-            
 			base.Update(gameTime);
-		}
+        }
 
-		protected override void Draw(GameTime gameTime)
-		{
-			GraphicsDevice.Clear(Color.CornflowerBlue);
+        protected override void Draw(GameTime gameTime)
+        {
+            GraphicsDevice.Clear(Color.CornflowerBlue);
 
-			spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null, null, camera.transform);
+            scene.Draw(spriteBatch);
 
-            managerIsland.Draw(spriteBatch);
-            //managerEA.Draw(spriteBatch);
-            managerPlayerUnits.Draw(spriteBatch);
-            managerPlayerBuildings.Draw(spriteBatch);
-            managerEnemies.Draw(spriteBatch);
-			managerMouse.Draw(spriteBatch);
-
-			spriteBatch.End();
-
-			spriteBatch.Begin();
-			managerUI.DrawBack(spriteBatch);
-			managerUI.Draw(spriteBatch);
-            managerPlayerUnits.DrawUI(spriteBatch);
-            managerPlayerBuildings.DrawUI(spriteBatch);
-            managerEnemies.DrawUI(spriteBatch);
-
-
-            if (Battleship.move)
-            {
-                spriteBatch.Draw(cursor, new Rectangle(0, 0, WINDOWS_WIDTH, WINDOWS_WIDTH), new Color(0, 0, 0, fadeOut));
-
-                if (showSummary)
-                {
-                    summary.Draw(spriteBatch, managerPlayerUnits, managerEnemies.managerUnits);
-                }
-            }
-
-			spriteBatch.End();
-
-			base.Draw(gameTime);
-		}
-	}
+            base.Draw(gameTime);
+        }
+    }
 }

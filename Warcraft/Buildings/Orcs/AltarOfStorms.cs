@@ -10,7 +10,7 @@ namespace Warcraft.Buildings.Orcs
 		public AltarOfStorms(int tileX, int tileY, ManagerMouse managerMouse, ManagerMap managerMap, ManagerUnits managerUnits) : 
             base(tileX, tileY, managerMouse, managerMap, managerUnits)
         {
-            information = new InformationBuilding("Altar of Storms", 700, 900, 500, Util.Units.PEASANT, 175 * Warcraft.FPS, Util.Buildings.ALTAR_OF_STORMS);
+            information = new InformationBuilding("Altar of Storms", 700, 900, 500, Util.Units.PEON, 175 * Warcraft.FPS, Util.Buildings.ALTAR_OF_STORMS);
 
 			Dictionary<AnimationType, List<Sprite>> sprites = new Dictionary<AnimationType, List<Sprite>>();
 			List<Sprite> spriteBuilding = new List<Sprite>();

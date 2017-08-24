@@ -99,9 +99,11 @@ namespace Warcraft.Commands
             texture = content.Load<Texture2D>("Summer Tiles");
         }
 
-        public void execute()
+        public bool execute()
         {
             started = true;
+
+            return true;
         }
 
         public void Update()

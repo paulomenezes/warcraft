@@ -22,10 +22,15 @@ namespace Warcraft.Util
         public Camera(Viewport viewport)
         {
             view = viewport;
-            center = ManagerBuildings.goldMines[player].position - new Vector2(Warcraft.WINDOWS_WIDTH / 2, Warcraft.WINDOWS_HEIGHT / 2);
         }
 
-        public void Update(GameTime gameTime)
+        public void Start() 
+        {
+			if (ManagerBuildings.goldMines.Count > 0)
+				center = ManagerBuildings.goldMines[player].position - new Vector2(Warcraft.WINDOWS_WIDTH / 2, Warcraft.WINDOWS_HEIGHT / 2);
+		}
+
+        public void Update()
         {
             KeyboardState keyboard = Keyboard.GetState();
             MouseState mouse = Mouse.GetState();

@@ -109,7 +109,10 @@ namespace Warcraft.Units.Humans
             commands.Add(new BuilderBuildings(Util.Buildings.BARRACKS, this, managerMouse, managerBuildings, managerUnits));
             commands.Add(new BuilderBuildings(Util.Buildings.CHICKEN_FARM, this, managerMouse, managerBuildings, managerUnits));
 			commands.Add(new BuilderWalls(this, managerMouse, managerBuildings, managerUnits));
-			commands.Add(new BuilderBuildings(Util.Buildings.CHURCH, this, managerMouse, managerBuildings, managerUnits));
+            if (Warcraft.ISLAND > 0)
+            {
+                commands.Add(new BuilderBuildings(Util.Buildings.CHURCH, this, managerMouse, managerBuildings, managerUnits));
+            }
 			commands.Add(new Miner(managerBuildings, managerUnits, this));
         }
     }

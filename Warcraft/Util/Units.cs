@@ -12,6 +12,7 @@
         SKELETON,
         BALLISTA,
         KNIGHT,
-        BATTLESHIP
+        BATTLESHIP,
+        DAEMON
     }
 }

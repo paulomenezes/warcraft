@@ -37,7 +37,7 @@ namespace Warcraft.Commands
             this.managerUnits = managerUnits;
         }
 
-        public void execute()
+        public bool execute()
         {
             cityHall = managerBuildings.buildings.Find((b) => 
                                                        (b.information as InformationBuilding).Type == Util.Buildings.TOWN_HALL ||
@@ -66,8 +66,12 @@ namespace Warcraft.Commands
                     worker.selected = false;
 
                     currentState = State.MINER;
+
+                    return true;
                 }
             }
+
+            return false;
         }
 
         public void Update()
